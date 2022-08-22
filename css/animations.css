@@ -1860,4 +1860,157 @@ input.checkbox-input:checked + .checkbox-label {
   -webkit-animation: mail-cover-part-top-ba 0.3s ease 3.5s forwards;
           animation: mail-cover-part-top-ba 0.3s ease 3.5s forwards;
 }
+
+.preloader-arrows {
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 0;
+}
+
+.preloader-arrows::before, .preloader-arrows::after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: 0%;
+  left: 0%;
+  width: 7rem;
+  height: 6rem;
+  background-color: #eeeeee;
+}
+
+.preloader-arrows::before {
+  -webkit-transform: translate(-110%, -50%);
+          transform: translate(-110%, -50%);
+  -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+          clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+}
+
+.preloader-arrows::after {
+  -webkit-transform: translate(10%, -100%);
+          transform: translate(10%, -100%);
+  -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+          clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+}
+
+.preloader-arrows.js-preloader-arrows-big-active {
+  -webkit-animation: preloader-arrows 0.3s ease 0.7s forwards;
+          animation: preloader-arrows 0.3s ease 0.7s forwards;
+  opacity: 1;
+}
+
+.preloader-arrows.js-preloader-arrows-big-active::before {
+  -webkit-animation: preloader-arrows-before 1.5s ease forwards;
+          animation: preloader-arrows-before 1.5s ease forwards;
+}
+
+.preloader-arrows.js-preloader-arrows-big-active::after {
+  -webkit-animation: preloader-arrows-after 1.5s ease forwards;
+          animation: preloader-arrows-after 1.5s ease forwards;
+}
+
+.preloader-arrows__back {
+  content: '';
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+  opacity: 1;
+}
+
+.preloader-arrows.js-preloader-arrows-big-active + .preloader-arrows__back {
+  -webkit-animation: preloader-arrows-back 2s ease forwards;
+          animation: preloader-arrows-back 2s ease forwards;
+}
+
+@keyframes preloader-arrows {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes preloader-arrows-back {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes preloader-arrows-back {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes preloader-arrows-before {
+  0% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+  }
+  30% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+  70% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+}
+
+@keyframes preloader-arrows-after {
+  0% {
+    -webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  30% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  70% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+  }
+}
 /*# sourceMappingURL=animations.css.map */

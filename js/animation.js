@@ -1,4 +1,11 @@
 $(document).ready(function() {
+	$('body').addClass('overflow-hidden');
+	setTimeout(function(){
+		$('body').removeClass('overflow-hidden');
+	}, 1000);
+});
+
+$(document).ready(function() {
 	$(document).on('click', '.spares-card__favorite', function(event) {
 		if ($(this).hasClass('active-add')) {
 			$(this).removeClass('active-add');
@@ -49,7 +56,6 @@ $('.js-change-number').on('click', function() {
 			setTimeout(function(){
 				btn.removeClass('show');
 				spares_card_button_box.removeClass('show');
-
 				setTimeout(function(){
 					btn.removeClass('button--show-cancel');
 					spares_card_button_box.removeClass('pointer-events-none');
@@ -65,7 +71,6 @@ $('.js-change-number').on('click', function() {
 			++value;
 		}
 	}
-
 	input.val(value).change();
 });
 
@@ -73,7 +78,6 @@ $(document).ready(function() {
 	$(document).on('click', '.load-more-button', function(event) {
 		$(this).addClass('load-more-button-anim');
 		$('.content').addClass('js-content-back');
-		
 		setTimeout(function(){
 			$('.load-more-button').removeClass('load-more-button-anim');
 			$('.content').removeClass('js-content-back');
@@ -86,7 +90,7 @@ $(document).ready(function() {
 		if (!$('.on-order__input').val()=='') {
 			$(this).addClass('js-on-order__button-active');
 			$('body').removeClass('overflow-hidden');
-			
+
 			setTimeout(function(){
 				$('.jsOnOrderModal').removeClass('open');
 				$('.overlay').removeClass('open');
@@ -96,40 +100,34 @@ $(document).ready(function() {
 			}, 2000);
 		}
 	});
-	
+
 	$(document).on('click', '.js-state-form-back', function(event) {
 		$('.state-form').removeClass('open');
 		$('body').removeClass('overflow-hidden');
-
 	});
-	
 });
 
 $(document).ready(function() {
 	$(document).on('click', '.btn-bell-anim', function(event) {
 		$(this).addClass('js-btn-bell-anim-active');
-
 		setTimeout(function(){
 			$('.btn-bell-anim').removeClass('js-btn-bell-anim-active');
 		}, 300);
 	});
 });
 
-
 $(document).ready(function() {
 	$(document).on('click', '.overlay', function(event) {
 		$('.overlay').removeClass('open');
 		$('.modal').removeClass('open');
 		$('.dropdown').removeClass('open');
-		$('header').removeClass('headerZI')
-		$('body').removeClass('overflow-hidden')
-
+		$('header').removeClass('headerZI');
+		$('body').removeClass('overflow-hidden');
 	});
 	$(document).on('click', '.dropdown__close-icon', function(event) {
-		$('header').removeClass('headerZI')
+		$('header').removeClass('headerZI');
 	});
 });
-
 
 $(document).ready(function() {
 	$(document).on('click', 'body', function(event) {
@@ -138,5 +136,3 @@ $(document).ready(function() {
 		}
 	});
 });
-
-

@@ -1192,3 +1192,136 @@ input.checkbox-input:checked+.checkbox-label {
 		}
 	}
 }
+
+
+
+	
+		.preloader-arrows {
+			position: fixed;
+			z-index: 10000;
+			top: 50%;
+			left: 50%;
+			pointer-events: none;
+			transform: rotate(0);
+			opacity: 0;
+	
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				z-index: 100;
+				top: 0%;
+				left: 0%;
+				width: 7rem;
+				height: 6rem;
+				background-color: #eeeeee;
+			}
+	
+			&::before {
+				transform: translate(-110%, -50%);
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+			}
+	
+			&::after {
+				transform: translate(10%, -100%);
+				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+			}
+			
+			&.js-preloader-arrows-big-active {
+				animation: preloader-arrows 0.3s ease 0.7s forwards;
+				opacity: 1;
+		
+				&::before {
+					animation: preloader-arrows-before 1.5s ease forwards;
+				}
+		
+				&::after {
+					animation: preloader-arrows-after 1.5s ease forwards;
+				}
+			}
+		}
+		
+		
+		.preloader-arrows__back {
+			content: '';
+			position: fixed;
+			z-index: 9999;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			pointer-events: none;
+			background-color: rgba($color: #000000, $alpha: 0.9);
+			transition: all 2s ease 0s;
+			opacity: 1;
+		}
+		
+		.preloader-arrows.js-preloader-arrows-big-active + .preloader-arrows__back {
+			animation: preloader-arrows-back 2s ease forwards;
+		}
+
+		@keyframes preloader-arrows {
+			0% {
+				transform: rotate(0);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	
+		@keyframes preloader-arrows-back {
+			0% {
+				opacity: 1;
+			}
+	
+			50% {
+				opacity: 1;
+			}
+	
+			100% {
+				opacity: 0;
+			}
+		}
+	
+		@keyframes preloader-arrows-before {
+			0% {
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+			}
+	
+			30% {
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+			}
+	
+			70% {
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+			}
+			99% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+				clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+			}
+		}
+	
+		@keyframes preloader-arrows-after {
+			0% {
+				clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+			}
+	
+			30% {
+				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+			}
+	
+			70% {
+				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+			}
+			99% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+			}
+		}
