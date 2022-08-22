@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('body').addClass('overflow-hidden');
 	setTimeout(function(){
 		$('body').removeClass('overflow-hidden');
-	}, 1000);
+	}, 2000);
 });
 
 $(document).ready(function() {

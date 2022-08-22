@@ -1219,12 +1219,16 @@ input.checkbox-input:checked+.checkbox-label {
 	
 			&::before {
 				transform: translate(-110%, -50%);
-				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+				clip-path: polygon(100% 0%, 40% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+				border-top-left-radius: 70%;
+				border-bottom-left-radius: 70%;
 			}
 	
 			&::after {
 				transform: translate(10%, -100%);
-				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+				clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+				border-top-right-radius: 70%;
+				border-bottom-right-radius: 70%;
 			}
 			
 			&.js-preloader-arrows-big-active {
@@ -1257,7 +1261,7 @@ input.checkbox-input:checked+.checkbox-label {
 		}
 		
 		.preloader-arrows.js-preloader-arrows-big-active + .preloader-arrows__back {
-			animation: preloader-arrows-back 2s ease forwards;
+			animation: preloader-arrows-back 3s ease forwards;
 		}
 
 		@keyframes preloader-arrows {
@@ -1286,36 +1290,42 @@ input.checkbox-input:checked+.checkbox-label {
 	
 		@keyframes preloader-arrows-before {
 			0% {
-				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 55%, 45% 45%, 100% 0%);
 			}
 	
 			30% {
-				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
 			}
 	
 			70% {
-				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+				clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+				transform: translate(-110%, -50%);
 			}
 			99% {
 				opacity: 1;
 			}
 			100% {
 				opacity: 0;
-				clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+				clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 0% 50%, 55% 0%);
+				transform: translate(-130%, -50%);
 			}
 		}
 	
 		@keyframes preloader-arrows-after {
 			0% {
 				clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+				clip-path: polygon(0% 0%, 55% 45%, 55% 55%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
 			}
 	
 			30% {
 				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+				clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
 			}
 	
 			70% {
 				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+				clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+				transform: translate(10%, -100%);
 			}
 			99% {
 				opacity: 1;
@@ -1323,5 +1333,7 @@ input.checkbox-input:checked+.checkbox-label {
 			100% {
 				opacity: 0;
 				clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+				clip-path: polygon(45% 0%, 100% 50%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+				transform: translate(30%, -100%);
 			}
 		}

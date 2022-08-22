@@ -1886,15 +1886,19 @@ input.checkbox-input:checked + .checkbox-label {
 .preloader-arrows::before {
   -webkit-transform: translate(-110%, -50%);
           transform: translate(-110%, -50%);
-  -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-          clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  -webkit-clip-path: polygon(100% 0%, 40% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+          clip-path: polygon(100% 0%, 40% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+  border-top-left-radius: 70%;
+  border-bottom-left-radius: 70%;
 }
 
 .preloader-arrows::after {
   -webkit-transform: translate(10%, -100%);
           transform: translate(10%, -100%);
-  -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-          clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  -webkit-clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+          clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  border-top-right-radius: 70%;
+  border-bottom-right-radius: 70%;
 }
 
 .preloader-arrows.js-preloader-arrows-big-active {
@@ -1929,8 +1933,8 @@ input.checkbox-input:checked + .checkbox-label {
 }
 
 .preloader-arrows.js-preloader-arrows-big-active + .preloader-arrows__back {
-  -webkit-animation: preloader-arrows-back 2s ease forwards;
-          animation: preloader-arrows-back 2s ease forwards;
+  -webkit-animation: preloader-arrows-back 3s ease forwards;
+          animation: preloader-arrows-back 3s ease forwards;
 }
 
 @keyframes preloader-arrows {
@@ -1970,24 +1974,28 @@ input.checkbox-input:checked + .checkbox-label {
 
 @keyframes preloader-arrows-before {
   0% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 55%, 45% 45%, 100% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 55%, 45% 45%, 100% 0%);
   }
   30% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
   }
   70% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 55%, 0% 45%, 55% 0%);
+    -webkit-transform: translate(-110%, -50%);
+            transform: translate(-110%, -50%);
   }
   99% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 0% 50%, 55% 0%);
+            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 0% 50%, 55% 0%);
+    -webkit-transform: translate(-130%, -50%);
+            transform: translate(-130%, -50%);
   }
 }
 
@@ -1995,14 +2003,22 @@ input.checkbox-input:checked + .checkbox-label {
   0% {
     -webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
             clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+    -webkit-clip-path: polygon(0% 0%, 55% 45%, 55% 55%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(0% 0%, 55% 45%, 55% 55%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
   }
   30% {
     -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
             clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+    -webkit-clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
   }
   70% {
     -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
             clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+    -webkit-clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 45%, 100% 55%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+    -webkit-transform: translate(10%, -100%);
+            transform: translate(10%, -100%);
   }
   99% {
     opacity: 1;
@@ -2011,6 +2027,10 @@ input.checkbox-input:checked + .checkbox-label {
     opacity: 0;
     -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
             clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+    -webkit-transform: translate(30%, -100%);
+            transform: translate(30%, -100%);
   }
 }
 /*# sourceMappingURL=animations.css.map */
