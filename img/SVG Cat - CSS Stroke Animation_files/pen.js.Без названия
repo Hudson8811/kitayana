@@ -1,0 +1,12 @@
+$(document).ready(function () {
+  $(document).on('click', '.spares-card__favorite', function (event) {
+    if ($(this).hasClass('active-add')) {
+      $(this).removeClass('active-add');
+      $(this).addClass('active-del');
+      $('.fav-left-to-right').addId('fav-left-to-right');
+    } else {
+      $(this).removeClass('active-del');
+      $(this).addClass('active-add');
+    }
+  });
+});
