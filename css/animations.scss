@@ -1337,3 +1337,84 @@ input.checkbox-input:checked+.checkbox-label {
 				transform: translate(30%, -100%);
 			}
 		}
+
+
+		.burger-menu {
+			background-image: none;
+			position: relative;
+			span {
+				display: inline-block;
+				position: absolute;
+				width: 100%;
+				height: 1.5px;
+				left: 0;
+				background-color: #000000;
+				transition: top 0.3s ease 0.15s, transform 0.5s ease 0s, opacity 0.3s ease 0.4s;
+				&:nth-child(1) {
+					top: 0;
+				}
+				&:nth-child(2) {
+					top: 50%;
+					transform: translate(0, -50%);
+				}
+				&:nth-child(3) {
+					top: 100%;
+					transform: translate(0, -50%);
+				}
+			}
+			&:hover{
+				span {
+					&:nth-child(1){
+						top: -20%;
+					}
+					&:nth-child(3){
+						top: 120%;
+					}
+				}
+			}
+			&.--svg__menu_close {
+				span {
+					transition: top 0.3s ease 0s, transform 0.5s ease 0.15s, opacity 0.3s ease 0s;
+					&:nth-child(1){
+						top: 50%;
+						transform: translate(0, -50%) rotate(-225deg);
+					}
+					&:nth-child(2){
+						opacity: 0;
+					}
+					&:nth-child(3){
+						top: 50%;
+						transform: translate(0, -50%) rotate(-135deg);
+					}
+				}
+			}
+		}
+
+/* 		@keyframes burger-menu-fc {
+			0% {
+				top: -20%;
+			}
+			50% {
+				top: 50%;
+				transform: translate(0, -50%) rotate(0deg);
+			}
+			100% {
+				top: 50%;
+				transform: translate(0, -50%) rotate(-225deg);
+			}
+		}
+		@keyframes burger-menu-lc {
+			0% {
+				top: 120%;
+			}
+		
+			50% {
+				top: 50%;
+				transform: translate(0, -50%) rotate(0deg);
+			}
+		
+			100% {
+				top: 50%;
+				transform: translate(0, -50%) rotate(-135deg);
+			}
+		} */
