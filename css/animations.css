@@ -1164,13 +1164,13 @@ span.button-show-cancel-inner--grey {
 }
 
 .button-anim.js-button-anim-active span.button-anim__span-show {
-  -webkit-animation: button-anim-span-show 1.5s ease 0.7s forwards;
-          animation: button-anim-span-show 1.5s ease 0.7s forwards;
+  -webkit-animation: button-anim-span-show 1.5s ease 0.5s forwards;
+          animation: button-anim-span-show 1.5s ease 0.5s forwards;
 }
 
 .button-anim.js-button-anim-active span.button-anim__span-hide {
-  -webkit-animation: button-anim-span-hide 1.5s ease 0.7s forwards;
-          animation: button-anim-span-hide 1.5s ease 0.7s forwards;
+  -webkit-animation: button-anim-span-hide 1.5s ease 0.5s forwards;
+          animation: button-anim-span-hide 1.5s ease 0.5s forwards;
 }
 
 @-webkit-keyframes button-anim-span-show {
