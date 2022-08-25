@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$(document).on('click', '.spares-card__favorite', function(event) {
+	$(document).on('click', '.heart__favorite', function(event) {
 		if ($(this).hasClass('active-add')) {
 			$(this).removeClass('active-add');
 			$(this).addClass('active-del');

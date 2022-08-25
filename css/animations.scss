@@ -142,6 +142,13 @@
 .spares-card__favorite {
 	width: 1.5rem;
 	height: 1.5rem;
+}
+.parts-item__favorite-icon {
+	width: 2rem;
+	height: 2rem;
+}
+
+.heart__favorite {
 	fill: none;
 
 	&.active-add {

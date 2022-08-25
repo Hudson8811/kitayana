@@ -289,39 +289,47 @@
 .spares-card__favorite {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.parts-item__favorite-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.heart__favorite {
   fill: none;
 }
 
-.spares-card__favorite.active-add {
+.heart__favorite.active-add {
   -webkit-animation: fav-heart-add 2s ease-in 0s forwards;
           animation: fav-heart-add 2s ease-in 0s forwards;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
 }
 
-.spares-card__favorite.active-add .heart-fill {
+.heart__favorite.active-add .heart-fill {
   fill: red;
 }
 
-.spares-card__favorite.active-add .heart-fill {
+.heart__favorite.active-add .heart-fill {
   -webkit-animation: fav-heart-show-ltr 0.3s ease-in 0s forwards;
           animation: fav-heart-show-ltr 0.3s ease-in 0s forwards;
 }
 
-.spares-card__favorite.active-del {
+.heart__favorite.active-del {
   -webkit-animation: fav-heart-del 2s ease-in 0s forwards;
           animation: fav-heart-del 2s ease-in 0s forwards;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
 }
 
-.spares-card__favorite.active-del .heart-fill {
+.heart__favorite.active-del .heart-fill {
   -webkit-animation: fav-heart-hide-ltr 0.3s ease-in 0s forwards;
           animation: fav-heart-hide-ltr 0.3s ease-in 0s forwards;
   fill: red;
 }
 
-.spares-card__favorite.active-del .heart-fill-back {
+.heart__favorite.active-del .heart-fill-back {
   -webkit-animation: heart-fill-back 1.5s ease-in 0.7s forwards;
           animation: heart-fill-back 1.5s ease-in 0.7s forwards;
 }
