@@ -774,6 +774,11 @@ span.button-show-cancel-inner {
 		&:hover{
 			background-color: #ffffff;
 		}
+		&.js-button-anim-active {
+			&:hover{
+				color: #000000;
+			}
+		}
 	}
 	&--red {
 		background-color: red;
@@ -831,9 +836,7 @@ span.button-show-cancel-inner {
 		span {
 			animation: button-anim-span 0.5s ease forwards;
 		}
-		&:hover{
-			color: #000000;
-		}
+
 		span.button-anim__span-show {
 			animation: button-anim-span-show 1.5s ease 0.5s forwards;
 		}
@@ -841,6 +844,7 @@ span.button-show-cancel-inner {
 			animation: button-anim-span-hide 1.5s ease 0.5s forwards;
 		}
 	}
+
 }
 @keyframes button-anim-span-show {
 	0% {

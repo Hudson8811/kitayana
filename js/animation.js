@@ -135,9 +135,13 @@ $('.js-change-number').on('click', function() {
 $(document).ready(function() {
 	$(document).on('click', '.button-anim', function(event) {
 		$(this).addClass('js-button-anim-active');
-		$('.content').addClass('js-content-back');
 		setTimeout(function(){
 			$('.button-anim').removeClass('js-button-anim-active');
+		}, 2000);
+	});
+	$(document).on('click', '.load-more-button', function(event) {
+		$('.content').addClass('js-content-back');
+		setTimeout(function(){
 			$('.content').removeClass('js-content-back');
 		}, 2000);
 	});

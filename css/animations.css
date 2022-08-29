@@ -1095,6 +1095,10 @@ span.button-show-cancel-inner--grey {
   background-color: #ffffff;
 }
 
+.button-anim--white.js-button-anim-active:hover {
+  color: #000000;
+}
+
 .button-anim--red {
   background-color: red;
 }
@@ -1165,10 +1169,6 @@ span.button-show-cancel-inner--grey {
 .button-anim.js-button-anim-active span {
   -webkit-animation: button-anim-span 0.5s ease forwards;
           animation: button-anim-span 0.5s ease forwards;
-}
-
-.button-anim.js-button-anim-active:hover {
-  color: #000000;
 }
 
 .button-anim.js-button-anim-active span.button-anim__span-show {
