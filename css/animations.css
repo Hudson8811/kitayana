@@ -2,157 +2,83 @@
   z-index: 99;
 }
 
-@-webkit-keyframes fav-heart-add {
+input.invalid {
+  border: none;
+  outline: 1px solid #c90202;
+}
+
+p.input-error {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay {
+  -webkit-transition: all 0.5s ease 1s;
+  transition: all 0.5s ease 1s;
+  /* 	&._active {
+		opacity: 1;
+		visibility: visible;
+	} */
+}
+
+.overlay.open {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+@-webkit-keyframes fav-heart {
   0% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  10% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  20% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40% {
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1);
   }
-  47% {
+  15% {
     -webkit-transform: rotate(10deg) scale(1.1);
             transform: rotate(10deg) scale(1.1);
   }
-  54% {
+  30% {
     -webkit-transform: rotate(-10deg) scale(1.2);
             transform: rotate(-10deg) scale(1.2);
   }
-  61% {
+  45% {
+    -webkit-transform: rotate(10deg) scale(1.3);
+            transform: rotate(10deg) scale(1.3);
+  }
+  60% {
     -webkit-transform: rotate(0deg) scale(1.3);
             transform: rotate(0deg) scale(1.3);
   }
-  90% {
+  100% {
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1);
   }
 }
 
-@keyframes fav-heart-add {
+@keyframes fav-heart {
   0% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  10% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  20% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40% {
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1);
   }
-  47% {
+  15% {
     -webkit-transform: rotate(10deg) scale(1.1);
             transform: rotate(10deg) scale(1.1);
   }
-  54% {
+  30% {
     -webkit-transform: rotate(-10deg) scale(1.2);
             transform: rotate(-10deg) scale(1.2);
   }
-  61% {
+  45% {
+    -webkit-transform: rotate(10deg) scale(1.3);
+            transform: rotate(10deg) scale(1.3);
+  }
+  60% {
     -webkit-transform: rotate(0deg) scale(1.3);
             transform: rotate(0deg) scale(1.3);
   }
-  90% {
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-}
-
-@-webkit-keyframes fav-heart-del {
-  0% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  10% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  20% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40% {
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-  47% {
-    -webkit-transform: rotate(10deg) scale(1.1);
-            transform: rotate(10deg) scale(1.1);
-  }
-  54% {
-    -webkit-transform: rotate(-10deg) scale(1.2);
-            transform: rotate(-10deg) scale(1.2);
-  }
-  61% {
-    -webkit-transform: rotate(0deg) scale(1.3);
-            transform: rotate(0deg) scale(1.3);
-  }
-  90% {
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-}
-
-@keyframes fav-heart-del {
-  0% {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  10% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  20% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40% {
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-  47% {
-    -webkit-transform: rotate(10deg) scale(1.1);
-            transform: rotate(10deg) scale(1.1);
-  }
-  54% {
-    -webkit-transform: rotate(-10deg) scale(1.2);
-            transform: rotate(-10deg) scale(1.2);
-  }
-  61% {
-    -webkit-transform: rotate(0deg) scale(1.3);
-            transform: rotate(0deg) scale(1.3);
-  }
-  90% {
+  100% {
     -webkit-transform: rotate(0deg) scale(1);
             transform: rotate(0deg) scale(1);
   }
@@ -250,6 +176,66 @@
   }
 }
 
+@-webkit-keyframes fav-heart-scale-add {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fav-heart-scale-add {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fav-heart-scale-del {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fav-heart-scale-del {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @-webkit-keyframes heart-fill-back {
   0% {
     fill: white;
@@ -296,15 +282,43 @@
   height: 2rem;
 }
 
+.heart__favorite-button-active-add {
+  -webkit-animation: fav-heart-scale-add 0.3s ease-in 0s forwards;
+          animation: fav-heart-scale-add 0.3s ease-in 0s forwards;
+}
+
+.heart__favorite-button-active-del {
+  -webkit-animation: fav-heart-scale-del 0.3s ease-in 0s forwards;
+          animation: fav-heart-scale-del 0.3s ease-in 0s forwards;
+}
+
 .heart__favorite {
   fill: none;
 }
 
+.heart__favorite:hover {
+  -webkit-animation: fav-heart 1s ease-in 0s forwards;
+          animation: fav-heart 1s ease-in 0s forwards;
+}
+
+.heart__favorite:hover .heart-fill-back {
+  -webkit-animation: heart-fill-back 1s ease-in 0s forwards;
+          animation: heart-fill-back 1s ease-in 0s forwards;
+}
+
 .heart__favorite.active-add {
-  -webkit-animation: fav-heart-add 2s ease-in 0s forwards;
-          animation: fav-heart-add 2s ease-in 0s forwards;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
+}
+
+.heart__favorite.active-add:hover {
+  -webkit-animation: fav-heart 1s ease-in 0s forwards;
+          animation: fav-heart 1s ease-in 0s forwards;
+}
+
+.heart__favorite.active-add:hover .heart-fill-back {
+  -webkit-animation: heart-fill-back 1s ease-in 0s forwards;
+          animation: heart-fill-back 1s ease-in 0s forwards;
 }
 
 .heart__favorite.active-add .heart-fill {
@@ -317,21 +331,24 @@
 }
 
 .heart__favorite.active-del {
-  -webkit-animation: fav-heart-del 2s ease-in 0s forwards;
-          animation: fav-heart-del 2s ease-in 0s forwards;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
+}
+
+.heart__favorite.active-del:hover {
+  -webkit-animation: fav-heart 1s ease-in 0s forwards;
+          animation: fav-heart 1s ease-in 0s forwards;
+}
+
+.heart__favorite.active-del:hover .heart-fill-back {
+  -webkit-animation: heart-fill-back 1s ease-in 0s forwards;
+          animation: heart-fill-back 1s ease-in 0s forwards;
 }
 
 .heart__favorite.active-del .heart-fill {
   -webkit-animation: fav-heart-hide-ltr 0.3s ease-in 0s forwards;
           animation: fav-heart-hide-ltr 0.3s ease-in 0s forwards;
   fill: red;
-}
-
-.heart__favorite.active-del .heart-fill-back {
-  -webkit-animation: heart-fill-back 1.5s ease-in 0.7s forwards;
-          animation: heart-fill-back 1.5s ease-in 0.7s forwards;
 }
 
 .spares-card__buttons {
@@ -674,10 +691,12 @@ span.button-show-cancel-inner {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   background: #a7a9b9;
   border-radius: 0.125rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .buttons-anim__button--black .buttons-anim__icon::before {
@@ -690,30 +709,39 @@ span.button-show-cancel-inner {
   height: 100%;
 }
 
+.buttons-anim__button--black .buttons-anim__icon:hover::before, .buttons-anim__button--black .buttons-anim__icon:hover::after {
+  background-color: #ffffff;
+}
+
+.buttons-anim__button--black .buttons-anim__icon.js-icon-scale-change-active {
+  opacity: 1;
+}
+
+.buttons-anim__button--black .buttons-anim__icon.js-icon-scale-change-active::before, .buttons-anim__button--black .buttons-anim__icon.js-icon-scale-change-active::after {
+  -webkit-animation: js-icon-scale-change-ab 0.3s ease forwards;
+          animation: js-icon-scale-change-ab 0.3s ease forwards;
+}
+
 .buttons-anim__button--black .buttons-anim__icon--decrease {
   left: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+.buttons-anim__button--black .buttons-anim__icon--decrease.js-icon-scale-change-active {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .buttons-anim__button--black .buttons-anim__icon--decrease::after {
   display: none;
 }
 
-.buttons-anim__button--black .buttons-anim__icon--decrease.js-icon-scale-change-active {
-  -webkit-animation: js-icon-scale-change-decrease 0.3s ease forwards;
-          animation: js-icon-scale-change-decrease 0.3s ease forwards;
-}
-
 .buttons-anim__button--black .buttons-anim__icon--increase {
   right: 25%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
 }
 
 .buttons-anim__button--black .buttons-anim__icon--increase.js-icon-scale-change-active {
-  -webkit-animation: js-icon-scale-change-increase 0.3s ease forwards;
-          animation: js-icon-scale-change-increase 0.3s ease forwards;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .buttons-anim.show::before {
@@ -851,75 +879,33 @@ span.button-show-cancel-inner {
   }
 }
 
-@-webkit-keyframes js-icon-scale-change-decrease {
+@-webkit-keyframes js-icon-scale-change-ab {
   0% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-    opacity: 0.6;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5) translate(-50%, -50%);
-            transform: scale(1.5) translate(-50%, -50%);
-    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1.6);
+            transform: translate(-50%, -50%) scale(1.6);
   }
   100% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-    opacity: 0.6;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
-@keyframes js-icon-scale-change-decrease {
+@keyframes js-icon-scale-change-ab {
   0% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-    opacity: 0.6;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5) translate(-50%, -50%);
-            transform: scale(1.5) translate(-50%, -50%);
-    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1.6);
+            transform: translate(-50%, -50%) scale(1.6);
   }
   100% {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
-    opacity: 0.6;
-  }
-}
-
-@-webkit-keyframes js-icon-scale-change-increase {
-  0% {
-    -webkit-transform: scale(1) translate(50%, -50%);
-            transform: scale(1) translate(50%, -50%);
-    opacity: 0.6;
-  }
-  50% {
-    -webkit-transform: scale(1.5) translate(50%, -50%);
-            transform: scale(1.5) translate(50%, -50%);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1) translate(50%, -50%);
-            transform: scale(1) translate(50%, -50%);
-    opacity: 0.6;
-  }
-}
-
-@keyframes js-icon-scale-change-increase {
-  0% {
-    -webkit-transform: scale(1) translate(50%, -50%);
-            transform: scale(1) translate(50%, -50%);
-    opacity: 0.6;
-  }
-  50% {
-    -webkit-transform: scale(1.5) translate(50%, -50%);
-            transform: scale(1.5) translate(50%, -50%);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1) translate(50%, -50%);
-            transform: scale(1) translate(50%, -50%);
-    opacity: 0.6;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -1077,6 +1063,173 @@ span.button-show-cancel-inner--grey {
   transition: transform 1.5s cubic-bezier(0.58, 0.3, 0.54, 0.57) 0.5s, right 0.8s ease 0.5s, z-index 0.8s ease 1s, -webkit-transform 1.5s cubic-bezier(0.58, 0.3, 0.54, 0.57) 0.5s;
 }
 
+.wrapper-load-more-button {
+  position: relative;
+}
+
+.wrapper-load-more-button div.js-preloader-arrows-load-more {
+  position: absolute;
+}
+
+.wrapper-load-more-button .js-preloader-arrows {
+  position: absolute;
+  z-index: 10;
+  top: -200%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 0;
+}
+
+.wrapper-load-more-button .js-preloader-arrows::before, .wrapper-load-more-button .js-preloader-arrows::after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: 0%;
+  left: 0%;
+  width: 7rem;
+  height: 6rem;
+  background-color: #eeeeee;
+}
+
+.wrapper-load-more-button .js-preloader-arrows::before {
+  -webkit-transform: translate(-110%, -50%);
+          transform: translate(-110%, -50%);
+  -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+          clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+}
+
+.wrapper-load-more-button .js-preloader-arrows::after {
+  -webkit-transform: translate(10%, -100%);
+          transform: translate(10%, -100%);
+  -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+          clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+}
+
+.wrapper-load-more-button.js-button-anim-active .js-preloader-arrows {
+  -webkit-animation: preloader-arrows 0.3s ease 0.7s forwards;
+          animation: preloader-arrows 0.3s ease 0.7s forwards;
+  opacity: 1;
+}
+
+.wrapper-load-more-button.js-button-anim-active .js-preloader-arrows::before {
+  -webkit-animation: preloader-arrows-before 1.5s ease forwards;
+          animation: preloader-arrows-before 1.5s ease forwards;
+}
+
+.wrapper-load-more-button.js-button-anim-active .js-preloader-arrows::after {
+  -webkit-animation: preloader-arrows-after 1.5s ease forwards;
+          animation: preloader-arrows-after 1.5s ease forwards;
+}
+
+.wrapper-load-more-button.js-button-anim-active::before {
+  -webkit-animation: js-content-back 2s ease forwards;
+          animation: js-content-back 2s ease forwards;
+}
+
+.load-more-button {
+  width: 100%;
+}
+
+@-webkit-keyframes preloader-arrows {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-arrows {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes preloader-arrows-before {
+  0% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+  }
+  30% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+  70% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+}
+
+@keyframes preloader-arrows-before {
+  0% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+  }
+  30% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+  70% {
+    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
+  }
+}
+
+@-webkit-keyframes preloader-arrows-after {
+  0% {
+    -webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  30% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  70% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+  }
+}
+
+@keyframes preloader-arrows-after {
+  0% {
+    -webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  30% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  70% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
+  }
+}
+
 .button-anim {
   overflow: hidden;
   position: relative;
@@ -1134,13 +1287,13 @@ span.button-show-cancel-inner--grey {
 }
 
 .button-anim::before {
-  left: 100%;
+  left: 110%;
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
 }
 
 .button-anim::after {
-  right: 100%;
+  right: 110%;
 }
 
 .button-anim span.button-anim__span-hide {
@@ -1255,7 +1408,7 @@ span.button-show-cancel-inner--grey {
 
 @-webkit-keyframes button-anim-before {
   0% {
-    left: 100%;
+    left: 110%;
   }
   59% {
     -webkit-clip-path: polygon(0 100%, 0 0, 96% 0, 100% 68%, 100% 100%, 114% 81%, 100% 100%, 72% 100%);
@@ -1271,7 +1424,7 @@ span.button-show-cancel-inner--grey {
     border-bottom-right-radius: 0% 0%;
   }
   100% {
-    left: 100%;
+    left: 110%;
     -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
     border-top-right-radius: 0% 0%;
@@ -1281,7 +1434,7 @@ span.button-show-cancel-inner--grey {
 
 @keyframes button-anim-before {
   0% {
-    left: 100%;
+    left: 110%;
   }
   59% {
     -webkit-clip-path: polygon(0 100%, 0 0, 96% 0, 100% 68%, 100% 100%, 114% 81%, 100% 100%, 72% 100%);
@@ -1297,7 +1450,7 @@ span.button-show-cancel-inner--grey {
     border-bottom-right-radius: 0% 0%;
   }
   100% {
-    left: 100%;
+    left: 110%;
     -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
     border-top-right-radius: 0% 0%;
@@ -1307,7 +1460,7 @@ span.button-show-cancel-inner--grey {
 
 @-webkit-keyframes button-anim-after {
   0% {
-    right: 100%;
+    right: 110%;
   }
   59% {
     -webkit-clip-path: polygon(0 100%, 0 0, 96% 0, 100% 68%, 100% 100%, 114% 81%, 100% 100%, 72% 100%);
@@ -1324,7 +1477,7 @@ span.button-show-cancel-inner--grey {
     border-radius: none;
   }
   100% {
-    right: 100%;
+    right: 110%;
     -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
     border-top-right-radius: 0% 0%;
@@ -1334,7 +1487,7 @@ span.button-show-cancel-inner--grey {
 
 @keyframes button-anim-after {
   0% {
-    right: 100%;
+    right: 110%;
   }
   59% {
     -webkit-clip-path: polygon(0 100%, 0 0, 96% 0, 100% 68%, 100% 100%, 114% 81%, 100% 100%, 72% 100%);
@@ -1351,7 +1504,7 @@ span.button-show-cancel-inner--grey {
     border-radius: none;
   }
   100% {
-    right: 100%;
+    right: 110%;
     -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
     border-top-right-radius: 0% 0%;
@@ -1361,6 +1514,56 @@ span.button-show-cancel-inner--grey {
 
 .content {
   position: relative;
+  /* 	.js-preloader-arrows {
+		position: fixed;
+		z-index: 10;
+		top: 50%;
+		left: 65%;
+		pointer-events: none;
+		transform: rotate(0);
+		opacity: 0;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 100;
+			top: 0%;
+			left: 0%;
+			width: 7rem;
+			height: 6rem;
+			background-color: #eeeeee;
+		}
+
+		&::before {
+			transform: translate(-110%, -50%);
+			clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		}
+
+		&::after {
+			transform: translate(10%, -100%);
+			clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		}
+	}
+
+	&.js-content-back {
+		.js-preloader-arrows {
+			animation: preloader-arrows 0.3s ease 0.7s forwards;
+			opacity: 1;
+
+			&::before {
+				animation: preloader-arrows-before 1.5s ease forwards;
+			}
+
+			&::after {
+				animation: preloader-arrows-after 1.5s ease forwards;
+			}
+		}
+
+		&::before {
+			animation: js-content-back 2s ease forwards;
+		}
+	} */
 }
 
 .content::before {
@@ -1376,85 +1579,6 @@ span.button-show-cancel-inner--grey {
   -webkit-transition: all 2s ease 0s;
   transition: all 2s ease 0s;
   opacity: 0;
-}
-
-.content .js-preloader-arrows {
-  position: fixed;
-  z-index: 10;
-  top: 50%;
-  left: 65%;
-  pointer-events: none;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  opacity: 0;
-}
-
-.content .js-preloader-arrows::before, .content .js-preloader-arrows::after {
-  content: '';
-  position: absolute;
-  z-index: 100;
-  top: 0%;
-  left: 0%;
-  width: 7rem;
-  height: 6rem;
-  background-color: #eeeeee;
-}
-
-.content .js-preloader-arrows::before {
-  -webkit-transform: translate(-110%, -50%);
-          transform: translate(-110%, -50%);
-  -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-          clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-}
-
-.content .js-preloader-arrows::after {
-  -webkit-transform: translate(10%, -100%);
-          transform: translate(10%, -100%);
-  -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-          clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-}
-
-.content.js-content-back .js-preloader-arrows {
-  -webkit-animation: preloader-arrows 0.3s ease 0.7s forwards;
-          animation: preloader-arrows 0.3s ease 0.7s forwards;
-  opacity: 1;
-}
-
-.content.js-content-back .js-preloader-arrows::before {
-  -webkit-animation: preloader-arrows-before 1.5s ease forwards;
-          animation: preloader-arrows-before 1.5s ease forwards;
-}
-
-.content.js-content-back .js-preloader-arrows::after {
-  -webkit-animation: preloader-arrows-after 1.5s ease forwards;
-          animation: preloader-arrows-after 1.5s ease forwards;
-}
-
-.content.js-content-back::before {
-  -webkit-animation: js-content-back 2s ease forwards;
-          animation: js-content-back 2s ease forwards;
-}
-
-@-webkit-keyframes preloader-arrows {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes preloader-arrows {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 @-webkit-keyframes js-content-back {
@@ -1481,85 +1605,29 @@ span.button-show-cancel-inner--grey {
   }
 }
 
-@-webkit-keyframes preloader-arrows-before {
-  0% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
-  }
-  30% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-  }
-  70% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
-  }
+.btn-bell-anim .btn-bell-anim__scale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@keyframes preloader-arrows-before {
-  0% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
-  }
-  30% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-  }
-  70% {
-    -webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
-            clip-path: polygon(55% 0%, 0% 50%, 54% 100%, 55% 100%, 0% 50%, 55% 0%);
-  }
-}
-
-@-webkit-keyframes preloader-arrows-after {
-  0% {
-    -webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
-            clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
-  }
-  30% {
-    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-  }
-  70% {
-    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
-            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
-  }
-}
-
-@keyframes preloader-arrows-after {
-  0% {
-    -webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
-            clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
-  }
-  30% {
-    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-  }
-  70% {
-    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
-            clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 45% 100%, 100% 50%, 45% 0%);
-  }
-}
-
-.btn-bell-anim span, .btn-bell-anim > div {
+.btn-bell-anim span,
+.btn-bell-anim > div {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.btn-bell-anim:hover .bell-anim {
+  -webkit-animation: bell-anim 1s linear forwards;
+          animation: bell-anim 1s linear forwards;
+  -webkit-transform-origin: 50% 30%;
+          transform-origin: 50% 30%;
 }
 
 .btn-bell-anim.js-btn-bell-anim-active {
@@ -1567,16 +1635,9 @@ span.button-show-cancel-inner--grey {
           animation: btn-bell-anim 0.3s ease 0.3s forwards;
 }
 
-.btn-bell-anim.js-btn-bell-anim-active span, .btn-bell-anim.js-btn-bell-anim-active > div {
+.btn-bell-anim.js-btn-bell-anim-active .btn-bell-anim__scale {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-}
-
-.btn-bell-anim:hover .bell-anim {
-  -webkit-animation: bell-anim 1s linear forwards infinite;
-          animation: bell-anim 1s linear forwards infinite;
-  -webkit-transform-origin: 50% 30%;
-          transform-origin: 50% 30%;
 }
 
 @-webkit-keyframes btn-bell-anim {
@@ -1667,11 +1728,15 @@ span.button-show-cancel-inner--grey {
 
 .checkbox-wrap {
   position: relative;
-  width: 100%;
-  height: 100%;
   background-color: #ffffff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  cursor: pointer;
+  border: 0.062rem solid #a7a9b9;
+  margin-right: 0.5rem;
 }
 
 .check-sign {
@@ -1681,8 +1746,8 @@ span.button-show-cancel-inner--grey {
 
 .check-part-1 {
   width: 0;
-  top: 65%;
-  left: 55%;
+  top: 69%;
+  left: 53%;
   opacity: 0;
   overflow: hidden;
   height: 0.15rem;
@@ -1694,8 +1759,8 @@ span.button-show-cancel-inner--grey {
 
 .check-part-2 {
   width: 0;
-  top: 60%;
-  left: 42%;
+  top: 64%;
+  left: 40%;
   height: 0.15rem;
   opacity: 0;
   -webkit-transform: rotate(-45deg);
@@ -1704,38 +1769,29 @@ span.button-show-cancel-inner--grey {
           transform-origin: 0 0;
 }
 
-.checkbox-input {
+.checkbox__input {
   display: none;
 }
 
-input.checkbox-input:checked + .checkbox-wrap .check-part-2 {
+input.checkbox__input:checked + .checkbox-wrap .check-part-2 {
   opacity: 1;
   width: 60%;
-  -webkit-transition: width .3s .15s;
-  transition: width .3s .15s;
+  -webkit-transition: width .3s .35s;
+  transition: width .3s .35s;
 }
 
-input.checkbox-input:checked + .checkbox-wrap .check-part-1 {
+input.checkbox__input:checked + .checkbox-wrap .check-part-1 {
   opacity: 1;
   width: 30%;
-  -webkit-transition: width .2s;
-  transition: width .2s;
+  -webkit-transition: width .2s .2s;
+  transition: width .2s .2s;
 }
 
-.checkbox-label {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
-  cursor: pointer;
-  border: 0.062rem solid #a7a9b9;
-  margin-right: 0.5rem;
-}
-
-input.checkbox-input:checked + .checkbox-wrap {
+input.checkbox__input:checked + .checkbox-wrap {
   background-color: #000000;
 }
 
-input.checkbox-input:checked + .checkbox-label {
+input.checkbox__input:checked + .checkbox-label {
   border: 0.062rem solid #000000;
 }
 
@@ -1745,7 +1801,7 @@ input.checkbox-input:checked + .checkbox-label {
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 50%;
+  left: -100%;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: all 0.7s ease 1s;
@@ -1761,8 +1817,24 @@ input.checkbox-input:checked + .checkbox-label {
 }
 
 .js-state-form-back {
-  -webkit-transition: all 0.5s ease 1s;
-  transition: all 0.5s ease 1s;
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease 1s;
+  transition: all 0.3s ease 1s;
+}
+
+.js-state-form-back._active {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal.state-form.open {
@@ -1775,26 +1847,24 @@ input.checkbox-input:checked + .checkbox-label {
   left: 50%;
   pointer-events: auto;
   opacity: 1;
-  -webkit-transition: all 0.7s ease 1.5s;
-  transition: all 0.7s ease 1.5s;
-}
-
-.modal.state-form.open + .js-state-form-back {
-  position: fixed;
-  z-index: 98;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 
 .modal.state-form.open .dropdown__close {
   top: 0;
-  -webkit-transition: all 0.7s ease 2s;
-  transition: all 0.7s ease 2s;
+  -webkit-transition: all 1.4s ease 0.7s;
+  transition: all 1.4s ease 0.7s;
+}
+
+.modal.state-form.open-slow {
+  -webkit-transition: all 0.7s ease 1.5s;
+  transition: all 0.7s ease 1.5s;
+}
+
+.modal.state-form.open-slow .dropdown__close {
+  -webkit-transition: all 1.2s ease 2s;
+  transition: all 1.2s ease 2s;
 }
 
 /* .js-on-order__button {
@@ -1981,6 +2051,8 @@ input.checkbox-input:checked + .checkbox-label {
   position: relative;
   z-index: 6;
   margin-top: 20px;
+  -webkit-transition: all 0.3s ease 1.5s;
+  transition: all 0.3s ease 1.5s;
   /* 	&::before{
 		content:'';
 		position: absolute;
