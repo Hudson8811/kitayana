@@ -1,12 +1,23 @@
 .headerZI {
 	z-index: 99;
 }
-input.invalid {
+input.input.invalid {
 	border: none;
 	outline: 1px solid #c90202;
 }
 p.input-error {
-	transition: all 0.3s ease 0s;
+	transition: all 0.3s linear 0s;
+	font-size: .875rem;
+	line-height: 1.5rem;
+	padding-top: 0.5rem;
+	height: 0;
+	overflow: hidden;
+}
+
+input.input.invalid+.input-error {
+	height: 2rem;
+}
+.input-wrap {
 }
 .overlay {
 	transition: all 0.5s ease 1s;

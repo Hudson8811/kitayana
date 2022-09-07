@@ -376,13 +376,11 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       let inputs = form.querySelectorAll('input');
       let failValidate = false;
-      document.querySelectorAll('.input-error').forEach(error => error.remove());
       document.querySelectorAll('.invalid').forEach(input => input.classList.remove('invalid'));
       inputs.forEach(input => {
 
           if(input.hasAttribute('data-required') && input.value.length < 3 && !input.classList.contains('checkbox__input')){
             failValidate = true;
-            input.insertAdjacentHTML('afterend', '<p class="input-error">Обязательное поле</p>');
             input.classList.add('invalid');
           }else if(input.classList.contains('checkbox__input') && !input.checked){
             failValidate = true;
@@ -394,11 +392,9 @@ document.addEventListener("DOMContentLoaded", function () {
         return false;
       }else{
         if(form.classList.contains('expertForm')){
-          document.querySelectorAll('.input-error').forEach(error => error.remove());
           document.querySelectorAll('.invalid').forEach(input => input.classList.remove('invalid'));
           form.classList.add('success')
         }else{
-          document.querySelectorAll('.input-error').forEach(error => error.remove());
           document.querySelectorAll('.invalid').forEach(input => input.classList.remove('invalid'));
           OpenStateFormModal('Регистрация прошла успешно', 'Теперь вы можете добавить свой автомобиль и найти любые автозапчасти в 3 клика');
         }
