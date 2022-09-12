@@ -8,17 +8,34 @@ input.input.invalid {
 }
 
 p.input-error {
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
   font-size: .875rem;
   line-height: 1.5rem;
   padding-top: 0.5rem;
   height: 0;
   overflow: hidden;
+  -webkit-transition: all 0.02s ease 0s;
+  transition: all 0.02s ease 0s;
+}
+
+p.input-error span {
+  opacity: 0;
+  display: block;
+  -webkit-transform: translate(0, -15px);
+          transform: translate(0, -15px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 input.input.invalid + .input-error {
   height: 2rem;
+}
+
+input.input.invalid + .input-error span {
+  opacity: 0.8;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all 0.3s ease, opacity 0.3s ease 0.05s;
+  transition: all 0.3s ease, opacity 0.3s ease 0.05s;
 }
 
 .overlay {
