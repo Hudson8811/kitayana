@@ -1,6 +1,19 @@
+@media (max-width: 75rem){
+	.filters {
+		transition: all 0.25s ease-out 0s;
+		display: block;
+		left: -120%;
+		&.open {
+			transition: .25s ease-out 0.3s;
+			left: 0;
+		}
+	}
+}
+
 .headerZI {
 	z-index: 99;
 }
+
 input.input.invalid {
 	border: none;
 	outline: 1px solid #c90202;

@@ -1,3 +1,17 @@
+@media (max-width: 75rem) {
+  .filters {
+    -webkit-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+    display: block;
+    left: -120%;
+  }
+  .filters.open {
+    -webkit-transition: .25s ease-out 0.3s;
+    transition: .25s ease-out 0.3s;
+    left: 0;
+  }
+}
+
 .headerZI {
   z-index: 99;
 }

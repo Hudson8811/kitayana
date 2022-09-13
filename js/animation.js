@@ -213,3 +213,16 @@ $(document).ready(function() {
 });
 
 
+
+$(document).ready(function() {
+	$(document).on('click', '.jsBtnFilter', function(event) {
+		$('.overlay').addClass('open');
+	});
+	$(document).on('click', '.jsCloseFilter', function(event) {
+		$('.overlay').fadeOut(0);
+		$('.overlay').removeClass('open');
+		setTimeout(function(){
+			$('.overlay').fadeIn(0);
+		}, 1000);
+	});
+});
