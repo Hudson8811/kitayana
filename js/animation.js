@@ -150,25 +150,35 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$(document).on('click', '.js-on-order__button', function(event) {
-		if (!$('.on-order__input').val()=='') {
-			$(this).addClass('js-on-order__button-active');
-			$('body').removeClass('overflow-hidden');
-			
-			$('.state-form').addClass('open-slow');
-
-			$('.js-state-form-back').addClass('_active');
-
-			setTimeout(function(){
-				$('.jsOnOrderModal').removeClass('open');
-				$('.overlay').removeClass('open');
-			}, 500);
-			setTimeout(function(){
-				$('.js-on-order__button').removeClass('js-on-order__button-active');
-			}, 2000);
-		}
+	$('.on-order__input').on('change keyup keydown', function() {
+		$(document).on('click', '.js-on-order__button', function(event) {
+			var $_count = parseInt($.trim($(this).val()).length);
+			console.log($_count);
+			if ($_count < 3) {
+				$(this).addClass('js-on-order__button-active');
+				$('body').removeClass('overflow-hidden');
+				
+				$('.state-form').addClass('open-slow');
+				
+				$('.js-state-form-back').addClass('_active');
+				
+				setTimeout(function(){
+					$('.jsOnOrderModal').removeClass('open');
+					$('.overlay').removeClass('open');
+				}, 500);
+				setTimeout(function(){
+					$('.js-on-order__button').removeClass('js-on-order__button-active');
+				}, 2000);
+			}
+		});
 	});
+	$(document).on('click', '.btn-bell-anim-black', function(event) {
+		$(this).addClass('btn-bell-anim-black-active');
 
+		setTimeout(function(){
+			$('.btn-bell-anim-black').removeClass('btn-bell-anim-black-active');
+		}, 2000);
+	});
 	$(document).on('click', '.js-state-form-back', function(event) {
 		$(this).removeClass('_active');
 		$('.state-form').removeClass('open');

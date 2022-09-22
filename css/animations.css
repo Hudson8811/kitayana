@@ -12,6 +12,11 @@
   }
 }
 
+.modal.jsOnOrderModal.open {
+  -webkit-transition: all 0.3s ease 0.7s;
+  transition: all 0.3s ease 0.7s;
+}
+
 .headerZI {
   z-index: 99;
 }
@@ -2060,6 +2065,128 @@ input.checkbox__input:checked + .checkbox-label {
 }
 
 @keyframes on-order__button-after {
+  0% {
+    right: 100%;
+  }
+  59% {
+    -webkit-clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+  }
+  60% {
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+    right: 40%;
+  }
+  100% {
+    right: 100%;
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+  }
+}
+
+.btn-bell-anim-black {
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+}
+
+.btn-bell-anim-black span {
+  position: relative;
+  z-index: 9;
+}
+
+.btn-bell-anim-black::before, .btn-bell-anim-black::after {
+  content: '';
+  position: absolute;
+  top: -2%;
+  bottom: -2%;
+  width: 100%;
+  background-color: #ffd4d3;
+  -webkit-clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+          clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+}
+
+.btn-bell-anim-black::before {
+  left: 100%;
+  -webkit-transform: rotateZ(-180deg);
+          transform: rotateZ(-180deg);
+}
+
+.btn-bell-anim-black::after {
+  right: 100%;
+}
+
+.btn-bell-anim-black-active::before {
+  -webkit-animation: btn-bell-anim-black-before 1s ease 0.2s forwards;
+          animation: btn-bell-anim-black-before 1s ease 0.2s forwards;
+}
+
+.btn-bell-anim-black-active::after {
+  -webkit-animation: btn-bell-anim-black-after 1s ease 0.2s forwards;
+          animation: btn-bell-anim-black-after 1s ease 0.2s forwards;
+}
+
+@-webkit-keyframes btn-bell-anim-black-before {
+  0% {
+    left: 100%;
+  }
+  59% {
+    -webkit-clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+  }
+  60% {
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+    left: 40%;
+  }
+  100% {
+    left: 100%;
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes btn-bell-anim-black-before {
+  0% {
+    left: 100%;
+  }
+  59% {
+    -webkit-clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+  }
+  60% {
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+    left: 40%;
+  }
+  100% {
+    left: 100%;
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+  }
+}
+
+@-webkit-keyframes btn-bell-anim-black-after {
+  0% {
+    right: 100%;
+  }
+  59% {
+    -webkit-clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+            clip-path: polygon(0% 0%, 93% 0, 98% 75%, 98% 82%, 97.5% 92%, 97% 100%, 0 100%);
+  }
+  60% {
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+    right: 40%;
+  }
+  100% {
+    right: 100%;
+    -webkit-clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 97% 0, 95% 35%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes btn-bell-anim-black-after {
   0% {
     right: 100%;
   }
