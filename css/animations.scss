@@ -2070,17 +2070,23 @@ input.checkbox__input:checked+.checkbox-label {
 		}
 	}
 
-	&:hover {
-		span {
-			&:nth-child(1) {
-				top: -20%;
-			}
-
-			&:nth-child(3) {
-				top: 120%;
+		&:hover {
+			span {
+				&:nth-child(1) {
+					top: -20%;
+					@media (max-width: 1023px){
+						top: 0;
+					}
+				}
+				
+				&:nth-child(3) {
+					top: 120%;
+					@media (max-width: 1023px){
+						top: 100%;
+					}
+				}
 			}
 		}
-	}
 
 	&.--svg__menu_close {
 		span {

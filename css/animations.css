@@ -2771,8 +2771,20 @@ input.checkbox__input:checked + .checkbox-label {
   top: -20%;
 }
 
+@media (max-width: 1023px) {
+  .burger-menu:hover span:nth-child(1) {
+    top: 0;
+  }
+}
+
 .burger-menu:hover span:nth-child(3) {
   top: 120%;
+}
+
+@media (max-width: 1023px) {
+  .burger-menu:hover span:nth-child(3) {
+    top: 100%;
+  }
 }
 
 .burger-menu.--svg__menu_close span {
