@@ -44,10 +44,10 @@ $('.jsButtonCounter').on('input paste keyup keydown change blur', '.spares-card_
 });
 
 $('.js-change-number').on('click', function() {
-	var input = $(this).siblings('.js-number-inp');
-	var value = parseInt(input.val()) || 0;
-	var btn = $(this).closest('.jsButtonCounter');
-	var spares_card_button_box = $('.buttons-anim');
+	let input = $(this).siblings('.js-number-inp');
+	let value = parseInt(input.val()) || 0;
+	let btn = $(this).closest('.jsButtonCounter');
+	let spares_card_button_box = $('.buttons-anim');
 	
 	if ($(this).data('type')==='decrease') {
 		if(value===1){
@@ -101,11 +101,11 @@ $('.jsButtonCounter').on('input paste keyup keydown change blur', '.buttons-anim
 });
 
 $('.js-change-number').on('click', function() {
-	var input = $(this).siblings('.js-number-inp');
-	var value = parseInt(input.val()) || 0;
-	var btn = $(this).parent();
-	/* var btnsWrap = $(this).closest('.js-cart-number-buttons-wrap'); */
-	var spares_card_button_box = $(this).closest('.buttons-anim');
+	let input = $(this).siblings('.js-number-inp');
+	let value = parseInt(input.val()) || 0;
+	let btn = $(this).parent();
+	/* let btnsWrap = $(this).closest('.js-cart-number-buttons-wrap'); */
+	let spares_card_button_box = $(this).closest('.buttons-anim');
 	
 	if ($(this).data('type')==='decrease') {
 		if(value===1){
@@ -152,7 +152,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('.on-order__input').on('change keyup keydown', function() {
 		$(document).on('click', '.js-on-order__button', function(event) {
-			var $_count = parseInt($.trim($(this).val()).length);
+			let $_count = parseInt($.trim($(this).val()).length);
 			console.log($_count);
 			if ($_count < 3) {
 				$(this).addClass('js-on-order__button-active');
