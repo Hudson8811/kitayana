@@ -1,0 +1,62 @@
+&__form{
+    padding-top: 0;
+    padding-bottom: rem(40px);
+    @media(max-width: 768px){
+        padding-top: 0 !important;
+    }
+    .input-wrap{
+        margin-bottom: 1rem;
+        @media(max-width: 768px){
+            margin-bottom: 9px;
+            input{
+                font-size: 12px;
+                padding: 12px 16px;
+            }
+        }
+
+        label{
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $color_8;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    form{
+        .checkbox{
+            &__name{
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                color: $color_8;
+                a{
+                    text-decoration: underline;
+                    color: $color_8;
+                }  
+            }
+
+            &__input{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .button{
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
+            height: rem(64px);
+            margin-top: 1.6rem;
+        }
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: $color_8;
+        padding-top: 0.5rem;
+    }
+}

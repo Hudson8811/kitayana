@@ -1,0 +1,98 @@
+<div class="modal jsInStockShopModal" id="jsInStockShopModal">
+    <div class="modal__inner">
+        <div class="modal__content">
+
+            <div class="modal__overhead modal__overhead--white">
+                @include('../components/modal-back-btn.html')
+                <button class="modal__type-button modal__type-button--simple jsToggleTypeButton">
+                    <span class="modal__type-icon --svg__pin"></span>
+                    на карте
+                </button>
+            </div>
+
+            <div class="modal__type-wrapper modal__type-wrapper--content active">
+                <div class="in-stock">
+                    <div class="in-stock__content">
+                        <div class="in-stock__row ">
+                            <div class="in-stock__type">СТО+магазин</div>
+                            <div class="in-stock__text">1,5 км</div>
+                        </div>
+                        <div class="in-stock__row in-stock__row--mb-sm">
+                            <div class="in-stock__name">Маршала Жукова пр., д.21
+                            </div>
+                            <div class="in-stock__text">
+                                (Автоцентр Маршал, пав. № 29 и № 40)
+                            </div>
+
+                        </div>
+                        <div class="in-stock__row in-stock__row--mb-md">
+                            <div class="in-stock__text">Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00</div>
+                        </div>
+
+                        <div class="in-stock__row">
+                            <a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+                            <a href="mailto:magazin1@gmail.com"
+                                class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+                        </div>
+                        <div class="in-stock__row">
+                            <div class="in-stock__item">
+                                <svg class="in-stock__icon">
+                                    <use xlink:href="/img/sprite.svg#css--check"></use>
+                                </svg>
+                                Есть СТО, есть авто-консультант
+                            </div>
+
+                            <a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal__type-wrapper modal__type-wrapper--map">
+                <div class="modal__map modal__map--mob map-filter" id="map-modal-stock"></div>
+            </div>
+
+
+            <div class="modal__bottom  modal__bottom--top">
+                <div class="modal__bottom-inner">
+                    <div class="modal__box modal__box--col-mob">
+                        <div class="modal__text">
+                            Наличие
+                        </div>
+                        <div class="modal__text modal__text--semibold">
+                            Всего: 7 шт.
+                        </div>
+                        <div class="modal__text modal__text--semibold">
+                            В магазине: 2 шт.
+                        </div>
+                    </div>
+                    <div class="modal__box modal__box--col-mob right-align-mobile">
+                        <div class="modal__text">
+                            Срок поставки:
+                        </div>
+                        <div class="modal__text">
+                            от <span class="semibold">сегодня</span>
+                        </div>
+                    </div>
+
+                    <div class="modal__row modal__row--mob-width">
+                        <div class="modal__box modal__box--text-right modal__box--col-mob modal__box--col-right">
+                            <div class="modal__text modal__text--semibold modal__text--big">
+                                1 404 ₽
+                            </div>
+                            <div class="modal__text modal__text--line modal__text--grey">
+                                1971 ₽
+                            </div>
+                        </div>
+
+                        @include('../components/cart-btn.html')
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal__map map-filter" id="map-modal-shop"></div>
+        @include('../components/modal-close.html')
+    </div>
+</div>

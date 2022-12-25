@@ -1,0 +1,12 @@
+&__descr{
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: $color_4;
+    column-gap: 10rem;
+    margin-bottom: 4rem;
+    column-width: rem(720px);
+    column-count: 2;
+    &--mb{
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,27 @@
+.model-list{
+    padding-top: rem(80px);
+    padding-bottom: rem(88px);
+    margin-top: rem(64px);
+    margin-bottom: rem(-16px);
+    background: $color_4;
+    @media(max-width: 768px){
+       margin-top: 32px;
+       margin-bottom:14px;
+       padding-bottom: 60px;
+       padding-top: 46px;
+    }
+    
+
+    @import 'inner';
+
+
+    @import 'item';
+
+   
+
+    @media(max-width: 768px){
+        .button{
+            display: none;
+        }
+    }
+}

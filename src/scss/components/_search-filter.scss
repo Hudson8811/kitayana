@@ -1,0 +1,29 @@
+.search-filter{
+    padding: 1rem;
+    border-bottom: 1px solid $border-color_1;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    .filter-from {
+        display: block;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        color: $color_3;
+        margin-right: 0.8rem;
+        min-width: 65px;
+    }
+
+    select, select option {
+        width: 100%;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    @media(min-width: 768px){
+        display: none;
+    }
+}

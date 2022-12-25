@@ -1,0 +1,53 @@
+.checkbox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &-wrap{
+        margin-right: 1rem;
+    }
+    &__input{
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__name{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        color: $color_4;
+        a{
+            color: $color_8;
+            text-decoration: underline;
+        }
+        @media(max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+        }
+        &-sm{
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $color_6;
+            span{
+                color: $color_2;
+            }
+
+            .link{
+                color: $color_8;
+                text-decoration: underline;
+            }
+        }
+
+        .red{
+            color: $color_2;
+        }
+    }
+}

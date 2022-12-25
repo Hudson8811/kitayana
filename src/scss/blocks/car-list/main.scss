@@ -1,0 +1,22 @@
+.car-list{
+    margin-top: rem(64px);
+    margin-bottom: rem(110px);
+    
+    @media(max-width: 768px){
+        margin-top: 32px;
+        margin-bottom: 55px;
+    }
+
+
+    @import 'inner';
+
+
+
+    // Item
+    // _date.scss, _img.scss, _name.scss
+    @import 'item';
+
+   
+
+    
+}

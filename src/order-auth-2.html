@@ -1,0 +1,310 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+
+
+
+<div class="wrapper order-wrapper">
+	<div class="breadcrumbs breadcrumbs--pb-0">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+				<a href="#" class="breadcrumbs__link">Корзина</a>
+				<a href="#" class="breadcrumbs__link">Оформление</a>
+			</div>
+		</div>
+	</div>
+
+	@include('partials/components/page-title.html', {
+		size: 'small',
+		title: 'Оформление заказа'
+	})
+		
+
+		<div class="order-page">
+			<div class="container">
+				<div class="order-page__content">
+					<div class="order-page__block">
+						<h2 class="block-title">
+							Данные получателя заказа
+						</h2>
+
+					
+
+						<form class="form">
+							<div class="input-row">
+								<div class="input-row">
+									<div class="input-group">
+										<label>Телефон *</label>
+										<input type="text" class="input" placeholder="+7 (812) 000 00 00" value="+7 (812) 123 45 67">
+									</div>
+
+									<div class="input-group code-group">
+										<label>Код из СМС *</label>
+										<input type="text" class="input" placeholder="_ _ _ _ _" value="53246">
+                                       
+                                    </div>
+	
+								</div>
+								
+								<label class="vertical-center code-hint">Номер телефона подтвержден</label>
+							</div>
+
+							<div class="input-row">
+								<div class="input-row">
+									<div class="input-group">
+										<label>Имя *</label>
+										<input type="text" class="input" placeholder="Ваше имя">
+									</div>
+									<label class="mobile-only">Заказы выдаются при предъявлении любого документа, удостоверяющего личность</label>
+									<div class="input-group">
+										<label>Фамилия *</label>
+										<input type="text" class="input" placeholder="Ваша фамилия">
+									</div>
+								</div>
+								
+								<label class="mobile-hidden">Заказы выдаются при предъявлении любого документа, удостоверяющего личность</label>
+							</div>
+
+
+                            
+							<div class="input-row">
+									<div class="input-group input-group--invalid">
+										<label>Электронная почта</label>
+										<input type="text" class="input invalid" placeholder="name@gmail.com">
+                                        <p class="input-error">Электронная почта введена некорректно</p>
+									</div>
+									
+								
+								<label class="vertical-center">Проинформируем вас о статусе вашего заказа</label>
+							</div>
+
+
+                             
+							<div class="input-row">
+                                <div class="input-group">
+                                    <label>Комментарий</label>
+                                    <textarea class="input" placeholder="Напишите комментарий к заказу"></textarea>
+                                </div>
+                             </div>
+
+
+							 <label for="g1" class="checkbox  dropdown__checkbox">
+								<input id="g1" class="checkbox__input" data-required="" type="checkbox">
+								<span class="checkbox-wrap">
+									<span class="check-sign check-part-1"></span>
+									<span class="check-sign check-part-2"></span>
+								</span>
+								<span class="checkbox__name checkbox__name--sm ">Я соглашаюсь с условиями <a href="">политики конфиденциальности</a>  и <a href="">правилами продажи</a> 
+								</span>
+							</label>
+
+
+						</form>
+					</div>
+
+                    <div class="order-page__block">
+                        <h2 class="block-title">
+                            Способ доставки
+                        </h2>
+                        <ul class="delivery-list order__radio-items">
+                            <li class="delivery-item order__radio-item">
+                                <input type="radio" name="delivery1" id="delivery1">
+                                <label for="delivery1" >
+                                    <span class="delivery-item__name">
+                                        <svg width="16" height="16" fill="none" >
+                                            <use xlink:href="/img/sprite-new.svg#geo"></use>
+                                        </svg>
+                                        Забрать в магазине
+                                    </span>
+                                    <span class="delivery-item__row">
+                                        <b>Сегодня</b>
+
+                                        <span class="price">0 ₽</span>
+                                    </span>
+
+
+                                    <span class="delivery-item__row column">
+                                        <span class="gray-hint mobile-hidden">
+                                            СТО+магазин
+                                        </span>
+                                        <span class="gray-hint mobile-only">
+                                            СДЭК
+                                        </span>
+                                        <span class="delivery-item__address">
+                                            Богатырский пр., д.14 к. 2 лит. Б
+                                        </span>
+                                    </span>
+
+                                    <a href="#" class="delivery-item__link">Выбрать магазин</a>
+                                </label>
+                               
+                            </li>
+
+
+                            <li class="delivery-item order__radio-item">
+                                <input type="radio" name="delivery1" id="delivery2">
+                                <label for="delivery2">
+                                    <span class="delivery-item__name">
+                                        <svg width="16" height="16" fill="none" >
+                                            <use xlink:href="/img/sprite-new.svg#geo"></use>
+                                        </svg>
+                                        Доставка в пункт выдачи заказа
+                                    </span>
+                                    <span class="delivery-item__row">
+                                        <b>17 марта, чт </b>
+
+                                        <span class="price">190 ₽</span>
+                                    </span>
+
+                                   
+
+                                    <a href="#" class="delivery-item__link">Выбрать ПВЗ</a>
+                                </label>
+                               
+                            </li>
+
+
+                            <li class="delivery-item order__radio-item">
+                                <input type="radio" name="delivery1" id="delivery3">
+                                <label for="delivery3">
+                                    <span class="delivery-item__name">
+                                        <svg width="16" height="16" fill="none" >
+                                            <use xlink:href="/img/sprite-new.svg#geo"></use>
+                                        </svg>
+                                        Доставка курьером
+                                    </span>
+                                    <span class="delivery-item__row">
+                                        <b>20 марта, вс</b>
+
+                                        <span class="price">290 ₽</span>
+                                    </span>
+
+                                    <a href="#" class="delivery-item__link">Указать адрес</a>
+                                </label>
+                               
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="order-page__block">
+                        <h2 class="block-title">Способ оплаты</h2>
+                        <ul class="order__radio-items">
+                            <li class="order__radio-item payment-item">
+                                <input type="radio" name="payment1" id="payment1">
+                                <label for="payment1">
+                                  <span class="payment-title">Оплата на сайте</span>
+                                  <span class="payment-descr">Картами Visa, MasterCard, Мир</span>
+                                </label>
+                            </li>
+                            <li class="order__radio-item payment-item">
+                                <input type="radio" name="payment1" id="payment2">
+                                <label for="payment2">
+                                  <span class="payment-title">Оплата при получении</span>
+                                  <span class="payment-descr">Наличными, картой</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				
+
+				<aside>
+					<div class="cart__aside">
+                        <span class="cart__aside-title">
+                            6 товаров в Корзине:
+                        </span>
+
+                        <a href="" class="cart__aside-link mobile-hidden">Внести изменения в заказ</a>
+    
+                        <ul class="cart__aside-info">
+                            <li class="cart__aside-row">
+                                <span>Стоимость заказа</span>
+                                <span>13 317 ₽</span>
+                            </li>
+    
+                            <li class="cart__aside-row cart__aside-row--big">
+                                <span>Ваша скидка</span>
+                                <span>– 2 550 ₽</span>
+                            </li>
+    
+                            <li class="cart__aside-row">
+                                <span>Доставка</span>
+                                <span>от бесплатно</span>
+                            </li>
+
+                            <li class="cart__aside-row mobile-only">
+                                <span>Скидка от суммы заказа</span>
+                                <span>– 1 245 ₽ (-5%)</span>
+                            </li>
+    
+                            
+                        </ul>
+    
+                        <div class="cart__aside-total">
+                            <div class="cart__aside-row">
+                                <div>
+                                    <b>Итого:</b>
+                                    <div>к оплате</div>
+                                </div>
+                                <div class="price-wrapper">
+                                    <div class="price">
+                                        1 401 ₽
+                                    </div>
+                                    <div class="cart__aside-row">
+                                        <div class="discount-count">-5%</div>
+                                        <div class="price price--old">
+                                            1971 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="cart__aside-promo cart__aside-promo--mb input-hidden">
+                            <a href="#" class="promo-link">У меня есть промокод</a>
+                            <input type="text" class="input" placeholder="Введите промокод">
+                        </div>
+
+                        <div class="cart__aside-discounts cart__aside-discounts--hidden">
+                            <div class="cart__aside-discounts-item">
+                              <b>СКИДКА -15%</b>   на Яндекс-такси при покупке запчастей в розницу
+                                <div class="promo">Промокод <b>YANDEX</b></div>
+                            </div>
+    
+                            <div class="cart__aside-discounts-item">
+                                СКИДКА -5% от суммы заказа 9 000 ₽
+                            </div>
+                        </div>
+    
+    
+                        
+    
+                        <button class="button w-100">Подтвердить заказ</button>
+                    </div>
+				</aside>
+
+
+			</div>
+		</div>
+
+
+</div>
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

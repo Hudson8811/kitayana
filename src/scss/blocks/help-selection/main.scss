@@ -1,0 +1,32 @@
+.help-selection{
+    background: #504F55;
+    color: #fff;
+    @media(max-width: 991px){
+        display: none;
+    }
+   
+
+    @import 'title';
+    @import 'text';
+    @import 'box';
+    @import 'photo';
+    @import 'name';
+    @import 'position';
+    @import 'button';
+    @import 'form';
+
+
+    .checkbox{
+        margin-top: rem(25px);
+    }
+
+    &__expert{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+@import 'need-help/main';
+

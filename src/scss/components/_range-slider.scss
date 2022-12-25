@@ -1,0 +1,44 @@
+.range-slider{
+    position: relative;
+    height: 1.25rem;
+    .irs-grid {
+        height: 0.125rem;
+    }
+
+    .irs-bar {
+        height: 0.125rem;
+        background-color: $color_2;
+        top: calc(50% - 0.062rem);
+        transform: translateY(-50%);
+    }
+
+    .irs-line {
+        height: 0.125rem;
+        background-color: #a7a9b9;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .irs-handle {
+        width: 1rem;
+        height: 1rem;
+        background-color: $color_2;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .irs-handle i:first-child {
+        display: none;
+    }
+
+    .irs {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .irs--flat {
+        height: 1rem;
+    }
+}

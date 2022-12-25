@@ -1,0 +1,76 @@
+@include('partials/header.html')
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/stateFormModal.html')
+
+
+
+
+
+
+
+
+
+<!-- new modal -->
+
+
+
+
+<div class="wrapper">
+
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Масла и жидкости</a>
+            </div>
+        </div>
+    </div>
+
+
+    @include('partials/components/page-title.html', {
+    'title': 'Масла и жидкости',
+    'size': 'big',
+    'model': 'hidden'
+    })
+
+
+
+    @include('partials/product-types.html', {
+    'cols': 4,
+    })
+
+
+    @include('partials/car-service.html')
+
+
+    @include('partials/need-help.html', {
+    block: 'show'
+    })
+
+
+    @include('partials/advantages.html')
+
+
+    @include('partials/shops.html')
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+
+@include('partials/footer.html')

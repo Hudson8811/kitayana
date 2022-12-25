@@ -1,0 +1,39 @@
+.hint{
+    font-weight: 600;
+    font-size: rem(18px);
+    line-height: rem(32px);
+    color: $color_9;
+    padding: 0px rem(16px);
+    width: max-content;
+    text-transform: uppercase;
+
+   @media(max-width: 768px){
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0px 8px;
+   }
+    &--green{
+        background: #66CE7D;
+    }
+
+    &--black{
+        background: $color_4;
+    }
+
+    &--orange{
+        background: #F27229;
+    }
+
+    &--blue{
+        background: #0687DE;
+    }
+
+    &--hidden{
+        display: none;
+    }
+}
+
+.hints-wrapper{
+    display: flex;
+    align-items: center;
+}

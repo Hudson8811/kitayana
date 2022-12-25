@@ -1,0 +1,32 @@
+&__title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 5.1rem;
+    line-height: 1.2;
+    letter-spacing: 0.00.125rem;
+    text-transform: uppercase;
+    color: $color_4;
+    margin-bottom: 5rem;
+    @media(max-width: 1200px){
+        font-size: 3.75rem;
+        line-height: 4.5rem;
+        margin-bottom: 3.75rem;
+    }
+
+    @media(max-width: 991px){
+        font-size: 2.125rem;
+        line-height: 2.687rem;
+        margin-bottom: 1.875rem;
+    }
+
+    @media(max-width: 768px){
+        font-size: 22px;
+        line-height: 1.937rem;
+        margin-bottom: 1.375rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}

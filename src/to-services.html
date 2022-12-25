@@ -1,0 +1,1031 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsServiceModal.html')
+
+
+
+	<div class="wrapper sto-services to-services">
+		<div class="breadcrumbs breadcrumbs--pb-0">
+			<div class="container">
+				<div class="breadcrumbs__inner">
+					<a href="#" class="breadcrumbs__link">Главная</a>
+					<a href="#" class="breadcrumbs__link">Услуги автосервиса</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="sto-services__title-row">
+				<h1 class="sto-services__title">
+					<a href="#" class="sto-services__arrow-back">
+						<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14 17.5L9 12.5L14 7.5" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ&nbsp;АВТО
+				</h1>
+				<div class="sto-services__title-links">
+					<a href="#" class="sto-services__shop-link">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.2488 2.87718C5.24747 1.88849 6.59601 1.33391 8.0013 1.33398C9.4066 1.33391 10.7551 1.88849 11.7538 2.87718C12.7525 3.86587 13.3206 5.20876 13.3346 6.61398C13.3346 10.2673 8.66797 14.334 8.43464 14.5073C8.31388 14.6106 8.1602 14.6674 8.0013 14.6674C7.8424 14.6674 7.68872 14.6106 7.56797 14.5073L7.56688 14.5064C7.35154 14.3198 2.66797 10.2609 2.66797 6.61398C2.68202 5.20876 3.25012 3.86587 4.2488 2.87718ZM8 8.49951C9.10457 8.49951 10 7.60408 10 6.49951C10 5.39494 9.10457 4.49951 8 4.49951C6.89543 4.49951 6 5.39494 6 6.49951C6 7.60408 6.89543 8.49951 8 8.49951Z" fill="#2D2727"/>
+						</svg>
+						Ближайшие сервисы
+					</a>
+					<a href="#" class="sto-services__map-link" data-popup="jsService">
+						смотреть на карте
+					</a>
+				</div>
+				<div class="service-map">
+					<div class="service-map__title">
+						<div class="service-map__title__left">СТО на карте</div>
+						<a href="#" class="service-map__title__right" data-popup="jsService">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#geo'></use>						
+							</svg>
+							<span class="parts-item__text--dotted">На карте</span>
+						</a>
+					</div>
+					<div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно</div>
+					<a href="#" class="service-map__link">доступно 26 автосервисов</a>
+					<button class="button service-map__button" data-popup="sto-reg">Записаться на ТО
+					</button>
+				</div>
+			</div>
+			<div class="sto-services__content-row">
+				<div class="sto-services__list">
+					<div class="sto-services-info">
+						<div class="sto-slider">
+							<div class="shops-inner__list">
+								<ul class="shops-inner__ordering-filter">
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 1</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 2</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 3</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 4</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 5</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 6</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 7</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 8</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 9</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 10</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 11</span>
+									</li>
+									<li class="shops-inner__ordering-filter-item">
+										<span>TO 12</span>
+									</li>
+								</ul>
+							</div>
+							<div class="shops-inner__next-el">
+								<svg class width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 7L15 12L10 17" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="sto-services__list-title">Прайс-лист на услуги</div>
+						<div class="sto-services__list-item sto-services__list-item--title">
+							<div class="sto-services__list-item-name">
+								Название услуги
+							</div>
+							<div class="sto-services__list-item-price">
+								Цена
+							</div>
+						</div>
+						<a href="#" class="sto-services__list-item sto-services__list-item--white">
+							<div class="sto-services__list-item-name">
+								Проверка шаровых соединений
+							</div>
+							<div class="sto-services__list-item-price">
+								1 407 ₽
+							</div>
+						</a>
+						<a href="#" class="sto-services__list-item sto-services__list-item--grey">
+							<div class="sto-services__list-item-name">
+								Проверка сайлентблоков
+							</div>
+							<div class="sto-services__list-item-price">
+								890 ₽
+							</div>
+						</a>
+						<a href="#" class="sto-services__list-item sto-services__list-item--white">
+							<div class="sto-services__list-item-name">
+								Проверкаизноса и работоспособности тормозной системы
+							</div>
+							<div class="sto-services__list-item-price">
+								1 407 ₽
+							</div>
+						</a>
+						<a href="#" class="sto-services__list-item sto-services__list-item--grey">
+							<div class="sto-services__list-item-name">
+								Проверка опор двигателя и коробки передач
+							</div>
+							<div class="sto-services__list-item-price">
+								890 ₽
+							</div>
+						</a>
+						<a href="#" class="sto-services__list-item sto-services__list-item--white">
+							<div class="sto-services__list-item-name">
+								Проверка шаровых соединений
+							</div>
+							<div class="sto-services__list-item-price">
+								1 407 ₽
+							</div>
+						</a>
+						<a href="#" class="sto-services__list-item sto-services__list-item--grey">
+							<div class="sto-services__list-item-name">
+								Проверкаизноса и работоспособности тормозной системы
+							</div>
+							<div class="sto-services__list-item-price">
+								890 ₽
+							</div>
+						</a>
+					</div>
+					<div class="sto-services__description">
+						<img  class="sto-services__description-image" src="img/sto-info-image.png" alt="">
+						<div class="sto-services__description-title">
+							Своевременный ремонт рулевого управления автомобиля - залог безопасного вождения.
+						</div>
+						<div class="sto-services__description-text">
+							Устранение неисправностей в деталях и механизмах рулевого управления – это процедура, которая на практике гораздо проще (а во многом и дешевле) ремонта той же самой коробки передач или, к примеру, двигателя. Однако значимость подобных процедур невозможно переоценить.
+							<br>
+							<br>
+							Даже новички знают, что от надежности рулевого управления зависит устойчивость автомобиля на дороге и его маневренность. Но самое главное, что от состояния рулевых реек, наконечников, усилителей, а также прочих узлов и деталей системы зависит безопасность водителя и его пассажиров. Исправные механизмы рулевого ежедневно спасают жизни десятков людей, а изношенные и вышедшие из строя детали, наоборот, становятся причиной гибели даже очень дисциплинированных водителей.
+						</div>
+						<div class="sto-services__description-list-title">
+							В рамках данной услуги мы выполняем следующие работы:
+						</div>
+						<ul class="sto-services__description-list">
+							<li>Проверка шаровых соединений</li>
+							<li>проверка сайлентблоков</li>
+							<li>проверка износа и работоспособности тормозной системы</li>
+							<li>проверка опор двигателя и коробки передач</li>
+							<li>визуальный осмотр на наличие течи или запотевания технических жидкостей</li>
+							<li>повреждения или износ резины</li>
+							<li>осмотр рулевого управления</li>
+							<li>проверка состояния рычагов</li>
+							<li>визуальный осмотр амортизаторов и пружин</li>
+							<li>проверка состояния ступичных подшипников</li>
+							<li>проверка состояния ШРУС'а</li>
+						</ul>
+					</div>
+				</div>
+				<form action="post" class="sto-service-form form-validate">
+					<div class="sto-service-form__title">Записаться на ТО</div>
+					<div class="sto-service-form__top">
+						<div class="input-wrapper">
+							<label class="input-title">Город *</label>
+							<div class="input-container">
+								<input type="text" class="input input--white select-input" data-required placeholder="Ввведите город" value="Санкт-Петербург">
+								<div class="sto-service-form__dropdown">
+									<div class="sto-service-form__dropdown-item">
+										Самара
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Санкт-Петербург
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саранск
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саратов
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саров
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саянск
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Сандово
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Самара
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Санкт-Петербург
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саранск
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саратов
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саров
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Саянск
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Сандово
+									</div>
+								</div>
+								<button class="--svg__search"></button>
+							</div>
+						</div>
+						<div class="input-wrapper">
+							<label class="input-title">Услуга *</label>
+							<div class="input-container">
+								<input type="text" class="input input--white select-input" data-required placeholder="Выберите услугу из списка" value="" readonly>
+								<div class="sto-service-form__dropdown">
+									<div class="sto-service-form__dropdown-item">
+										Услуга 1
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 2
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 3
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 4
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 5
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 6
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 7
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 8
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 9
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 10
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 11
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 12
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 13
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Услуга 14
+									</div>
+								</div>
+								<svg class="sto-service-form__arrow">
+									<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="input-double-wrapper">
+							<div class="input-wrapper">
+								<label class="input-title">Телефон *</label>
+								<div class="input-container">
+									<input type="tel" class="input input--white" data-required placeholder="+7 (000) 000 00 00">
+								</div>
+							</div>
+							<div class="input-wrapper">
+								<label class="input-title">Имя</label>
+								<div class="input-container">
+									<input type="text" class="input input--white" placeholder="Ваше имя">
+								</div>
+							</div>
+						</div>
+						<div class="input-wrapper">
+							<label class="input-title">СТО *</label>
+							<div class="input-container">
+								<input type="text" class="input input--white select-input" data-required placeholder="Выберите СТО из списка" value="" readonly>
+								<div class="sto-service-form__dropdown">
+									<div class="sto-service-form__dropdown-item">
+										Санкт-Петербург, Маршала Жукова пр., д.21 (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+									<div class="sto-service-form__dropdown-item">
+										Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+									</div>
+								</div>
+								<svg class="sto-service-form__arrow">
+									<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="sto-service__hidden-inputs shrink">
+							<div class="input-double-wrapper">
+								<div class="input-wrapper">
+									<label class="input-title">Ориентировочная дата</label>
+									<div class="input-container">
+										<input type="text" class="input input--white" placeholder="Дата">
+									</div>
+								</div>
+								<div class="input-wrapper">
+									<label class="input-title">Желаемое время записи</label>
+									<div class="input-container">
+										<input type="text" class="input input--white" placeholder="Время">
+									</div>
+								</div>
+							</div>
+							<div class="input-double-wrapper input-double-wrapper--lifted">
+								<div class="input-wrapper">
+									<label class="input-title">Информация об автомобиле</label>
+									<div class="input-container">
+										<input type="text" class="input input--white select-input" placeholder="Марка">
+										<div class="sto-service-form__dropdown">
+											<div class="sto-service-form__dropdown-item">
+												Марка 1
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 2
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 3
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 4
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 5
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 6
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 7
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 8
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 9
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 10
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 11
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 12
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 13
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Марка 14
+											</div>
+										</div>
+										<svg class="sto-service-form__arrow">
+											<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="input-wrapper">
+									<label class="input-title">&nbsp;</label>
+									<div class="input-container">
+										<input type="text" class="input input--white select-input" placeholder="Укажите модель авто">
+										<div class="sto-service-form__dropdown">
+											<div class="sto-service-form__dropdown-item">
+												Модель 1
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 2
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 3
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 4
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 5
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 6
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 7
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 8
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 9
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 10
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 11
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 12
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 13
+											</div>
+											<div class="sto-service-form__dropdown-item">
+												Модель 14
+											</div>
+										</div>
+										<svg class="sto-service-form__arrow">
+											<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="input-double-wrapper">
+								<div class="input-wrapper">
+									<label class="input-title">Гос номер</label>
+									<div class="input-container">
+										<input type="text" class="input input--white" placeholder="_   _ _ _   _ _   _ _">
+									</div>
+								</div>
+								<div class="input-wrapper">
+									<label class="input-title">&nbsp;</label>
+									<div class="input-container input-container-text">
+										<p>Для постановки вашего автомобиля в&nbsp;электронную&nbsp;очередь</p>
+									</div>
+								</div>
+							</div>
+							<div class="input-wrapper">
+								<label class="input-title">Комментарий</label>
+								<div class="input-container">
+									<textarea class="input input--white" placeholder="Чем подробнее заполните форму тем быстрее наш менеджер сможет решить вашу проблему"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="sto-service-form__toggle-button">
+							<span class="sto-service-form__toggle-button__text">Подробная форма</span>
+							<svg class="sto-service-form__arrow">
+								<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+							</svg>
+						</div>
+						<div class="sto-service-form__text">
+							Отправьте заявку на обслуживание или ремонт авто, и в течение 15 минут вам&nbsp;позвонит менеджер для записи на ТО
+						</div>
+						<label for="ch24" class="checkbox  dropdown__checkbox">
+							<input id="ch24" class="checkbox__input" data-required="" type="checkbox">
+							<span class="checkbox-wrap">
+								<span class="check-sign check-part-1"></span>
+								<span class="check-sign check-part-2"></span>
+							</span>
+							<span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#" class="link">условиями</a>
+								передачи данных
+							</span>
+						</label>
+						<button class="button submit">Записаться на ТО</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="sto-services__near-services">
+			<div class="sto-services__near-services-left">
+				<div class="sto-services__near-services-title">
+					Ближайшие <br>
+					сервисы
+				</div>
+				<button class="sto-services__near-services-button button" data-popup="jsService">смотреть на карте</button>
+			</div>
+			<div class="sto-services__near-services-right">
+				<img src="img/near-service-map.png" alt="">
+			</div>
+		</div>
+	</div>
+
+<!-- Popup tech form -->
+<div class="tech-service-reg-popup modal" id="sto-reg">
+	<div class="tech-service-reg-popup__top">
+		<div class="tech-service-reg-popup__top-title">
+			Записаться на ТО
+		</div>
+		<button class="tech-service-reg-popup__close jsButtonCloseModal modal__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2029_506743)">
+					<path d="M18.5478 6.03516L5.44922 19.1337" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+					<path d="M18.5478 19.1337L5.44922 6.03516" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+				</g>
+				<defs>
+					<clipPath id="clip0_2029_506743">
+						<rect width="24" height="24" fill="white"/>
+					</clipPath>
+				</defs>
+			</svg>
+		</button>
+	</div>
+	<div class="tech-service-reg-popup__bottom">
+		<div class="tech-service-reg-popup__content">
+			<form action="post" class="sto-service-form form-validate">
+				<div class="sto-service-form__title">Записаться на ТО</div>
+				<div class="sto-service-form__top">
+					<div class="input-wrapper">
+						<label class="input-title">Город *</label>
+						<div class="input-container">
+							<input type="text" class="input input--white select-input" data-required placeholder="Ввведите город" value="Санкт-Петербург">
+							<div class="sto-service-form__dropdown">
+								<div class="sto-service-form__dropdown-item">
+									Самара
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Санкт-Петербург
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саранск
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саратов
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саров
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саянск
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Сандово
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Самара
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Санкт-Петербург
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саранск
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саратов
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саров
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Саянск
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Сандово
+								</div>
+							</div>
+							<button class="--svg__search"></button>
+						</div>
+					</div>
+					<div class="input-wrapper">
+						<label class="input-title">Услуга *</label>
+						<div class="input-container">
+							<input type="text" class="input input--white select-input" data-required placeholder="Выберите услугу из списка" value="" readonly>
+							<div class="sto-service-form__dropdown">
+								<div class="sto-service-form__dropdown-item">
+									Услуга 1
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 2
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 3
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 4
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 5
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 6
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 7
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 8
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 9
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 10
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 11
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 12
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 13
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Услуга 14
+								</div>
+							</div>
+							<svg class="sto-service-form__arrow">
+								<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="input-double-wrapper">
+						<div class="input-wrapper">
+							<label class="input-title">Телефон *</label>
+							<div class="input-container">
+								<input type="tel" class="input input--white" data-required placeholder="+7 (000) 000 00 00">
+							</div>
+						</div>
+						<div class="input-wrapper">
+							<label class="input-title">Имя</label>
+							<div class="input-container">
+								<input type="text" class="input input--white" placeholder="Ваше имя">
+							</div>
+						</div>
+					</div>
+					<div class="input-wrapper input-map-wrapper">
+						<label class="input-title">СТО *</label>
+						<div class="input-container">
+							<input type="text" class="input input--white select-input" data-required placeholder="Выберите СТО из списка" value="" readonly>
+							<div class="sto-service-form__dropdown">
+								<div class="sto-service-form__dropdown-item">
+									Санкт-Петербург, Маршала Жукова пр., д.21 (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+								<div class="sto-service-form__dropdown-item">
+									Гатчина, 25 октября пр., д.52 Б (Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+							</div>
+							<svg class="sto-service-form__arrow">
+								<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+							</svg>
+						</div>
+						<a href="#" class="sto-service__map-trigger" data-popup="tech-service-popup-map">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#geo'></use>
+							</svg>
+							<span class="parts-item__text--dotted">На карте</span>
+						</a>
+					</div>
+					<div class="sto-service__hidden-inputs shrink">
+						<div class="input-double-wrapper">
+							<div class="input-wrapper">
+								<label class="input-title">Ориентировочная дата</label>
+								<div class="input-container">
+									<input type="text" class="input input--white" placeholder="Дата">
+								</div>
+							</div>
+							<div class="input-wrapper">
+								<label class="input-title">Желаемое время записи</label>
+								<div class="input-container">
+									<input type="text" class="input input--white" placeholder="Время">
+								</div>
+							</div>
+						</div>
+						<div class="input-double-wrapper input-double-wrapper--lifted">
+							<div class="input-wrapper">
+								<label class="input-title">Информация об автомобиле</label>
+								<div class="input-container">
+									<input type="text" class="input input--white select-input" placeholder="Марка">
+									<div class="sto-service-form__dropdown">
+										<div class="sto-service-form__dropdown-item">
+											Марка 1
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 2
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 3
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 4
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 5
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 6
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 7
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 8
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 9
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 10
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 11
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 12
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 13
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Марка 14
+										</div>
+									</div>
+									<svg class="sto-service-form__arrow">
+										<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="input-wrapper">
+								<label class="input-title input-title--empty">&nbsp;</label>
+								<div class="input-container">
+									<input type="text" class="input input--white select-input" placeholder="Укажите модель авто">
+									<div class="sto-service-form__dropdown">
+										<div class="sto-service-form__dropdown-item">
+											Модель 1
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 2
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 3
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 4
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 5
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 6
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 7
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 8
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 9
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 10
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 11
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 12
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 13
+										</div>
+										<div class="sto-service-form__dropdown-item">
+											Модель 14
+										</div>
+									</div>
+									<svg class="sto-service-form__arrow">
+										<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="input-double-wrapper">
+							<div class="input-wrapper">
+								<label class="input-title">Гос номер</label>
+								<div class="input-container">
+									<input type="text" class="input input--white" placeholder="_   _ _ _   _ _   _ _">
+								</div>
+							</div>
+							<div class="input-wrapper input-wrapper-text">
+								<label class="input-title input-title--empty">&nbsp;</label>
+								<div class="input-container input-container-text">
+									<p>Для постановки вашего автомобиля в электронную&nbsp;очередь</p>
+								</div>
+							</div>
+						</div>
+						<div class="input-wrapper">
+							<label class="input-title">Комментарий</label>
+							<div class="input-container">
+								<textarea class="input input--white" placeholder="Чем подробнее заполните форму тем быстрее наш менеджер сможет решить вашу проблему"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="sto-service-form__toggle-button shrink">
+						<span class="sto-service-form__toggle-button__text">Подробная форма</span>
+						<svg class="sto-service-form__arrow">
+							<use xlink:href="/img/sprite-new.svg#small-arrow-down"></use>
+						</svg>
+					</div>
+					<div class="sto-service-form__text">
+						Отправьте заявку и в течение 15 минут вам позвонит менеджер&nbsp;для&nbsp;записи на услугу
+					</div>
+					<label for="ch25" class="checkbox  dropdown__checkbox">
+						<input id="ch25" class="checkbox__input" data-required="" type="checkbox">
+						<span class="checkbox-wrap">
+							<span class="check-sign check-part-1"></span>
+							<span class="check-sign check-part-2"></span>
+						</span>
+						<span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#" class="link">условиями</a>
+							передачи данных
+						</span>
+					</label>
+					<button class="button submit">Записаться на СТО</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Popup tech form -->
+
+
+
+<!-- Popup tech map -->
+<div class="tech-service-reg-popup modal" id="tech-service-popup-map">
+	<div class="tech-service-reg-popup__top">
+		<div class="tech-service-reg-popup__top-title">
+			СТО на карте
+		</div>
+		<button class="tech-service-reg-popup__close jsButtonCloseModal modal__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2029_506744)">
+					<path d="M18.5478 6.03516L5.44922 19.1337" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+					<path d="M18.5478 19.1337L5.44922 6.03516" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+				</g>
+				<defs>
+					<clipPath id="clip0_2029_506744">
+						<rect width="24" height="24" fill="white"/>
+					</clipPath>
+				</defs>
+			</svg>
+		</button>
+	</div>
+	<div class="tech-service-reg-popup__bottom">
+		<form action="post" class="tech-service-reg-popup__search">
+			<div class="input-container">
+				<input type="text" class="input" data-required placeholder="Укажите название или адрес">
+				<button class="--svg__search"></button>
+			</div>
+		</form>
+		<div class="tech-service-reg-popup__content tech-service-popup__content--map">
+			<div id="map-modal" class="tech-service__map"></div>
+		</div>
+	</div>
+</div>
+<!-- Popup tech map -->
+
+
+<!-- Popup select service -->
+<div class="tech-service-popup modal" id="tech-service-selected">
+	<div class="tech-service-popup__top tech-service-popup__top--mb-n">
+		<div class="tech-service-popup__back jsButtonBackModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14 17L9 12L14 7" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			назад
+		</div>
+	</div>
+	<div class="tech-service-popup__bottom">
+		<div class="tech-service-popup__content">
+			<!-- popup item -->
+			<div class="tech-service-popup__item tech-service-popup__item--bt-n">
+				<div class="in-stock__row in-stock__row--mb-sm">
+					<div class="in-stock__type">
+						СТО+магазин
+					</div>
+					<div class="in-stock__text in-stock__text--lh-sm">1,5 км</div>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__name">
+						Санкт-Петербург, Маршала Жукова пр., д.21
+					</div>
+					<div class="in-stock__text">
+						(Автоцентр Маршал, пав. № 29 и № 40)
+					</div>
+				</div>
+				<div class="in-stock__row in-stock__row--mb-n">
+					<div class="in-stock__text">
+						Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+					</div>
+				</div>
+
+				<div class="in-stock__row">
+					<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+					<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__item">
+						<svg class="in-stock__icon">
+							<use xlink:href="/img/sprite.svg#css--check"></use>
+						</svg>
+						Есть СТО, есть авто-консультант
+					</div>
+					<a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+					
+				</div>
+				<button class="button tech-service-popup__button">
+					Выбрать
+				</button>
+			</div>
+			<!-- /popup item -->
+		</div>
+	</div>
+</div>
+<!-- Popup select service -->
+
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

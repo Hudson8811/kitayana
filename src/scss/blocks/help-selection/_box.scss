@@ -1,0 +1,11 @@
+&__box{
+    padding: 2.2rem 2.7rem 1.5rem;
+    &--bordered{
+        border-top: 0.062rem solid rgba(167, 169, 185, 0.5);
+        border-bottom: 0.062rem solid rgba(167, 169, 185, 0.5);
+    }
+
+    &--py-md{
+        padding: 1.5rem 2.5rem;
+    }
+}

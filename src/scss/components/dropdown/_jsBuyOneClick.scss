@@ -1,0 +1,187 @@
+.modal.jsByOneClick{
+    .parts-item-main__info{
+        padding-top: rem(32px);
+
+        @media(max-width: 769px){
+            padding-top: 0;
+            padding-left: 133px;
+            margin-top: -8px;
+        }
+    }   
+
+    .parts-item-main__title{
+        margin-bottom: rem(7px);
+        @media(max-width: 769px){
+            -webkit-line-clamp: 1;
+        }
+    }
+    .parts-item-main__preview{
+        @media(max-width: 769px){
+           margin-right: 13px;
+        }
+
+        .parts-item__discount{
+            @media(max-width: 769px){
+                padding: 0px 7px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+    }
+    .parts-item-main__img{
+        width: rem(160px);
+        height: rem(160px);
+        object-fit: cover;
+        @media(max-width: 769px){
+            width: 82px;
+            height: 82px;
+        }
+        
+    }
+
+    .parts-item-main__text{
+        @media(max-width: 769px){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    
+    .modal__close{
+        @media(max-width: 769px){
+            width: 24px;
+            height: 24px;
+            top: 16px !important;
+            right: 16px !important;
+        }
+    }
+
+    .checkbox-wrap{
+        @media(max-width: 768px){
+            width: 24px;
+            height: 24px;
+            margin-right: 16px;
+        }
+    }
+
+    .parts-item-main__preview .parts-item__favorite{
+        top: rem(23px);
+        right: rem(6px);
+        @media(max-width: 769px){
+            top: 13px;
+            right: -4px;
+        }
+    }
+
+    .product-category{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: rem(-32px);
+        @media(max-width: 769px){
+            bottom: -20px;
+        }
+    }
+
+    .parts-item-main{
+        border-bottom: 1px solid rgba(45, 39, 39, 0.7);
+        padding-bottom: rem(58px);
+        @media(max-width: 769px){
+            padding-top: 23px;   
+            padding-bottom: 19px;     
+        }
+    }
+
+    .form{
+        padding: rem(35px) rem(74px);
+        @include scroll();
+        max-height: 100%;
+        overflow-y: auto;
+        @media(max-width: 769px){
+            padding: 55px 16px 16px 16px;
+        }
+        &-title{
+            font-weight: 600;
+            font-size: rem(36px);
+            line-height: rem(44px);
+            margin-bottom: rem(20px);
+            text-transform: none;
+            letter-spacing: 0;
+            @media(max-width: 769px){
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 11px;
+            }
+        }
+
+        &-descr{
+            font-weight: 400;
+            font-size: rem(16px);
+            line-height: rem(28px);
+            color: rgba(45, 39, 39, 0.7);
+            max-width: rem(560px);    
+            margin-bottom: rem(34px);    
+            @media(max-width: 769px){
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .input-group label{
+            font-weight: 400;
+            font-size: rem(14px);
+            line-height: rem(24px);
+            color: rgba(45, 39, 39, 0.7);
+            margin-bottom: rem(8px);
+            display: block;
+            @media(max-width: 769px){
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 24px;
+            }   
+        }
+
+        .input-row{
+            margin-bottom: rem(35px);
+            gap: rem(38px);
+            @media(max-width: 769px){
+                margin: 0;
+                gap: 0;
+            }
+        }
+        .checkbox{
+            margin-top: rem(-2px);
+            margin-bottom: rem(32px);
+            @media(max-width: 769px){
+                margin-top: 5px;
+                margin-bottom: 32px;
+            }
+                
+        }
+        .checkbox__name{
+            font-weight: 400;
+            font-size: rem(14px);
+            line-height: rem(24px);
+            a{
+                color: #E60000;
+            }
+        } 
+       
+
+        .button.submit{
+            padding: rem(18px) rem(32px);
+            width: rem(160px);
+            @media(max-width: 769px){
+                width: 100%;
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 14px;
+                height: 48px;
+            }
+        }
+    }
+}

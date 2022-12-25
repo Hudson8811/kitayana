@@ -1,0 +1,211 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+                <a href="#" class="breadcrumbs__link">Профиль</a>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+    <div class="profile__inner container">
+        <aside>
+            <div class="header__auth-list">
+                <div class="header__auth-box">
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#user'></use>
+                            </svg>
+                        </div>
+                        Профиль
+                    </a>
+                    <a href="#" class="header__auth-link active">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                            </svg>
+
+                        </div>
+                        Адреса доставки
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+                            </svg>
+                        </div>
+                        Заказы
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#car-icon'></use>
+                            </svg>
+
+                        </div>
+                        Гараж
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#favorite'></use>
+                            </svg>
+                        </div>
+                        Избранное
+                    </a>
+                </div>
+                <div class="header__auth-bottom">
+                    <div class="header__text header__text--md">
+                        +7 (812) 123 45 45
+                    </div>
+                    <button class="header__exit">
+                        выйти
+                        <span class="header__exit-icon --svg__exit"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="service-map">
+                <div class="service-map__title">
+                    <div class="service-map__title__left">СТО на карте</div>
+                    <a href="#" class="service-map__title__right" data-popup="jsService">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#geo'></use>
+                        </svg>
+                        <span class="parts-item__text--dotted">На карте</span>
+                    </a>
+                </div>
+                <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                </div>
+                <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                <a href="#" class="button service-map__button">Записаться на СТО
+                </a>
+            </div>
+        </aside>
+
+        <div class="profile__content">
+            <div class="profile__content-header profile__content-header--sm">
+                <div class="profile__content-title">
+                    <a href=""><h1>Гараж <span class="title-count">0 авто</span></h1></a>
+                   
+                    <p class="hint">7% ваша персональная скидка на товары</p>
+                </div>
+
+            </div>
+
+
+
+
+
+           <div class="profile__car-add">
+               <form class="form">
+                    <h4 class="form-title">
+                        Добавить авто
+                    </h4>
+                    <p class="form-descr">
+                        Для добавления авто в Гараж заполните все обязательные поля
+                    </p>
+
+                    <div class="input-row row-direction">
+                        <div class="input-group select-group">
+                            <label>Информация об автомобиле*</label>
+                            <select name="" id="" class="custom-select profile-select profile-select--sm">
+                                <option selected disabled>Марка</option>
+                                <option >Марка 1</option>
+                                <option >Марка 2</option>
+                                <option >Марка 3</option>
+                                <option >Марка 4</option>
+                            </select>
+                        </div>
+                        <div class="input-group select-group">
+                            <select name="" id="" class="custom-select profile-select">
+                                <option selected disabled>Укажите модель авто</option>
+                                <option >Модель 1</option>
+                                <option >Модель 2</option>
+                                <option >Модель 3</option>
+                                <option >Модель 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>VIN номер</label>
+                            <input type="text" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" class="input">
+                        </div>
+                        <div class="form-hint">
+                            Пример: Y4K8762Z7HB300490
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Гос номер</label>
+                            <input type="text" placeholder="_   _ _ _   _ _   _ _" class="input">
+                        </div>
+                        <div class="form-hint">
+                            Пример: А 777 АА 77 
+                        </div>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button class="button">Добавить авто</button>
+                        <button class="button button--white cancel">
+                            отмена
+                        </button>
+                    </div>
+               </form>
+              
+            </div>
+            
+        </div>
+
+
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

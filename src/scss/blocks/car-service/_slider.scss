@@ -1,0 +1,30 @@
+&-slider{
+    display: none;
+    margin: 0 -1rem 1rem;
+    width: calc(100% + 2rem);
+    padding-right: 1rem;
+    .swiper-slide{
+        width: auto !important;
+        height: 223px !important;
+    }
+    @media(max-width: 768px){
+        display: block;
+    }
+
+    .car-service__item{
+        border: 0.062rem solid $border-color_1;
+        width: 22.562rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 100% !important;
+        height: 100%;
+        @media(max-width: 768px){
+            width: 360px;
+        }
+    }
+
+    .car-service__button{
+        display: none;
+    }
+}

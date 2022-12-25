@@ -1,0 +1,629 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+                <a href="#" class="breadcrumbs__link">Профиль</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="profile__inner container">
+        <aside>
+            <div class="header__auth-list">
+                <div class="header__auth-box">
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#user'></use>
+                            </svg>
+                        </div>
+                        Профиль
+                    </a>
+                    <a href="#" class="header__auth-link active">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                            </svg>
+
+                        </div>
+                        Адреса доставки
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+                            </svg>
+                        </div>
+                        Заказы
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#car-icon'></use>
+                            </svg>
+
+                        </div>
+                        Гараж
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#favorite'></use>
+                            </svg>
+                        </div>
+                        Избранное
+                    </a>
+                </div>
+                <div class="header__auth-bottom">
+                    <div class="header__text header__text--md">
+                        +7 (812) 123 45 45
+                    </div>
+                    <button class="header__exit">
+                        выйти
+                        <span class="header__exit-icon --svg__exit"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="service-map">
+                <div class="service-map__title">
+                    <div class="service-map__title__left">СТО на карте</div>
+                    <a href="#" class="service-map__title__right" data-popup="jsService">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#geo'></use>
+                        </svg>
+                        <span class="parts-item__text--dotted">На карте</span>
+                    </a>
+                </div>
+                <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                </div>
+                <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                <a href="#" class="button service-map__button">Записаться на СТО
+                </a>
+            </div>
+        </aside>
+
+        <div class="profile__content">
+            <div class="profile__content-header profile__content-header">
+                <div class="profile__content-title">
+                    <a href="">
+                        <h1>Заказы</h1>
+                    </a>
+
+                    <p class="hint">7% ваша персональная скидка на товары</p>
+                </div>
+                <ul class="profile-tabs">
+                    <li>
+                        <a href="#" data-tab="tab1" class="profile__tab-trigger active">Все (7)</a>
+                    </li>
+                    <li>
+                        <a href="#" data-tab="tab2" class="profile__tab-trigger">Текущие (2)</a>
+                    </li>
+                    <li><a href="#" data-tab="tab2" class="profile__tab-trigger">Завершённые (3)</a></li>
+
+                    <li><a href="#" data-tab="tab2" class="profile__tab-trigger">Отменённые (2)</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="profile__order-list">
+                <div class="list-overhead">
+                    <a href="" class="filter-link order-list__item arrow-top">
+                        № заказа
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                    <a href="" class="filter-link order-list__item">
+                        Статус заказа
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                    <a href="" class="filter-link order-list__item">
+                        Дата заказа
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                    <a href="" class="filter-link order-list__item">
+                        Доставка
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                    <a href="" class="filter-link order-list__item">
+                        Оплата
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                    <a href="" class="filter-link order-list__item">
+                        Сумма
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                    <a href="" class="filter-link order-list__item">
+                        Действие
+                        <span class="parts-list__icon --svg__arrow_filter-bottom"></span>
+                        <span class="parts-list__icon --svg__arrow_filter"></span>
+                    </a>
+                </div>
+
+
+                <ul class="list__items">
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                M-25468001
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--orange">
+                                Принят
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Самовывоз из магазина
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                19 марта, сб
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                ожидает оплаты
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                2 802 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                4 товара
+                            </div>
+                        </div>
+
+                        <div class="list__item-box">
+                            <a href="#" class="button action-btn">Оплатить 1 400 ₽</a>
+                        </div>
+                    </li>
+
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--green">
+                                Готов к выдаче
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--red">
+                                Отменен
+                            </div>
+                        </div>
+                        <div class="list__item-box  date-visible">
+                            <div class="list__item-text">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--blue">
+                                Завершен
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--blue">
+                                Завершен
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--blue">
+                                Завершен
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--blue">
+                                Завершен
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="list__item">
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--bold">
+                                W-57507543
+                            </div>
+                            <div class="list__item-text date-hidden">
+                                18 марта, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-status list__item-status--blue">
+                                Завершен
+                            </div>
+                        </div>
+                        <div class="list__item-box date-visible">
+                            <div class="list__item-text ">
+                                17 марта, чт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                Доставка курьером
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                сегодня, пт
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--medium">
+                                На сайте
+                            </div>
+                            <div class="list__item-text">
+                                оплачено
+                            </div>
+                        </div>
+                        <div class="list__item-box">
+                            <div class="list__item-text list__item-text--black">
+                                11 407 ₽
+                            </div>
+                            <div class="list__item-text list__item-text--thin">
+                                3 товара
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+
+                <div class="list-footer">
+                    <ul class="pagination">
+                        <li class="arrow arrow--left">
+                            <a href="" class="disabled">
+                                <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <use xlink:href='/img/sprite-new.svg#pagination-left'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="active">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                    
+                        <li class="arrow arrow--right">
+                            <a href="">
+                                <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <use xlink:href="/img/sprite-new.svg#pagination-right"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="wrapper-load-more-button mobile-only">
+                        <div class="js-preloader-arrows js-preloader-arrows-load-more"></div>
+                        <button class="button button--white load-more-button button-anim button-anim--white">
+                            Загрузить еще
+                        </button>
+                    </div>
+                </div>
+
+              
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

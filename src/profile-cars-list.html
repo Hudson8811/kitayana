@@ -1,0 +1,378 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+@include('partials/modals/jsCarParts.html')
+
+
+<div class="modal state-form order-states order-states--confim" id="removeConfim">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#cart-confim'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Удаление
+    </div>
+
+    <div class="state-text">
+		Вы действительно хотите удалить авто  <br> <span class="red">Chery Tiggo T11</span>?
+    </div>
+
+	<div class="confim-buttons">
+		<a href="" class="button" data-popup="carRemoved">удалить</a>
+		<a class="cancel">Отмена</a>
+	</div>
+
+
+</div>
+
+
+<div class="modal state-form order-states" id="carRemoved">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#success-icon'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Авто удалено
+    </div>
+
+    <div class="state-text">
+		Chery Tiggo T11
+    </div>
+
+	<button class="mobile-btn jsCloseStateForm">
+		Закрыть
+	</button>
+
+
+</div>
+
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+                <a href="#" class="breadcrumbs__link">Профиль</a>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+    <div class="profile__inner container">
+        <aside>
+            <div class="header__auth-list">
+                <div class="header__auth-box">
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#user'></use>
+                            </svg>
+                        </div>
+                        Профиль
+                    </a>
+                    <a href="#" class="header__auth-link active">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                            </svg>
+
+                        </div>
+                        Адреса доставки
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+                            </svg>
+                        </div>
+                        Заказы
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#car-icon'></use>
+                            </svg>
+
+                        </div>
+                        Гараж
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#favorite'></use>
+                            </svg>
+                        </div>
+                        Избранное
+                    </a>
+                </div>
+                <div class="header__auth-bottom">
+                    <div class="header__text header__text--md">
+                        +7 (812) 123 45 45
+                    </div>
+                    <button class="header__exit">
+                        выйти
+                        <span class="header__exit-icon --svg__exit"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="service-map">
+                <div class="service-map__title">
+                    <div class="service-map__title__left">СТО на карте</div>
+                    <a href="#" class="service-map__title__right" data-popup="jsService">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#geo'></use>
+                        </svg>
+                        <span class="parts-item__text--dotted">На карте</span>
+                    </a>
+                </div>
+                <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                </div>
+                <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                <a href="#" class="button service-map__button">Записаться на СТО
+                </a>
+            </div>
+        </aside>
+
+        <div class="profile__content">
+            <div class="profile__content-header profile__content-header--sm">
+                <div class="profile__content-title">
+                    <a href=""><h1>Гараж <span class="title-count">2 авто</span></h1></a>
+                    <a href="" class="add-car mobile-hidden" data-popup="jsOrderingNewAddress">
+                        <svg>
+                            <use xlink:href='/img/sprite-new.svg#red-plus'></use>
+                        </svg>
+                        
+                        Добавить авто
+                        
+                    </a>
+                    <p class="hint">7% ваша персональная скидка на товары</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="add-car__mobile">
+                <a href="" class="add-car" data-popup="jsOrderingNewAddress">
+                    <svg>
+                        <use xlink:href='/img/sprite-new.svg#red-plus'></use>
+                    </svg>
+                    Добавить авто
+                </a>
+            </div>
+
+
+
+           <div class="profile__cars-list">
+                <div class="profile__cars-item">
+                    <div class="cars__item-col">
+                        <div class="cars__item-details-wrapper">
+                            <div class="cars__item-img">
+                                <img src="img/profile-car2.png" alt="temp">
+                            </div>
+                            <div class="cars__item-details">
+                                <span class="car-name">Chery Tiggo T11</span>
+                               <ul class="car-characteristic">
+                                    <li>2.4 AT</li>
+                                    <li>2013 год</li>
+                                    <li>Китай</li>
+                               </ul>
+                               <span class="serial-number">
+                                Y4K8762Z7HB300490
+                               </span>
+                               <span class="car-number">
+                                А 777 АА 77
+                               </span>
+                            </div>
+
+                            <div class="nav">
+                                <button>
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-pen"></use>
+                                    </svg>
+                                </button>
+                                <button data-popup="removeConfim">
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-footer">
+                            <p>
+                                Каталог запчастей для <b>Chery Tiggo T11</b> 
+                            </p>
+                            <a class="button">В каталог</a>
+                        </div>
+                    </div>
+
+
+                    <div class="cars__item-col">
+                        <span class="subtitle">
+                            Купить оригинальные запчасти для ТО
+                            <div class="product-count mobile-only">
+                                6 товаров
+                            </div>
+                        </span>
+                        <div class="price-wrapper">
+                            <div class="price">
+                                38 401 ₽
+                            </div>
+                            <div class="discount">
+                                -5%
+                            </div>
+                            <div class="old-price">
+                                40 971 ₽
+                            </div>
+                        </div>
+                        <div class="product-count mobile-hidden">
+                            6 товаров
+                        </div>
+
+                        <div class="buttons">
+                            <button class="button">
+                                в корзину
+                            </button>
+                            <button class="button button--grey" data-popup="jsCarParts">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__cars-item">
+                    <div class="cars__item-col">
+                        <div class="cars__item-details-wrapper">
+                            <div class="cars__item-img">
+                                <img src="img/car-5.png" alt="temp">
+                            </div>
+                            <div class="cars__item-details">
+                                <span class="car-name">Chery Tiggo T11</span>
+                               <ul class="car-characteristic">
+                                    <li>2.4 AT</li>
+                                    <li>2013 год</li>
+                                    <li>Китай</li>
+                               </ul>
+                               <span class="serial-number">
+                                Y4K8762Z7HB300490
+                               </span>
+                               <span class="car-number">
+                                А 777 АА 77
+                               </span>
+                            </div>
+
+                            <div class="nav">
+                                <button>
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-pen"></use>
+                                    </svg>
+                                </button>
+                                <button data-popup="removeConfim">
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-footer">
+                            <p>
+                                Каталог запчастей для  <b>Chery Tiggo T11</b> 
+                            </p>
+                            <a class="button">В каталог</a>
+                        </div>
+                    </div>
+
+
+                    <div class="cars__item-col">
+                        <span class="subtitle">
+                            Купить оригинальные запчасти для ТО
+                            <div class="product-count mobile-only">
+                                6 товаров
+                            </div>
+    
+                        </span>
+                        <div class="price-wrapper">
+                            <div class="price">
+                                38 401 ₽
+                            </div>
+                            <div class="discount">
+                                -5%
+                            </div>
+                            <div class="old-price">
+                                40 971 ₽
+                            </div>
+                        </div>
+                        <div class="product-count mobile-hidden">
+                            6 товаров
+                        </div>
+
+                        <div class="buttons">
+                            <button class="button">
+                                в корзину
+                            </button>
+                            <button class="button button--grey" data-popup="jsCarParts">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

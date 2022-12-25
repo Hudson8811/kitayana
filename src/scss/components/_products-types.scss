@@ -1,0 +1,189 @@
+.product-types{
+    padding-top: rem(50px);
+    margin-bottom: rem(-7px);
+    border-top: rem(1px) solid $color_6;
+    &.b-none{
+        border: none;
+    }
+    &.py-0{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media(max-width: 768px){
+        padding-top: 40px;
+        padding-bottom: 20px;
+        border: none;
+    }
+
+    
+    .container{
+        @media(min-width: 991px){
+            padding-right: 0;
+        }
+        &.p-0{
+            padding: 0;
+        }
+    }
+    &__grid{
+        display: grid;
+        &--4{
+            grid-template-columns: repeat(4, 1fr);
+            @media(max-width: 991px){
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media(max-width: 768px){
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &--3{
+            grid-template-columns: repeat(3, 1fr);
+            @media(min-width: 1900px){
+                max-width: rem(1280px);
+            }
+            @media(max-width: 991px){
+                grid-template-columns: repeat(2, 1fr);
+                padding-top: rem(48px);
+            }
+            @media(max-width: 768px){
+                grid-template-columns: 1fr;
+                margin-bottom: -37px;
+            }
+        }
+
+        &--2{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        grid-gap: rem(40px);
+
+        @media(max-width: 768px){
+            grid-gap: 16px;
+        }
+    }
+
+    
+
+    &__item{
+        padding: rem(32px);
+        position: relative;
+        background: $color_9;
+        height: rem(300px);
+        transition: 0.2s linear;
+        @media(max-width: 768px){
+            height: 83px;
+            display: flex;
+            align-items: center;
+        }
+        &:hover{
+            @media(min-width: 768px){
+                .product-links{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        .product-name{
+            font-weight: 600;
+            font-size: rem(22px);
+            line-height: rem(32px);
+            color: $color_4;
+            max-width: rem(300px);
+            @media(max-width: 768px){
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @media(max-width: 768px){
+                max-width: 200px;
+            }
+        }
+
+        .product-img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            right: 0;
+            bottom: 0;
+            mix-blend-mode: multiply;
+            z-index: 1;
+            &:hover{
+                filter: grayscale(100%);
+            }
+
+            @media(max-width: 768px){
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 150px;
+                height: 100%;
+            }
+        }
+
+        .product-links{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+            padding-top: rem(16px);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s linear;
+            @media(max-width: 768px){
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                max-width: 100%;
+                width: 100%;
+                margin-top: 0;
+                padding-top: 0;
+            }
+            li{
+                @media(max-width: 768px){
+                    padding: 16px 12px;
+                    border-bottom: 1px solid $color_9;
+                   
+                }
+                a{
+                    font-weight: 500;
+                    font-size: rem(16px);
+                    line-height: rem(28px);
+                    color: $color_4;
+
+                    @media(max-width: 768px){
+                        font-size: 12px;
+                        line-height: 24px;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                &:last-child{
+                    a{
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 14px;
+                        text-transform: uppercase;
+                        color: $color_2;
+                    }
+                    border-bottom: 0;
+                }
+            }
+            gap: rem(8px);
+            max-width: rem(300px);
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        &.opened{
+            .product-links{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

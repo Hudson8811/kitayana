@@ -1,0 +1,224 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+<div class="wrapper shops-page">
+	<div class="shops-inner">
+		<div class="shops-inner__left">
+			<div class="breadcrumbs breadcrumbs--pb-0">
+				<div class="breadcrumbs__inner">
+					<a href="#" class="breadcrumbs__link">Главная</a>
+					<a href="#" class="breadcrumbs__link">Адреса магазинов и СТО</a>
+				</div>
+			</div>
+			<h1 class="shops-inner__title">
+				<a href="#" class="shops-inner__arrow-back">
+					<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 17.5L9 12.5L14 7.5" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+				Адреса магазинов и СТО
+			</h1>
+			<div class="shops-inner__list">
+				<ul class="shops-inner__ordering-filter">
+					<li class="shops-inner__ordering-filter-item">
+						<input type="radio" name="or-fil" id="or-fil1" checked="true">
+						<label for="or-fil1">Все</label>
+					</li>
+					<li class="shops-inner__ordering-filter-item">
+						<input type="radio" name="or-fil" id="or-fil2">
+						<label for="or-fil2">Магазин</label>
+					</li>
+					<li class="shops-inner__ordering-filter-item">
+						<input type="radio" name="or-fil" id="or-fil3">
+						<label for="or-fil3">Магазин + СТО</label>
+					</li>
+					<li class="shops-inner__ordering-filter-item">
+						<input type="radio" name="or-fil" id="or-fil4">
+						<label for="or-fil4">Отделы компании</label>
+					</li>
+				</ul>
+			</div>
+			<div class="shops-list-wrapper">
+				<div class="search-field__wrapper">
+					<div class="search-field">
+						<input type="text" placeholder="Укажите название или адрес">
+						<button class="header__search-icon --svg__search"></button>
+					</div>
+
+					<a href="#" class="map-type map-type--list">
+						<svg>
+							<use xlink:href="/img/sprite-new.svg#list"></use>
+						</svg>
+						списком
+					</a>
+
+					<a href="#" class="map-type  map-type--map active">
+						<svg>
+							<use xlink:href="/img/sprite-new.svg#geo"></use>
+						</svg>
+						на карте
+					</a>
+				</div>
+				<ul class="shops-list">
+					<li class="shop-item">
+						<div class="in-stock__content">
+							<div class="in-stock__row in-stock__row--mb-sm">
+								<div class="in-stock__type">СТО+магазин</div>
+								<div class="in-stock__text in-stock__text--lh-sm">1,5 км</div>
+							</div>
+							<div class="in-stock__row">
+								<div class="in-stock__name">
+									г. Санкт-Петербург, Богатырский пр., д.14 к. 2 лит. Б
+								</div>
+								<div class="in-stock__text">
+									(Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+							</div>
+							<div class="in-stock__row in-stock__row--mb-none">
+								<div class="in-stock__text">
+								Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+								</div>
+							</div>
+
+							<div class="in-stock__row">
+								<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+								<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+							</div>
+							<div class="in-stock__row">
+								<div class="in-stock__item">
+									<svg class="in-stock__icon">
+										<use xlink:href="/img/sprite.svg#css--check"></use>
+									</svg>
+									Есть СТО, есть авто-консультант
+								</div>
+								<a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+							</div>
+						</div>
+					</li>
+					<li class="shop-item">
+						<div class="in-stock__content">
+							<div class="in-stock__row in-stock__row--mb-sm">
+								<div class="in-stock__type">магазин</div>
+							</div>
+							<div class="in-stock__row">
+								<div class="in-stock__name">
+									г. Санкт-Петербург, Гатчина, 25 октября пр., д.52 Б
+								</div>
+							</div>
+							<div class="in-stock__row in-stock__row--mb-none">
+								<div class="in-stock__text">
+								Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+								</div>
+							</div>
+
+							<div class="in-stock__row">
+								<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+								<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+							</div>
+						</div>
+					</li>
+					<li class="shop-item">
+						<div class="in-stock__content">
+							<div class="in-stock__row in-stock__row--mb-sm">
+								<div class="in-stock__type">магазин</div>
+							</div>
+							<div class="in-stock__row">
+								<div class="in-stock__name">
+									г. Санкт-Петербург, Гатчина, 25 октября пр., д.52 Б
+								</div>
+							</div>
+							<div class="in-stock__row in-stock__row--mb-none">
+								<div class="in-stock__text">
+								Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+								</div>
+							</div>
+
+							<div class="in-stock__row">
+								<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+								<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div id="map-modal3" class="shops-inner__map-mob"></div>
+			</div>
+			
+		</div>
+		<div class="shops-inner__right">
+			<div id="map-modal2" class="shops-inner__map"></div>
+			<a href="#" class="shops-inner__chat">
+				<svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href='/img/sprite-new.svg#chat'></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- Popup select service -->
+<div class="tech-service-popup modal" id="tech-service-selected">
+	<div class="tech-service-popup__top tech-service-popup__top--mb-n">
+		<div class="tech-service-popup__back jsButtonBackModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14 17L9 12L14 7" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			назад
+		</div>
+	</div>
+	<div class="tech-service-popup__bottom">
+		<div class="tech-service-popup__content">
+			<!-- popup item -->
+			<div class="tech-service-popup__item tech-service-popup__item--bt-n">
+				<div class="in-stock__row in-stock__row--mb-sm">
+					<div class="in-stock__type">
+						СТО+магазин
+					</div>
+					<div class="in-stock__text in-stock__text--lh-sm">1,5 км</div>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__name">
+						Санкт-Петербург, Маршала Жукова пр., д.21
+					</div>
+					<div class="in-stock__text">
+						(Автоцентр Маршал, пав. № 29 и № 40)
+					</div>
+				</div>
+				<div class="in-stock__row in-stock__row--mb-n">
+					<div class="in-stock__text">
+						Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+					</div>
+				</div>
+
+				<div class="in-stock__row">
+					<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+					<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__item">
+						<svg class="in-stock__icon">
+							<use xlink:href="/img/sprite.svg#css--check"></use>
+						</svg>
+						Есть СТО, есть авто-консультант
+					</div>
+					<a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+				</div>
+			</div>
+			<!-- /popup item -->
+		</div>
+	</div>
+</div>
+<!-- Popup select service -->
+
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

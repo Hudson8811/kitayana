@@ -1,0 +1,393 @@
+<div class="filters jsFilters">
+    <div class="filters__overhead">
+        <h3 class="filters__title">
+            Фильтры
+        </h3>
+        <button class="filters__close --svg__close jsCloseFilter"></button>
+    </div>
+
+    <div class="filters__item quick-search">
+        <div class="filters__box">
+            <div class="filters__label">
+                Быстрый поиск по номеру запчасти
+            </div>
+
+            <div class="filters__icon"></div>
+        </div>
+
+        <div class="filters__content">
+            <form class="search filters__search">
+                <input type="text" class="search__input" placeholder="Введите номер запчасти">
+                <button class="search__icon --svg__search-grey"></button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="filters__item filters__selected">
+        <ul>
+            <li>
+                <span>Цена</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+            <li>
+                <span>CNLYU</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+            <li>
+                <span>Jorden</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+            <li>
+                <span>На складе в магазине</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+            <li>
+                <span>Бабушкина ул., д.111</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+            <li>
+                <span>Индустриальный пр. д.50</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+
+            <li>
+                <span>Есть скидка</span>
+                <button class="filter-remove --svg__close"></button>
+            </li>
+
+
+            <li class="reset">
+                <span>Сбросить все</span>
+                <button class="filter-remove --svg__close--white"></button>
+            </li>
+
+
+
+        </ul>
+    </div>
+
+    <div class="filters__item">
+        <div class="filters__box">
+            <div class="filters__label">
+                Тип запчасти
+            </div>
+
+            <div class="filters__icon"></div>
+        </div>
+        <div class="filters__content">
+           
+            <div class="filters__list">
+                <label for="chс1" class="checkbox filters__checkbox">
+                    <input id="chс1" class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Оригинал</span>
+                </label>
+                <label for="chс2" class="checkbox filters__checkbox">
+                    <input id="chс2" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Аналог</span>
+                </label>
+            
+                
+            </div>
+        </div>
+    </div>
+    <div class="filters__item">
+        <div class="filters__box">
+            <div class="filters__label">
+                Цена
+            </div>
+
+            <div class="filters__icon"></div>
+        </div>
+
+        <div class="filters__content">
+            <div class="range-slider filters__range">
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+            </div>
+            <div class="filters__wrapper">
+                <div class="input-price filters__price ">
+                    <input type="text" class="input-price__input jsPriceFrom" value="0">
+                    <div class="input-price__text">₽</div>
+                </div>
+                <div class="filters__btwn">
+                    —
+                </div>
+                <div class="input-price filters__price ">
+                    <input type="text" class="input-price__input jsPriceTo" value="500">
+                    <div class="input-price__text">₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filters__item">
+        <div class="filters__box">
+            <div class="filters__label">
+                Бренд
+            </div>
+
+            <div class="filters__icon"></div>
+        </div>
+        <div class="filters__content">
+            <form class="search filters__search">
+                <input type="text" class="search__input" placeholder="Быстрый поиск">
+                <button class="search__icon --svg__search-grey"></button>
+            </form>
+            <div class="filters__list">
+                <label for="ch2" class="checkbox filters__checkbox">
+                    <input id="ch2" class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">CNLYU</span>
+                </label>
+                <label for="ch3" class="checkbox filters__checkbox">
+                    <input id="ch3" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">GORDON</span>
+                </label>
+                <label for="ch4" class="checkbox filters__checkbox">
+                    <input id="ch4" class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Jorden</span>
+                </label>
+                <label for="ch5" class="checkbox filters__checkbox">
+                    <input id="ch5" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Fuda Bearing Corporation</span>
+                </label>
+                <label for="ch6" class="checkbox filters__checkbox">
+                    <input id="ch6" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">TYC BrotherIndustrial</span>
+                </label>
+                <label for="ch7" class="checkbox filters__checkbox">
+                    <input id="ch7" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Tianjin DSR Bearing</span>
+                </label>
+                <label for="ch8" class="checkbox filters__checkbox">
+                    <input id="ch8" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Tianjin DSR Bearing</span>
+                </label>
+
+                <a href="" class="view-all desktop-hidden">посмотреть все</a>
+            </div>
+        </div>
+    </div>
+    <div class="filters__item">
+        <div class="filters__box">
+            <div class="filters__label">
+                Наличие
+            </div>
+            <div class="filters__icon"></div>
+        </div>
+
+        <div class="filters__content">
+            <div class="filters__list">
+                <label for="ch9" class="checkbox filters__checkbox">
+                    <input id="ch9" class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">На складе в магазине</span>
+                </label>
+                <label for="ch10" class="checkbox filters__checkbox">
+                    <input id="ch10" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">На складе в интернет-магазине</span>
+                </label>
+                <label for="ch11" class="checkbox filters__checkbox">
+                    <input id="ch11" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">На складе поставщика</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="filters__item">
+        <div class="filters__box">
+            <div class="filters__row">
+                <div class="filters__label filters__label--between">
+                    <span>Наличие в магазинах</span>
+
+                    <!-- <a href="#" class="filters__map" >
+                        <svg class="filters__icon-map">
+                            <use xlink:href="/img/sprite.svg#sprite--pin"></use>
+                        </svg>
+                        <span>На карте</span>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="filters__icon"></div>
+        </div>
+        <div class="filters__content">
+            <div class="search-wrap">
+                <form class="search filters__search">
+                    <input type="text" class="search__input" placeholder="Быстрый поиск">
+                    <button class="search__icon --svg__search-grey"></button>
+                </form>
+                <a href="#" class="filters__map jsFilterMapBtn mobile-only" data-popup="jsFilterMapPopup">
+                    <svg class="filters__icon-map">
+                        <use xlink:href="/img/sprite.svg#sprite--pin"></use>
+                    </svg>
+                    <span>На карте</span>
+                </a>
+                <a href="#" class="filters__map jsFilterMapBtn mobile-hidden" data-popup="jsService">
+                    <svg class="filters__icon-map">
+                        <use xlink:href="/img/sprite.svg#sprite--pin"></use>
+                    </svg>
+                    <span>На карте</span>
+                </a>
+            </div>
+
+            <div class="filters__list">
+                <label for="ch12" class="checkbox filters__checkbox">
+                    <input id="ch12" class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">CNLYU</span>
+                </label>
+                <label for="ch13" class="checkbox filters__checkbox">
+                    <input id="ch13" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">GORDON</span>
+                </label>
+                <label for="ch14" class="checkbox filters__checkbox">
+                    <input id="ch14" class="checkbox__input" type="checkbox" checked>
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Jorden</span>
+                </label>
+                <label for="ch15" class="checkbox filters__checkbox">
+                    <input id="ch15" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Fuda Bearing Corporation</span>
+                </label>
+                <label for="ch16" class="checkbox filters__checkbox">
+                    <input id="ch16" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">TYC BrotherIndustrial</span>
+                </label>
+                <label for="ch17" class="checkbox filters__checkbox">
+                    <input id="ch17" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Tianjin DSR Bearing</span>
+                </label>
+                <label for="ch18" class="checkbox filters__checkbox">
+                    <input id="ch18" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Tianjin DSR Bearing</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="filters__item">
+        <div class="filters__box">
+            <div class="filters__row">
+                <div class="filters__label">
+                    Доп. фильтры
+                </div>
+            </div>
+
+            <div class="filters__icon"></div>
+        </div>
+
+        <div class="filters__content">
+            <div class="filters__list">
+                <label for="ch19" class="checkbox filters__checkbox">
+                    <input id="ch19" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Есть скидка</span>
+                </label>
+                <label for="ch20" class="checkbox filters__checkbox">
+                    <input id="ch20" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Акция: комбо-наборы</span>
+                </label>
+                <label for="ch21" class="checkbox filters__checkbox">
+                    <input id="ch21" class="checkbox__input" type="checkbox">
+                    <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                    <span class="checkbox__name">Акция: название акции</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filters__bottom">
+        <button class="button filters__button">
+            применить
+        </button>
+    </div>
+
+    @include('help-section.html')
+</div>

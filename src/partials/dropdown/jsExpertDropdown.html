@@ -1,0 +1,86 @@
+<div class="dropdown dropdown--big dropdown--grey jsExpertDropdown" id="jsExpertDropdown">
+    <form class="dropdown__inner form-validate expertForm">
+        <button class="dropdown__close dropdown__close--ml jsBtnCloseDropdown">
+            <svg class="dropdown__close-icon dropdown__close-icon--white">
+                <use xlink:href="/img/sprite.svg#css--close"></use>
+            </svg>
+        </button>
+
+        <div class="dropdown__block">
+            <div class="dropdown__title dropdown__title--big dropdown__title--normal dropdown__title--white">
+                Помощь в подборе <br>
+                запчастей
+            </div>
+
+            <div class="dropdown__text dropdown__text--sm dropdown__text--white dropdown__text--normal">
+                Окажем помощь в подборе и покупке запчастей
+            </div>
+        </div>
+
+        <div class="dropdown__block dropdown__block--py dropdown__block--mb">
+            <div class="dropdown__row">
+                 <img alt="temp-alt" src="/img/avatar.png"  class="dropdown__photo">
+                <div class="dropdown__info">
+                    <div
+                        class="dropdown__title dropdown__title--white dropdown__title--md  dropdown__title--normal dropdown__title--mb-none">
+                        Дмитрий
+                    </div>
+                    <div class="dropdown__position">Автоэксперт</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="dropdown__title dropdown__title--white dropdown__title--md  dropdown__title--normal dropdown__title--mb-sm">
+            Заказать звонок эксперту
+        </div>
+        <div class="dropdown__text dropdown__text--sm dropdown__text--normal dropdown__text--white">
+            Оставьте номер телефона и эксперт перезвонит и сделает точный подбор нужной детали
+        </div>
+
+        <div class="form-controls">
+            <input type="text" data-required class="input input--black dropdown__input form__input form-control"
+                placeholder="Введите имя">
+            <input type="tel" data-required class="input input--black dropdown__input" placeholder="+7 (000) 000-00-00">
+
+            <label class="checkbox checkbox--white dropdown__checkbox" for="chex">
+                <input class="checkbox__input" type="checkbox" id="chex">
+                <span class="checkbox-wrap">
+                        <span class="check-sign check-part-1"></span>
+                        <span class="check-sign check-part-2"></span>
+                    </span>
+                <span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#" class="link">условиями</a>
+                    передачи данных
+                </span>
+            </label>
+
+            <div class="dropdown__buttons">
+                <button class="button dropdown__button dropdown__button--mr-sm">Заказать звонок</button>
+                <div
+                    class="dropdown__text dropdown__text--sm dropdown__text--white dropdown__text--mb-none dropdown__text--normal">
+                    с 10:00 до 20:00 (мск)
+                </div>
+            </div>
+        </div>
+
+        <div class="message success">
+            <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href='/img/sprite-new.svg#success-envelope'></use>
+            </svg>
+            <p>
+                Ваша заявка успешно отправлена
+            </p>
+        </div>
+
+        <div class="message error">
+            <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <use xlink:href='/img/sprite-new.svg#bad-envelope'></use>
+            </svg>
+
+            <p>
+                Произошла ошибка при отправке, попробуйте позже
+            </p>
+        </div>
+    </form>
+</div>

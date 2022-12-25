@@ -1,0 +1,497 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+              
+            </div>
+        </div>
+    </div>
+
+
+  
+ 
+    @include('partials/components/page-title.html', {
+        'title': 'Мой кабинет',
+        'size': 'small',
+        'model': 'hidden'
+        })
+
+
+    <div class="profile__grid-container container">
+        <div class="profile__grid">
+            <div class="profile-info">
+                <div class="profile__block-title">
+                    СЕМИПОПОЛОВИГЕРОВЕРСАЛО... Вениамин
+                </div>
+                <a href="" class="phone">+7 (812) 123 45 45</a>
+                
+                <p>
+                    Вы можете изменить персональную информацию и адреса доставки
+                </p>
+
+                <div class="profile-info__footer">
+                    <a href="" class="profile-link">Перейти в профиль</a>
+                    <a href="" class="logout">Выйти</a>
+                </div>
+            </div>
+    
+            <div class="profile-orders profile-block">
+                <div class="profile__block-title">
+                    заказы
+                    <div class="title-count">
+                        2 заказа
+                    </div>
+
+                    <a href="#" class="profile__block-title-link mobile-hidden">Перейти в заказы</a>
+                </div>
+
+                <div class="block-content block-content--mt">
+                    <ul class="order-list">
+                        <li class="order-item">
+                            <div>
+                                <span class="order-item__title">
+                                    M-25468001
+                                </span>
+                                <span class="order-item__value">
+                                    18 марта, пт
+                                </span>
+                            </div>
+
+                            <div>
+                                <span class="order-item__title">
+                                    Принят
+                                </span>
+                                <span class="order-item__value">
+                                    Статус заказа
+                                </span>
+                            </div>
+
+                            <div class="mobile-hidden">
+                                <span class="order-item__title">
+                                    Из магазина
+                                </span>
+                                <span class="order-item__value">
+                                    19 марта, сб
+                                </span>
+                            </div>
+
+                            <div class="mobile-hidden">
+                                <span class="order-item__title">
+                                    На сайте
+                                </span>
+                                <span class="order-item__value">
+                                    ожидает оплаты
+                                </span>
+                            </div>
+
+                            <div>
+                                <span class="order-item__title order-item__price">
+                                    2 802 ₽
+                                </span>
+                                <span class="order-item__value">
+                                    4 товара
+                                </span>
+                            </div>
+
+                            <div class="arrow-wrapper">
+                                <a href="" class="arrow">
+                                    <svg class="mobile-hidden">
+                                        <use xlink:href='/img/sprite-new.svg#order-item-arrow'></use>
+                                    </svg>
+                                    <svg class="mobile-only">
+                                        <use xlink:href='/img/sprite-new.svg#order-item-small-arrow'></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </li>
+                        <li class="order-item">
+                            <div>
+                                <span class="order-item__title">
+                                    M-25468001
+                                </span>
+                                <span class="order-item__value">
+                                    18 марта, пт
+                                </span>
+                            </div>
+
+                            <div>
+                                <span class="order-item__title">
+                                    Принят
+                                </span>
+                                <span class="order-item__value">
+                                    Статус заказа
+                                </span>
+                            </div>
+
+                            <div class="mobile-hidden">
+                                <span class="order-item__title">
+                                    Из магазина
+                                </span>
+                                <span class="order-item__value">
+                                    19 марта, сб
+                                </span>
+                            </div>
+
+                            <div class="mobile-hidden">
+                                <span class="order-item__title">
+                                    На сайте
+                                </span>
+                                <span class="order-item__value">
+                                    ожидает оплаты
+                                </span>
+                            </div>
+
+                            <div>
+                                <span class="order-item__title order-item__price">
+                                    2 802 ₽
+                                </span>
+                                <span class="order-item__value">
+                                    4 товара
+                                </span>
+                            </div>
+
+                            <div class="arrow-wrapper">
+                                <a href="" class="arrow">
+                                    <svg class="mobile-hidden">
+                                        <use xlink:href='/img/sprite-new.svg#order-item-arrow'></use>
+                                    </svg>
+                                    <svg class="mobile-only">
+                                        <use xlink:href='/img/sprite-new.svg#order-item-small-arrow'></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <a href="#" class="order-link mobile-only">
+                        Перейти в заказы
+                    </a>
+                </div>
+            </div>
+    
+            <div class="profile-maps">
+                <div class="service-map">
+                    <div class="service-map__title-wrap">
+                        <div class="profile__block-title service-map__title">СТО на карте</div>
+                        <a href="#" class="service-map__title__right">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <use xlink:href="/img/sprite-new.svg#geo"></use>
+                            </svg>
+                            <span class="parts-item__text--dotted">На карте</span>
+                        </a>
+                    </div>
+                    <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно</div>
+                    <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                    <a href="#" class="button service-map__button">Записаться на СТО
+                    </a>
+                </div>
+            </div>
+    
+    
+            <div class="profile-address profile-block">
+                <div class="profile__block-title">
+                    Адреса доставки
+                    <div class="title-count">
+                        2 адреса
+                    </div>
+                </div>
+                
+                <div class="block-content block-content--mt">
+                    <ul class="address-list">
+                        <li class="address-item">
+                            <div class="item-header">
+                                <div class="address-type">
+                                    дом
+                                </div>
+
+                                <div class="nav">
+                                    <button>
+                                        <svg>
+                                            <use xlink:href='/img/sprite-new.svg#address-pen'></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use xlink:href='/img/sprite-new.svg#address-remove'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="address-text">
+                                Невский проспект, д. 61, кв 156
+                            </span>
+                        </li>
+                        <li class="address-item">
+                            <div class="item-header">
+                                <div class="address-type">
+                                    дом
+                                </div>
+
+                                <div class="nav">
+                                    <button>
+                                        <svg>
+                                            <use xlink:href='/img/sprite-new.svg#address-pen'></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use xlink:href='/img/sprite-new.svg#address-remove'></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="address-text">
+                                Невский проспект, д. 61, кв 156
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="address-footer">
+                        <a href="" class="new-address mobile-hidden">Посмотреть все</a>
+                        <a href="" class="new-address">Добавить новый адрес</a>
+                    </div>
+                </div>
+               
+            </div>
+    
+            <div class="profile-cars profile-block">
+                <div class="profile__block-title">
+                    гараж
+                    <div class="title-count">
+                        3 авто 
+                    </div>
+
+                    <a href="#" class="profile__block-title-link mobile-hidden">Перейти в гараж</a>
+
+                    <a href="#" class="profile__block-title-link mobile-hidden">Добавить авто в гараж</a>
+                </div>
+
+                <div class="block-content block-content--mt">
+                    <div class="car-list__wrapper">
+                        <ul class="car-list">
+                            <li class="car-item">
+                                <div class="car-item__details-wrap">
+                                    <img class="car-item__img" src="img/profile-car.png"/>
+                                    <div class="car-item__details">
+                                        <a class="car-item__name" href="#">Chery Tiggo T11</a>
+                                        <span class="car-item__years">2013 год</span>
+                                        <span class="car-item__number">Y4K8762Z7HB300490</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="car-item__links mobile-hidden">
+                                    <a href="">Детали для ТО</a>
+                                    <a href="">Каталог запчастей</a>
+                                    <a href="">Записаться на СТО</a>
+                                </div>
+                            </li>
+                            <li class="car-item">
+                                <div class="car-item__details-wrap">
+                                    <img class="car-item__img" src="img/profile-car.png"/>
+                                    <div class="car-item__details">
+                                        <a class="car-item__name" href="#">Bentley Continental Flying Spur W12 Mulliner</a>
+                                        <span class="car-item__years">2013 год</span>
+                                        <span class="car-item__number">Y4K8762Z7HB300490</span>
+                                    </div>
+                                </div>
+                                <div class="car-item__links mobile-hidden">
+                                    <a href="">Детали для ТО</a>
+                                    <a href="">Каталог запчастей</a>
+                                    <a href="">Записаться на СТО</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="slider-pagination mobile-only"></div>
+                    </div>
+                  
+
+                    <div class="car-footer mobile-only">
+                        <a href="">Перейти в гараж</a>
+                        <a href="">Добавить авто в гараж</a>
+                    </div>
+                </div>
+
+
+            </div>
+    
+            <div class="profile-part-form">
+                <div class="form-header">
+                    <div class="profile__block-title">
+                        Помощь в подборе запчастей
+
+
+                    </div>
+                    <div class="form-subtitle">
+                        Окажем помощь в подборе и покупке запчастей
+                    </div>
+
+                </div>
+
+                    <div class="expert-info__wrapper">
+                        <img src="img/avatar.png" alt="">
+                        <div class="expert-info">
+                            <span class="name">Дмитрий</span>
+                            <span class="position">Автоэксперт</span>
+                        </div>
+                    </div>
+
+                   
+
+                    <form action="" class="form-validate">
+
+                        <div class="profile__block-title">
+                            Заказать звонок эксперту
+                        </div>
+                        <div class="form-subtitle">
+                            Оставьте номер телефона и эксперт перезвонит
+                            и сделает точный подбор нужной детали
+                        </div>
+
+                        <input type="text" class="input" placeholder="Введите имя *" data-requared>
+                        <input type="tel" class="input" placeholder="+7 (000) 000-00-00">
+
+                        <label class="checkbox dropdown__checkbox" for="chex">
+                            <input class="checkbox__input" type="checkbox" id="chex">
+                            <span class="checkbox-wrap">
+                                    <span class="check-sign check-part-1"></span>
+                                    <span class="check-sign check-part-2"></span>
+                                </span>
+                            <span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#" class="link">условиями</a>
+                                передачи данных
+                            </span>
+                        </label>
+
+                        <div class="form-footer">
+                            <button class="button button--grey button--submit">
+                                Заказать звонок
+                            </button>
+                            <span>с 10:00 до 20:00 (мск)</span>
+                        </div>
+                    </form>
+            </div>
+    
+            <div class="profile-clients">
+                <div class="profile__block-title">
+                    Клиентам
+
+                </div>
+                <ul class="link-list">
+                    <li>
+                        <a href="">Порядок приема товаров</a>
+                    </li>
+                    <li>
+                        <a href="">Гарантия и возврат</a>
+                    </li>
+                    <li>
+                        <a href="">Доставка и оплата</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="profile-favorites profile-block">
+                <div class="profile__block-title">
+                    Избранное
+                    <div class="title-count">
+                        2 товара
+                    </div>
+                    <a href="#" class="profile__block-title-link mobile-hidden">Посмотреть все</a>
+
+                </div>
+
+                <div class="block-content block-content--mt">
+                    <ul class="favorites-list">
+                        <li class="favorites-item">
+                            <div class="favorites-item__details-wrap">
+                                <div class="favorites-item__img-wrap">
+                                    <img src="img/item.png" alt="temp">
+                                    @include('partials/components/favorite-btn.html')
+                                </div>
+                                <div class="favorites-item__details">
+                                    <a href="#" class="favorites-item__name">Щётка стеклоочистителя зимняя ALCF 24”/... </a>
+                                    <span class="favorites-item__number">1882NKE601</span>
+                                    <span class="favorites-item__country">Geely / Китай</span>
+                                </div>
+                            </div>
+                           
+                            <div class="favorites-item__price-wrap">
+                                <a href="" class="button button--grey">выбрать</a>
+                                <span class="favorites-item__price">
+                                    1 230 ₽
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="favorites-item">
+                            <div class="favorites-item__details-wrap">
+                                <div class="favorites-item__img-wrap">
+                                    <img src="img/profile-fav2.png" alt="temp">
+                                    @include('partials/components/favorite-btn.html')
+                                </div>
+                                <div class="favorites-item__details">
+                                    <a href="#" class="favorites-item__name">Свеча зажигания Denso 3120 </a>
+                                    <span class="favorites-item__number">1882NKE601</span>
+                                    <span class="favorites-item__country">Geely / Китай</span>
+                                </div>
+                            </div>
+                           
+                            <div class="favorites-item__price-wrap">
+                                <a href="" class="button button--grey">выбрать</a>
+                                <span class="favorites-item__price">
+                                    630 ₽
+                                </span>
+                            </div>
+                        </li>
+
+                     
+                    </ul>
+
+                    <a href="" class="favorites-link mobile-only">Перейти в избранное</a>
+                </div>
+
+            </div>
+    
+    
+        </div>
+    </div>
+    
+
+    
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

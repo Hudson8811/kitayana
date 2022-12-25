@@ -1,0 +1,371 @@
+.car-service{
+    padding: 7.3rem 0 4.75rem;
+    @media(max-width: 991px){
+        padding: 5.625rem 0;
+    }
+
+    @media(max-width: 768px){
+        padding: 3rem 0;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: rem(565px) rem(637px) rem(565px);
+        margin-bottom: 5rem;
+        @media(max-width: 1200px){
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 -1rem;
+            width: calc(100% + 2rem);
+            padding: 0 1rem;
+        }
+
+        @media(max-width: 768px){
+            margin-bottom: 0;
+        }
+    }
+
+    &__inner{
+        height: 100%;
+        padding: 4.9rem 5rem;
+        @media(max-width: 1400px){
+            padding: 3.125rem;
+        }
+        @media(max-width: 768px){
+            background: $color_8;
+            padding: 2.3rem;
+            &--mob{
+                background: none;
+            }
+
+            &--hidden{
+                display: none;
+            }
+        }
+
+        &--mob{
+            display: none;
+            @media(max-width: 768px){
+                display: block;
+            }
+        }
+    }
+
+    &__title{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 5.1rem;
+        line-height: 1.2;
+        letter-spacing: 0.00.125rem;
+        text-transform: uppercase;
+        color: $color_4;
+        margin-bottom: 5rem;
+        @media(max-width: 1200px){
+            font-size: 3.75rem;
+            line-height: 4.5rem;
+            margin-bottom: 3.75rem;
+        }
+
+        @media(max-width: 991px){
+            font-size: 2.125rem;
+            line-height: 2.687rem;
+            margin-bottom: 1.875rem;
+        }
+
+        @media(max-width: 768px){
+            font-size: 22px;
+            line-height: 1.937rem;
+            margin-bottom: 1.375rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+
+    &__item{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0.062rem solid $color_6; 
+        .button{
+            display: flex;
+            width: max-content;
+        }
+
+        @media(max-width: 768px){
+            min-height: 223px;
+            .button{
+                margin-top: 40px;
+            }
+            &--hidden{
+                display: none;
+            }
+        }
+        &:first-child {
+            border-right: 0;
+            border-bottom: 0;
+        }
+        &:nth-child(2) {
+            border-bottom: 0;
+            border-right: 0;
+            @media(max-width: 768px){
+                order: -1; 
+            }
+        }
+        &:nth-child(3) {
+            border-left: 0;
+            border-bottom: 0;
+        }
+        &:nth-child(4) {
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 0;
+        }
+        &:nth-child(5) {
+            border-right: 0;
+        }
+        &:last-child {
+            border-left: 0;
+        }
+
+        &--grey{
+            background: $color_9;
+        }
+    }
+
+    &__name{
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        color: $color_4;
+        margin-bottom: 2.5rem;
+        @media(max-width: 768px){
+            font-size: 18px;
+            line-height: 1.375rem;
+            margin-bottom: 0.625rem;
+        }
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        color: $color_4;
+        margin-bottom: 2.687rem;
+        @media(max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &--medium{
+            font-weight: 600;
+            font-size: 1.375rem;
+            @media(max-width: 768px){
+                font-size: 1rem;
+                line-height: 1.25rem;
+            }
+        }
+
+        &--mb{
+            margin-bottom: 4.2rem;
+            @media(max-width: 768px){
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &__stat{
+        padding: 0.375rem 1rem;
+        background: $color_9;
+        border-radius: 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        color: $color_4;
+        margin-bottom: 3.5rem;
+        display: inline-block;
+
+        @media(max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__content{
+        padding-left: 5.062rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        &--single{
+            padding: rem(80px) rem(160px);
+            .car-service__descr{
+                column-width: auto;
+            }
+
+            @media(max-width: 991px){
+                padding: 16px !important;
+                padding-bottom: 48px !important;
+                .car-service__descr{
+                    width: 100%;
+                    column-count: 1;
+                    padding: 0;
+                    max-width: 100%;
+                    padding-top: 33px !important;
+                }
+            }
+        }
+        @media(max-width: 991px){
+            flex-direction: column;
+            padding-left: 2.5rem;
+        }
+
+        @media(max-width: 768px){
+            padding-left: 0;
+            padding-bottom: 24px;
+            &.hide{
+                display: none;
+            }
+            .car-service__descr{
+                padding-left: 0;
+                font-size: 12px;
+                line-height: 24px;
+                padding-bottom: 24px;
+                padding-top: 48px;
+                color: $color_6;
+                margin-bottom: 0;
+                max-width: 92%;
+                
+            }
+    
+            .car-service__link--red{
+                font-size: 10px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: $color_8;
+                padding: 16px;
+                background: $color_2;
+            }
+        }
+    }
+
+    &__col{
+        width: 50%;
+        margin-right: 10rem;
+        &:last-child{
+            margin-right: 0;
+        }
+        @media(max-width: 1200px){
+            margin-right: 7.5rem;
+        }
+        @media(max-width: 991px){
+            width: 100%;
+            margin: 0 0 2.5rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__descr{
+        font-size: 1.125rem;
+        line-height: 2rem;
+        color: $color_4;
+        column-gap: 10rem;
+        margin-bottom: 4rem;
+        column-width: rem(720px);
+        column-count: 2;
+        &--mb{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link{
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color: $color_4;
+        margin-bottom: 1.5rem;
+        &--red{
+            font-weight: 600;
+            font-size: 1rem;
+            color: $color_2;
+            letter-spacing: 0.00.125rem;
+            text-transform: uppercase;
+            @media(max-width: 768px){
+                font-size: 0.875rem;
+            }
+        }
+        @media(max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__img{
+        width: 11rem;
+        min-height: 100% !important;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &-slider{
+        display: none;
+        margin: 0 -1rem 1rem;
+        width: calc(100% + 2rem);
+        padding-right: 1rem;
+        .swiper-slide{
+            width: auto !important;
+            height: 223px !important;
+        }
+        @media(max-width: 768px){
+            display: block;
+        }
+
+        .car-service__item{
+            border: 0.062rem solid $border-color_1;
+            width: 22.562rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100% !important;
+            height: 100%;
+            @media(max-width: 768px){
+                width: 360px;
+            }
+        }
+
+        .car-service__button{
+            display: none;
+        }
+    }
+
+    &__button{
+        @media(max-width: 768px){
+            display: block;
+            width: max-content;
+        }
+    }
+
+    &__map{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

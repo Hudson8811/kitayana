@@ -1,0 +1,114 @@
+@include('partials/header.html', {
+top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+
+
+
+<div class="wrapper">
+
+     <div class="breadcrumbs breadcrumbs--pb-0">
+          <div class="container">
+               <div class="breadcrumbs__inner">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                    <a href="#" class="breadcrumbs__link">Каталог по марке авто</a>
+               </div>
+          </div>
+     </div>
+
+
+
+
+
+
+     @include('partials/components/page-title.html', {
+     'title': 'Каталог по марке авто',
+     'size': 'big',
+     })
+
+
+     @include('partials/model-select.html', {
+     step: '1'
+     })
+
+     <div class="model-list">
+          <div class="container">
+               <div class="model-list__inner">
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/chery.png">
+                    </a>
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/lifan.png">
+                    </a>
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/geely.png">
+                    </a>
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/haval.png">
+                    </a>
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/Foton.png">
+                    </a>
+
+
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/lifan.png">
+                    </a>
+
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/Foton.png">
+                    </a>
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/chery.png">
+                    </a>
+
+                    <a href="#" class="model-list__item">
+                         <img alt="temp-alt" src="/img/logos/light/geely.png">
+                    </a>
+               </div>
+
+               <a href="" class="button">продолжить</a>
+          </div>
+     </div>
+
+
+     @include('partials/car-service.html')
+
+
+     @include('partials/need-help.html', {
+
+     })
+
+
+     @include('partials/advantages.html')
+
+
+     @include('partials/shops.html')
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

@@ -1,0 +1,270 @@
+@include('partials/header.html', {
+"top": 'hide'
+})
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsGetDetailPhoto.html')
+@include('partials/modals/jsGallery.html')
+@include('partials/modals/jsReviewPopup.html')
+
+
+
+
+
+<div class="wrapper product-page">
+
+
+    <div class="product__top-line">
+        <div class="product__top-line-col">
+            <div class="product__top-line-row">
+                <img alt="temp-alt" src="/img/product-small.png" class="product-img">
+                <span class="product-name">
+                    Фильтр масляный D4060-JA00A
+                </span>
+            </div>
+        </div>
+
+        <div class="product__top-line-col">
+            <div class="product__top-line-row">
+                Geely / Китай
+            </div>
+            <div class="product__top-line-row">
+                Оригинал: <span class="sku">D4060-JA00A</span>
+                <div class="attention">
+                    <i class="attention--icon"></i>
+                    <div class="attention__content">
+                        <div class="attention__header">
+                            <span class="attention__header-title">Замена артикула производителем</span>
+                        </div>
+                        <div class="attention__content-text attention__content-text--between">
+                            Старый номер <b>D4060-JA00A</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__top-line-col">
+            <div class="product__top-line-row product__top-line-row--bordered">
+                В наличии: <b>4 шт.</b>
+            </div>
+            <div class="product__top-line-row product__top-line-row--bordered">
+                от <b>сегодня</b>
+            </div>
+        </div>
+
+
+        <div class="product__top-line-col">
+            <div class="product__top-line-row">
+                <div class="product__top-line-col prices">
+                    <div class="parts-item__text parts-item__text--md">
+                        1 201 ₽
+                    </div>
+                    <div class="parts-item__old-price">
+                        1971 ₽
+                    </div>
+                </div>
+
+                <div class="product__top-line-col">
+                    <div class="parts-item__discount parts-item__discount--blue">
+                        –10%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product__top-line-col buttons-col">
+            <div class="product__top-line-row">
+                @include('partials/components/cart-btn.html')
+                <a href="#" class="button button--grey">Купить в 1 клик</a>
+                @include('partials/components/favorite-btn.html')
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="product__details product__details--pt-0">
+        <div class="product__details-tabs">
+            <div class="container">
+                <ul class="product__details-tabs-links">
+                    <li>
+                        <a href="" class="active">Предложения</a>
+                    </li>
+                    <li>
+                        <a href="">Описание</a>
+                    </li>
+                    <li>
+                        <a href="">Применяемость</a>
+                    </li>
+                    <li>
+                        <a href="">Отзывы и рейтинг</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="product__aside-container product__reviews">
+
+        <div class="content">
+
+            <div class="review-emply">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='/img/sprite-new.svg#reviews-emply'></use>
+                </svg>
+
+                <p>
+                    Еще никто не поделился своими впечатлениями о товаре, вы можете быть первым
+                </p>
+
+
+                <div class="review-form review-form--emply desktop-hidden">
+                    <h4 class="form-title">Оставить отзыв</h4>
+                    <p>
+                        Отзывы могут оставлять только авторизованные пользователи, пожалуйста, <a href="">войдите</a>
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <aside>
+            <form class="review-form review-form--emply form">
+                <h4 class="form-title">Оставить отзыв</h4>
+                <p>
+                    Отзывы могут оставлять только авторизованные пользователи, пожалуйста, <a href="">войдите</a>
+                </p>
+            </form>
+        </aside>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="product__slider-container">
+        <div class="container">
+            <div class="product__slider-title-wrapper">
+                <h2 class="product__slider-title">
+                    с этим товаром
+                    покупают
+                </h2>
+
+                <div class="product__slider-nav-wrapper">
+                    <div class="product__slider-nav">
+                        <button class="product__slider-prev product__slider-prev-0"></button>
+                        <div class="product__slider-pagination product__slider-pagination-0"></div>
+                        <button class="product__slider-next product__slider-next-0"></button>
+                    </div>
+
+                    <a href="#" class="all-product">Все товары</a>
+                </div>
+
+            </div>
+
+
+            <div class="product__slider">
+
+                <div class="product__slider-wrapper">
+                    @loop('partials/products-grid-item.html', '/json/products.json')
+                </div>
+
+                <div class="product__slider-pagination product__slider-pagination-0"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="product__slider-container product__slider-container--pb">
+        <div class="container">
+            <div class="product__slider-title-wrapper  align-center">
+                <h2 class="product__slider-title">
+                    Вас может заинтересовать
+                </h2>
+
+                <div class="product__slider-nav-wrapper">
+                    <div class="product__slider-nav">
+                        <button class="product__slider-prev product__slider-prev-1"></button>
+                        <div class="product__slider-pagination product__slider-pagination-1"></div>
+                        <button class="product__slider-next product__slider-next-1"></button>
+
+                    </div>
+
+                    <a href="#" class="all-product">Все товары</a>
+                </div>
+
+            </div>
+
+
+            <div class="product__slider">
+
+                <div class="product__slider-wrapper">
+                    @loop('partials/products-grid-item.html', '/json/products.json')
+                </div>
+                <div class="product__slider-pagination product__slider-pagination-1"></div>
+            </div>
+        </div>
+    </div>
+
+
+    @include('partials/car-service-content.html')
+
+
+
+
+
+    @include('partials/need-help-single.html')
+
+
+
+
+
+
+    @include('partials/advantages.html')
+
+
+    @include('partials/shops.html')
+
+
+</div>
+
+@include('partials/components/product__bottom-panel.html')
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

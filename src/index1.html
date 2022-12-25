@@ -1,0 +1,135 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+@include('partials/modals/jsServiceModal.html')
+
+
+
+<div class="wrapper wrapper-origin">
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Каталог оригинальных запчастей</a>
+                <a href="#" class="breadcrumbs__link">Chery</a>
+                <a href="#" class="breadcrumbs__link">Tiggo</a>
+                <a href="#" class="breadcrumbs__link">Tiggo T11 1 2005-2014</a>
+                <a href="#" class="breadcrumbs__link">Приготовление смеси</a>
+                <a href="#" class="breadcrumbs__link">Фильтр масляный</a>
+            </div>
+        </div>
+    </div>
+
+
+    @include('partials/selected-filter.html', {
+    title: 'Фильтр не масляный',
+    carImg: 'img/car.png',
+    selected: 'false',
+    carModel: 'Модель автомобиля',
+    carYears: 'не выбрана'
+    })
+
+    <div class="wrapper-grid">
+
+        @include('partials/filter.html')
+
+
+        <div class="content">
+<!-- 
+            <div class="categories-tabs">
+                <div class="categories-tabs__name categories-tabs__name--black">Все 37:</div>
+                <a href="#original"
+                    class="anchor-link categories-tabs__name categories-tabs__name--dashed ">Оригиналы</a>
+                <a href="#analogy" class="anchor-link categories-tabs__name categories-tabs__name--dashed">Аналоги</a>
+            </div> -->
+
+
+            @include('partials/spares.html')
+
+
+            @include('partials/mobile-filter.html')
+
+
+            @include('partials/parts-list.html')
+
+            <ul class="pagination">
+                <!-- <li>
+                    <a href="">
+                        <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href='/img/sprite-new.svg#pagination-left'></use>
+                        </svg>
+                    </a>
+                </li> -->
+
+                <li>
+                    <a href="" class="active">1</a>
+                </li>
+                <li>
+                    <a href="">2</a>
+                </li>
+                <li>
+                    <a href="">3</a>
+                </li>
+                <li>
+                    <a href="">...</a>
+                </li>
+                <li>
+                    <a href="">12</a>
+                </li>
+
+                <li class="arrow arrow--right">
+                    <a href="">
+                        <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href='/img/sprite-new.svg#pagination-right'></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    @include('partials/car-service.html', {
+        'descr': 'car-service__content--descr-hidden'
+    })
+
+
+    @include('partials/need-help.html', {
+    block: 'show'
+    })
+
+
+    @include('partials/advantages.html')
+
+
+    @include('partials/shops.html')
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

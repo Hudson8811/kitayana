@@ -1,0 +1,72 @@
+<div class="modal order-popups order-popups--sm" id="jsCancelOrder">
+    <div class="modal__inner">
+
+    
+
+        <div class="modal__content">
+            <div class="modal__overhead">
+                Отменить заказ <span class="red">№ M-25468001</span>  <span class="date">от 18 марта, пт</span>
+            </div>
+
+            <div class="modal__container">
+                <p class="order-popups__text">
+                    Вы можете отказаться от заказа до передачи его в доставку.  <br>
+                    Если заказ уже был отгружен, вам необходимо связаться с менеджером компании по телефону <a href="">+7 (812) 600 35 35</a> 
+                </p>
+
+                <form action="" class="form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Причина отмены *</label>
+                            <select name="" id="" class="custom-select profile-select">
+                                <option selected disabled>Выберите из списка</option>
+                                <option >Выберите из списка 1</option>
+                                <option >Выберите из списка 2</option>
+                            
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Комментарий</label>
+                            <textarea class="input" placeholder="Ваш комментарий"></textarea>
+                        </div>
+                    </div>
+                    <label class="checkbox dropdown__checkbox" for="chex23">
+                        <input class="checkbox__input" type="checkbox" id="chex23">
+                        <span class="checkbox-wrap">
+                                <span class="check-sign check-part-1"></span>
+                                <span class="check-sign check-part-2"></span>
+                            </span>
+                        <span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#" class="link">условиями</a>
+                            передачи данных
+                        </span>
+                    </label>
+                    <button class="button">
+                        Подтвердить отмену
+                    </button>
+                </form>
+
+
+                <ul class="order-popups__list">
+                    <li>Нам нужно немного времени, чтобы обработать отмену заказа</li>
+                    <li>Мы пришлем SMS и e-mail об отмене</li>
+                    <li>Если товар оплачен на сайте, мы вернем денежные средства на ту же карту</li>
+                    <li>Возврат денежных средств в течение 3-х дней (точный срок зависит от банка)</li>
+                    <li>После отмены заказ будет перенесён в раздел «Отменённые»</li>
+                </ul>
+
+
+
+
+            </div>
+
+            
+        </div>
+
+
+     
+        
+        @include('../components/modal-close.html')
+    </div>
+</div>

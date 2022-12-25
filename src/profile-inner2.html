@@ -1,0 +1,301 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+                <a href="#" class="breadcrumbs__link">Профиль</a>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+    <div class="profile__inner container">
+        <aside>
+            <div class="header__auth-list">
+                <div class="header__auth-box">
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#user'></use>
+                            </svg>
+                        </div>
+                        Профиль
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                            </svg>
+
+                        </div>
+                        Адреса доставки
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+                            </svg>
+                        </div>
+                        Заказы
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#car-icon'></use>
+                            </svg>
+
+                        </div>
+                        Гараж
+                    </a>
+                    <a href="#" class="header__auth-link active">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#favorite-red'></use>
+                            </svg>
+                        </div>
+                        Избранное
+                    </a>
+                </div>
+                <div class="header__auth-bottom">
+                    <div class="header__text header__text--md">
+                        +7 (812) 123 45 45
+                    </div>
+                    <button class="header__exit">
+                        выйти
+                        <span class="header__exit-icon --svg__exit"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="service-map">
+                <div class="service-map__title">
+                    <div class="service-map__title__left">СТО на карте</div>
+                    <a href="#" class="service-map__title__right" data-popup="jsService">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#geo'></use>
+                        </svg>
+                        <span class="parts-item__text--dotted">На карте</span>
+                    </a>
+                </div>
+                <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                </div>
+                <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                <a href="#" class="button service-map__button">Записаться на СТО
+                </a>
+            </div>
+        </aside>
+
+        <div class="profile__content">
+            <div class="profile__content-header">
+                <div class="profile__content-title">
+                    <a href=""><h1>Профиль</h1></a>
+                    <p class="hint">7% ваша персональная скидка на товары</p>
+                </div>
+
+                <ul class="profile-tabs">
+                    <li>
+                        <a href="#" data-tab="tab1" class="profile__tab-trigger active">Личные данные</a>
+                    </li>
+                    <li>
+                        <a href="#" data-tab="tab2" class="profile__tab-trigger">Пароль</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <form class="active profile__content-data profile__tab-content form form-validate" id="tab1">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Телефон *</label>
+                        <div class="input-wrap">
+                        <input type="text" class="input invalid" value="+7 (812) 123 45 67" data-required>
+                        
+                        <div class="code-popup input-popup">
+                         
+                            <div class="input-popup__title">
+                                Введите код из смс
+                                <button class="close">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#close2'></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <input type="text" class="input invalid" placeholder="_ _ _ _">
+                            <div class="input-error">
+                                Неверный код
+                            </div>
+                            <a href="">Отправить код ещё раз</a>
+                            <div class="timer">через <b>39 сек.</b> </div>
+                        </div>
+
+                        <div class="input-popup input-popup--focus">
+                            <div class="text text--green">
+                                Номер телефона подтвержден
+                            </div>
+                        </div>
+
+                        <div class="input-error mobile-only">Номер телефона не подтвержден</div>
+                        <span class="form-hint">
+                            Для изменения номера телефона необходимо будет ввести код подтверждения из смс
+                        </span>
+                        <a href="" id="code-link" class="form-link">Отправить код по СМС</a>
+                    </div>
+                    <div class="input-error mobile-hidden">Номер телефона не подтвержден</div>
+                    </div>
+                   
+                </div>
+
+                <div class="input-row code">
+                    <div class="input-group">
+                        <label>Код из СМС *</label>
+                        <div class="input-wrap">
+                        <input type="text" class="input" placeholder="_ _ _ _">
+
+                            <a href="#" class="form-link">
+                                Отправить код ещё раз
+                            </a>
+                            <div class="form-hint">
+                                через <b>39 сек.</b> 
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Имя *</label>
+                        <input type="text" class="input" data-required value="">
+                    </div>
+                    <div class="input-group">
+                        <label>Фамилия</label>
+                        <input type="text" class="input" data-required value="">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Электронная почта </label>
+                        <div class="input-wrap">
+                            <input type="text" class="input invalid" value="">
+                            
+                            <div class="input-popup input-popup--focus">
+                                <div class="text">
+                                    На указанный вами email направлено письмо
+                                </div>
+                            </div>
+                            <div class="input-error mobile-only">Электронная почта не подтверждена</div>
+                            <div class="form-hint">
+                                Для изменения email необходимо будет перейти по ссылке, направленной в письме на указанный вами email
+                            </div>
+                            <a href="#" class="form-link mobile-only">
+                                Подтвердить электронную почту
+                            </a>
+                        </div>
+                        <div class="input-error mobile-hidden">Электронная почта не подтверждена</div>
+                       
+                    </div>
+
+                   
+                </div>
+
+                <button class="submit button">
+                    Сохранить данные
+                </button>
+                
+            </form>
+            <form class="profile__content-data profile__tab-content form" id="tab2">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Текущий пароль</label>
+                        <input type="password" class="input" value=".........">
+                        <button class="show-password">
+                            <svg>
+                                <use xlink:href='/img/sprite-new.svg#eye_close'></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Новый пароль</label>
+                        <input type="password" class="input" value=".........">
+                        <button class="show-password">
+                            <svg>
+                                <use xlink:href='/img/sprite-new.svg#eye_close'></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <label>Повторите новый пароль</label>
+                        <input type="password" class="input" value=".........">
+                        <button class="show-password">
+                            <svg>
+                                <use xlink:href='/img/sprite-new.svg#eye_close'></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+              
+
+                <button class="submit button">
+                    Сменить пароль
+                </button>
+            </form>
+
+        </div>
+
+
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

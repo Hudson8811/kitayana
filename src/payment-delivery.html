@@ -1,0 +1,255 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<div class="wrapper payment-delivery">
+	<div class="breadcrumbs breadcrumbs--pb-0">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+				<a href="#" class="breadcrumbs__link">Оплата и доставка</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="payment-delivery__title-row">
+			<h1 class="payment-delivery__title">
+				<a href="#" class="payment-delivery__arrow-back">
+					<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 17.5L9 12.5L14 7.5" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+				Оплата и доставка
+			</h1>
+			<div class="payment-delivery__title-links">
+				<a href="#" class="payment-delivery__shop-link">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M4.2488 2.87718C5.24747 1.88849 6.59601 1.33391 8.0013 1.33398C9.4066 1.33391 10.7551 1.88849 11.7538 2.87718C12.7525 3.86587 13.3206 5.20876 13.3346 6.61398C13.3346 10.2673 8.66797 14.334 8.43464 14.5073C8.31388 14.6106 8.1602 14.6674 8.0013 14.6674C7.8424 14.6674 7.68872 14.6106 7.56797 14.5073L7.56688 14.5064C7.35154 14.3198 2.66797 10.2609 2.66797 6.61398C2.68202 5.20876 3.25012 3.86587 4.2488 2.87718ZM8 8.49951C9.10457 8.49951 10 7.60408 10 6.49951C10 5.39494 9.10457 4.49951 8 4.49951C6.89543 4.49951 6 5.39494 6 6.49951C6 7.60408 6.89543 8.49951 8 8.49951Z" fill="#2D2727"/>
+					</svg>
+					Магазины и сервисы
+				</a>
+				<a href="#" class="payment-delivery__map-link">
+					смотреть на карте
+				</a>
+			</div>
+		</div>
+		<div class="payment-delivery__content-row">
+			<div class="payment-delivery__content-left">
+				<div class="shops-inner__list">
+					<ul class="shops-inner__ordering-filter">
+						<li class="shops-inner__ordering-filter-item payment-radio">
+							<input type="radio" name="or-fil" id="or-fil1" checked="true">
+							<label for="or-fil1">ОПЛАТА</label>
+						</li>
+						<li class="shops-inner__ordering-filter-item  delivery-radio">
+							<input type="radio" name="or-fil" id="or-fil2">
+							<label for="or-fil2">ДОСТАВКА</label>
+						</li>
+					</ul>
+				</div>
+				<div class="payment-delivery__list payment-delivery__list--payment payment-delivery__list-opened">
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#credit-card"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Оплата картой на сайте
+							</div>
+							<p class="payment-delivery__list-item-text">
+								При оформлении заказа заполните все необходимые поля. В разделе «Способ оплаты» выберите «Онлайн-оплата платежной картой». Нажмите кнопку «Оплатить». После этого вы автоматически попадёте на защищенную страницу процессингового центра Сбербанк. Обработка полученных конфиденциальных данных клиента (реквизиты карты, регистрационные данные и т. д.) производится в процессинговом центре. Все операции в платежной системе Сбербанк идут в защищенном режиме. <br>
+								В форму оплаты вам необходимо ввести данные вашей карты (информация предоставляется в зашифрованном виде и сохраняется только на специализированном сервере платежной системы. Наш магазин не сохраняет данные о вашей пластиковой карте).
+							</p>
+							<p class="payment-delivery__list-item-text">
+								Если вы решите отменить заказ, платеж будет возвращен. Возврат осуществляется на карту, с которой прошла оплата.
+							</p>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#credit-card"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Оплата картой в магазине
+							</div>
+							<p class="payment-delivery__list-item-text">
+								В магазинах сети «Китаяна» можно произвести оплату банковскими картами Visa, MasterCard, Мир.
+							</p>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#wallet"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Оплата наличными в магазине
+							</div>
+							<p class="payment-delivery__list-item-text">
+								В магазинах сети «Китаяна» можно произвести оплату наличными. Продажа товаров за наличные осуществляется через контрольно-кассовый аппарат с выдачей покупателю чека. Оплата товара производится только в рублях.
+							</p>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#wallet"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Оплата наличными курьеру
+							</div>
+							<p class="payment-delivery__list-item-text">
+								Клиент сети магазинов «Китаяна» может произвести оплату товара непосредственно на месте вручения заказа. Доставка заказа осуществляется только до подъезда покупателя. При передаче заказа курьер интернет-магазина «Китаяна» предоставляет покупателю следующие документы: товарную накладную; чек, подтверждающий оплату.
+							</p>
+							<p class="payment-delivery__list-item-text">
+								Со своей стороны, покупатель проверяет заказ в присутствии курьера, после чего производит оплату заказа. Если полученный товар не соответствует заказанному, покупатель вправе отказаться от заказа.
+							</p>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+				</div>
+				<div class="payment-delivery__list payment-delivery__list--delivery">
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#pin-payment"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Самовывоз из магазина
+							</div>
+							<p class="payment-delivery__list-item-text">
+								Заказ можно получить непосредственно в часы работы любого магазина. <br>
+								После прибытия заказа в магазин покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ,
+								удостоверяющий&nbspличность (например, паспорт или водительские права).
+							</p>
+							<div class="payment-delivery__list-item-text">
+								<div class="payment-delivery__list-item-notice">
+									<p class="payment-delivery__list-item-notice-top">
+										<svg class="payment-delivery__list-item-notice-image">
+											<use xlink:href="/img/sprite-new.svg#payment-attention"></use>
+										</svg>
+										Доставка заказа до магазина – бесплатная.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#pin-payment"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Самовывоз из точек выдачи
+							</div>
+							<p class="payment-delivery__list-item-text">
+								Доставка заказанного товара осуществляется до филиала транспортной компании в городе покупателя. В случае отсутствия филиала у транспортной компании в городе покупателя доставка осуществляется в ближайший к городу покупателя филиал. <br>
+								После прибытия заказа в точку выдачи покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права)..
+							</p>
+							<div class="payment-delivery__list-item-text">
+								<div class="payment-delivery__list-item-notice">
+									<p class="payment-delivery__list-item-notice-top">
+										<svg class="payment-delivery__list-item-notice-image">
+											<use xlink:href="/img/sprite-new.svg#payment-attention"></use>
+										</svg>
+										Доставка до филиала – платная. 
+									</p>
+									<p class="payment-delivery__list-item-notice-bottom">Оплата стоимости доставки производится в соответствии с расценками транспортной компании.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+					<!-- payment-delivery__list-item -->
+					<div class="payment-delivery__list-item">
+						<svg class="payment-delivery__list-item-image">
+							<use xlink:href="/img/sprite-new.svg#car-payment"></use>
+						</svg>
+						<div class="payment-delivery__list-item-content">
+							<div class="payment-delivery__list-item-title">
+								Доставка курьером
+							</div>
+							<p class="payment-delivery__list-item-text">
+								Для того чтобы заказать адресную доставку курьерами транспортной компании, покупателю необходимо будет указать при оформлении заказа в разделе «Способ получения» адресные данные. Затем следует выбрать подходящую транспортную компанию. <br>
+								После прибытия заказа покупатель получит СМС-оповещение. Для получения заказа покупатель должен предъявить документ, удостоверяющий личность (например, паспорт или водительские права).
+							</p>
+							<div class="payment-delivery__list-item-text">
+								<div class="payment-delivery__list-item-notice">
+									<p class="payment-delivery__list-item-notice-top">
+										<svg class="payment-delivery__list-item-notice-image">
+											<use xlink:href="/img/sprite-new.svg#payment-attention"></use>
+										</svg>
+										Доставка до подъезда – платная.
+									</p>
+									<p class="payment-delivery__list-item-notice-bottom">Оплата стоимости доставки производится в соответствии с расценками конкретной транспортной компании.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /payment-delivery__list-item -->
+				</div>
+			</div>
+			<aside class="payment-delivery__content-right">
+				<div class="payment-delivery__menu">
+					<a href="#" class="payment-delivery__menu-link current">Оплата и доставка</a>
+					<a href="#" class="payment-delivery__menu-link">Гарантия возврата</a>
+					<a href="#" class="payment-delivery__menu-link">Порядок приёма товаров</a>
+					<a href="#" class="payment-delivery__menu-link">Программа лояльности</a>
+					<a href="#" class="payment-delivery__menu-link">Адреса магазинов и СТО</a>
+					<a href="#" class="payment-delivery__menu-link">Услуги автосервиса</a>
+					<a href="#" class="payment-delivery__menu-link">Помощь</a>
+				</div>
+				@include('partials/help-section.html')
+			</aside>
+		</div>
+		<!-- Banner STO -->
+		<div class="sale-banner visible">
+			<div class="sale-banner__info">
+				<div class="sale-banner__title">
+					Магазины и СТО
+					<a href="#" class="sale-banner__title-link">Все магазины</a>
+				</div>
+				<div class="sale-banner__text">
+					Наши магазины представлены в 40 городах 
+				</div>
+				<div class="sale-banner__tags">
+					<div class="sale-banner__tag">
+						Доступно 100 магазинов
+					</div>
+					<div class="sale-banner__tag">
+						Доступно 26 автосервисов
+					</div>
+				</div>
+				<a href="#" class="button sale-banner__button">Все магазины и СТО</a>
+			</div>
+			<img src="img/sales/service-map.png" alt="" class="sale-banner__map">
+		</div>
+		<!-- /Banner STO -->
+	</div>
+</div>
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

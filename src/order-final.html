@@ -1,0 +1,241 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+
+
+
+<div class="wrapper order">
+	<div class="breadcrumbs breadcrumbs--pb-0">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+				<a href="#" class="breadcrumbs__link">Корзина</a>
+				<a href="#" class="breadcrumbs__link">Оформление</a>
+			</div>
+		</div>
+	</div>
+
+	@include('partials/components/page-title.html', {
+		size: 'small',
+		title: 'Спасибо! Ваш заказ №123456 оформлен'
+	})
+		
+
+		<div class="order-info__wrapper">
+			<div class="container">
+
+				<div class="order-info__col">
+					<div class="order-info__block">
+
+						<div class="order-info__header">
+							<h4 class="order-info__title">
+								Состав заказа:
+							</h4>
+							<span class="order-info__subtitle">
+								6 товаров
+							</span>
+						</div>
+					
+
+						<ul class="order-info__items">
+							<li class="order-info__item">
+								<div class="order-info__row">
+									<div class="item-title">
+										Колодки тормозные задние дисковые к-кт X70 2017
+									</div>
+									<div>
+										<span class="item-count">2 шт.</span>
+										<span class="item-price">2 802 ₽</span>
+									</div>
+								</div>
+
+								<div class="order-info__row">
+									<span class="item-sku">Номер запчасти: <b>1882NKE601</b> </span>
+									<span class="item-model">LIFAN / Китай</span>
+								</div>
+							</li>
+
+
+							<li class="order-info__item">
+								<div class="order-info__row">
+									<div class="item-title">
+										Фильтр масляный
+									</div>
+									<div>
+										<span class="item-count">2 шт.</span>
+										<span class="item-price">1 047 ₽</span>
+									</div>
+								</div>
+
+								<div class="order-info__row">
+									<span class="item-sku">Номер запчасти: <b>1882NKE601</b> </span>
+									<span class="item-model">Chery / Китай</span>
+								</div>
+							</li>
+
+
+							<li class="order-info__item">
+								<div class="order-info__row">
+									<div class="item-title">
+										Масло моторное MOBIL SUPER 3000 X1 5 W40 4 л.
+									</div>
+									<div>
+										<span class="item-count">1 шт.</span>
+										<span class="item-price">2 578 ₽</span>
+									</div>
+								</div>
+
+								<div class="order-info__row">
+									<span class="item-sku">Номер запчасти: <b>1882NKE601</b> </span>
+									<span class="item-model">MOBIL / Китай</span>
+								</div>
+							</li>
+						</ul>
+
+
+						<div class="order__details">
+							<div class="order__details-row">
+								<span>Стоимость заказа</span>
+								<span>13 317 ₽</span>
+							</div>
+
+							<div class="order__details-row order__details-row--bold">
+								<span>Ваша скидка</span>
+								<span>– 2 550 ₽</span>
+							</div>
+
+							<div class="order__details-row">
+								<span>Доставка</span>
+								<span>бесплатно</span>
+							</div>
+
+							<div class="order__details-row mobile-only">
+								<span>Скидка от суммы заказа</span>
+								<span>– 1 245 ₽ (-5%)</span>
+							</div>
+						</div>
+
+
+						<div class="order__total">
+							<div class="order__total-col">
+								<b>Итого:</b>
+								к оплате
+							</div>
+
+							<div class="order__total-col">
+								<span class="price">
+									11 401 ₽
+								</span>
+								<div>
+									<span class="discount-count">
+										-5%
+									</span>
+									<span class="price--old">
+										12 971 ₽
+									</span>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="order-info__col">
+					<div class="order-info__block">
+
+						<div class="order-info__header order-info__header--bordered">
+							<h4 class="order-info__title order-info__title--mb">
+								Информация о заказе:
+							</h4>
+
+							<h5>
+								Оплата при получении
+							</h5>
+							<span>Наличными, картой</span>
+
+							<div class="order-info__hint mobile-hidden">
+								Оплата заказа будет доступна только после подтверждения менеджером
+							</div>
+						</div>
+
+						<div class="order-info__contact">
+							<h5>Забрать в магазине</h5>
+							<div class="contact-row">
+								<span>17 февраля, пт </span>
+								<span>190 ₽</span>
+							</div>
+
+							<div class="contact-hint">СТО+магазин</div>
+							<h4>Богатырский пр., д.14 к. 2 лит. Б</h4>
+							<span>+7 (812) 600-35-35</span>
+							<span>Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00</span>
+							<span>magazin1@gmail.com</span>
+						</div>
+						
+
+						<div class="order-info__recipient mobile-hidden">
+							<h5>Получатель</h5>
+							<span>Александр Петров</span>
+							<span>+7 (812) 123 45 67</span>
+							<span>name@gmail.com</span>
+							<span>Комментарий к заказу. Пожелания</span>
+						</div>
+
+					
+
+						
+
+					
+
+					
+					</div>
+				</div>
+
+				<div class="order-info__col">
+					<div class="service-map">
+                        <div class="service-map__title">
+                            <div class="service-map__title__left">СТО на карте</div>
+                            <a href="#" class="service-map__title__right">
+								
+                                <svg width="16" height="16" fill="none" >
+                                    <use xlink:href="/img/sprite-new.svg#geo"></use>
+                                </svg>
+								
+                                <span class="parts-item__text--dotted">На карте</span>
+                            </a>
+                        </div>
+                        <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно</div>
+                        <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                        <a href="#" class="button service-map__button">Записаться на СТО
+                        </a>
+                    </div>
+
+
+					<div class="order-info__block order-info__buttons">
+						<a href="" class="button">Перейти в личный кабинет</a>
+						<a href="" class="button button--grey">Продолжить покупки</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+</div>
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

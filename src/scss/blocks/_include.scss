@@ -1,0 +1,79 @@
+
+// Advantages
+// _item.scss, _text.scss, _icon.scss, main.scss
+@import 'advantages/main';
+
+
+
+// Car service
+// _inner.scss, _content.scss, _descr.scss, _grid.scss, _img.scss, _item,scss
+// _link.scss, _name.scss, _stat.scss, _text.scss, _title.scss, main.css
+@import 'car-service/main.scss';
+
+@import 'filter';
+@import 'need-help';
+@import 'parts-list';
+@import 'shops';
+@import 'spares';
+@import 'model-select';
+
+
+// Model list
+// _inner.scss, _item.scss, main.scss
+@import 'model-list/main';
+
+
+// Car list
+// _inner.scss, _item.scss
+@import 'car-list/main';
+
+
+@import 'subcategory';
+@import 'search-result';
+
+// Help selection
+// _box.scss, _button.scss, _form.scss, _name.scss, _photo.scss, _position.scss
+// _text.scss, _title.scss, need-help/main.scss, main.scss
+@import 'help-selection/main';
+
+
+
+@import 'need-help';
+@import 'forms';
+
+
+
+@import 'product/main';
+
+
+
+@import 'cart/main';
+
+
+@import 'blocks/favorites';
+
+
+@import 'blocks/buy-one-click';
+
+
+@import 'blocks/sales';
+
+
+@import 'blocks/order/main';
+
+
+@import 'blocks/about';
+
+
+@import 'blocks/main-page';
+
+
+@import 'blocks/shops-page';
+
+
+@import 'blocks/tech-page';
+
+@import 'blocks/profile';
+
+@import 'blocks/payment-delivery';
+@import 'blocks/sto-services';

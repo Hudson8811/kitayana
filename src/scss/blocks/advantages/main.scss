@@ -1,0 +1,28 @@
+
+
+.advantages{
+    padding: 5rem 0;
+    @media(max-width: 991px){
+        padding: 3.75rem 0;
+    }
+    @media(max-width: 768px){
+        display: none;
+    }
+
+    &__inner{
+        display: flex;
+        align-items: flex-start;
+    }
+
+  
+    @import 'icon';
+
+
+ 
+    @import 'text';
+
+
+    
+    @import 'item';
+   
+}

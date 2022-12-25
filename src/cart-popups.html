@@ -1,0 +1,215 @@
+@include('partials/header.html')
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsGetDetailPhoto.html')
+@include('partials/modals/jsGallery.html')
+@include('partials/modals/jsReviewPopup.html')
+
+
+
+
+
+<div class="modal state-form cart-states" id="emptyStorage">
+
+  
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#sad-smile'></use>
+    </svg>
+        
+
+    <div class="state-title">
+        Нам очень жаль, но не все товары 
+        есть на складе
+    </div>
+
+    <div class="state-text">
+        К оформлению доступно <b>1 товар из 2</b> 
+    </div>
+
+    <ul class="cart-items">
+        <li class="cart-item">
+            <div class="item-photo">
+                <img src="/img/products/grid-items/image7-1.png" alt="temp">
+            </div>
+            <div class="item-content">
+                <h4>Моторное масло MOBIL Super 3000 X1, 5W-40, 4л, Super 3000 X1 синтети...</h4>
+                <span class="stock">В наличии: <b>4 шт.</b>    </span>
+            </div>
+        </li>
+    </ul>
+
+    <a href="#" class="button jsCloseStateForm">продолжить оформление</a>
+    <a href="#" class="back-link jsCloseStateForm">вернуться в корзину</a>
+
+
+</div>
+
+
+
+<div class="modal state-form cart-states" id="emptyStorage2">
+
+  
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#sad-smile'></use>
+    </svg>
+        
+
+    <div class="state-title">
+        Нам очень жаль, но не все товары 
+        есть на складе
+    </div>
+
+    <div class="state-text">
+        К оформлению доступно <b>4 товара из 4</b> 
+    </div>
+
+    <ul class="cart-items">
+        <li class="cart-item">
+            <div class="item-photo">
+                <img src="/img/products/grid-items/image7-1.png" alt="temp">
+            </div>
+            <div class="item-content">
+                <h4>Моторное масло MOBIL Super 3000 X1, 5W-40, 4л, Super 3000 X1 синтети...</h4>
+                <span class="stock">В наличии:  <b class="red">1 шт.</b> <b>из 2</b>   </span>
+            </div>
+        </li>
+
+        <li class="cart-item">
+            <div class="item-photo">
+                <img src="/img/products/grid-items/image7-1.png" alt="temp">
+            </div>
+            <div class="item-content">
+                <h4>Моторное масло MOBIL Super 3000 X1, 5W-40, 4л, Super 3000 X1 синтети...</h4>
+                <span class="stock">В наличии: <b>4 шт.</b>    </span>
+            </div>
+        </li>
+
+        <li class="cart-item">
+            <div class="item-photo">
+                <img src="/img/products/grid-items/image7-1.png" alt="temp">
+            </div>
+            <div class="item-content">
+                <h4>Моторное масло MOBIL Super 3000 X1, 5W-40, 4л, Super 3000 X1 синтети...</h4>
+                <span class="stock">В наличии: <b>4 шт.</b>    </span>
+            </div>
+        </li>
+    </ul>
+
+    <a href="#" class="button jsCloseStateForm">продолжить оформление</a>
+    <a href="#" class="back-link jsCloseStateForm">вернуться в корзину</a>
+
+
+</div>
+
+
+<div class="modal state-form cart-states" id="emptyStorage3">
+
+  
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#sad-smile'></use>
+    </svg>
+        
+
+    <div class="state-title">
+        Нам очень жаль, но выбранных вами товаров нет на складе
+    </div>
+
+    <div class="state-text">
+        Вы можете перейти в каталог и выбрать
+        другие аналогичные товары
+    </div>
+
+  
+    <a href="#" class="button jsCloseStateForm">в каталог</a>
+    <a href="#" class="back-link jsCloseStateForm">вернуться в корзину</a>
+
+
+</div>
+
+<div class="wrapper cart-wrapper">
+
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Корзина</a>
+              
+            </div>
+        </div>
+    </div>
+
+
+    @include('partials/components/page-title.html', {
+        gift: true,
+        size: 'small',
+        title: 'Корзина'
+    })
+
+        <div class="cart__content-wrapper">
+            <div class="container">
+               <ul>
+                    <li><a href="" data-popup="emptyStorage">Корзина нет товаров на складе</a></li>
+                    <li><a href="" data-popup="emptyStorage2">Корзина нет товаров на складе 2</a></li>
+                    <li><a href="" data-popup="emptyStorage3">Корзина нет товаров на складе 3</a></li>
+               </ul>
+            </div>
+        </div>
+   
+
+
+    <div class="product__slider-container product__slider-container--pb">
+        <div class="container">
+            <div class="product__slider-title-wrapper  align-center">
+                <h2 class="product__slider-title">
+                    Вас может заинтересовать
+                </h2>
+
+                <div class="product__slider-nav-wrapper">
+                    <div class="product__slider-nav">
+                        <button class="product__slider-prev product__slider-prev-0"></button>
+                        <div class="product__slider-pagination product__slider-pagination-0"></div>
+                        <button class="product__slider-next product__slider-next-0"></button>
+
+                    </div>
+
+                    <a href="#" class="all-product">Все товары</a>
+                </div>
+
+            </div>
+
+
+            <div class="product__slider">
+
+                <div class="product__slider-wrapper">
+                    @loop('partials/products-grid-item.html', '/json/products.json')
+                </div>
+                <div class="product__slider-pagination product__slider-pagination-0"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

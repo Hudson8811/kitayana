@@ -1,0 +1,25 @@
+&__link{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: $color_4;
+    margin-bottom: 1.5rem;
+    &--red{
+        font-weight: 600;
+        font-size: 1rem;
+        color: $color_2;
+        letter-spacing: 0.00.125rem;
+        text-transform: uppercase;
+        @media(max-width: 768px){
+            font-size: 0.875rem;
+        }
+    }
+    @media(max-width: 768px){
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        margin-bottom: 0.5rem;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

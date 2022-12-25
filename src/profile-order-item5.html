@@ -1,0 +1,472 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+@include('partials/modals/jsCancelOrder.html')
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+                <a href="#" class="breadcrumbs__link">Профиль</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="profile__inner container">
+        <aside>
+            <div class="header__auth-list">
+                <div class="header__auth-box">
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#user'></use>
+                            </svg>
+                        </div>
+                        Профиль
+                    </a>
+                    <a href="#" class="header__auth-link active">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                            </svg>
+
+                        </div>
+                        Адреса доставки
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+                            </svg>
+                        </div>
+                        Заказы
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#car-icon'></use>
+                            </svg>
+
+                        </div>
+                        Гараж
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#favorite'></use>
+                            </svg>
+                        </div>
+                        Избранное
+                    </a>
+                </div>
+                <div class="header__auth-bottom">
+                    <div class="header__text header__text--md">
+                        +7 (812) 123 45 45
+                    </div>
+                    <button class="header__exit">
+                        выйти
+                        <span class="header__exit-icon --svg__exit"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="service-map">
+                <div class="service-map__title">
+                    <div class="service-map__title__left">СТО на карте</div>
+                    <a href="#" class="service-map__title__right" data-popup="jsService">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#geo'></use>
+                        </svg>
+                        <span class="parts-item__text--dotted">На карте</span>
+                    </a>
+                </div>
+                <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                </div>
+                <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                <a href="#" class="button service-map__button">Записаться на СТО
+                </a>
+            </div>
+        </aside>
+
+        <div class="profile__content">
+            <div class="profile__content-header profile__content-header--back">
+                <a href="" class="profile__content-back mobile-hidden">
+                    <svg>
+                        <use xlink:href='/img/sprite-new.svg#profile-back'></use>
+                    </svg>
+                    все заказы
+                </a>
+                <div class="profile__content-title profile__content-title--mobile-sm">
+                    <a href="">
+                        <h1>Заказ № M-25468001</h1>
+                        <span class="order-date">
+                            от 18 марта, пт
+                        </span>
+                    </a>
+
+                    <p class="hint">7% ваша персональная скидка на товары</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="profile__order">
+                <div class="profile__order-overhead">
+                    <div class="list__item-status list__item-status--red">
+                        Отменен
+                    </div>
+
+                    <div class="overhead-text">
+                        Просрочен и отменен
+                    </div>
+
+                    <!-- <a href="#" class="cancel-order">
+                        Отменить заказ
+                    </a> -->
+                </div>
+
+                <div class="order-details__wrapper">
+                    <div class="order-details">
+                        <div class="order-details__col">
+                            <div class="order-details__group">
+                                <div class="details__group-title details__group-title--mobile-sm">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#user'></use>
+                                    </svg>
+                                    Получатель
+                                </div>
+                                <div class="details__group-content">
+                                    <div class="details__group-text">
+                                        Александр Петров
+                                    </div>
+                                    <a href="#" class="details__group-text details__group-text--thin">
+                                        +7 (812) 123 45 67
+                                    </a>
+                                    <a href="#" class="details__group-text details__group-text--thin">
+                                        name@gmail.com
+                                    </a>
+                                    <div class="details__group-text details__group-text--thin">
+                                        Комментарий к заказу. Пожелания
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-details__group">
+                                <div class="details__group-title">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                                    </svg>
+                                    Самовывоз из магазина
+                                    <span class="details__group-title--date">
+                                        20 марта, пт
+                                    </span>
+                                </div>
+                                <div class="details__group-content details__group-content--sm-gap">
+                                    <div class="details__group-type">
+                                        СДЭК
+                                    </div>
+                                    <a href="#" class="details__group-text details__group-text">
+                                        Индустриальный пр. д.50, корп. 1
+                                    </a>
+                                    <div class="details__group-text details__group-text--thin">
+                                        +7 (812) 600-35-35
+                                    </div>
+                                    <div class="details__group-text details__group-text--thin">
+                                        Пн-Сб 10:00 – 20:00, Вс 10:00 – 18:00
+                                    </div>
+                                 
+                                </div>
+
+                                <div class="order-details__group--attention">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#alert'></use>
+                                    </svg>
+    
+                                    <div class="details__group-text details__group-text--thin">
+                                        Срок хранения до 24 марта включительно
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                           
+                        </div>
+
+                        <div class="order-details__col">
+
+                            <div class="order-details__group">
+                                <div class="details__group-title">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#message'></use>
+                                    </svg>
+                                    Комментарий менеджера
+                                    
+                                </div>
+                                <div class="details__group-content details__group-content--sm-gap attention">
+                                    
+                                    <div class="details__group-text details__group-text--thin attention">
+                                        Заказ покупателем не был принят и оплачен, адальше идет продолжение более длинного комментария, но на 2 строк...
+                                        
+                                    </div>
+                                    <div class="attention__content">
+                                        Заказ покупателем не был принят и оплачен, адальше идет продолжение более длинного комментария, но на 2 строки максимум
+                                    </div>
+                                 
+                                </div>
+
+                            </div>
+
+                            <div class="order-details__group">
+                                <div class="details__group-title">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#card'></use>
+                                    </svg>
+                                    Оплата на сайте
+                                   
+                                </div>
+                                <a href="#" class="order-status">
+                                    оплачен
+                                </a>
+                                <div class="details__group-content details__group-content--total">
+                                    <div class="details__group-row">
+                                        <div class="details__group-text details__group-text--thin">
+                                            Товары
+                                        </div>
+                                        <div class="details__group-text details__group-text--thin">
+                                            11 407 ₽
+                                        </div>
+                                    </div>
+                                    <div class="details__group-row">
+                                        <div class="details__group-text details__group-text--thin">
+                                            Доставка
+                                        </div>
+                                        <div class="details__group-text details__group-text--thin">
+                                            Бесплатно
+                                        </div>
+                                    </div>
+                                    <div class="details__group-row">
+                                        <div class="details__group-text details__group-text--bold">
+                                            Итоговая сумма
+                                        </div>
+                                        <div class="details__group-text details__group-text--bold">
+                                            11 407 ₽
+                                        </div>
+                                    </div>
+                                    <div class="details__group-row">
+                                        <div class="details__group-text details__group-text--thin">
+                                            Уже оплачено
+                                        </div>
+                                        <div class="details__group-text details__group-text--thin">
+                                            11 407 ₽
+                                        </div>
+                                    </div>
+                                    <div class="details__group-row">
+                                        <div class="details__group-text details__group-text--black">
+                                            К оплате
+                                        </div>
+                                        <div class="details__group-text details__group-text--black">
+                                            5 135 ₽
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <a href="#" class="button">
+                                        Оплатить 5 135 ₽
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+                    <div class="composition">
+                        <div class="composition__title-wrapper">
+                            <h3 class="composition__title">Состав заказа:</h3>
+                            <span class="composition__title-count">
+                                3 товара
+                            </span>
+                        </div>
+
+                        <ul class="composition__list">
+                            <li class="composition__item">
+                                <div class="composition__item-img">
+                                    <img src="img/product-none.png" alt="temp">
+                                    @include('partials/components/favorite-btn.html')
+                                    <div class="product-type">
+                                        Оригинал
+                                    </div>
+                                </div>
+                                <div class="composition__item-details">
+                                    <a href="#" class="composition__item-title">
+                                        Колодки тормозные задние дисковые к-кт X70 2017
+                                    </a>
+                                    <span class="composition__item-characteristic">
+                                        D4060-JA00A
+                                    </span>
+                                    <span class="composition__item-characteristic">
+                                        Geely / Китай
+                                    </span>
+
+
+                                    <div class="composition__item-footer">
+                                        <a href="" class="reorder">
+                                            <svg>
+                                                <use xlink:href='/img/sprite-new.svg#repeat-arrows'></use>
+                                            </svg>
+                                            Перезаказать
+                                        </a>
+
+                                        <div class="price-wrapper">
+                                           <div class="product-count">
+                                            2 шт.
+                                           </div>
+                                           <div class="price">2 802 ₽</div>
+                                        </div>
+                                    </div>
+                                   
+
+                                    
+                                </div>
+                            </li>
+                            <li class="composition__item">
+                                <div class="composition__item-img">
+                                    <img src="img/photo.png" alt="temp">
+                                    @include('partials/components/favorite-btn.html')
+                                    <div class="product-type">
+                                        Оригинал
+                                    </div>
+                                </div>
+                                <div class="composition__item-details">
+                                    <a href="#" class="composition__item-title">
+                                        Колодки тормозные задние дисковые к-кт X70 2017
+                                    </a>
+                                    <span class="composition__item-characteristic">
+                                        D4060-JA00A
+                                    </span>
+                                    <span class="composition__item-characteristic">
+                                        Geely / Китай
+                                    </span>
+
+
+                                    <div class="composition__item-footer">
+                                        <a href="" class="reorder">
+                                            <svg>
+                                                <use xlink:href='/img/sprite-new.svg#repeat-arrows'></use>
+                                            </svg>
+                                            Перезаказать
+                                        </a>
+
+                                      
+                                        <div class="price-wrapper">
+                                           <div class="product-count">
+                                            2 шт.
+                                           </div>
+                                           <div class="price">2 802 ₽</div>
+                                        </div>
+                                    </div>
+                                   
+
+                                    
+                                </div>
+                            </li>
+                            <li class="composition__item">
+                                <div class="composition__item-img">
+                                    <img src="img/photo.png" alt="temp">
+                                    @include('partials/components/favorite-btn.html')
+                                    <div class="product-type">
+                                        Оригинал
+                                    </div>
+                                </div>
+                                <div class="composition__item-details">
+                                    <a href="#" class="composition__item-title">
+                                        Колодки тормозные задние дисковые к-кт X70 2017
+                                    </a>
+                                    <span class="composition__item-characteristic">
+                                        D4060-JA00A
+                                    </span>
+                                    <span class="composition__item-characteristic">
+                                        Geely / Китай
+                                    </span>
+
+
+                                    <div class="composition__item-footer">
+                                        <a href="" class="reorder">
+                                            <svg>
+                                                <use xlink:href='/img/sprite-new.svg#repeat-arrows'></use>
+                                            </svg>
+                                            Перезаказать
+                                        </a>
+
+                                        <div class="price-wrapper">
+                                           <div class="product-count">
+                                            2 шт.
+                                           </div>
+                                           <div class="price">2 802 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+              
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

@@ -1,0 +1,111 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+@include('partials/modals/jsServiceModal.html')
+
+
+
+@include('partials/modals/authModals/auth1.html')
+@include('partials/modals/authModals/auth2.html')
+@include('partials/modals/authModals/auth3.html')
+@include('partials/modals/authModals/personalData.html')
+@include('partials/modals/authModals/password.html')
+@include('partials/modals/authModals/password2.html')
+@include('partials/modals/authModals/password3.html')
+@include('partials/modals/authModals/password4.html')
+@include('partials/modals/authModals/feedback.html')
+@include('partials/modals/authModals/notFound.html')
+@include('partials/modals/authModals/register.html')
+@include('partials/modals/authModals/register2.html')
+@include('partials/modals/authModals/registerSuccess.html')
+@include('partials/modals/authModals/passwordChanged.html')
+
+
+<div class="wrapper wrapper-origin">
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Каталог оригинальных запчастей</a>
+                <a href="#" class="breadcrumbs__link">Chery</a>
+                <a href="#" class="breadcrumbs__link">Tiggo</a>
+                <a href="#" class="breadcrumbs__link">Tiggo T11 1 2005-2014</a>
+                <a href="#" class="breadcrumbs__link">Приготовление смеси</a>
+                <a href="#" class="breadcrumbs__link">Фильтр масляный</a>
+            </div>
+        </div>
+    </div>
+
+
+    <ul>
+        <li><a href="" data-popup="jsAuth1"> Авторизация (по паролю/телефону) </a></li>
+        <li><a href="" data-popup="jsAuth2"> Авторизация (телефон) </a></li>
+        <li><a href="" data-popup="jsAuth3"> Авторизация (имя фамилия) </a></li>
+        <li><a href="" data-popup="personalData"> Личные данные </a></li>
+        <li><a href="" data-popup="notFoundModal"> Пользователь не найден </a></li>
+        <li><a href="" data-popup="feedback"> Заказать обратный звонок </a></li>
+        <li><a href="" data-popup="passwordPopup"> Пароль </a></li>
+        <li><a href="" data-popup="passwordPopup2"> Востановление пароля (номер телефона) </a></li>
+        <li><a href="" data-popup="passwordPopup4"> Востановление пароля (новый пароль) </a></li>
+        <li><a href="" data-popup="passwordPopup3"> Востановление пароля (изменить пароль) </a></li>
+
+
+        <li><a href="" data-popup="register"> Регистрация </a></li>
+        <li><a href="" data-popup="register2"> Регистрация номер совпал </a></li>
+        <li><a href="" data-popup="registerSuccess"> Регистрация успешна </a></li>
+        <li><a href="" data-popup="passwordChanged"> пароль успешно изменен </a></li>
+
+    </ul>
+
+    <div class="wrapper-grid">
+
+        @include('partials/filter.html')
+
+
+        <div class="content">
+          
+
+
+            @include('partials/spares.html')
+
+
+            @include('partials/mobile-filter.html')
+
+
+            @include('partials/parts-list.html')
+
+
+        </div>
+    </div>
+
+  
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

@@ -1,0 +1,54 @@
+.review-emply{
+   
+    svg{
+        width: rem(48px);
+        height: rem(48px);
+        margin-bottom: rem(24px);
+
+        @media(max-width: 991px){
+            width: 32px;
+            height: 32px;
+            margin-bottom: 16px;
+            
+        }
+    }
+
+    p{
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(32px);
+        color: #2D2727;
+        max-width: rem(480px);
+
+        @media(max-width: 991px){
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 24px;
+            max-width: 320px;
+        }
+    }
+
+    .review-form{
+        @media(max-width: 991px){
+            display: block;
+            background: none;
+            padding: 48px 0px;
+            border-top: 1px solid #F1F1F3;
+            margin-top: 32px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            .form-title{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+    }
+}

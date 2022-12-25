@@ -1,0 +1,12 @@
+&__item{
+    margin-right: 15rem;
+    max-width: 15rem;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    @media(max-width: 991px){
+        margin-right: 1.25rem;
+    }
+}

@@ -1,0 +1,31 @@
+.jsInStockShopModal{
+    @media(max-width: 768px){
+        .modal__bottom-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .modal__box {
+                width: 50%;
+            }
+
+            .modal__row{
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 1rem;
+                .modal__button {
+                    width: 150px;
+                    margin-top: 0;
+                }
+                .modal__box--col-right .modal__text--big {
+                    font-size: 1rem;
+                    line-height: 1.2;
+                }
+                .modal__box--col-right {
+                    text-align: left;
+                    align-items: flex-start;
+                }
+            } 
+        }
+    }
+}

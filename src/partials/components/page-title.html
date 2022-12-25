@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="page-title page-title--@size">
+        <a href="#">
+            @title
+        </a>
+        @if(context.gift){
+            <span class="gift">
+                <i class="gift--icon">
+                </i>
+                <span class="gift__text">
+                   <span>Поздравляем!</span>  Вы получили бесплатную доставку
+                </span>
+            </span>
+        }
+
+        @if(context.model){
+            <img alt="temp-alt" src="/img/geely.png" class="@model">
+        }
+       
+    </h1>
+</div>

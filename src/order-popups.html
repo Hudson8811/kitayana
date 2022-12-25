@@ -1,0 +1,194 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+@include('partials/modals/jsOrderingModal.html')
+@include('partials/modals/jsOrderingModal2.html')
+@include('partials/modals/jsOrderingNotFound.html')
+@include('partials/modals/jsOrdering2.html')
+@include('partials/modals/jsOrderingAddresses.html')
+@include('partials/modals/jsOrderingEmply2.html')
+@include('partials/modals/jsOrderingNewAddress.html')
+
+
+<div class="modal state-form order-states" id="addressAdded">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#success-icon'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Адрес добавлен
+    </div>
+
+    <div class="state-text">
+		Комендантский пр., д. 43, корп.3, лит.А
+    </div>
+
+	<button class="mobile-btn jsCloseStateForm">
+		Закрыть
+	</button>
+
+
+</div>
+
+
+<div class="modal state-form order-states" id="addressRemoved">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#success-icon'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Адрес удален
+    </div>
+
+    <div class="state-text">
+		Комендантский пр., д. 43, корп.3, лит.А
+    </div>
+
+	<button class="mobile-btn jsCloseStateForm">
+		Закрыть
+	</button>
+
+
+</div>
+
+
+
+<div class="modal state-form order-states" id="addressCityError">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+   
+
+    <div class="state-text">
+		Вы можете оформить доставку только в тот город, который выбрали на сайте
+    </div>
+
+	<button class="mobile-btn jsCloseStateForm">
+		Закрыть
+	</button>
+
+
+</div>
+
+
+
+<div class="modal state-form order-states order-states--confim" id="addressConfim">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#cart-confim'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Удаление
+    </div>
+
+    <div class="state-text">
+		Вы действительно хотите удалить адрес <span class="red mobile-hidden">Комендантский пр., д. 43, корп.3, лит.А?</span> <span class="red desktop-hidden">дом</span> 
+    </div>
+
+	<div class="confim-buttons">
+		<a href="" class="button">удалить</a>
+		<a class="cancel">Отмена</a>
+	</div>
+
+
+</div>
+
+
+
+
+<div class="wrapper order">
+	<div class="breadcrumbs breadcrumbs--pb-0">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+				<a href="#" class="breadcrumbs__link">Корзина</a>
+				<a href="#" class="breadcrumbs__link">Оформление</a>
+			</div>
+		</div>
+	</div>
+
+	@include('partials/components/page-title.html', {
+		size: 'small',
+		title: 'Спасибо! Ваш заказ №123456 оформлен'
+	})
+		
+
+		<div class="order-info__wrapper">
+			<div class="container">
+
+				<ul>
+					<li>
+						<a href="" data-popup="jsOrdering">15.04-Оформление – магазин</a>
+					</li>
+					<li>
+						<a href="" data-popup="jsOrderingNotFound">15.04-Оформление – магазин ничего не найдено</a>
+					</li>
+					<li>
+						<a href="" data-popup="jsOrdering2">15.05-Оформление – ПВЗ</a>
+					</li>
+					<li>
+						<a href="" data-popup="jsOrdering3">15.06-Оформление – Курьером</a>
+					</li>
+					<li>
+						<a href="" data-popup="jsOrderingNotFound2">15.06-Оформление – Курьером (пусто)</a>
+					</li>
+				
+					<li>
+						<a href="" data-popup="jsOrderingNewAddress">15.06-Оформление – Курьером — Добавление адреса</a>
+					</li>
+				
+					<li>
+						<a href="" data-popup="addressAdded">адрес добавлено</a>
+					</li>
+				
+					<li>
+						<a href="" data-popup="addressRemoved">адрес удален</a>
+					</li>
+				
+					<li>
+						<a href="" data-popup="addressConfim">удалить адрес?</a>
+					</li>
+					<li>
+						<a href="" data-popup="addressCityError">Вы можете оформить доставку только в тот город, который выбрали на сайте</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+
+</div>
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

@@ -1,0 +1,67 @@
+&__content{
+    padding-left: 5.062rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &--descr-hidden{
+        @media(max-width: 768px){
+            display: none !important;
+
+        }
+    }
+    &--single{
+        padding: rem(80px) rem(160px);
+        .car-service__descr{
+            column-width: auto;
+        }
+
+        @media(max-width: 991px){
+            padding: 16px !important;
+            padding-bottom: 48px !important;
+            .car-service__descr{
+                width: 100%;
+                column-count: 1;
+                padding: 0;
+                max-width: 100%;
+                padding-top: 33px !important;
+            }
+        }
+    }
+    @media(max-width: 1200px){
+        padding-top: 40px;
+    }
+    @media(max-width: 991px){
+        flex-direction: column;
+        padding-left: 2.5rem;
+    }
+
+    @media(max-width: 768px){
+        padding-left: 0;
+        padding-bottom: 24px;
+        &.hide{
+            display: none;
+        }
+        .car-service__descr{
+            padding-left: 0;
+            font-size: 12px;
+            line-height: 24px;
+            padding-bottom: 24px;
+            padding-top: 48px;
+            color: $color_6;
+            margin-bottom: 0;
+            max-width: 92%;
+            
+        }
+
+        .car-service__link--red{
+            font-size: 10px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: $color_8;
+            padding: 16px;
+            background: $color_2;
+        }
+    }
+}

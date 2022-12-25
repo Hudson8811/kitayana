@@ -1,0 +1,72 @@
+@include('partials/header.html', {
+top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+@include('partials/modals/jsEditCar1.html')
+@include('partials/modals/jsEditCar2.html')
+
+
+
+
+
+
+
+<div class="wrapper">
+
+     <div class="breadcrumbs breadcrumbs--pb-0">
+          <div class="container">
+               <div class="breadcrumbs__inner">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                    <a href="#" class="breadcrumbs__link">Каталог по марке авто</a>
+               </div>
+          </div>
+     </div>
+
+
+
+
+
+
+     @include('partials/components/page-title.html', {
+     'title': 'Каталог по марке авто',
+     'size': 'big',
+     })
+
+
+     @include('partials/model-select.html', {
+     step: '1'
+     })
+
+
+     <ul>
+          <li>
+               <a href="" data-popup="edit-car1">Изменить автомобиль  1</a>
+          </li>
+          <li>
+               <a href="" data-popup="edit-car2">Изменить автомобиль  2</a>
+          </li>
+     </ul>
+
+   
+
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

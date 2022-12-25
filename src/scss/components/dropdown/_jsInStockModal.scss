@@ -1,0 +1,79 @@
+.jsInStockModal{
+    .modal__overhead {
+        position: absolute;
+        width: 100%;
+        @media(max-width: 768px){
+            display: grid !important;
+            grid-template-columns: 124px 77px 86px;
+        }
+    }
+    .modal__list {
+        padding-top: rem(76px);
+    }
+
+    .modal__button {
+        margin-left: rem(20px);
+    }
+    @media(max-width: 991px){
+        .flex-mobile {
+            display: none;
+        } 
+
+        .modal__row {
+            width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+    
+            .button {
+                width: 150px !important;
+            }
+        }
+    }
+    @media(max-width: 768px){
+        .modal__box {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .modal__text--big {
+            font-size: 1rem;
+            line-height: 1.1;
+        }
+
+        .flex-mobile .modal__text:last-child {
+            font-weight: bold;
+            padding-right: 44px;
+        }
+
+        .flex-mobile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .modal__button {
+            max-width: 155px;
+            margin-top: 0;
+        }
+
+        .modal__button {
+            margin-top: 0;
+        }
+
+        .modal__list {
+            padding-top: 50px;
+        }
+
+       
+    }
+}
+
+
+.jsInStockShopModal{
+    .modal__overhead{
+        @media(max-width: 768px){
+            padding: 0px !important;
+        }
+    }
+}

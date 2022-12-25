@@ -1,0 +1,58 @@
+@include('partials/header.html', {
+	top: 'hide-all'
+})
+
+<div class="wrapper tech-works">
+	<div class="tech-works__top">
+		<div class="container">
+			<div class="tech-works__top-row">
+				<a href="#" class="tech-works__logo"></a>
+				<div class="tech-works__top-info">
+					<a href="#" class="tech-works__phone">+7 (812) 600 35 35</a>
+					<p class="tech-works__top-text">с 10:00 до 20:00 мск</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tech-works__middle">
+		<div class="container">
+			<div class="tech-works__middle-row">
+				<div class="tech-works__content">
+					<div class="tech-works__title">
+						На сайте ведутся <br> технические работы
+					</div>
+					<div class="tech-works__text">
+						Скоро мы все починим. Просим извинения за причиненные&nbspнеудобства.
+					</div>
+				</div>
+				<div class="tech-works__image">
+					<img src="img/tech-work.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tech-works__bottom">
+		<div class="container">
+			<div class="footer__bottom">
+				<div class="footer__text">
+					© 2022 Китаяна. Все права защищены.
+				</div>
+				<div class="footer__payments">
+					<img alt="temp-alt" src="/img/visa.svg" class="footer__payment-img">
+					<img alt="temp-alt" src="/img/mastercard.svg" class="footer__payment-img">
+					<img alt="temp-alt" src="/img/mir.svg" class="footer__payment-img">
+				</div>
+				<div class="footer__box">
+					<div class="footer__text footer__text--sm">
+						Разработка сайта
+						<svg class="error-page__image-num">
+							<use xlink:href="/img/sprite-new.svg#artw"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@include('partials/footer.html')

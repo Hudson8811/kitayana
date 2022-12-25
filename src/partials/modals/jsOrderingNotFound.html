@@ -1,0 +1,63 @@
+<div class="modal order-popups order-popups--notfound jsOrdering" id="jsOrderingNotFound">
+    <div class="modal__inner">
+
+    
+
+        <div class="modal__content">
+            <div class="modal__overhead">
+                Магазины Санкт-Петербург
+            </div>
+
+            <div class="modal__container">
+                <ul class="ordering-filter">
+                    <li>
+                        <input type="radio" name="or-fil" id="or-fil1" checked>
+                        <label for="or-fil1">Все</label>
+                        
+                    </li>
+                    <li>
+                        <input type="radio" name="or-fil" id="or-fil2">
+                        <label for="or-fil2">Магазин</label>
+                        
+                    </li>
+                    <li>
+                        <input type="radio" name="or-fil" id="or-fil3">
+                        <label for="or-fil3">Магазин + СТО</label>
+                       
+                    </li>
+                </ul>
+
+
+                <div class="search-field__wrapper">
+                    <div class="search-field">
+                        <input type="text" placeholder="Укажите название или адрес">
+                        <button class="header__search-icon --svg__search"></button>
+                    </div>
+
+                   
+                </div>
+              
+
+                
+                <div class="not-found">
+                    <svg>
+                        <use xlink:href="/img/sprite-new.svg#nodes-notfound"></use>
+                    </svg>
+
+                    <span>К сожалению, по вашему запросу ничего не найдено</span>
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+
+        <div id="map-modal4" class="modal__map map-filter">
+
+        </div>
+        
+        @include('../components/modal-close.html')
+    </div>
+</div>

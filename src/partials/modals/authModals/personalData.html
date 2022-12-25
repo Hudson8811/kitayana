@@ -1,0 +1,49 @@
+<div class="modal auth-modals " id="personalData">
+    <div class="modal__inner">
+        <div class="modal__content">
+
+            @include('../../components/modal-close.html')
+
+
+            <div class="modal__overhead">
+                Личные данные
+            </div>
+            
+            <div class="form-wrapper">
+              
+                <p class="form-text">
+                    Заполните поля Имя и Фамилия. В последующем вы сможете использовать их для восстановления доступа.
+                </p>
+    
+                <form action="" class="form form-validate">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Имя</label>
+                            <input type="tel" class="input" placeholder="Введите имя">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Фамилия</label>
+                            <input type="tel" class="input" placeholder="Введите фамилию">
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button class="button button--sm">Сохранить</button>
+                        <a href="" class="form-link">Пропустить</a>
+                    </div>
+
+                    <div class="form-alert">
+                        Нажимая кнопку «Войти», вы соглашаетесь c условиями <span class="red">политики конфиденциальности</span> 
+                    </div>
+                </form>
+             
+    
+            </div>
+
+          
+
+        </div>
+    </div>
+</div>

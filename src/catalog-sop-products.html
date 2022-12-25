@@ -1,0 +1,93 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+
+
+
+<div class="wrapper wrapper--grey-mb">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Каталог оригинальных запчастей</a>
+                <a href="#" class="breadcrumbs__link">Chery</a>
+                <a href="#" class="breadcrumbs__link">Tiggo</a>
+                <a href="#" class="breadcrumbs__link">Tiggo T11 1 2005-2014</a>
+                <a href="#" class="breadcrumbs__link">Приготовление смеси</a>
+                <a href="#" class="breadcrumbs__link">Фильтр масляный</a>
+            </div>
+        </div>
+    </div>
+
+
+    @include('partials/components/page-title.html', {
+    'title': 'Моторное масло',
+    'size': 'small',
+    'model': 'hidden'
+    })
+
+    <div class="wrapper-grid bordered">
+
+        @include('partials/filter.html')
+
+
+        <div class="content sop-products">
+
+            <div class="sort-input">
+                <span>Сортировать по:</span>
+                <select name="s1" id="s1" class="custom-select">
+                    <option value="1" selected>Наличию</option>
+                    <option value="2">Сроку пост.</option>
+                    <option value="3">Цене</option>
+                </select>
+            </div>
+
+            @include('partials/mobile-filter.html')
+
+            @include('partials/products-grid.html')
+
+
+        </div>
+    </div>
+
+    @include('partials/car-service.html')
+
+
+    @include('partials/need-help.html', {
+    block: 'show'
+    })
+
+
+    @include('partials/advantages.html')
+
+
+    @include('partials/shops.html')
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

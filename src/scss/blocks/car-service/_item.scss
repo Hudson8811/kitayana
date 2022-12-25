@@ -1,0 +1,50 @@
+&__item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0.062rem solid $color_6; 
+    .button{
+        display: flex;
+        width: max-content;
+    }
+
+    @media(max-width: 768px){
+        min-height: 223px;
+        .button{
+            margin-top: 40px;
+        }
+        &--hidden{
+            display: none;
+        }
+    }
+    &:first-child {
+        border-right: 0;
+        border-bottom: 0;
+    }
+    &:nth-child(2) {
+        border-bottom: 0;
+        border-right: 0;
+        @media(max-width: 768px){
+            order: -1; 
+        }
+    }
+    &:nth-child(3) {
+        border-left: 0;
+        border-bottom: 0;
+    }
+    &:nth-child(4) {
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 0;
+    }
+    &:nth-child(5) {
+        border-right: 0;
+    }
+    &:last-child {
+        border-left: 0;
+    }
+
+    &--grey{
+        background: $color_9;
+    }
+}

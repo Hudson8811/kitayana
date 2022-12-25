@@ -1,0 +1,141 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+@include('partials/modals/jsServiceModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+
+
+
+<div class="wrapper favorites-page">
+	<div class="breadcrumbs breadcrumbs--pb-0">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+				<a href="#" class="breadcrumbs__link">Мой кабинет</a>
+				<a href="#" class="breadcrumbs__link">Избранное</a>
+			</div>
+		</div>
+	</div>
+	<div class="favorites__aside-container empty">
+		<aside>
+			<div class="header__auth-list">
+				<div class="header__auth-box">
+					<a href="#" class="header__auth-link">
+						<div class="header__auth-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#user'></use>
+							</svg>
+						</div>
+						Профиль
+					</a>
+					<a href="#" class="header__auth-link">
+						<div class="header__auth-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+							</svg>
+						</div>
+						Адреса доставки
+					</a>
+					<a href="#" class="header__auth-link">
+						<div class="header__auth-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+							</svg>
+						</div>
+						Заказы
+					</a>
+					<a href="#" class="header__auth-link">
+						<div class="header__auth-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#car-icon'></use>
+							</svg>
+						</div>
+						Гараж
+					</a>
+					<a href="#" class="header__auth-link active">
+						<div class="header__auth-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href='/img/sprite-new.svg#favorite-red'></use>
+							</svg>
+						</div>
+						Избранное
+					</a>
+				</div>
+				<div class="header__auth-bottom">
+					<div class="header__text header__text--md">
+						+7 (812) 123 45 45
+					</div>
+					<button class="header__exit">
+						выйти
+						<span class="header__exit-icon --svg__exit"></span>
+					</button>
+				</div>
+			</div>
+			<div class="service-map">
+				<div class="service-map__title">
+					<div class="service-map__title__left">СТО на карте</div>
+					<a href="#" class="service-map__title__right" data-popup="jsService">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href='/img/sprite-new.svg#geo'></use>
+						</svg>
+						<span class="parts-item__text--dotted">На карте</span>
+					</a>
+				</div>
+				<div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно</div>
+				<a href="#" class="service-map__link">доступно 26 автосервисов</a>
+				<a href="#" class="button service-map__button">Записаться на СТО
+				</a>
+			</div>
+		</aside>
+		<div class="content">
+			<div class="content__title-block">
+				<a href="" class="content__title-block__icon-box">
+					<svg class="content__title-block__icon">
+						<use xlink:href="/img/sprite.svg#sprite--arrow-right"></use>
+					</svg>
+				</a>
+				<div class="content__title-block__left">Избранное</div>
+				<div class="content__title-block__right">0 товаров</div>
+				<div class="content__title-block__discount">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href='/img/sprite-new.svg#discount-icon'></use>
+					</svg>
+					7% ваша персональная скидка на товары
+				</div>
+			</div>
+			<div class="favorites-empty">
+				<div class="favorites-empty__image">
+					<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href='/img/sprite-new.svg#favorite-emply'></use>
+					</svg>
+				</div>
+				<div class="favorites-empty__title">
+					Нет товаров в избранном
+				</div>
+				<div class="favorites-empty__subtitle">
+					Добавляйте товары из каталога в избранное и покупайте позже
+				</div>
+				<div class="favorites-empty__button button">
+					начать поиск деталей
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

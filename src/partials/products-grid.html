@@ -1,0 +1,82 @@
+<div class="products__grid products__grid--3">
+    @loop('products-grid-item.html', '/json/products.json')
+
+    <!-- product item -->
+    <div class="products__grid-item">
+
+        <!-- product item header -->
+        <div class="product__item-header">
+            <!-- hints -->
+            <div class="product__item-hints hints-wrapper">
+
+                <div class="hint hint--black">
+                    SALE
+                </div>
+
+
+                <div class="hint hint--@productDiscontColor hint--green">
+                    -5%
+                </div>
+            </div>
+
+            <!-- product img -->
+            <div class="product__item-img">
+                <img alt="temp-alt" src="/img/products/grid-items/image7-9.png">
+
+
+                <!-- favorite btn -->
+                @include('components/favorite-btn.html')
+            </div>
+
+
+
+        </div>
+
+        <!-- product body -->
+        <div class="product__item-body">
+            <!-- product name -->
+            <a href="" class="product__item-name">
+                Полусинтетическое моторное масло 5W-30 Profi SN/CF 4 л. – NG7...
+            </a>
+            <!-- product attribute -->
+            <span class="product__item-attr">Номер товара: 1882NKE601</span>
+
+            <!-- product info row -->
+            <div class="product__item-row product__item-row--between">
+                <div class="product__item-col">
+
+                </div>
+
+                <div class="product__item-col">
+                    <div class="price">
+                        от 3 808 ₽
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- product footer -->
+        <div class="product__item-footer flex-end">
+            <button class="parts-item__button parts-item__button--black btn-bell-anim" data-popup="jsOnOrderModal">
+                под заказ
+                <span class="--svg__notification on-order__button-icon bell-anim"></span>
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="wrapper-load-more-button">
+    <div class="js-preloader-arrows js-preloader-arrows-load-more"></div>
+    <button class="button button--white load-more-button button-anim button-anim--white">
+        Загрузить еще
+    </button>
+</div>

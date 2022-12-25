@@ -1,0 +1,695 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+
+
+
+
+<div class="modal order-popups order-popups-form" id="jsOrderingNewAddress2">
+    <div class="modal__inner">
+
+    
+
+        <div class="modal__content">
+            <div class="modal__overhead">
+                Ваш адрес для курьерской доставки
+
+            </div>
+
+            <div class="modal__container">
+               <form action="" class="form form-validate">
+                <div class="form-title">Новый адрес</div>
+
+             
+
+
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Название адреса</label>
+                        <input type="text" class="input" placeholder="Дом">
+                        <ul class="types">
+                            <li>
+                                Дом
+                            </li>
+                            <li>
+                                Офис
+                            </li>
+                            <li>
+                                Работа
+                            </li>
+                            <li>
+                                Гараж
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Город</label>
+                        <div class="search-input__wrapper">
+                            <input type="text" class="input" placeholder="Введите адрес">
+                            <button class="search__icon --svg__search-grey"></button>
+
+                            <div class="dropdown__search-result">
+                                <ul>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Адрес</label>
+                        <div class="search-input__wrapper">
+                            <input type="text" class="input" placeholder="Введите адрес">
+                            <button class="search__icon --svg__search-grey"></button>
+
+                            <div class="dropdown__search-result">
+                                <ul>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+
+
+
+
+
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Квартика / офис *</label>
+                        <input type="text" class="input" placeholder="156">
+                        
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Комментарий</label>
+                       
+                        <textarea  placeholder="Ваш комментарий курьеру" class="input"></textarea>
+                        
+                    </div>
+                </div>
+
+
+                <div class="input-row buttons-wrap">
+                    <button class="button button-submit">Сохранить </button>
+                    <a href="Отмена" class="cancel">отмена</a>
+                </div>
+               </form>
+
+
+            </div>
+
+            
+        </div>
+
+
+        @include('partials/components/modal-close.html')
+        
+    </div>
+</div>
+
+
+
+<div class="modal order-popups order-popups-form" id="jsOrderingNewAddress3">
+    <div class="modal__inner">
+
+    
+
+        <div class="modal__content">
+            <div class="modal__overhead">
+                г. Санкт-Петербург, Индустриальный пр. д.50, корп. 1...
+
+            </div>
+
+            <div class="modal__container">
+               <form action="" class="form form-validate">
+                <div class="form-title">Редактирование адреса</div>
+
+             
+
+
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Название адреса</label>
+                        <input type="text" class="input" placeholder="Дом" value="Дом">
+                        <ul class="types">
+                            <li>
+                                Дом
+                            </li>
+                            <li>
+                                Офис
+                            </li>
+                            <li>
+                                Работа
+                            </li>
+                            <li>
+                                Гараж
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Город</label>
+                        <div class="search-input__wrapper">
+                            <input type="text" class="input" placeholder="Введите адрес" value="Санкт-Петербург">
+                            <button class="search__icon --svg__search-grey"></button>
+
+                            <div class="dropdown__search-result">
+                                <ul>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Адрес</label>
+                        <div class="search-input__wrapper">
+                            <input type="text" class="input" placeholder="Введите адрес" value="Индустриальный пр. д. 50, корп. 1">
+                            <button class="search__icon --svg__search-grey"></button>
+
+                            <div class="dropdown__search-result">
+                                <ul>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Самара</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Санкт-Петербург</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саранск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саратов</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саров</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Саянск</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сандово</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+
+
+
+
+
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Квартика / офис *</label>
+                        <input type="text" class="input" placeholder="156" value="200">
+                        
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Комментарий</label>
+                       
+                        <textarea  placeholder="Ваш комментарий курьеру" class="input" value="Это офис, внизу проходная. Позвонить мне, я встречу"></textarea>
+                        
+                    </div>
+                </div>
+
+
+                <div class="input-row buttons-wrap">
+                    <button class="button button-submit">Сохранить </button>
+                    <a href="Отмена" class="cancel">отмена</a>
+                </div>
+               </form>
+
+
+            </div>
+
+            
+        </div>
+
+
+        @include('partials/components/modal-close.html')
+        
+    </div>
+</div>
+
+
+<div class="wrapper profile">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Мой кабинет</a>
+                <a href="#" class="breadcrumbs__link">Профиль</a>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+    <div class="profile__inner container">
+        <aside>
+            <div class="header__auth-list">
+                <div class="header__auth-box">
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#user'></use>
+                            </svg>
+                        </div>
+                        Профиль
+                    </a>
+                    <a href="#" class="header__auth-link active">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo-stroke'></use>
+                            </svg>
+
+                        </div>
+                        Адреса доставки
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#cart-icon'></use>
+                            </svg>
+                        </div>
+                        Заказы
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#car-icon'></use>
+                            </svg>
+
+                        </div>
+                        Гараж
+                    </a>
+                    <a href="#" class="header__auth-link">
+                        <div class="header__auth-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#favorite'></use>
+                            </svg>
+                        </div>
+                        Избранное
+                    </a>
+                </div>
+                <div class="header__auth-bottom">
+                    <div class="header__text header__text--md">
+                        +7 (812) 123 45 45
+                    </div>
+                    <button class="header__exit">
+                        выйти
+                        <span class="header__exit-icon --svg__exit"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="service-map">
+                <div class="service-map__title">
+                    <div class="service-map__title__left">СТО на карте</div>
+                    <a href="#" class="service-map__title__right" data-popup="jsService">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#geo'></use>
+                        </svg>
+                        <span class="parts-item__text--dotted">На карте</span>
+                    </a>
+                </div>
+                <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                </div>
+                <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                <a href="#" class="button service-map__button">Записаться на СТО
+                </a>
+            </div>
+        </aside>
+
+        <div class="profile__content">
+            <div class="profile__content-header profile__content-header--sm">
+                <div class="profile__content-title">
+                    <a href=""><h1>Адреса доставки</h1></a>
+                    <a href="" class="add-address mobile-hidden" data-popup="jsOrderingNewAddress2">
+                        <svg>
+                            <use xlink:href='/img/sprite-new.svg#red-plus'></use>
+                        </svg>
+                        Добавить новый адрес
+                        
+                    </a>
+                    <p class="hint">7% ваша персональная скидка на товары</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="profile__addresses ">
+                <div class="profile__addresses-list profile-address">
+                    <a href="" class="add-address mobile-only" data-popup="jsOrderingNewAddress2">
+                        <svg>
+                            <use xlink:href="/img/sprite-new.svg#red-plus"></use>
+                        </svg>
+                        Добавить новый адрес
+                        
+                        </a>
+
+                        
+                  <h3 class="profile__addresses-title">
+                      Мои адреса
+                  </h3>
+
+                
+                  <ul class="address-list">
+                      <li class="address-item">
+                          <div class="item-header">
+                              <div class="address-type">
+                                  дом
+                              </div>
+  
+                              <div class="nav">
+                                  <button data-popup="jsOrderingNewAddress3">
+                                      <svg>
+                                          <use xlink:href="/img/sprite-new.svg#address-pen"></use>
+                                      </svg>
+                                  </button>
+                                  <button>
+                                      <svg>
+                                          <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                      </svg>
+                                  </button>
+                              </div>
+                          </div>
+                          <a href="#" class="address-text" data-placemark="0">
+                              Невский проспект, д. 61, кв 156
+                          </a>
+                          <span class="address-text address-text--grey">
+                            Заказ смогу принять вечером после 18:00 
+                        </span>
+                      </li>
+                      <li class="address-item">
+                          <div class="item-header">
+                              <div class="address-type">
+                                  дом
+                              </div>
+  
+                              <div class="nav">
+                                <button data-popup="jsOrderingNewAddress3">
+                                      <svg>
+                                          <use xlink:href="/img/sprite-new.svg#address-pen"></use>
+                                      </svg>
+                                  </button>
+                                  <button>
+                                      <svg>
+                                          <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                      </svg>
+                                  </button>
+                              </div>
+                          </div>
+                          <a href="#" class="address-text" data-placemark="1">
+                              Невский проспект, д. 61, кв 156
+                          </a>
+                          <span class="address-text address-text--grey">
+                            Заказ смогу принять вечером после 18:00 
+                        </span>
+                      </li>
+
+                      <li class="address-item">
+                        <div class="item-header">
+                            <div class="address-type">
+                                дом
+                            </div>
+
+                            <div class="nav">
+                                <button data-popup="jsOrderingNewAddress3">
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-pen"></use>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="address-text" data-placemark="2">
+                            Невский проспект, д. 61, кв 156
+                        </a>
+                        <span class="address-text address-text--grey">
+                            Заказ смогу принять вечером после 18:00 
+                        </span>
+                    </li>
+
+
+                    <li class="address-item">
+                        <div class="item-header">
+                            <div class="address-type">
+                                дом
+                            </div>
+
+                            <div class="nav">
+                                <button>
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-pen"></use>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg>
+                                        <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="address-text" data-placemark="3">
+                            Невский проспект, д. 61, кв 156
+                        </a>
+                        <span class="address-text address-text--grey">
+                            Заказ смогу принять вечером после 18:00 
+                        </span>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="addresses-map">
+                    <div id="address-map">
+
+                    </div>
+                </div>
+              </div>
+            
+        </div>
+
+
+      
+    </div>
+
+
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

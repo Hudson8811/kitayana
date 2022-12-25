@@ -1,0 +1,216 @@
+.in-stock{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    overflow-y: auto;
+    @media(max-width: 1400px){
+        grid-template-columns: 1fr 17.5rem;
+    }
+
+    @media(max-width: 768px){
+        grid-template-columns: 1fr;
+    }
+
+    &__content{
+        padding: 2.5rem 2.5rem 0rem 3vw;
+        width: 100%;
+        @media(max-width: 768px){
+            padding: 1.5rem 1rem;
+            border-right: 0;
+            border-bottom: 0.062rem solid $color_6;
+        }
+    }
+
+    &__info{
+        padding: 3rem 2.5rem 2.5rem;
+        @media(max-width: 768px){
+            padding: 1.5rem 0 4.312rem;
+            padding-bottom: 2.5rem;
+            margin: 0 1rem;
+        }
+    }
+
+    &__type{
+        padding: 0.375rem 1rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.00.125rem;
+        text-transform: uppercase;
+        color: $color_4;
+        background: $color_9;
+        border-radius: 2.5rem;
+        margin-right: 1rem;
+        @media(max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+            padding: 0 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__text{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $color_4;
+        &--md{
+            font-size: 1rem;
+            line-height: 1.75rem;
+            color: $color_4;
+            @media (max-width: 768px) {
+                font-size: 0.75rem;
+                line-height: 1.5rem;
+            }
+        }
+        &--normal{
+            font-weight: 400;
+        }
+
+        &--mb-sm{
+            margin-bottom: 0.5rem;
+        }
+
+        &--grey{
+            color: $color_6;
+        }
+
+        
+        @media(max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+        }
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: rem(18px);
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 0.5rem;
+        }
+
+        &--md-sm{
+            @media (max-width: 768px) {
+                margin-bottom: 0rem;
+            }
+        }
+
+        &--mb-md{
+            @media (max-width: 768px) {
+                margin-bottom:1rem;
+            }
+        }
+
+    }
+
+    &__name{
+        margin-right: 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        color: $color_4;
+        width: 100%;
+        @media (max-width: 768px) {
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__link{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: $color_4;
+        margin-right: 1rem;
+        @media (max-width: 768px) {
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+        }
+        &--red{
+            color: $color_5;
+            margin-left: 1rem;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        &--big{
+            display: block;
+            font-weight: 600;
+            font-size: 1.125rem;
+            line-height: 2rem; 
+            @media (max-width: 768px) {
+                font-size: 0.75rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        &--black{
+            color: $color_4; 
+        }
+    }
+
+    &__box{
+        margin-bottom: 2rem;
+        @media (max-width: 768px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__item{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        color: $color_4;
+        display: flex;
+        align-items: center;
+        @media (max-width: 768px){
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+        }
+
+        
+    }
+
+    &__icon{
+        color: $color_2;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    &__logo{
+        width: 10rem;
+        height: 1.5rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 2.312rem;
+        @media (max-width: 768px){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__payments{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        &-img{
+            width: 3rem;
+            height: auto;
+            margin-right: 1rem;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &-text{
+            margin-top: 2.5rem;
+            @media (max-width: 768px){
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+}

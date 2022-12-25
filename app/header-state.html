@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/img/favicons/favicon.webp" type="image/webp">
+    <link rel="shortcut icon" href="/img/favicons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="/css/main.min.css">
+
+    <title>Китаяна</title>
+
+
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__inner">
+                <div class="header__row">
+                    <div class="header__logo-mob">
+                        <button class="header__menu --svg__menu jsMenuButton"></button>
+                        <a href="#" class="header__logo header__logo--mob --svg__logo"></a>
+                    </div>
+                    <div class="header__city-box">
+                        <div class="header__city">
+                            Санкт-Петербург
+                        </div>
+                        <svg class="header__city-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href='/img/sprite-new.svg#small-arrow-down'></use>
+                        </svg>
+
+
+                        <div class="dropdown">
+                            <div class="dropdown__box">
+                                <div class="dropdown__title">
+                                    Санкт-Петербург
+                                </div>
+                                <div class="dropdown__stats">
+                                    <div class="dropdown__stat-item">
+                                        12 магазинов
+                                    </div>
+                                    <div class="dropdown__stat-item">
+                                        3 СТО+магазин
+                                    </div>
+                                    <div class="dropdown__stat-item">
+                                        27 ПВЗ
+                                    </div>
+                                </div>
+
+                                <form class="search dropdown__search">
+                                    <input type="text" class="search__input" placeholder="Поиск по сайту">
+                                    <button class="search__icon --svg__search-grey"></button>
+                                </form>
+                            </div>
+                            <div class="dropdown__box">
+                                <div class="dropdown__text">
+                                    От города зависит стоимость доставки
+                                </div>
+                                <div class="dropdown__text dropdown__text--md">
+                                    Популярные города:
+                                </div>
+                                <div class="dropdown__grid">
+                                    <div class="dropdown__list">
+                                        <a href="#" class="dropdown__city-link">
+                                            Москва
+                                        </a>
+                                        <a href="#" class="dropdown__city-link active">
+                                            <svg class="header__checked-icon">
+                                                <use xlink:href="/img/sprite.svg#css--check"></use>
+                                            </svg>
+                                            Санкт-Петербург
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Екатеринбург
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Воронеж
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Иркутск
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Казань
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Краснодар
+                                        </a>
+                                    </div>
+                                    <div class="header__dropdown-list">
+                                        <a href="#" class="dropdown__city-link">
+                                            Красноярск
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Нижний Новгород
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Новосибирск
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Омск
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Ростов-на-Дону
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Самара
+                                        </a>
+                                        <a href="#" class="dropdown__city-link">
+                                            Уфа
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__row">
+                        <div class="header__phone-box">
+                            <a href="#" class="header__phone">+7 (812) 600 35 35</a>
+                            <div class="dropdown">
+
+                                <div class="dropdown__box dropdown__box--pb">
+
+                                    <div class="dropdown__text dropdown__text--md dropdown__text--mb-sm">
+                                        Заказать звонок
+                                    </div>
+
+                                    <div class="dropdown__text dropdown__text--sm">
+                                        Оставьте номер телефона и эксперт перезвоним в течении 3 - 10 минут
+                                    </div>
+                                    <input type="text" class="input dropdown__input" placeholder="Введите имя">
+                                    <input type="text" class="input dropdown__input" placeholder="+7 (000) 000-00-00">
+
+                                    <label for="h2" class="checkbox dropdown__checkbox">
+                                        <input class="checkbox__input" type="checkbox" id="h2">
+                                        <div class="checkbox__check"></div>
+                                        <span class="checkbox__name checkbox__name--sm">Я согласен с
+                                            <span>условиями</span>
+                                            передачи данных
+                                        </span>
+                                    </label>
+
+                                    <div class="dropdown__wrapper">
+                                        <button class="button dropdown__button">Заказать</button>
+                                        <div class="dropdown__socials">
+                                            <a href="#" class="dropdown__social --svg__whatsapp"></a>
+                                            <a href="#" class="dropdown__social --svg__telegram"></a>
+                                            <a href="#" class="dropdown__social --svg__skype"></a>
+                                            <a href="#" class="dropdown__social --svg__viber"></a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__text header__time">с 10:00 до 20:00 мск</div>
+
+                    </div>
+                </div>
+                <div class="header__text header__text--black header__text-delivery">
+                    Бесплатная доставка от 3 000 ₽ — Возврат до 30 дней
+                </div>
+                <div class="header__row">
+                    <!-- <a href="#" class="header__text header__text--black header__order-text">Где мой заказ?</a> -->
+
+                    <a href="#" class="header__phone-button --svg__phone"></a>
+                    <div class="header__auth authorized">
+                        <button class="header__auth-button jsAuthButton" data-popup="jsAuthDropdown">
+                            <svg class="header__icon-user">
+                                <use xlink:href="/img/sprite.svg#css--user"></use>
+                            </svg>
+                            <!--                        <span class="header__auth-text">Войти</span>-->
+                            <span class="header__auth-text">Войти</span>
+                        </button>
+
+
+                    </div>
+                    <button class="header__question-button jsExpertButton" data-dropdown="jsExpertDropdown">
+                        <img alt="temp-alt" src="/img/avatar.png" class="header__photo">
+                        запрос эксперту
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__inner">
+                <div class="header__box header__menu-box">
+                    <button class="header__menu --svg__menu jsMenuButton"></button>
+                    <a href="#" class="header__logo --svg__logo"></a>
+                </div>
+
+                <div class="header__box header__search-box">
+                    <button class="header__search-icon --svg__search"></button>
+                    <input type="text" class="header__search"
+                        placeholder="Введите номер запчасти или наименование товара">
+                    <button class="header__search-close --svg__close"></button>
+
+                    <div class="search-result">
+
+
+
+                        <div class="found-products">
+                            <a href="" class="title title--cart-icon">
+                                Найдено более 4568 товаров
+                            </a>
+                            <ul class="product-list">
+                                <li class="product-item">
+                                    <a href="" class="product-link">
+                                        <img alt="temp-alt" src="/img/photo.png" class="product-img">
+                                        <div class="product-details">
+                                            <span class="product-name">Диск тормозной передний</span>
+                                            <span class="product-country">Tralli / Китай</span>
+                                            <span class="product-number">555 I32013</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="product-item">
+                                    <a href="" class="product-link">
+                                        <img alt="temp-alt" src="/img/photo.png" class="product-img">
+                                        <div class="product-details">
+                                            <span class="product-name">Диск тормозной передний</span>
+                                            <span class="product-country">Tralli / Китай</span>
+                                            <span class="product-number">555 I32013</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="product-item">
+                                    <a href="" class="product-link">
+                                        <img alt="temp-alt" src="/img/photo.png" class="product-img">
+                                        <div class="product-details">
+                                            <span class="product-name">Диск тормозной передний</span>
+                                            <span class="product-country">Tralli / Китай</span>
+                                            <span class="product-number">555 I32013</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="product-item">
+                                    <a href="" class="product-link">
+                                        <img alt="temp-alt" src="/img/photo.png" class="product-img">
+                                        <div class="product-details">
+                                            <span class="product-name">Диск тормозной передний</span>
+                                            <span class="product-country">Tralli / Китай</span>
+                                            <span class="product-number">555 I32013</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                        <div class="nodes">
+                            <a href="#" class="title title--filter-icon">
+                                Узлы и подузлы
+                            </a>
+
+                            <ul class="nodes-list">
+                                <li class="nodes-item">
+                                    <a href="" class="nodes-link">Тормозная система</a>
+                                    <a href="" class="nodes-link">Колодки тормозные передние</a>
+                                    <a href="" class="nodes-link">Дисковой тормозной механизм</a>
+                                </li>
+                                <li class="nodes-item">
+                                    <a href="" class="nodes-link">Тормозная система</a>
+                                    <a href="" class="nodes-link">Масло моторное</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="cars.html" class="header__box header__box--col header__box-item">
+                    <div class="header__name">+ авто</div>
+                    <div class="header__text">В гараж</div>
+                </a>
+                <a href="favorite.html" class="header__box header__box--col header__box--border-none header__box-item">
+                    <div class="header__name">
+                        <svg class="header__icon-heart">
+                            <use xlink:href="/img/sprite.svg#css--heart"></use>
+                        </svg>
+                        0
+                    </div>
+                    <div class="header__text">Избранное</div>
+                </a>
+                <a href="cart" class="header__basket-button">
+                    <div class="header__name header__name--white">
+                        <div class="header__icon-cart --svg__cart"></div>
+                        нет товаров
+                    </div>
+                    <div class="header__text">В корзине 2 товара</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="main-menu jsMainMenu">
+            <div class="main-menu__contact-info">
+                <div class="main-menu__contact">
+                    <div class="main-menu__contact-text">
+                        +7 (812) 600 35 35
+                    </div>
+                    <div class="main-menu__contact-text main-menu__contact-text--grey">
+                        с 10:00 до 20:00 мск
+                    </div>
+                </div>
+                <button class="header__question-button jsExpertButton" data-dropdown="jsExpertDropdown">
+                    <img alt="temp-alt" src="/img/avatar.png" class="header__photo">
+                    запрос эксперту
+                </button>
+                <a href="#" class="button main-menu__button">заказать звонок</a>
+            </div>
+
+            <div class="main-menu__inner">
+                <div class="main-menu__grid">
+                    <div class="main-menu__col active">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Каталог по маркам
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Chery</a>
+                                <a href="#" class="main-menu__link">Geely</a>
+                                <a href="#" class="main-menu__link">Lifan</a>
+                                <a href="#" class="main-menu__link">Haval</a>
+                                <a href="#" class="main-menu__link">Foton</a>
+                                <a href="#" class="main-menu__link">Brilliance</a>
+                                <a href="#" class="main-menu__link">Cummins</a>
+                                <a href="#" class="main-menu__link">Dong Feng</a>
+                                <a href="#" class="main-menu__link">Great Wall</a>
+                                <a href="#" class="main-menu__link">BYD</a>
+                                <a href="#" class="main-menu__link">Great Wall</a>
+
+                                <a href="#" class="main-menu__link main-menu__link--red">
+                                    смотреть все
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Аксессуары
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Топливная система
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Автохимия
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Коробка передач
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Кузов
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Тормозная система
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Фильтр
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Химия
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Шасси
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Электрика
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="separator"></div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Клиентам
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    О компании
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-menu__col">
+                        <div class="accordion accordion--mob accordion--reset">
+                            <button class="accordion__overhead">
+                                <div class="main-menu__title main-menu__title--mb-none">
+                                    Информация
+                                </div>
+                                <div class="accordion__plus"></div>
+                            </button>
+                            <div class="accordion__content">
+                                <a href="#" class="main-menu__link">Прокладки</a>
+                                <a href="#" class="main-menu__link">Система подачи воздуха</a>
+                                <a href="#" class="main-menu__link">Механизм газораспределения</a>
+                                <a href="#" class="main-menu__link">Блок-картер</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Электроника двигателя</a>
+                                <a href="#" class="main-menu__link">Кривошипношатунный механизм</a>
+                                <a href="#" class="main-menu__link">Система смазки</a>
+                                <a href="#" class="main-menu__link">Система очистки ОГ</a>
+                                <a href="#" class="main-menu__link">Кожух двигателя</a>
+                                <a href="#" class="main-menu__link">Ременный привод</a>
+                                <a href="#" class="main-menu__link">Подача дополнительного воздуха</a>
+                                <a href="#" class="main-menu__link">Приготовление смеси</a>
+                                <a href="#" class="main-menu__link">Головка цилиндра</a>
+                                <a href="#" class="main-menu__link">Система зажигания, накаливания</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <form action="#" class="main-menu__form form-validate">
+                    <div class="form__header">
+                        <div class="form__title form__title--big">Помощь в подборе запчастей</div>
+                        <div class="form__text">
+                            Окажем помощь в подборе и покупке запчастей
+                        </div>
+                    </div>
+
+                    <div class="form__body">
+                        <div class="form_title form__title--medium">
+                            Заказать звонок эксперту
+                        </div>
+                        <div class="form__text">
+                            Оставьте номер телефона и эксперт перезвонит и сделает точный подбор нужной детали
+                        </div>
+
+                        <div class="input-wrapper">
+                            <span class="input-title">Имя *</span>
+                            <input type="text" class="input input--white" data-required placeholder="Ваше имя">
+                        </div>
+
+
+                        <div class="input-wrapper">
+                            <span class="input-title">Телефон *</span>
+                            <input type="tel" class="input input--white" data-required placeholder="+7 (000) 000-00-00">
+                        </div>
+
+                        <label for="h4" class="checkbox  dropdown__checkbox">
+                            <input class="checkbox__input" data-required type="checkbox" id="h4">
+                            <span class="checkbox__check checkbox__check--border-none"></span>
+                            <span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#"
+                                    class="link">условиями</a>
+                                передачи данных
+                            </span>
+                        </label>
+
+                        <div class="btn-wrap">
+                            <button class="button submit">Заказать звонок</button>
+                            <span>
+                                с 10:00 до 20:00 (мск)
+                            </span>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="main-menu__bottom">
+                <div class="container">
+                    <div class="main-menu__wrapper">
+                        <div class="main-menu__text">
+                            Сайт для оптовиков
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="/img/sprite.svg#css--whatsapp-main"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="/img/sprite.svg#css--telegram-main"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="/img/sprite.svg#css--skype-main"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="socials__link">
+                                <svg class="socials__icon">
+                                    <use xlink:href="/img/sprite.svg#css--viber-main"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="overlay"></div>
+    <div class="search-overlay"></div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col footer__col--sm-w">
+                    <div class="footer__logo --svg__logo"></div>
+                    <div class="footer__text footer__text--md">
+                        Запчасти для китайских
+                        авто и автосервис
+                    </div>
+                    <a href="#" class="footer__contact-link footer__contact-link--red">
+                        +7 (812) 600-35-35
+                    </a>
+                    <a href="#" class="footer__contact-link">
+                        china-parts@gmail.com
+                    </a>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social --svg__vk"></a>
+                        <a href="#" class="footer__social --svg__ok"></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">
+                        Каталоги
+                    </div>
+                    <a href="#" class="footer__link">
+                        Каталог запчастей
+                    </a>
+                    <a href="#" class="footer__link">
+                        Каталог по марке авто
+                    </a>
+                    <a href="#" class="footer__link">
+                        Запчасти для ТО
+                    </a>
+                    <a href="#" class="footer__link">
+                        Каталог производителей
+                    </a>
+                    <a href="#" class="footer__link">
+                        Шины и диски
+                    </a>
+                    <a href="#" class="footer__link">
+                        Масла и жидкости
+                    </a>
+                    <a href="#" class="footer__link">
+                        Все каталоги
+                    </a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">
+                        Клиентам
+                    </div>
+                    <a href="#" class="footer__link">
+                        Доставка и оплата
+                    </a>
+                    <a href="#" class="footer__link">
+                        Гарантия и возврат
+                    </a>
+                    <a href="#" class="footer__link">
+                        Порядок приёма товаров
+                    </a>
+                    <a href="#" class="footer__link">
+                        Программа лояльности
+                    </a>
+                    <a href="#" class="footer__link">
+                        Адреса магазинов и СТО
+                    </a>
+                    <a href="#" class="footer__link">
+                        Услуги автосервиса
+                    </a>
+                    <a href="#" class="footer__link">
+                        Помощь
+                    </a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">
+                        О компании
+                    </div>
+                    <a href="#" class="footer__link">
+                        О нас
+                    </a>
+                    <a href="#" class="footer__link">
+                        Наша команда
+                    </a>
+                    <a href="#" class="footer__link">
+                        Производители запчастей
+                    </a>
+                    <a href="#" class="footer__link">
+                        Вакансии
+                    </a>
+                    <a href="#" class="footer__link">
+                        Банковские реквизиты
+                    </a>
+                    <a href="#" class="footer__link">
+                        Связаться с нами
+                    </a>
+                    <a href="#" class="footer__link">
+                        Контакты
+                    </a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">
+                        Информация
+                    </div>
+                    <a href="#" class="footer__link">
+                        Блог
+                    </a>
+                    <a href="#" class="footer__link">
+                        Новости
+                    </a>
+                    <a href="#" class="footer__link">
+                        Акции
+                    </a>
+                    <a href="#" class="footer__link">
+                        Правовая информация
+                    </a>
+                    <a href="#" class="footer__link">
+                        Сертификаты
+                    </a>
+                    <a href="#" class="footer__link footer__link--md">
+                        Сайт для оптовиков
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer__companies">
+            <div class="container">
+                <div class="footer__row">
+                    <img alt="temp-alt" src="/img/logos/lifan.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/geely.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/chery.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/haval.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/foton.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/great-wall.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/brilliance.png" class="footer__company">
+                    <img alt="temp-alt" src="/img/logos/dongfeng.png" class="footer__company">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__bottom">
+                <div class="footer__text">
+                    © 2022 Китаяна. Все права защищены.
+                </div>
+                <div class="footer__payments">
+                    <img alt="temp-alt" src="/img/visa.svg" class="footer__payment-img">
+                    <img alt="temp-alt" src="/img/mastercard.svg" class="footer__payment-img">
+                    <img alt="temp-alt" src="/img/mir.svg" class="footer__payment-img">
+                </div>
+                <div class="footer__box">
+                    <div class="footer__text footer__text--sm">
+                        Разработка сайта
+                    </div>
+                    <img alt="temp-alt" src="/img/artw.png" class="footer__logo-dev">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+</script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

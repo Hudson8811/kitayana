@@ -1,0 +1,1896 @@
+@include('partials/header.html', {
+	top: 'show',
+	notice: 'show',
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+@include('partials/modals/stateFormModal.html')
+
+
+<div class="wrapper main-page">
+	<div class="entry-block">
+		<div class="entry-block__left">
+			<div class="entry-block__title">
+				Запчасти и автосервис китайских автомобилей 
+			</div>
+			<div class="entry-block__benefits">
+				<div class="entry-block__benefit-item">
+					<svg class="entry-block__benefit-item-icon">
+						<use xlink:href="/img/sprite.svg#sprite--stile"></use>
+					</svg>
+					<div class="entry-block__benefit-text">
+						<span>Контроль качества</span><br>
+						всех запчастей
+					</div>
+				</div>
+				<div class="entry-block__benefit-item w-mb-100">
+					<svg class="entry-block__benefit-item-icon">
+						<use xlink:href="/img/sprite.svg#sprite--stile"></use>
+					</svg>
+					<div class="entry-block__benefit-text">
+						<span>Бесплатная доставка</span><br>
+						при заказе от 3 000 ₽
+					</div>
+				</div>
+				<div class="entry-block__benefit-item w-mb-100">
+					<svg class="entry-block__benefit-item-icon">
+						<use xlink:href="/img/sprite.svg#sprite--stile"></use>
+					</svg>
+					<div class="entry-block__benefit-text">
+						<span>Возврат 14 дней</span> без <br>
+						объяснения причины
+					</div>
+				</div>
+				<div class="entry-block__benefit-item">
+					<svg class="entry-block__benefit-item-icon">
+						<use xlink:href="/img/sprite.svg#sprite--stile"></use>
+					</svg>
+					<div class="entry-block__benefit-text">
+						Более<span> 3 700 товаров</span><br>
+						всегда в наличии
+					</div>
+				</div>
+			</div>
+			<a href="#" class="entry-block__benefit-catalog-link button">Открыть каталог </a>
+		</div>
+		<div class="entry-block__right">
+			<img src="img/main-page/engine.png" alt="" class="entry-block__engine">
+			<div class="entry-block__engine-desc">
+				Отличные отзывы
+				<svg width="196" height="77" viewBox="0 0 196 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.509659 76.5779L51.8581 1.35693H195.5" stroke="#B0A3A3" stroke-opacity="0.5"/>
+				</svg>
+			</div>
+			<div class="entry-block__engine-desc">
+				Оригинальный товар
+				<svg width="228" height="77" viewBox="0 0 228 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M227.465 75.9715L176.116 0.750488H0" stroke="#B0A3A3" stroke-opacity="0.5"/>
+				</svg>
+			</div>
+			<div class="entry-block__engine-desc">
+				Проверенное качество
+				<svg width="228" height="77" viewBox="0 0 228 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M227.465 75.9715L176.116 0.750488H0" stroke="#B0A3A3" stroke-opacity="0.5"/>
+				</svg>
+			</div>
+			<a href="#" class="entry-block__part-search">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7 1C7 0.447716 7.44772 0 8 0C8.55228 0 9 0.447715 9 1V15C9 15.5523 8.55228 16 8 16C7.44772 16 7 15.5523 7 15V1Z" fill="white"/>
+					<path d="M1 9C0.447716 9 2.41411e-08 8.55228 0 8C-2.41411e-08 7.44772 0.447715 7 1 7L15 7C15.5523 7 16 7.44771 16 8C16 8.55228 15.5523 9 15 9H1Z" fill="white"/>
+				</svg>
+				Поиск <br> запчасти
+			</a>
+		</div>
+	</div>
+	<div class="cars">
+		<div class="cars__slider">
+			<a href="#">
+				<img src="img/logos/logo-main/lifan.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/geely.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/cherry.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/haval.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/foton.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/cherry.png" alt="">
+			</a>
+		</div>
+		<div class="cars__slider cars__slider--mob">
+			<a href="#">
+				<img src="img/logos/logo-main/lifan.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/geely-mob.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/cherry-mob.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/haval.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/foton.png" alt="">
+			</a>
+			<a href="#">
+				<img src="img/logos/logo-main/cherry-mob.png" alt="">
+			</a>
+		</div>
+		<div class="container">
+			<div class="cars__search">
+				<div class="cars__search-title">
+					Поиск автозапчастей
+				</div>
+				<form action="GET" role="search" class="cars__search-form">
+					<div class="cars__search-form-input">
+						<button class="--svg__search"></button>
+						<input type="text" placeholder="Введите марку автомобиля">
+					</div>
+					<div class="cars__search-form-input">
+						<button class="--svg__search"></button>
+						<input type="text" placeholder="Введите модель автомобиля">
+					</div>
+				</form>
+			</div>
+			<div class="cars__list">
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/cherry.png" class="cars__list-items-logo" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">Tiggo 4</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Tiggo 7 Pro</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Tiggo T11</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Amulet A15</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Bonus A13</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/lifan.png" class="cars__list-items-logo" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">650 EV</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Breez 520</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Cebrium 720</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Celliya 530</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Murman 820</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/geely.png" class="cars__list-items-logo" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">Tugella i</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Tugella i</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Emgrand EC7</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Atlas I</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">MK</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/haval.png" class="cars__list-items-logo" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">F7</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">F7 x</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">H2</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">H5 I</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">H6</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/foton.png" class="cars__list-items-logo" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">Tugella i</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Coolray i</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Emgrand EC7</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Atlas I</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">MK</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/faw.png" class="cars__list-items-logo cars__list-items-logo--sm mb-md" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">Tiggo 4</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Tiggo 7 Pro</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Tiggo T11</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Amulet A15</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Bonus A13</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/greatwall.png" class="cars__list-items-logo cars__list-items-logo--md mb-md" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">650 EV</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Breez 520</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Cebrium 720</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Celliya 530</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Murman 820</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/brilliance.png" class="cars__list-items-logo cars__list-items-logo--md-2 mb-md" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">Tugella i</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Coolray i</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Emgrand EC7</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">Atlas I</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">MK</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cars__list-items">
+					<img src="img/logos/logo-main/brilliance.png" class="cars__list-items-logo cars__list-items-logo--md-2 mb-md" alt="">
+					<ul>
+						<li class="cars__list-item">
+							<a href="#">F7</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">F7 x</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">H2</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">H5 I</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#">H6</a>
+							<div class="cars__list-item-hover">
+								<img src="img/car-3.png" alt="">
+								<div class="cars__list-item-hover--title">
+									Geely Coolray1
+								</div>
+							</div>
+						</li>
+						<li class="cars__list-item">
+							<a href="#" class="cars__all-items">Все модели</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Sale slider -->
+	<div class="sales__slider-container sales__slider-container--mobile">
+		<div class="product__slider-title-wrapper">
+			<h2 class="product__slider-title">
+				акции
+			</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-1"></button>
+					<div class="product__slider-pagination product__slider-pagination-1"></div>
+					<button class="product__slider-next product__slider-next-1"></button>
+				</div>
+
+				<a href="#" class="all-product">Все акции</a>
+				<a href="#" class="all-product all-product--mobile">Все 23</a>
+			</div>
+
+		</div>
+
+		<div class="sale__slider sale__slider--mob">
+
+			<div class="sale__slider-wrapper">
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления топлива и как...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+					<div class="sale__grid-item-shadow"></div>
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Сезонная замена <br> технических жидкостей <br> в автомобиле
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Антифриз, масла <br> и другие технические жидкости
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления топлива и как...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+					<div class="sale__grid-item-shadow"></div>
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Сезонная замена <br> технических жидкостей <br> в автомобиле
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Антифриз, масла <br> и другие технические жидкости
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления топлива и как...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+					<div class="sale__grid-item-shadow"></div>
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Сезонная замена <br> технических жидкостей <br> в автомобиле
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Антифриз, масла <br> и другие технические жидкости
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+			</div>
+
+			<div class="product__slider-pagination product__slider-pagination-1"></div>
+		</div>
+	</div>
+	<!-- /Sale slider -->
+
+	<!-- Sale slider desktop -->
+	<div class="sales__slider-container sales__slider-container--desktop">
+		<div class="product__slider-title-wrapper">
+			<h2 class="product__slider-title">
+				акции
+			</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-2"></button>
+					<div class="product__slider-pagination product__slider-pagination-2"></div>
+					<button class="product__slider-next product__slider-next-2"></button>
+				</div>
+
+				<a href="#" class="all-product">Все акции</a>
+				<a href="#" class="all-product all-product--mobile">Все 23</a>
+			</div>
+
+		</div>
+
+		<div class="sale__slider sale__slider--desktop">
+
+			<div class="sale__slider-wrapper">
+
+				<!-- Desktop slide item -->
+				<div class="sale__slide-item">
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Великий уравнитель: для чего нужен регулятор давления топлива и как...
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+						<div class="sale__grid-item-shadow"></div>
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Сезонная замена <br> технических жидкостей <br> в автомобиле
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Антифриз, масла <br> и другие технические жидкости
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+				</div>
+				<!-- /Desktop slide item -->
+
+				<!-- Desktop slide item -->
+				<div class="sale__slide-item">
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Великий уравнитель: для чего нужен регулятор давления топлива и как...
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+						<div class="sale__grid-item-shadow"></div>
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Сезонная замена <br> технических жидкостей <br> в автомобиле
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Антифриз, масла <br> и другие технические жидкости
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+				</div>
+				<!-- /Desktop slide item -->
+
+				<!-- Desktop slide item -->
+				<div class="sale__slide-item">
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Великий уравнитель: для чего нужен регулятор давления топлива и как...
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+						<div class="sale__grid-item-shadow"></div>
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Сезонная замена <br> технических жидкостей <br> в автомобиле
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Антифриз, масла <br> и другие технические жидкости
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+				</div>
+				<!-- /Desktop slide item -->
+
+			</div>
+
+			<div class="product__slider-pagination product__slider-pagination-2"></div>
+		</div>
+	</div>
+	<!-- /Sale slider desktop-->
+
+	<!-- Product catalog -->
+	<div class="product-types b-none opened product-types--desktop">
+		<div class="container p-0">
+			<div class="product-types__title">
+				Каталог автозапчастей
+			</div>
+			<div class="product-types__grid product-types__grid--3">
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Аксессуары
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo.png" class="product-img">
+
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Двигатель
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-1.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Коробка передач
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-2.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Кузов
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-3.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Тормозная система
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-4.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Фильтр
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-5.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Химия
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-6.png" class="product-img">
+					<ul class="product-links">
+					<li>
+						<a href="catalog-sop-products.html">Жидкость гур</a>
+					</li>
+					<li>
+						<a href="catalog-sop-products.html">Тормозная жидкость</a>
+					</li>
+					<li>
+						<a href="catalog-sop-products.html">Тормозная жидкость</a>
+					</li>
+					<li class="mobile-only">
+						<a href="#">Свернуть</a>
+					</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Шасси
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-7.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Электрика
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-8.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product-types__item">
+					<h3 class="product-name">
+						Сопутствующие товары
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-9.png" class="product-img">
+					<ul class="product-links">
+						<li>
+							<a href="catalog-sop-products.html">Жидкость гур</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li>
+							<a href="catalog-sop-products.html">Тормозная жидкость</a>
+						</li>
+						<li class="mobile-only">
+							<a href="#">Свернуть</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Product catalog -->
+
+	<!-- Product catalog mobile -->
+	<div class="product-types b-none opened product-types--mobile">
+		<div class="container p-0">
+			<div class="product-types__title">
+				Каталог автозапчастей
+			</div>
+			<div class="product-types__grid product-types__grid--3">
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Аксессуары
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Двигатель
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-1.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Коробка передач
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-2.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Кузов
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-3.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Тормозная система
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-4.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Фильтр
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-5.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Химия
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-6.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Шасси
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-7.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Электрика
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-8.png" class="product-img">
+				</a>
+				<a href="#" class="product-types__item">
+					<h3 class="product-name">
+						Сопутствующие товары
+					</h3>
+					<img alt="temp-alt" src="/img/nodes/photo-9.png" class="product-img">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- /Product catalog -->
+
+	<!-- Product slider -->
+	<div class="product__slider-container">
+		<div class="container">
+			<div class="product__slider-title-wrapper">
+				<h2 class="product__slider-title">
+					популярные 
+					товары
+				</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-0"></button>
+					<div class="product__slider-pagination product__slider-pagination-0"></div>
+					<button class="product__slider-next product__slider-next-0"></button>
+				</div>
+
+				<a href="#" class="all-product">Все товары</a>
+			</div>
+
+			</div>
+
+
+			<div class="product__slider">
+
+				<div class="product__slider-wrapper">
+					@loop('partials/products-grid-item.html', '/json/products.json')
+				</div>
+
+				<div class="product__slider-pagination product__slider-pagination-0"></div>
+			</div>
+		</div>
+	</div>
+	<!-- /Product slider -->
+
+	<!-- Car service -->
+	@include('partials/car-service.html')
+	<!-- /Car service -->
+
+	<!-- Sale slider blog -->
+	<div class="sales__slider-container sales__slider-container--blog">
+		<div class="product__slider-title-wrapper">
+			<h2 class="product__slider-title">
+				Блог<span>Новости</span>
+			</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-4"></button>
+					<div class="product__slider-pagination product__slider-pagination-4"></div>
+					<button class="product__slider-next product__slider-next-4"></button>
+				</div>
+
+				<a href="#" class="all-product">Все записи</a>
+				<a href="#" class="all-product all-product--mobile">Все 23</a>
+			</div>
+
+		</div>
+
+		<div class="sale__slider sale__slider--blog">
+
+			<div class="sale__slider-wrapper">
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/news-slide-bg.png" alt="" class="sale__grid-item-image">
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Почему моторное масло становится похожим на солидол?
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags"> 
+							<div class="sale__grid-item-tag sale__grid-item-tag--grey">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Ждём Вас в наших магазинах и СТО!
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/news-slide-bg.png" alt="" class="sale__grid-item-image">
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Почему моторное масло становится похожим на солидол?
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags"> 
+							<div class="sale__grid-item-tag sale__grid-item-tag--grey">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Ждём Вас в наших магазинах и СТО!
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/news-slide-bg.png" alt="" class="sale__grid-item-image">
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Почему моторное масло становится похожим на солидол?
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags"> 
+							<div class="sale__grid-item-tag sale__grid-item-tag--grey">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Ждём Вас в наших магазинах и СТО!
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				
+
+			</div>
+
+			<div class="product__slider-pagination product__slider-pagination-4"></div>
+		</div>
+	</div>
+	<!-- /Sale slider blog -->
+
+	<!-- Sale slider blog mobile -->
+	<div class="sales__slider-container sales__slider-container--blog sales__slider-container--blog--mob">
+		<div class="product__slider-title-wrapper">
+			<h2 class="product__slider-title">
+				Блог<span>Новости</span>
+			</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-5"></button>
+					<div class="product__slider-pagination product__slider-pagination-5"></div>
+					<button class="product__slider-next product__slider-next-5"></button>
+				</div>
+
+				<a href="#" class="all-product">Все</a>
+				<a href="#" class="all-product all-product--mobile">Все</a>
+			</div>
+
+		</div>
+
+		<div class="sale__slider sale__slider--blog sale__slider--blog--mob">
+
+			<div class="sale__slider-wrapper">
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img src="img/main-page/image-blog-mob.png" alt="" class="sale__grid-item-image sale__grid-item-image--rel">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Совет
+							</div>
+							<div class="sale__grid-item-tag">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				
+
+			</div>
+		</div>
+	</div>
+	<!-- /Sale slider blog mobile -->
+
+	<div class="advantage-banner">
+		<div class="container">
+			<div class="advantage-banner__title">
+				Работаем только <br> с надёжными производителями
+			</div>
+			<div class="advantage-banner__text">
+				Гарантируем качество 100%, либо вернем деньги.
+			</div>
+		</div>
+		<img src="img/main-page/advantage-bg.png" alt="" class="advantage-banner__bg">
+	</div>
+	<div class="container">
+		<div class="car-service__content">
+			<div class="car-service__descr-main">
+				<div class="car-service__descr-main-left">
+					«Китаяна» была организована на базе широко известной компании по обслуживанию корейских
+					автомобилей,
+					сеть магазинов и автосервисов которой более 20 лет успешно работает на территории Российской
+					Федерации. <br><br>
+
+					«Китаяна» обладает обширной базой профессионального оборудования и укомплектована грамотными
+					специалистами в сфере технического обслуживания автомобилей китайских брендов.
+				</div> 
+				<div class="car-service__descr-main-right">
+					Это даёт возможность проведения полного цикла обслуживания, ремонта и восстановления автомобилей
+					при любых видах неисправностей и повреждений. Наши специалисты всегда помогут с подбором необходимых
+					запчастей, приведут ваш автомобиль в соответствие со стандартами установленными заводом
+					изготовителем.
+				</div>
+			</div>
+
+			<a href="#" class="car-service__link car-service__link--red">
+			Подробнее
+			</a>
+		</div>
+	</div>
+
+	<!-- Contact form -->
+	@include('partials/need-help-single.html')
+	<!-- /Conract form -->
+
+	<!-- Advantages -->
+	@include('partials/advantages.html')
+	<!-- /Advantages -->
+
+	<!-- Banner STO -->
+	<div class="sale-banner">
+		<div class="sale-banner__info">
+			<div class="sale-banner__title">
+				Магазины и СТО
+				<a href="#" class="sale-banner__title-link">Все магазины</a>
+			</div>
+			<div class="sale-banner__text">
+				Наши магазины представлены в 40 городах 
+			</div>
+			<div class="sale-banner__tags">
+				<div class="sale-banner__tag">
+					Доступно 100 магазинов
+				</div>
+				<div class="sale-banner__tag">
+					Доступно 26 автосервисов
+				</div>
+			</div>
+			<a href="#" class="button sale-banner__button">Все магазины и СТО</a>
+		</div>
+		<img src="img/sales/service-map.png" alt="" class="sale-banner__map">
+	</div>
+	<!-- /Banner STO -->
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

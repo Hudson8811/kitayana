@@ -1,0 +1,102 @@
+<div class="dropdown dropdown--left jsAuthDropdown" id="jsAuthDropdown">
+
+
+    @include('../components/dropdown-close.html')
+
+
+    <div class="dropdown__inner">
+        <div class="dropdown__overhead">
+            <div class="dropdown__title dropdown__title--mb-none">
+                Авторизация
+            </div>
+
+        </div>
+
+        <div class="dropdown__body">
+            <div class="tabs">
+                <ul class="tabs-link">
+                    <li>
+                        <a href="" data-tab="auth-phone">по номеру телефона</a>
+                    </li>
+                    <li>
+                        <a href="" data-tab="auth-email" class="active">по e-mail</a>
+                    </li>
+                </ul>
+
+                <div class="tabs-content">
+
+                    <form class="tab form-validate" id="auth-phone">
+                        <label class="dropdown__label">
+                            Телефон *
+                        </label>
+                        <div class="input-wrap code">
+                            <input class="input" type="tel" placeholder="+7 (000) 000-00-00">
+                            <button class="button">получить код</button>
+                        </div>
+                        <p class="dropdown__rule dropdown__rule--small">
+                            На указанный номер телефона придёт сообщение с коротким кодом
+                        </p>
+
+                        <label class="dropdown__label">
+                            Код из SMS *
+                        </label>
+
+                        <input type="text" data-required class="input input--pr " placeholder="Пароль">
+
+
+                        <p class="dropdown__rule dropdown__rule--small">
+                            Повторная отправка через 01:55
+                        </p>
+
+
+                        <div class="dropdown__buttons dropdown__buttons--between">
+                            <button class="button dropdown__button dropdown__button--md dropdown__button--mr submit">
+                                Войти
+                            </button>
+                            <a href="#" class="dropdown__link jsRegisterButton" data-dropdown="jsRegisterDropdown">
+                                Зарегистрироваться
+                            </a>
+                        </div>
+
+                        <p class="dropdown__rule">
+                            Нажимая кнопку «Войти», вы соглашаетесь c условиями <a href="#" class="red">политики
+                                конфиденциальности</a>
+                        </p>
+                    </form>
+
+
+                    <form class="tab open form-validate" id="auth-email">
+                        <label class="dropdown__label">
+                            E-mail *
+                        </label>
+                        <input type="text" class="input dropdown__input" data-required placeholder="Введите e-mail">
+
+
+                        <label class="dropdown__label">
+                            Пароль *
+                        </label>
+                        <div class="input-wrapper dropdown__input">
+                            <input type="text" class="input input--pr " data-required placeholder="Пароль">
+                            <button class="input-icon --svg__eye_close"></button>
+                        </div>
+                        <a href="#" class="forgot-link">Забыли пароль?</a>
+
+                        <div class="dropdown__buttons dropdown__buttons--between">
+                            <button class="submit button dropdown__button dropdown__button--md dropdown__button--mr">
+                                Войти
+                            </button>
+                            <a href="#" class="dropdown__link jsRegisterButton" data-dropdown="jsRegisterDropdown">
+                                Зарегистрироваться
+                            </a>
+                        </div>
+
+                        <p class="dropdown__rule">
+                            Нажимая кнопку «Войти», вы соглашаетесь c условиями <a href="#" class="red">политики
+                                конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

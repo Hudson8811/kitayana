@@ -1,0 +1,99 @@
+<div class="modal order-popups order-popups--sm" id="jsProductReturn2">
+    <div class="modal__inner">
+
+
+
+        <div class="modal__content">
+            <div class="modal__overhead">
+                Форма обратной связи
+            </div>
+
+            <div class="modal__container">
+                
+                <div class="return-title">
+                    Заказ № M-25468001 <span>от 18 марта, пт</span>
+                </div>
+                <p class="order-popups__text mobile-hidden">
+                    Укажите необходимые сведения и отправьте заявку на возврат. <br>
+                    Товар вы можете вернуть в пункт самовывоза или в магазин «Китаяна»
+                </p>
+
+                <form action="" class="form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Телефон *</label>
+                            <input type="tel" class="input input--sm" placeholder="+7 (999) 000 00 00">
+                           
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Товар к возврату *</label>
+                            <select name="" id="" class="custom-select profile-select">
+                                <option selected disabled>Выберите из списка</option>
+                                <option>Выберите из списка 1</option>
+                                <option>Выберите из списка 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Количество возвращаемых товаров *</label>
+                            <div class="spares-card__button-box buttons-anim show">
+                               
+                                <div class="jsButtonCounter buttons-anim__button buttons-anim__button--black show">
+                                    <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--decrease" data-type="decrease"></span>
+                                    <input class="js-number-inp buttons-anim__input" type="text" value="1">
+                                    <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--increase" data-type="increase">
+                                    </span>
+                                    <span class="button-show-cancel-inner button-show-cancel-inner--red">Отмена</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Описание причины возврата</label>
+                            <textarea class="input" placeholder="Опишите вашу причину возврата"></textarea>
+                        </div>
+                    </div>
+                    <label class="checkbox dropdown__checkbox" for="chex23">
+                        <input class="checkbox__input" type="checkbox" id="chex23">
+                        <span class="checkbox-wrap">
+                            <span class="check-sign check-part-1"></span>
+                            <span class="check-sign check-part-2"></span>
+                        </span>
+                        <span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#"
+                                class="link">условиями</a>
+                            передачи данных
+                        </span>
+                    </label>
+                    <button class="button submit">
+                        Отправить заявку
+                    </button>
+                </form>
+
+
+                <p class="order-popups__text order-popups__text--footer">
+                    После возврата товара денежные средства <b>автоматически будут возвращены на банковскую карту</b> , с которой товар был оплачен
+                </p>
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        @include('../components/modal-close.html')
+    </div>
+</div>

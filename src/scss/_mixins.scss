@@ -1,0 +1,32 @@
+@use 'sass:math';
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.woff') format('woff'), url('#{$file-path}.woff2') format('woff2');
+    }
+}
+
+
+
+@function rem($size) {
+    @return calc($size / 16px) * 1rem;
+}
+
+
+@mixin scroll(){
+    &::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f3;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #a7a9b9;
+    }
+    scrollbar-width: thin;
+}
+
+

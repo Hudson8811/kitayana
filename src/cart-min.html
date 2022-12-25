@@ -1,0 +1,329 @@
+@include('partials/header.html')
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsGetDetailPhoto.html')
+@include('partials/modals/jsGallery.html')
+@include('partials/modals/jsReviewPopup.html')
+
+
+
+
+<div class="wrapper cart-wrapper">
+
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Корзина</a>
+              
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="page-title page-title--@size">
+            <a href="#">
+                Корзина
+            </a>
+                <span class="gift">
+                    <i class="gift--icon gift--icon-2">
+                    </i>
+                    <span class="gift__text">
+                        До бесплатной доставки осталось <b>198 ₽</b> 
+                    </span>
+                </span>
+    
+           
+        </h1>
+    </div>
+
+        <div class="cart__content-wrapper">
+            <div class="container">
+                <div class="cart__content">
+                    <div class="cart__count-wrapper">
+                        <div class="cart__count">
+                            К оформлению заказа доступно <b>1 товаров из 2</b> 
+                        </div>
+        
+                        <a href="" class="cart-clean">
+                            <i class="cart--icon"></i>
+                            Очистить корзину
+                        </a> 
+                    </div>
+
+
+                    <div class="cart__product-list">
+                        <div class="cart__overhead">
+                            <span>Товары с розничных складов</span>
+                            <span class="attention-wrapper">
+                                Доступен самовывоз из магазина
+
+                                <span class="attention" data-attention-id="at1">  
+                                    <i class="attention--icon"></i>
+                                    <span class="attention__content" id="at1">
+                                        <span class="attention__header">
+                                            <span class="attention__header-title">Замена артикула производителем</span>
+                                        </span>
+                                        <span class="attention__content-text attention__content-text--between">
+                                            Старый номер <b>D4060-JA00A</b>
+                                        </span>
+                
+                                        <a href="" class="button button--grey attention__close mobile-only">закрыть</a>
+                                    </span>
+                                </span>
+
+                            </span>
+                        </div>
+
+                   
+
+                        <div class="cart__product-item">
+                            <div class="product__details-wrapper">
+                                <div class="product__img">
+                                    <img src="/img/photo.png" alt="">
+                                    @include('partials/components/favorite-btn.html')
+                                <div class="product__type-hint">АНАЛОГ</div>
+
+                               </div>
+                                <div class="product__details">
+                                    <a href="#" class="parts-item__title">Колодки тормозные задние дисковые к-кт X70 2017</a>
+                                    <div class="parts-item__text parts-item__text--black-light parts-item__manufacturer">SS35002</div>
+                                    <div class="parts-item__text parts-item__text--black-light parts-item__manufacturer">LIFAN / Китай</div>
+                                    
+                                </div>
+                                <a href="" class="button button--white remove-button mobile-only">Удалить</a>
+                            </div>
+
+                            <div class="product__item-col">
+                                <a href="" class="parts-item__text parts-item__text--dotted">В наличии: <b >4 шт.</b> </a>
+                            </div>
+
+                            
+                            <div class="product__item-col">
+                                <a href="" class="parts-item__text">от <b>сегодня</b> </a>
+                            </div>
+
+                            <div class="product__item-col">
+                                <div class="price-wrapper">
+                                    <div class="parts-item__text parts-item__text--md">
+                                        1 201 ₽
+                                    </div>
+                            
+                                </div>
+
+                              
+
+
+                                <div class="counter-wrapper">
+                                    <div class="parts-item__button jsButtonCounter buttons-anim__button buttons-anim__button--black">
+                                        <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--decrease" data-type="decrease"></span>
+                                        <input class="js-number-inp buttons-anim__input" type="text" value="1">
+                                        <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--increase" data-type="increase">
+                                        </span>
+                                        <span class="button-show-cancel-inner button-show-cancel-inner--grey">Отмена</span>
+                                    </div>
+                                </div>
+
+                                <button class="remove">
+                                    <i class="remove--icon"></i>
+                                </button>
+                                
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="cart__product-item cart__product-item--disabled">
+                            
+                            <div class="product__details-wrapper">
+                                <div class="product__img">
+                                    <img src="/img/photo.png" alt="">
+                                    @include('partials/components/favorite-btn.html')
+                                <div class="product__type-hint">АНАЛОГ</div>
+
+                               </div>
+                                <div class="product__details">
+                                    <a href="#" class="parts-item__title">Колодки тормозные задние дисковые к-кт X70 2017</a>
+                                    <div class="parts-item__text parts-item__text--black-light parts-item__manufacturer">SS35002</div>
+                                    <div class="parts-item__text parts-item__text--black-light parts-item__manufacturer">LIFAN / Китай</div>
+                                    
+                                </div>
+
+                                <div class="disabled-text">
+                                    <b>Внимание!</b> Товар временно недоступен
+                                 </div>
+
+                                 <a href="" class="button button--white remove-button mobile-only">Удалить</a>
+                            </div>
+
+                            <div class="product__item-col">
+                                <a href="" class="parts-item__text parts-item__text--dotted">В наличии: <b>4 шт.</b> </a>
+                            </div>
+
+                            
+                            <div class="product__item-col">
+                                <a href="" class="parts-item__text">от <b>сегодня</b> </a>
+                            </div>
+
+                            <div class="product__item-col">
+                                <div class="price-wrapper">
+                                    <div class="parts-item__text parts-item__text--md">
+                                        1 201 ₽
+                                    </div>
+                                  
+                                </div>
+
+                               
+
+                                <div class="counter-wrapper">
+                                    <div class="parts-item__button jsButtonCounter buttons-anim__button buttons-anim__button--black">
+                                        <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--decrease" data-type="decrease"></span>
+                                        <input class="js-number-inp buttons-anim__input" type="text" value="1">
+                                        <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--increase" data-type="increase">
+                                        </span>
+                                        <span class="button-show-cancel-inner button-show-cancel-inner--grey">Отмена</span>
+                                    </div>
+                                </div>
+
+                                <button class="remove">
+                                    <i class="remove--icon"></i>
+                                </button>
+                                
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+    
+                <aside class="cart__aside-wrapper">
+                    <div class="cart__aside">
+                        <span class="cart__aside-title">
+                            2 товара в Корзине:
+                        </span>
+    
+                        <ul class="cart__aside-info">
+                            <li class="cart__aside-row">
+                                <span>Стоимость заказа</span>
+                                <span>3 317 ₽</span>
+                            </li>
+    
+                            <li class="cart__aside-row cart__aside-row--big">
+                                <span>Ваша скидка</span>
+                                <span>– 515 ₽</span>
+                            </li>
+    
+                            <li class="cart__aside-row">
+                                <span>Доставка</span>
+                                <span>от 190 ₽</span>
+                            </li>
+    
+                          
+                        </ul>
+    
+                        <div class="cart__aside-total">
+                            <div class="cart__aside-row">
+                                <div>
+                                    <b>Итого:</b>
+                                    <div>к оплате</div>
+                                </div>
+                                <div class="price-wrapper">
+                                    <div class="price">
+                                        2 802 ₽
+                                    </div>
+                                    <div class="cart__aside-row">
+                                        <div class="discount-count">-5%</div>
+                                        <div class="price price--old">
+                                            3 317 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="cart__aside-promo">
+                            <input type="text" class="input input--white" placeholder="Введите промокод">
+                        </div>
+    
+                        <div class="cart__aside-discounts">
+                            <div class="cart__aside-discounts-item">
+                              <b>СКИДКА -15%</b>   на Яндекс-такси при покупке запчастей в розницу
+                                <div class="promo">Промокод <b>YANDEX</b></div>
+                            </div>
+    
+                            <div class="cart__aside-discounts-item">
+                                <b>СКИДКА -5%</b> от суммы заказа 9 000 ₽
+                            </div>
+                        </div>
+    
+                        <button class="button w-100">оформить заказ</button>
+                    </div>
+
+                   
+                </aside>
+            </div>
+        </div>
+   
+
+
+    <div class="product__slider-container product__slider-container--pb">
+        <div class="container">
+            <div class="product__slider-title-wrapper  align-center">
+                <h2 class="product__slider-title">
+                    Вас может заинтересовать
+                </h2>
+
+                <div class="product__slider-nav-wrapper">
+                    <div class="product__slider-nav">
+                        <button class="product__slider-prev product__slider-prev-0"></button>
+                        <div class="product__slider-pagination product__slider-pagination-0"></div>
+                        <button class="product__slider-next product__slider-next-0"></button>
+
+                    </div>
+
+                    <a href="#" class="all-product">Все товары</a>
+                </div>
+
+            </div>
+
+
+            <div class="product__slider">
+
+                <div class="product__slider-wrapper">
+                    @loop('partials/products-grid-item.html', '/json/products.json')
+                </div>
+                <div class="product__slider-pagination product__slider-pagination-0"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

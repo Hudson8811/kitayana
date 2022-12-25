@@ -1,0 +1,162 @@
+.attention{
+    position: relative;
+    @media(max-width: 768px){
+        position: static;
+    }
+    &--icon{
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1211_439701)'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23F27229'/%3E%3Cpath d='M7.434 9.75122H8.82L9.17 3.19922H7.098L7.434 9.75122ZM8.134 13.0972C8.778 13.0972 9.24 12.6072 9.24 12.0052C9.24 11.4032 8.778 10.9272 8.134 10.9272C7.476 10.9272 7 11.4032 7 12.0052C7 12.6072 7.476 13.0972 8.134 13.0972Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1211_439701'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        width: rem(16px);
+        height: rem(16px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        display: block;
+        &--grey{
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1211_434057)'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23A7A9B9'/%3E%3Cpath d='M7.43236 9.33333C7.43236 9.05811 7.47699 8.81636 7.56625 8.60809C7.65551 8.39981 7.7708 8.21385 7.91213 8.05021C8.05346 7.88656 8.20223 7.73408 8.35844 7.59275C8.52208 7.45142 8.67457 7.31381 8.8159 7.17992C8.95723 7.04603 9.07252 6.9047 9.16179 6.75593C9.25105 6.60716 9.29568 6.4398 9.29568 6.25384C9.29568 5.94142 9.16922 5.68852 8.91632 5.49512C8.66341 5.30172 8.32497 5.20502 7.90098 5.20502C7.49186 5.20502 7.13482 5.2794 6.82985 5.42817C6.53231 5.57694 6.28312 5.78894 6.08229 6.06416L5 5.36123C5.31241 4.93724 5.72152 4.60623 6.22734 4.3682C6.73315 4.12273 7.33194 4 8.02371 4C8.56671 4 9.04277 4.08182 9.45188 4.24547C9.86099 4.40167 10.1808 4.63226 10.4114 4.93724C10.642 5.23477 10.7573 5.59926 10.7573 6.03068C10.7573 6.32822 10.709 6.58856 10.6123 6.81172C10.523 7.03487 10.404 7.23199 10.2552 7.40307C10.1139 7.56671 9.96141 7.72292 9.79777 7.87169C9.63412 8.01302 9.47792 8.15435 9.32915 8.29568C9.18782 8.43701 9.07252 8.58949 8.98326 8.75314C8.894 8.91678 8.84937 9.11018 8.84937 9.33333H7.43236ZM8.14644 12C7.8861 12 7.67039 11.9145 7.4993 11.7434C7.33566 11.5723 7.25384 11.3677 7.25384 11.1297C7.25384 10.8917 7.33566 10.6908 7.4993 10.5272C7.67039 10.3561 7.8861 10.2706 8.14644 10.2706C8.40679 10.2706 8.61878 10.3561 8.78243 10.5272C8.94607 10.6908 9.02789 10.8917 9.02789 11.1297C9.02789 11.3677 8.94607 11.5723 8.78243 11.7434C8.61878 11.9145 8.40679 12 8.14644 12Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1211_434057'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+    }
+
+    &__header{
+        padding: 0px rem(16px);
+        padding-top: rem(16px);
+        padding-bottom: 4px;
+        font-weight: 500;
+        font-size: rem(14px);
+        line-height: rem(24px);
+        border-bottom: 1px solid rgba(45, 39, 39, 0.3);
+        display: block;
+        &-title{
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+        }
+    }
+
+  
+   
+    &__content{
+        transition: 0.2s linear;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: rem(30px);
+        left: 50%;
+        z-index: 20;
+        transform: translateX(-50%);
+        filter: drop-shadow(0px 0px rem(32px) rgba(45, 39, 39, 0.15));
+        background: #fff;
+        width: max-content;
+        &.active{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            visibility: visible;
+            z-index: 99;
+        }
+        @media(max-width: 991px){
+            
+        }
+        .button{
+            width: 87%;
+            margin: 16px;
+            @media(max-width: 991px){
+                margin-top: 0;
+                display: flex !important;
+                height: 48px;
+            }
+        }
+        &-text{
+            padding: rem(16px);
+            color: #2D2727;
+            b{
+                font-weight: 600;
+                font-size: rem(14px);
+                line-height: rem(24px);
+                color: $color_1;
+
+            }
+            &--between{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    @media(min-width: 991px){
+        &:hover{
+            .attention__content{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &--icon{
+            &:hover{
+                & ~ .attention__content{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+  
+
+  
+
+
+    &__card-item{
+        .attention__content{
+            width: rem(252px);
+            padding-bottom: 12px;
+        }
+
+        .attention__header{
+            margin-bottom: 8px;
+            .attention__content-text {
+                padding-left: 0;
+                padding-right: 0;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: #2D2727;
+                padding-top: 12px;
+                padding-bottom: 4px;
+            }
+        }
+
+        .attention__content-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        .price-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .price{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 32px;
+                &--old{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-decoration-line: line-through;
+                    color: rgba(45, 39, 39, 0.7);
+                }
+            }
+
+            .parts-item__discount{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                width: 64px;
+            }
+        }
+    }
+}

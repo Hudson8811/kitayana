@@ -1,0 +1,11 @@
+&__text{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    span{
+        font-weight: 600;
+    }
+    @media(max-width: 991px){
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+    }
+}

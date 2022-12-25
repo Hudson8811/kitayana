@@ -1,0 +1,147 @@
+.subcategory{
+    padding: rem(68px) rem(83px);
+    background: $color_9;
+    margin-right: rem(20px);
+    @media(max-width: 991px){
+        margin-right: 0;
+        margin-top: rem(30px);
+        padding: rem(30px);
+    }
+    &__header{
+        display: flex;
+        align-items: flex-end;   
+        justify-content: space-between;
+        h2{
+            font-weight: 600;
+            font-size: rem(36px);
+            line-height: rem(44px);
+            color: $color_4;
+            @media(max-width: 768px){
+                font-size: 24px;
+            }
+        }
+
+        span{
+            font-weight: 400;
+            font-size: rem(16px);
+            line-height: rem(28px);
+            color: $color_6;
+        }
+    }
+
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: rem(40px);
+        padding-top: rem(48px);
+        @media(max-width: 768px){
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+
+    &__item{
+        padding: rem(32px) rem(25px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: rem(20px);
+        line-height: rem(32px);
+        color: $color_4;
+        background: $color_8;
+        @media(max-width: 768px){
+            font-size: 14px;
+            line-height: 18px;
+            padding: 16px;
+        }
+        i{
+            display: block;
+            background-image: url("data:image/svg+xml,%3Csvg width='48' height='16' viewBox='0 0 48 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M46.7071 8.70711C47.0976 8.31658 47.0976 7.68342 46.7071 7.29289L40.3431 0.928932C39.9526 0.538408 39.3195 0.538408 38.9289 0.928932C38.5384 1.31946 38.5384 1.95262 38.9289 2.34315L44.5858 8L38.9289 13.6569C38.5384 14.0474 38.5384 14.6805 38.9289 15.0711C39.3195 15.4616 39.9526 15.4616 40.3431 15.0711L46.7071 8.70711ZM2 9H46V7H2V9Z' fill='%232D2727'/%3E%3C/svg%3E%0A");
+            min-width: rem(48px);
+            min-height: rem(16px);
+            background-size: cover;
+            margin-left: rem(10px);
+        }
+
+        &:hover{
+            color: $color_2;
+            i{
+                background-image: url("data:image/svg+xml,%3Csvg width='48' height='16' viewBox='0 0 48 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M46.7071 8.70711C47.0976 8.31658 47.0976 7.68342 46.7071 7.29289L40.3431 0.928932C39.9526 0.538408 39.3195 0.538408 38.9289 0.928932C38.5384 1.31946 38.5384 1.95262 38.9289 2.34315L44.5858 8L38.9289 13.6569C38.5384 14.0474 38.5384 14.6805 38.9289 15.0711C39.3195 15.4616 39.9526 15.4616 40.3431 15.0711L46.7071 8.70711ZM2 9H46V7H2V9Z' fill='%23E60000'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+}
+
+.not-found{
+    display: flex;
+    padding-top: rem(5px);
+   
+    @media(max-width: 768px){
+        padding-top: 0;
+    }
+
+    .text{
+        max-width: rem(560px);
+    }
+    svg{
+        width: rem(140px);
+        height: rem(140px);
+        margin-right: rem(100px);
+        @media(max-width: 768px){
+            width: rem(80px);
+            height: rem(80px);
+            margin-right: rem(25px);
+        }
+    }
+    h4{
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 16px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        a{
+            color: $color_2;
+        }
+    }
+
+    &--medium{
+        svg{
+            margin-right: rem(103px);
+        }
+        .text{
+            max-width: rem(700px);
+            h4{
+                margin-bottom: rem(30px);
+            }
+            p{
+                max-width: rem(600px);
+            }
+        }
+    }
+
+    @media(max-width: 768px){
+        svg{
+            min-width: 80px;
+            min-height: 80px;
+            margin-right: 23px;
+        }
+
+        h4{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 24px;
+        }
+        
+    }
+
+
+   
+}

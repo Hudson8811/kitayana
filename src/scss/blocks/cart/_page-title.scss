@@ -1,0 +1,60 @@
+.cart-wrapper{
+    .page-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: rem(155px);
+        padding-bottom: rem(40px);
+        @media(max-width: 991px){
+            padding-right: 0;
+        }
+        .gift{
+            display: flex;
+            align-items: center;
+            @media(max-width: 768px){
+                padding-left: 39px;
+                padding-top: 7px;
+            }
+            &--icon{
+                background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23F1F1F3'/%3E%3Cpath d='M15.1719 19.4414L24.0019 24.5514L32.7719 19.4714' stroke='%23E60000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 33.613V24.543' stroke='%23E60000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.9306 14.48L16.5906 17.45C15.3806 18.12 14.3906 19.8 14.3906 21.18V26.83C14.3906 28.21 15.3806 29.89 16.5906 30.56L21.9306 33.53C23.0706 34.16 24.9406 34.16 26.0806 33.53L31.4206 30.56C32.6306 29.89 33.6206 28.21 33.6206 26.83V21.18C33.6206 19.8 32.6306 18.12 31.4206 17.45L26.0806 14.48C24.9306 13.84 23.0706 13.84 21.9306 14.48Z' stroke='%23E60000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M29.0017 25.2416V21.5816L19.5117 16.1016' stroke='%23E60000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                display: block;
+                width: rem(48px);
+                height: rem(48px);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-right: rem(16px);
+                @media(max-width: 768px){
+                    margin-right: 8px;
+                    min-width: 48px;
+                    min-height: 48px;
+                }
+
+                &-2{
+                    background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23F1F1F3'/%3E%3Cpath d='M48 24C48 29.0683 46.3955 34.0065 43.4164 38.1068C40.4373 42.2072 36.2366 45.2592 31.4164 46.8254C26.5962 48.3915 21.4038 48.3915 16.5836 46.8254C11.7633 45.2592 7.56266 42.2072 4.58359 38.1068C1.60452 34.0065 -4.43085e-07 29.0683 0 24C4.43085e-07 18.9317 1.60452 13.9935 4.58359 9.89315C7.56267 5.79281 11.7634 2.74083 16.5836 1.17464C21.4038 -0.391548 26.5962 -0.391548 31.4164 1.17464L30.6748 3.45718C26.3366 2.04761 21.6635 2.04761 17.3252 3.45718C12.987 4.86675 9.2064 7.61353 6.52524 11.3038C3.84407 14.9941 2.4 19.4385 2.4 24C2.4 28.5615 3.84407 33.0059 6.52523 36.6962C9.2064 40.3865 12.987 43.1332 17.3252 44.5428C21.6635 45.9524 26.3365 45.9524 30.6748 44.5428C35.013 43.1332 38.7936 40.3865 41.4748 36.6962C44.1559 33.0059 45.6 28.5615 45.6 24H48Z' fill='%23E60000'/%3E%3Cpath d='M15.1719 19.4399L24.0019 24.5499L32.7719 19.4699' stroke='%23292D32' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 33.61V24.54' stroke='%23292D32' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M33.6106 21.17V26.83C33.6106 26.88 33.6106 26.92 33.6006 26.97C32.9006 26.36 32.0006 26 31.0006 26C30.0606 26 29.1906 26.33 28.5006 26.88C27.5806 27.61 27.0006 28.74 27.0006 30C27.0006 30.75 27.2106 31.46 27.5806 32.06C27.6706 32.22 27.7806 32.37 27.9006 32.51L26.0706 33.52C24.9306 34.16 23.0706 34.16 21.9306 33.52L16.5906 30.56C15.3806 29.89 14.3906 28.21 14.3906 26.83V21.17C14.3906 19.79 15.3806 18.11 16.5906 17.44L21.9306 14.48C23.0706 13.84 24.9306 13.84 26.0706 14.48L31.4106 17.44C32.6206 18.11 33.6106 19.79 33.6106 21.17Z' stroke='%23292D32' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M35 30C35 31.2 34.47 32.27 33.64 33C32.93 33.62 32.01 34 31 34C28.79 34 27 32.21 27 30C27 28.74 27.58 27.61 28.5 26.88C29.19 26.33 30.06 26 31 26C33.21 26 35 27.79 35 30Z' stroke='%23292D32' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M31.25 28.75V30.25L30 31' stroke='%23292D32' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &__text{
+                max-width: rem(245px);
+                font-weight: 500;
+                font-size: rem(16px);
+                line-height: rem(28px);
+                color: rgba(45, 39, 39, 0.7);
+                b{
+                    color: #141415;
+                    font-weight: 500;
+                }
+                @media(max-width: 768px){
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    text-transform: none;
+                }
+                span{
+                    color: #E60000;
+                }
+            }
+        }
+    }
+}

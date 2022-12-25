@@ -1,0 +1,68 @@
+.car-service{
+    padding: 7.3rem 0 4.75rem;
+    @media(max-width: 991px){
+        padding: 5.625rem 0;
+    }
+
+    @media(max-width: 768px){
+        padding: 3rem 0;
+    }
+   
+   
+    @import 'grid';
+
+
+    @import 'inner';
+
+
+    @import 'title';
+
+
+    @import 'item';
+
+    
+    @import 'name';
+
+
+    @import 'text';
+
+
+    @import 'stat';
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+  
+
+    @import 'content';
+
+    @import 'col';
+
+    @import 'descr';
+
+    @import 'link';
+
+    @import 'img';
+
+    @import 'slider';
+
+    
+
+    &__button{
+        @media(max-width: 768px){
+            display: block;
+            width: max-content;
+        }
+    }
+
+    &__map{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

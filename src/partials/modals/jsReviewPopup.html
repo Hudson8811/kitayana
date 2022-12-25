@@ -1,0 +1,69 @@
+<div class="modal jsReviewPopup modal__content--sm-width" id="jsReviewPopup">
+    <div class="modal__inner ">
+        <div class="modal__content">
+
+            @include('../components/modal-close.html')
+
+
+            <div class="modal__overhead modal__overhead--invert modal__overhead--large">
+                Отзыв
+            </div>
+
+
+            <div class="modal__body">
+                <form class="review-form form">
+                    <h4 class="form-title">Оставить отзыв</h4>
+                    <p>
+                        Вы уже приобретали этот товар, пожалуйста, поделитесь своим мнением
+                    </p>
+
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="star star--hovered"></i>
+                            <i class="star star--hovered"></i>
+                            <i class="star star--hovered"></i>
+                            <i class="star star--hovered"></i>
+                            <i class="star star--hovered"></i>
+                        </div>
+
+                        Оцените товар
+                    </div>
+
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>E-mail *</label>
+                            <input type="text" class="input input--white" placeholder="Введите e-mail">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Комментарий *</label>
+                            <textarea class="input input--white" placeholder="Ваше мнение о товаре"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="file-load">
+                        <div class="load-hint">Добавьте фотографии (JPG, GIF, JPEG, PNG, BMP)</div>
+
+                        <label for="file-load" class="file-load__area">
+                            <input type="file" name="file-load" id="file-load">
+                            <i class="icon">
+                            </i>
+                            <span>Нажмите на кнопку или <br> перетащите фото в эту область</span>
+                        </label>
+                    </div>
+
+                    <button class="button">
+                        отправить
+                    </button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,10 @@
+&__name{
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.45;
+    color: $color_8;
+    @media(max-width: 768px){
+       font-size: 14px;
+       line-height: 18px;
+    }
+}

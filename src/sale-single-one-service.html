@@ -1,0 +1,865 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+@include('partials/modals/jsServiceModal.html')
+
+
+<div class="wrapper sale-single">
+	<div class="sale-inner">
+		<div class="sale-inner__title">
+			<div class="breadcrumbs breadcrumbs--pb-0">
+				<div class="container">
+					<div class="breadcrumbs__inner">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+						<a href="#" class="breadcrumbs__link">Акции</a>
+						<a href="#" class="breadcrumbs__link">Антикризисное предложение по окраске автомобиля</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h1 class="page-title page-title--medium">
+					<a href="#">
+						АНТИКРИЗИСНОЕ ПРЕДЛОЖЕНИЕ&nbspПО&nbspОКРАСКЕ АВТОМОБИЛЯ
+					</a>
+				</h1>
+			</div>
+		</div>
+		<div class="sale-inner__period">
+			<img  class="sale-image" src="img/sales/single-sale.png" alt="">
+			<div class="period-content">
+				<div class="period-content__title">
+					Период действия
+				</div>
+				<div class="period-content__row">
+					<div class="period-content__item">
+						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8 16.6484C12.4183 16.6484 16 13.0667 16 8.64844C16 4.23016 12.4183 0.648438 8 0.648438C3.58172 0.648438 0 4.23016 0 8.64844C0 13.0667 3.58172 16.6484 8 16.6484Z" fill="#A7A9B9"/>
+							<path d="M8 4.20312V8.64757L10.6667 11.3142" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="period-content__text">с 1 Апреля 2022</div>
+					</div>
+					<div class="period-content__item">
+						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_2029_501615)">
+							<circle cx="8" cy="8.64844" r="8" fill="#A7A9B9"/>
+							<path d="M7.434 10.3997H8.82L9.17 3.84766H7.098L7.434 10.3997ZM8.134 13.7457C8.778 13.7457 9.24 13.2557 9.24 12.6537C9.24 12.0517 8.778 11.5757 8.134 11.5757C7.476 11.5757 7 12.0517 7 12.6537C7 13.2557 7.476 13.7457 8.134 13.7457Z" fill="white"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_2029_501615">
+									<rect width="16" height="16" fill="white" transform="translate(0 0.648438)"/>
+								</clipPath>
+							</defs>
+						</svg>
+						<div class="period-content__text">Предложение не суммируется с другими акциями.</div>
+					</div>
+					<div class="period-content__item period-content__item--red">
+						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6.87776 1.11328L5.67347 2.31757C5.57588 2.41517 5.4435 2.47 5.30548 2.47H3.40865C2.53213 2.47 1.82156 3.18056 1.82156 4.05709V5.95392C1.82156 6.09194 1.76673 6.22431 1.66914 6.32191L0.464847 7.5262C-0.154949 8.14599 -0.154949 9.15088 0.464847 9.77068L1.66914 10.975C1.76673 11.0726 1.82156 11.2049 1.82156 11.343V13.2398C1.82156 14.1163 2.53213 14.8269 3.40865 14.8269H5.30548C5.4435 14.8269 5.57587 14.8817 5.67347 14.9793L6.87776 16.1836C7.49756 16.8034 8.50244 16.8034 9.12224 16.1836L10.3265 14.9793C10.4241 14.8817 10.5565 14.8269 10.6945 14.8269H12.5914C13.4679 14.8269 14.1784 14.1163 14.1784 13.2398V11.343C14.1784 11.2049 14.2333 11.0726 14.3309 10.975L15.5352 9.77068C16.1549 9.15088 16.155 8.14599 15.5352 7.5262L14.3309 6.32191C14.2333 6.22431 14.1784 6.09194 14.1784 5.95392V4.05709C14.1784 3.18056 13.4679 2.47 12.5914 2.47H10.6945C10.5565 2.47 10.4241 2.41517 10.3265 2.31757L9.12224 1.11328C8.50245 0.493489 7.49756 0.493488 6.87776 1.11328Z" fill="#E60000"/>
+							<line x1="5" y1="11.5878" x2="10.9393" y2="5.64844" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+							<circle cx="6" cy="5.64844" r="1" fill="white"/>
+							<circle cx="10" cy="11.6484" r="1" fill="white"/>
+						</svg>
+						<div class="period-content__text">1 услуга</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sale-inner__info">
+			<div class="info-content">
+				<div class="info-content__item">
+					<div class="info-content__title">
+						Уважаемые клиенты!
+					</div>
+					<div class="info-content__text">
+						<p>
+							До <b>31</b> мая <b>2022</b> закажите в интернет-магазине КИТАЯНА и воспользуйтесь БЕСПЛАТНОЙ заменой в автосервисе Маршал!
+						</p>
+						<ul>
+							<li>бесплатная замена тормозных колодок* - при покупке любых тормозных колодок</li>
+							<li>бесплатная замена моторного масла и масляного фильтра** - при покупке 4л масла и масляного фильтра</li>
+							<li>бесплатная замена амортизаторов***</li>
+						</ul>
+					</div>
+				</div>
+				<div class="info-content__item">
+					<div class="info-content__title">
+						Как воспользоваться?
+					</div>
+					<div class="info-content__text">
+						<p>
+							Для участия в акции укажите промокод "АЙБОЛИД" при оформлении заказа в интернет-магазине. <br>
+							Для получения бесплатной замены предъявите товарную накладную с заказом менеджеру СТО.  В Розничном магазине акция применяется автоматически.
+						</p>
+					</div>
+				</div>
+				<div class="info-content__item">
+					<div class="info-content__title">
+						Условия акции
+					</div>
+					<div class="info-content__text">
+						<p>
+							В акции участвует товар, приобретенные со склада наличия. 
+							<br><br>
+							* при комплектации автомобиля электронным ручным тормозом, сведение тормозных колодок - 800 рублей; снятие ошибки износа тормозных колодок - 500 рублей.
+							<br><br>
+							** в предложение входит бесплатное снятие и установка защиты картера.
+							<br><br>
+							***  демонтаж обшивки багажного отделения оплачивается отдельно
+							<br><br>
+							На стоимость тормозных колодок, масла, масляного фильтра, амортизаторов не распространяется скидка, действующая по другим акциям в интернет-магазине.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sale-inner__tech-service">
+			<div class="tech-service__content">
+				<div class="tech-service__title">
+					<div class="tech-service__title-text">Выберите СТО</div>
+					<a href="#" class="tech-service__title-link" data-popup="jsService">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.2527 2.87718C5.25138 1.88849 6.59991 1.33391 8.00521 1.33398C9.4105 1.33391 10.759 1.88849 11.7577 2.87718C12.7564 3.86587 13.3245 5.20876 13.3385 6.61398C13.3385 10.2673 8.67187 14.334 8.43854 14.5073C8.31779 14.6106 8.16411 14.6674 8.00521 14.6674C7.84631 14.6674 7.69263 14.6106 7.57188 14.5073L7.57078 14.5064C7.35544 14.3198 2.67188 10.2609 2.67188 6.61398C2.68593 5.20876 3.25403 3.86587 4.2527 2.87718ZM8.00391 8.49951C9.10848 8.49951 10.0039 7.60408 10.0039 6.49951C10.0039 5.39494 9.10848 4.49951 8.00391 4.49951C6.89934 4.49951 6.00391 5.39494 6.00391 6.49951C6.00391 7.60408 6.89934 8.49951 8.00391 8.49951Z" fill="#2D2727"></path>
+						</svg>
+						<span class="parts-item__text--dotted">На карте</span>
+					</a>
+				</div>
+
+				<div class="tech-service__row">
+					<!-- tech-service__item -->
+					<div class="tech-service__item open tech-service__item--bb-n tech-service__item--single">
+						<div class="tech-service__item-right accordion__content">
+							<div class="in-stock__row ">
+								<div class="in-stock__type">
+									СТО+магазин
+								</div>
+							</div>
+							<div class="in-stock__row in-stock__row--mb-sm">
+								<div class="in-stock__name">
+									Маршала Жукова пр., д.21
+								</div>
+								<div class="in-stock__text">
+									(Автоцентр Маршал, пав. № 29 и № 40)
+								</div>
+							</div>
+							<div class="in-stock__row in-stock__row--mb-md">
+								<div class="in-stock__text">
+									Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+								</div>
+							</div>
+
+							<div class="in-stock__row">
+								<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+								<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+							</div>
+							<div class="in-stock__row">
+								<div class="in-stock__item">
+									<svg class="in-stock__icon">
+										<use xlink:href="/img/sprite.svg#css--check"></use>
+									</svg>
+									Есть СТО, есть авто-консультант
+								</div>
+								<a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+							</div>
+						</div>
+					</div>
+					<!-- /tech-service__item -->
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="button tech-popup-button" data-popup="tech-service-popup-list">
+		Выбрать СТО
+	</div>
+
+	<!-- Sale slider -->
+	<div class="sales__slider-container sales__slider-container--mobile">
+		<div class="product__slider-title-wrapper">
+			<h2 class="product__slider-title">
+				акции
+			</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-1"></button>
+					<div class="product__slider-pagination product__slider-pagination-1"></div>
+					<button class="product__slider-next product__slider-next-1"></button>
+				</div>
+
+				<a href="#" class="all-product">Все акции</a>
+				<a href="#" class="all-product all-product--mobile">Все 23</a>
+			</div>
+
+		</div>
+
+		<div class="sale__slider sale__slider--mob">
+
+			<div class="sale__slider-wrapper">
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления топлива и как...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+					<div class="sale__grid-item-shadow"></div>
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Сезонная замена <br> технических жидкостей <br> в автомобиле
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Антифриз, масла <br> и другие технические жидкости
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления топлива и как...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+					<div class="sale__grid-item-shadow"></div>
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Сезонная замена <br> технических жидкостей <br> в автомобиле
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Антифриз, масла <br> и другие технические жидкости
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Великий уравнитель: для чего нужен регулятор давления топлива и как...
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+					<div class="sale__grid-item-shadow"></div>
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Сезонная замена <br> технических жидкостей <br> в автомобиле
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+				<!-- sale__grid-item -->
+				<div class="sale__grid-item">
+					<div class="sale__grid-item-container">
+						<div class="sale__grid-item-tags">
+							<div class="sale__grid-item-tag--white">
+								Акция
+							</div>
+							<div class="sale__grid-item-tag">
+								до 20.08.2022
+							</div>
+						</div>
+						<div class="sale__grid-item-title">
+							Антифриз, масла <br> и другие технические жидкости
+						</div>
+						<div class="sale__grid-item-text">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+						</div>
+					</div>
+				</div>
+				<!-- end sale__grid-item -->
+
+			</div>
+
+			<div class="product__slider-pagination product__slider-pagination-1"></div>
+		</div>
+	</div>
+	<!-- /Sale slider -->
+
+	<!-- Sale slider desktop -->
+	<div class="sales__slider-container sales__slider-container--desktop">
+		<div class="product__slider-title-wrapper">
+			<h2 class="product__slider-title">
+				акции
+			</h2>
+
+			<div class="product__slider-nav-wrapper">
+				<div class="product__slider-nav">
+					<button class="product__slider-prev product__slider-prev-2"></button>
+					<div class="product__slider-pagination product__slider-pagination-2"></div>
+					<button class="product__slider-next product__slider-next-2"></button>
+				</div>
+
+				<a href="#" class="all-product">Все акции</a>
+				<a href="#" class="all-product all-product--mobile">Все 23</a>
+			</div>
+
+		</div>
+
+		<div class="sale__slider sale__slider--desktop">
+
+			<div class="sale__slider-wrapper">
+
+				<!-- Desktop slide item -->
+				<div class="sale__slide-item">
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Великий уравнитель: для чего нужен регулятор давления топлива и как...
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+						<div class="sale__grid-item-shadow"></div>
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Сезонная замена <br> технических жидкостей <br> в автомобиле
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Антифриз, масла <br> и другие технические жидкости
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+				</div>
+				<!-- /Desktop slide item -->
+
+				<!-- Desktop slide item -->
+				<div class="sale__slide-item">
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Великий уравнитель: для чего нужен регулятор давления топлива и как...
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+						<div class="sale__grid-item-shadow"></div>
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Сезонная замена <br> технических жидкостей <br> в автомобиле
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Антифриз, масла <br> и другие технические жидкости
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+				</div>
+				<!-- /Desktop slide item -->
+
+				<!-- Desktop slide item -->
+				<div class="sale__slide-item">
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Великий уравнитель: для чего нужен регулятор давления топлива и как...
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<img class="sale__grid-item-image" src="img/sales/sale-slider-image.png" alt="">
+						<div class="sale__grid-item-shadow"></div>
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Сезонная замена <br> технических жидкостей <br> в автомобиле
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+
+					<!-- sale__grid-item -->
+					<div class="sale__grid-item">
+						<div class="sale__grid-item-container">
+							<div class="sale__grid-item-tags">
+								<div class="sale__grid-item-tag--white">
+									Акция
+								</div>
+								<div class="sale__grid-item-tag">
+									до 20.08.2022
+								</div>
+							</div>
+							<div class="sale__grid-item-title">
+								Антифриз, масла <br> и другие технические жидкости
+							</div>
+							<div class="sale__grid-item-text">
+								Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval,...
+							</div>
+						</div>
+					</div>
+					<!-- end sale__grid-item -->
+				</div>
+				<!-- /Desktop slide item -->
+
+			</div>
+
+			<div class="product__slider-pagination product__slider-pagination-2"></div>
+		</div>
+	</div>
+	<!-- /Sale slider desktop-->
+
+	<div class="sale-banner">
+		<div class="sale-banner__info">
+			<div class="sale-banner__title">
+				Магазины и СТО
+			</div>
+			<div class="sale-banner__text">
+				Наши магазины представлены в 40 городах 
+			</div>
+			<div class="sale-banner__tags">
+				<div class="sale-banner__tag">
+					Доступно 100 магазинов
+				</div>
+				<div class="sale-banner__tag">
+					Доступно 26 автосервисов
+				</div>
+			</div>
+			<a href="#" class="button sale-banner__button">Все магазины и СТО</a>
+		</div>
+		<img src="img/sales/service-map.png" alt="" class="sale-banner__map">
+	</div>
+</div>
+
+
+<!-- Popup tech list -->
+<div class="tech-service-popup modal" id="tech-service-popup-list">
+	<div class="tech-service-popup__top">
+		<div class="tech-service-popup__back jsButtonCloseModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14 17L9 12L14 7" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			назад
+		</div>
+		<div class="tech-service-popup__switch">
+			<div class="tech-service-popup__switch-map tech-service-popup__switch-item active" data-popup="tech-service-popup-map">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M4.2488 2.87718C5.24747 1.88849 6.59601 1.33391 8.0013 1.33398C9.4066 1.33391 10.7551 1.88849 11.7538 2.87718C12.7525 3.86587 13.3206 5.20876 13.3346 6.61398C13.3346 10.2673 8.66797 14.334 8.43464 14.5073C8.31388 14.6106 8.1602 14.6674 8.0013 14.6674C7.8424 14.6674 7.68872 14.6106 7.56797 14.5073L7.56688 14.5064C7.35154 14.3198 2.66797 10.2609 2.66797 6.61398C2.68202 5.20876 3.25012 3.86587 4.2488 2.87718ZM8 8.49951C9.10457 8.49951 10 7.60408 10 6.49951C10 5.39494 9.10457 4.49951 8 4.49951C6.89543 4.49951 6 5.39494 6 6.49951C6 7.60408 6.89543 8.49951 8 8.49951Z" fill="#2D2727"/>
+				</svg>
+				На карте
+			</div>
+		</div>
+		<div class="tech-service-popup__close jsButtonCloseModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2029_506743)">
+					<path d="M18.5478 6.03516L5.44922 19.1337" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+					<path d="M18.5478 19.1337L5.44922 6.03516" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+				</g>
+				<defs>
+					<clipPath id="clip0_2029_506743">
+						<rect width="24" height="24" fill="white"/>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+	</div>
+	<div class="tech-service-popup__bottom">
+		<div class="tech-service-popup__title">
+			Выберите СТО
+		</div>
+		<div class="tech-service-popup__content">
+
+			<!-- popup item -->
+			<div class="tech-service-popup__item">
+				<div class="in-stock__row in-stock__row--mb-sm">
+					<div class="in-stock__type">
+						СТО+магазин
+					</div>
+					<div class="in-stock__text in-stock__text--lh-sm">1,5 км</div>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__name">
+						Санкт-Петербург, Маршала Жукова пр., д.21
+					</div>
+					<div class="in-stock__text">
+						(Автоцентр Маршал, пав. № 29 и № 40)
+					</div>
+				</div>
+				<div class="in-stock__row in-stock__row--mb-n">
+					<div class="in-stock__text">
+						Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+					</div>
+				</div>
+
+				<div class="in-stock__row">
+					<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+					<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__item">
+						<svg class="in-stock__icon">
+							<use xlink:href="/img/sprite.svg#css--check"></use>
+						</svg>
+						Есть СТО, есть авто-консультант
+					</div>
+					<a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+				</div>
+			</div>
+			<!-- /popup item -->
+
+		</div>
+	</div>
+</div>
+<!-- Popup tech list -->
+
+<!-- Popup tech map -->
+<div class="tech-service-popup modal" id="tech-service-popup-map">
+	<div class="tech-service-popup__top">
+		<div class="tech-service-popup__back jsButtonBackModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14 17L9 12L14 7" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			назад
+		</div>
+		<div class="tech-service-popup__switch">
+			<div class="tech-service-popup__switch-list tech-service-popup__switch-item active jsButtonBackModal">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line y1="1" x2="7" y2="1" stroke="#2D2727" stroke-width="2"/>
+					<line y1="7" x2="14" y2="7" stroke="#2D2727" stroke-width="2"/>
+					<line y1="13" x2="14" y2="13" stroke="#2D2727" stroke-width="2"/>
+				</svg>
+				Списком
+			</div>
+		</div>
+		<div class="tech-service-popup__close jsButtonCloseModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2029_506743)">
+					<path d="M18.5478 6.03516L5.44922 19.1337" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+					<path d="M18.5478 19.1337L5.44922 6.03516" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+				</g>
+				<defs>
+					<clipPath id="clip0_2029_506743">
+						<rect width="24" height="24" fill="white"/>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+	</div>
+	<div class="tech-service-popup__bottom">
+		<div class="tech-service-popup__title">
+			Выберите СТО
+		</div>
+		<div class="tech-service-popup__content tech-service-popup__content--map">
+			<div id="map-modal" class="tech-service__map"></div>
+		</div>
+	</div>
+</div>
+<!-- Popup tech map -->
+
+<!-- Popup select service -->
+<div class="tech-service-popup modal" id="tech-service-selected">
+	<div class="tech-service-popup__top tech-service-popup__top--mb-n">
+		<div class="tech-service-popup__back jsButtonBackModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14 17L9 12L14 7" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			назад
+		</div>
+		<div class="tech-service-popup__close jsButtonCloseModal">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_2029_506743)">
+					<path d="M18.5478 6.03516L5.44922 19.1337" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+					<path d="M18.5478 19.1337L5.44922 6.03516" stroke="#2D2727" stroke-width="2" stroke-linecap="round"/>
+				</g>
+				<defs>
+					<clipPath id="clip0_2029_506743">
+						<rect width="24" height="24" fill="white"/>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+	</div>
+	<div class="tech-service-popup__bottom">
+		<div class="tech-service-popup__content">
+			<!-- popup item -->
+			<div class="tech-service-popup__item tech-service-popup__item--bt-n">
+				<div class="in-stock__row in-stock__row--mb-sm">
+					<div class="in-stock__type">
+						СТО+магазин
+					</div>
+					<div class="in-stock__text in-stock__text--lh-sm">1,5 км</div>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__name">
+						Санкт-Петербург, Маршала Жукова пр., д.21
+					</div>
+					<div class="in-stock__text">
+						(Автоцентр Маршал, пав. № 29 и № 40)
+					</div>
+				</div>
+				<div class="in-stock__row in-stock__row--mb-n">
+					<div class="in-stock__text">
+						Пн-Сб: 10:00 – 19:00, Вс: 10:00 – 18:00
+					</div>
+				</div>
+
+				<div class="in-stock__row">
+					<a href="tel:+78126003535" class="in-stock__link in-stock__link--big">+7 (812) 600-35-35</a>
+					<a href="mailto:magazin1@gmail.com" class="in-stock__link in-stock__link--big">magazin1@gmail.com</a>
+				</div>
+				<div class="in-stock__row">
+					<div class="in-stock__item">
+						<svg class="in-stock__icon">
+							<use xlink:href="/img/sprite.svg#css--check"></use>
+						</svg>
+						Есть СТО, есть авто-консультант
+					</div>
+					<a href="#" class="in-stock__link in-stock__link--red">Записаться на СТО</a>
+				</div>
+			</div>
+			<!-- /popup item -->
+		</div>
+	</div>
+</div>
+<!-- Popup select service -->
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

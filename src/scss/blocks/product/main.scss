@@ -1,0 +1,49 @@
+@import 'grid/main';
+@import 'card/main';
+@import 'bottom-panel/main';
+@import 'item/main';
+@import 'slider/main';
+@import 'top-line/main';
+@import 'reviews/main';
+
+
+.product-proposals{
+    .parts-item__preview{
+        position: relative;
+        .parts-item__img{
+            @media(max-width: 768px){
+                margin-top: 32px;
+            }
+            
+        }
+        .product__type-hint{
+                position: absolute;
+                font-weight: 600;
+                font-size: rem(18px);
+                line-height: rem(32px);
+                color: #F1F1F3;
+                padding: 0px rem(16px);
+                background: #2D2727;
+                left: 50%;
+                bottom: -34px;
+                transform: translateX(-50%);
+                @media(max-width: 991px){
+                }
+    
+                @media(max-width: 768px){
+                    font-weight: 600;
+                    height: max-content;
+                    font-size: 12px;
+                    line-height: 24px;
+                    padding: 0px 8px;
+                    bottom: 10px;
+                }
+
+                @media(max-width: 400px){
+                    bottom: -20px;
+                    right: 0;
+                    left: 62%;
+                }
+        }
+    }
+}

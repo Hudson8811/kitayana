@@ -1,0 +1,51 @@
+<div class="modal auth-modals  auth-modals--register " id="register">
+    <div class="modal__inner">
+        <div class="modal__content">
+
+            @include('../../components/modal-close.html')
+
+
+            <div class="modal__overhead">
+                Регистрация
+            </div>
+            
+            <div class="form-wrapper">
+               
+    
+                <form action="" class="form form-validate" >
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Телефон *</label>
+                            <div class="input-wrap">
+                                <input type="tel" class="input input-md" placeholder="+7 (000) 000-00-00">
+                                <button class="button">получить код</button>
+                            </div>
+                            <p class="input-hint">На указанный номер телефона придёт сообщение с коротким кодом</p>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Код из SMS *</label>
+                            <input type="text" class="input">
+                            <p class="input-hint">Повторная отправка через <b>01:55</b></p>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button class="button button--lg">Зарегистрироваться</button>
+                        <a href="" class="form-link">Войти</a>
+                    </div>
+
+                    <div class="form-alert">
+                        Нажимая кнопку «Войти», вы соглашаетесь c условиями <span class="red">политики конфиденциальности</span> 
+                    </div>
+                </form>
+               
+    
+            </div>
+
+          
+
+        </div>
+    </div>
+</div>

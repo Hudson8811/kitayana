@@ -1,0 +1,128 @@
+@include('partials/header.html')
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+
+
+
+<div class="wrapper">
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Каталог по марке авто</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    @include('partials/components/page-title.html', {
+    'title': 'Bentley Continental Flying Spur W12 Mulliner...',
+    'size': 'big',
+    'model': true
+    })
+
+
+    @include('partials/model-select.html', {
+    step: '2'
+    })
+
+    <div class="car-list">
+        <div class="container">
+            <div class="car-list__inner">
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">Atlas</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+                </a>
+
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo-1.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">Coolray</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+                </a>
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo-2.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">Tugella</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+                </a>
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo-3.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">Emgrand</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+                </a>
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo-4.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">GC</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+                </a>
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo-5.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">Bentley Continental Flying Spur W12 Mulline...</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+
+                </a>
+                <a href="#" class="car-list__item">
+                    <img alt="temp-alt" src="/img/cards-small/photo-6.png">
+                    <div class="car-list__item-text">
+                        <h2 class="name">Otaka</h2>
+                        <span class="date">2016 – наст. время</span>
+                    </div>
+
+                </a>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    @include('partials/car-service.html')
+
+
+    @include('partials/need-help.html', {
+    })
+
+
+    @include('partials/advantages.html')
+
+
+    @include('partials/shops.html')
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

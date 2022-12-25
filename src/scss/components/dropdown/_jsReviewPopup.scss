@@ -1,0 +1,60 @@
+.jsReviewPopup{
+    .modal__body{
+        height: 100%;
+
+    }
+    .review-form{
+        display: block;
+        padding: 0;
+        @media(min-width: 768px){
+            padding: 24px 3vw;
+
+        }
+        .form-title{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 31px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            max-width: 360px;
+        }
+
+        .rating{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            .star{
+                display: block;
+            }
+        }
+
+        .input-row{
+            margin-bottom: 0px;
+        }
+
+        .file-load{
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-bottom: 16px;
+            justify-content: flex-end;
+            @media(min-width: 768px){
+                margin-top: 16px;
+            }
+            &__area{
+                margin-bottom: 0;
+               span{
+                display: none;
+               }
+            }
+        }
+    }
+}

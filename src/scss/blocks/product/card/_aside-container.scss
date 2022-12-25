@@ -1,0 +1,311 @@
+.product__aside-container{
+    padding: 0px rem(80px);
+    display: grid;
+    grid-template-columns: rem(1287px) rem(405px);
+    grid-gap: rem(80px);
+    padding-top: rem(64px);
+    .help-selection__box:first-child{
+        padding-top: rem(40px);
+    }
+    &.product__reviews{
+        grid-template-columns: rem(1040px) rem(640px);
+        grid-gap: rem(80px);
+        
+    }
+    @media(max-width: 991px){
+        grid-template-columns: 100% !important;
+        padding: 18px;
+    }
+
+    @media(max-width: 768px){
+        grid-gap: 0;
+    }
+
+    &.product-proposals{
+        background: #F1F1F3;
+        padding-top: rem(67px);
+        @media(max-width: 768px){
+            padding-top: 0;
+        }
+        .overhead{
+            margin-bottom: rem(30px);
+        }
+        .parts-item__text--md{
+            @media(max-width: 768px){
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+
+        .parts-list__overhead{
+           padding: rem(24px);
+        }
+        .filters-mob__items{
+            padding: 16px;
+            padding-bottom: 14px;
+            padding-top: 0;
+            margin-top: 48px;
+            &:first-child{
+                margin-top: 24px;
+            }
+        
+        }
+        .load-more-button{
+            max-width: 100%;
+        }
+
+        .parts-list-wrapper{
+            width: 100%;
+            margin-right: 0;
+            @media(max-width: 768px){
+                margin: 0 !important;
+            }
+        }
+        .wrapper-load-more-button{
+            width: 100%;
+            @media(max-width: 768px){
+                padding: 0px 16px;
+                .load-more-button{
+                    background: #F1F1F3;
+                    font-size: 10px;
+                    height: 48px;
+                    margin-top: 19px;
+                }
+            }
+        }
+        aside{
+            padding-top: rem(74px);
+            @media(max-width: 768px){
+                display: none;
+            }
+        }
+
+        .content{
+            background: none;
+            @media(max-width: 768px){
+                background: #fff;
+                padding-bottom: 48px;
+            }
+            .overhead{
+                align-items: flex-end;
+                padding-right: 0;
+                @media(max-width: 768px){
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    background: #F1F1F3;
+                    padding: 17px 16px !important;
+                    border-bottom: 1px solid rgba(45, 39, 39, 0.7) !important;
+                    margin-bottom: 0px;
+                    .title{
+                        display: flex;
+                        align-items: center;
+                        .parts-item__discount{
+                            margin-left: 16px;
+                        }
+                    }
+                }
+                &--mt{
+                    margin-top: rem(70px);
+                    @media(max-width: 768px){
+                        margin-top: 0;
+                    }
+                }
+                .text{
+                    line-height: rem(15px);
+                }
+            }
+        }
+    }
+
+    @media(max-width: 768px){
+        padding: 0;
+       
+    }
+    // background: #F1F1F3;
+    .content{
+        padding: 0;
+        background: #fff;
+    }
+
+    // aside{
+    //     padding-top: 80px;
+    // }
+
+    .parts-list-wrapper{
+        padding-right: 0;
+    }
+
+    @media(max-width: 991px){
+        .help-selection{
+            display: none;
+        }
+    }
+
+    .brand__list{
+        padding: 0;
+        max-height: 100%;
+        overflow: hidden;
+        &-cars{
+            grid-template-columns: rem(556px) rem(556px);
+            grid-gap: rem(84px);
+            margin-bottom: rem(16px);
+            @media(max-width: 991px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media(max-width: 768px){
+                grid-template-columns: 100%;
+                grid-gap: 8px;
+                margin-bottom: 23px;
+            }
+        }
+
+        .brand__list-car img{
+            width: rem(140px);
+            height: auto;
+            @media(max-width: 768px){
+                width: 87px;
+                margin-right: 16px;
+            }
+        }
+
+        .car-name{
+            font-weight: 600;
+            font-size: rem(18px);
+            line-height: rem(30px);
+            @media(max-width: 768px){
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        .car-years{
+            font-weight: 400;
+            font-size: rem(16px);
+            line-height: rem(28px);
+            @media(max-width: 768px){
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        .brand__list-header{
+            margin-top: 0;
+        }
+    }
+
+    .brand-form{
+        margin-top: rem(39px);
+        padding: rem(80px);
+        background: #F1F1F3;
+        margin-bottom: rem(111px);
+        p{
+            padding-top: 12px;
+            padding-bottom: 24px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 24px;
+            color: rgba(45, 39, 39, 0.7);
+        }
+        @media(max-width: 991px){
+            padding: 20px;
+            margin-bottom: 0;
+        }
+
+        @media(max-width: 768px){
+            margin-top: 28px;
+            padding-top: 48px;
+            margin-bottom: 0px;
+            padding-right: 13px;
+            margin-bottom: 50px;
+            padding-bottom: 42px;
+            p{
+                padding-top: 7px;
+                padding-bottom: 28px;
+            }
+        }
+        .button{
+            margin-top: rem(20px);
+            width: rem(241px);
+            @media(max-width: 768px){
+                width: 100%;
+                margin-top: 31px;
+                height: 48px;
+            }
+        }
+        .form-title{
+            font-weight: 600;
+            font-size: rem(28px);
+            line-height: rem(34px);
+            color: #2D2727;
+            text-transform: none;
+            margin-bottom: rem(32px);
+            letter-spacing: 0;
+            @media(max-width: 768px){
+                margin-bottom: 0;
+                font-size: 18px;
+                line-height: 22px;
+                max-width: 345px;
+            }
+        }
+
+        .input-row{
+            gap: rem(40px);
+            margin-bottom: rem(32px);
+            @media(max-width: 768px){
+                gap: 0px;
+                margin-bottom: 0;
+            }
+        }
+
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            @media(max-width: 768px){
+                margin-bottom: 19px;
+            }
+        }
+
+        label{
+            font-weight: 400;
+            font-size: rem(14px);
+            line-height: rem(24px);
+            color: rgba(45, 39, 39, 0.7);
+            display: inline-block;
+            margin-bottom: rem(8px);
+        }
+
+        textarea{
+            max-width: rem(734px);
+            max-height: rem(120px) !important;
+            height: 100%;
+            @media(max-width: 768px){
+                width: 100%;
+                max-width: 100%;
+                max-height: 72px !important;
+            }
+        }
+
+        .checkbox{
+            display: flex;
+            align-items: center;
+              .checkbox__name{
+                font-weight: 400;
+                font-size: rem(14px);
+                line-height: rem(24px);
+                color: rgba(45, 39, 39, 0.7);
+                a{
+                    color: #E60000;
+                    text-decoration: none;
+                }
+            }
+           
+        }
+    }
+    
+}
+
+

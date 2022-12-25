@@ -1,0 +1,73 @@
+.jsExpertDropdown{
+    width: 33.5rem;
+    top: rem(48px) !important;
+    @media(max-width: 768px){
+        top: 0 !important;
+    }
+    .dropdown{
+        @media(max-width: 768px){
+            &__inner{
+                padding-top: 50px !important;
+            }
+            
+        }
+        &__title--big{
+            margin-bottom: 0.5rem;
+        }
+        &__close{
+            right: 2.5rem;
+            top: 3.5rem;
+            @media(max-width: 768px){
+                top: 16px;
+                right: 16px;
+            }
+            
+        }
+
+        &__photo{
+            margin-right: 16px;
+        }
+        &__inner{
+            padding: 2.2rem 3.5rem;
+            padding-right: 2rem;
+        }
+        &__text{
+            margin-bottom: 2rem;
+            &--mb{
+                &-none{
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        &__block--py{
+            
+            &--py{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            &--mb{
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__input{
+            margin-bottom: 1rem;
+        }
+
+        &__button{
+            margin-right: 20px;
+        }
+    }
+   
+
+    .input-error{
+        margin-top: -1rem;
+    }
+
+
+    .checkbox__name{
+        color: $color_8;
+    }
+    
+}

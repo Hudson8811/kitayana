@@ -1,0 +1,54 @@
+.counter {
+    padding: 0.625rem 1.25rem;
+    background: $color_9;
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 1.062rem;
+            height: 0.125rem;
+            border-radius: 0.125rem;
+            background: rgba(45, 39, 39, 0.3);
+        }
+
+        &--plus{
+            &::after{
+                background: $color_4;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 0.125rem;
+                height: 1.062rem;
+                border-radius: 0.125rem;
+                background: $color_4;
+            }
+        }
+    }
+
+    &__value{
+        width: 1.875rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+        color: $color_4;
+        margin: 0 0.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

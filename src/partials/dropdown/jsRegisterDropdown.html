@@ -1,0 +1,111 @@
+<div class="dropdown dropdown--left  jsRegisterDropdown" id="jsRegisterDropdown">
+    <div class="dropdown__inner">
+        <div class="dropdown__overhead">
+            <div class="dropdown__title dropdown__title--mb-none">
+                Регистрация
+            </div>
+           @include('../components/dropdown-close.html')
+        </div>
+
+        <div class="dropdown__body">
+            <div class="tabs">
+                <ul class="tabs-link">
+                    <li>
+                        <a href="" data-tab="reg-phone">по номеру телефона</a>
+                    </li>
+                    <li>
+                        <a href="" class="active" data-tab="reg-email">по e-mail</a>
+                    </li>
+                </ul>
+
+                <div class="tabs-content">
+                    <form class="tab open form-validate" id="reg-email">
+
+                        <label class="dropdown__label">
+                            Имя *
+                        </label>
+                        <input type="text" data-required class="input dropdown__input" placeholder="Введите имя">
+
+
+                        <label class="dropdown__label">
+                            E-mail *
+                        </label>
+                        <input type="text" data-required class="input dropdown__input" placeholder="Введите e-mail">
+
+
+                        <label class="dropdown__label">
+                            Пароль *
+                        </label>
+                        <div class="input-wrapper dropdown__input">
+                            <input type="text" data-required class="input input--pr " placeholder="Пароль">
+                            <button class="input-icon --svg__eye_close"></button>
+                        </div>
+
+                        <div class="dropdown__buttons dropdown__buttons--between">
+                            <button class="submit button dropdown__button dropdown__button--md dropdown__button--mr">
+                                зарегистрироваться
+                            </button>
+                            <a href="#" class="dropdown__link jsAuthButton" data-dropdown="jsAuthDropdown">
+                                Войти
+                            </a>
+                        </div>
+
+                        <div class="dropdown__rule">
+                            Регистрируясь я принимаю <a href="#">условия оферты</a> и соглашаюсь на <a
+                                href="#">обработку перс. данных</a>
+                        </div>
+                    </form>
+
+
+                    <form class="tab form-validate" id="reg-phone">
+
+                        <label class="dropdown__label">
+                            Имя *
+                        </label>
+                        <input type="text" data-required class="input dropdown__input" placeholder="Введите имя">
+
+
+                        <label class="dropdown__label">
+                            Телефон *
+                        </label>
+                        <div class="input-wrap code">
+                            <input class="input" type="tel" placeholder="+7 (000) 000-00-00">
+                            <button class="button">получить код</button>
+                        </div>
+                        <p class="dropdown__rule dropdown__rule--small">
+                            На указанный номер телефона придёт сообщение с коротким кодом
+                        </p>
+
+                        <label class="dropdown__label">
+                            Код из SMS *
+                        </label>
+
+                        <input type="text" data-required class="input input--pr " placeholder="Пароль">
+
+
+                        <p class="dropdown__rule dropdown__rule--small">
+                            Повторная отправка через 01:55
+                        </p>
+
+
+                        <div class="dropdown__buttons dropdown__buttons--between">
+                            <button class="submit button dropdown__button dropdown__button--md dropdown__button--mr">
+                                Зарегистрироваться
+                            </button>
+                            <a href="#" class="dropdown__link">
+                                Войти
+                            </a>
+                        </div>
+
+                        <p class="dropdown__rule">
+                            Нажимая кнопку «Войти», вы соглашаетесь c условиями <a href="#" class="red">политики
+                                конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

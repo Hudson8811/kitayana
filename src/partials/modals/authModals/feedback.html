@@ -1,0 +1,65 @@
+<div class="modal auth-modals auth-modals--md " id="feedback">
+    <div class="modal__inner">
+        <div class="modal__content">
+
+            @include('../../components/modal-close.html')
+
+
+            <div class="modal__overhead">
+                Заказать обратный звонок менеджера
+            </div>
+            
+            <div class="form-wrapper">
+
+
+                <div class="form-text">
+                    Укажите необходимые сведения и отправьте заявку. Наши специалисты свяжутся с вами.
+                </div>
+    
+                <form action="" class="form form-validate active" >
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Телефон *</label>
+                            <input type="tel" class="input input--sm input-md" placeholder="+7 (999) 000 00 00">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Имя</label>
+                            <input type="text" class="input input-md" placeholder="Введите имя">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Комментарий</label>
+                            <textarea class="input" placeholder="Ваш комментарий"></textarea>
+                        </div>
+                    </div>
+
+                    <label class="checkbox" for="chex1231">
+                        <input class="checkbox__input" type="checkbox" id="chex1231">
+                        <span class="checkbox-wrap">
+                                <span class="check-sign check-part-1"></span>
+                                <span class="check-sign check-part-2"></span>
+                            </span>
+                        <span class="checkbox__name checkbox__name--sm ">Я согласен с <a href="#" class="link">условиями</a>
+                            передачи данных
+                        </span>
+                    </label>
+
+                    <div class="form-footer">
+                        <button class="button button--md">Отправить заявку</button>
+                    </div>
+
+                   
+                </form>
+               
+    
+            </div>
+
+          
+
+        </div>
+    </div>
+</div>

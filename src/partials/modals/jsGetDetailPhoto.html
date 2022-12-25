@@ -1,0 +1,82 @@
+<div class="modal jsGetDetailPhoto modal__content--sm-width" id="jsGetDetailPhoto">
+    <div class="modal__inner ">
+        <div class="modal__content">
+
+            @include('../components/modal-close.html')
+
+
+            <div class="modal__overhead modal__overhead--invert modal__overhead--large">
+                Запрос фото детали
+            </div>
+
+
+            <div class="modal__body">
+                <form action="#" class="get-photo form form-validate">
+
+                    <h3 class="form-title mobile-only">Запрос фото детали</h3>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label class="dropdown__label">Товар</label>
+                            <input type="text" value="Фильтр масляный D4060-JA00A" class="input input--invert">
+                        </div>
+                    </div>
+
+
+                    <div class="input-row">
+                        <div class="input-group input-group--sm">
+                            <label class="dropdown__label">Имя *</label>
+                            <input type="text" placeholder="Ваше имя" data-required class="input input--invert">
+                        </div>
+                        <div class="input-group">
+                            <label class="dropdown__label">Фамилия *</label>
+                            <input type="text" placeholder="Ваша фамилия" data-required class="input input--invert">
+                        </div>
+                    </div>
+
+
+                    <div class="input-row">
+                        <div class="input-group input-group--sm">
+                            <label class="dropdown__label">Телефон *</label>
+                            <input type="text" placeholder="+7 (999) 000 00 00" data-required
+                                class="input input--invert">
+                        </div>
+                        <div class="input-group">
+                            <label class="dropdown__label">E-mail *</label>
+                            <input type="text" placeholder="Введите e-mail" data-required class="input input--invert">
+                        </div>
+                    </div>
+
+
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label class="dropdown__label">Комментарий</label>
+                            <textarea rows="2" placeholder="Ваш комментарий" data-required
+                                class="input input--invert"></textarea>
+                        </div>
+                    </div>
+
+
+                    <label class="checkbox" for="chex13">
+                        <input class="checkbox__input" type="checkbox" id="chex13">
+                        <span class="checkbox-wrap">
+                            <span class="check-sign check-part-1"></span>
+                            <span class="check-sign check-part-2"></span>
+                        </span>
+                        <span class="checkbox__name checkbox__name--sm">Я согласен с <a href="#"
+                                class="link">условиями</a>
+                            передачи данных
+                        </span>
+                    </label>
+
+                    <button class="submit button">Отправить заявку</button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,101 @@
+@include('partials/header.html')
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsGetDetailPhoto.html')
+@include('partials/modals/jsGallery.html')
+@include('partials/modals/jsReviewPopup.html')
+
+
+
+
+<div class="wrapper cart-wrapper cart-wrapper--empty" >
+
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Корзина</a>
+              
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="cart__content-wrapper cart__content-wrapper--border-none">
+            <div class="container">
+               <div class="cart-empty">
+                    <svg width="140" height="140" viewBox="0 0 140 140" >
+                        <use xlink:href="/img/sprite-new.svg#cart-emply"></use>
+                    </svg>
+
+                    
+
+                    <div class="cart-empty__content">
+                        <h2>Добавьте в корзину нужные товары</h2>
+                        <p>Перейдите в каталог запчастей для выбора товаров</p>
+                        <a href="#" class="button">Каталог</a>
+                    </div>
+                    
+               </div>
+            </div>
+        </div>
+   
+
+
+    <div class="product__slider-container product__slider-container--pb product__slider-container--mb">
+        <div class="container">
+            <div class="product__slider-title-wrapper  align-center">
+                <h2 class="product__slider-title">
+                    Вас может заинтересовать
+                </h2>
+
+                <div class="product__slider-nav-wrapper">
+                    <div class="product__slider-nav">
+                        <button class="product__slider-prev product__slider-prev-0"></button>
+                        <div class="product__slider-pagination product__slider-pagination-0"></div>
+                        <button class="product__slider-next product__slider-next-0"></button>
+
+                    </div>
+
+                    <a href="#" class="all-product">Все товары</a>
+                </div>
+
+            </div>
+
+
+            <div class="product__slider">
+
+                <div class="product__slider-wrapper">
+                    @loop('partials/products-grid-item.html', '/json/products.json')
+                </div>
+                <div class="product__slider-pagination product__slider-pagination-0"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

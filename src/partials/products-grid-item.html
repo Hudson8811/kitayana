@@ -1,0 +1,88 @@
+<!-- product item -->
+<div class="products__grid-item">
+
+    <!-- product item header -->
+    <div class="product__item-header">
+        <!-- hints -->
+        <div class="product__item-hints hints-wrapper">
+
+            <div class="hint hint--black hint--@productBlackHint">
+                @productBlackHint
+            </div>
+
+
+            <div class="hint hint--@productDiscontColor hint-@productDiscontColor">
+                -@productDiscount%
+            </div>
+        </div>
+
+        <!-- product img -->
+        <div class="product__item-img">
+            <img alt="temp-alt" src="@productImgUrl">
+
+
+            <!-- favorite btn -->
+            @include('components/favorite-btn.html')
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- product body -->
+    <div class="product__item-body">
+        <!-- product name -->
+        <a href="" class="product__item-name">
+            @productName
+        </a>
+        <!-- product attribute -->
+        <span class="product__item-attr">Номер товара: @productAttr</span>
+
+        <!-- product info row -->
+        <div class="product__item-row product__item-row--between">
+            <div class="product__item-col">
+                <a href="#" class="product__item-text product__item-text--underline" data-popup="jsInStockModal">
+                    В наличии: <span>@productStock шт.</span>
+                </a>
+
+                <div class="product__item-text">
+                    от <span>@productDate</span>
+                </div>
+            </div>
+
+            <div class="product__item-col">
+                <div class="price">
+                    @productPrice ₽
+                </div>
+                <div class="price price--old">
+                    @productOldPrice ₽
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="proposals proposals--desktop">
+            еще предложения
+            <i class="--svg__big-arrow"></i>
+        </a>
+
+        <a href="#" class="proposals--mobile">
+            Ещё 3 предложения
+        </a>
+
+    </div>
+
+
+    <!-- product footer -->
+    <div class="product__item-footer">
+        <button class="button button--grey">купить в 1 клик</button>
+        @include('components/cart-btn.html', {
+        'color': 'red',
+        })
+    </div>
+
+
+</div>

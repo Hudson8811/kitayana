@@ -1,0 +1,17 @@
+&__col{
+    width: 50%;
+    margin-right: 10rem;
+    &:last-child{
+        margin-right: 0;
+    }
+    @media(max-width: 1200px){
+        margin-right: 7.5rem;
+    }
+    @media(max-width: 991px){
+        width: 100%;
+        margin: 0 0 2.5rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

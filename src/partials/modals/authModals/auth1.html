@@ -1,0 +1,87 @@
+<div class="modal auth-modals " id="jsAuth1">
+    <div class="modal__inner">
+        <div class="modal__content">
+
+            @include('../../components/modal-close.html')
+
+
+            <div class="modal__overhead">
+                Авторизация
+            </div>
+            
+            <div class="form-wrapper">
+                <ul class="auth-tabs">
+                    <li>
+                        <a href="" class="active" data-tabs-index="1" data-tab-name="phone">по номеру телефона</a>
+                    </li>
+                    <li>
+                        <a href="" data-tabs-index="1" data-tab-name="password">по паролю</a>
+                    </li>
+                </ul>
+    
+                <form action="" class="form form-validate active" data-tabs-index="1" id="phone">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Телефон *</label>
+                            <div class="input-wrap">
+                                <input type="tel" class="input input-md" placeholder="+7 (000) 000-00-00">
+                                <button class="button">получить код</button>
+                            </div>
+                            <p class="input-hint">На указанный номер телефона придёт сообщение с коротким кодом</p>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Код из SMS *</label>
+                            <input type="text" class="input">
+                            <p class="input-hint">Повторная отправка через <b>01:55</b></p>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <button class="button">Войти</button>
+                        <a href="" class="form-link">Зарегистрироваться</a>
+                    </div>
+
+                    <div class="form-alert">
+                        Нажимая кнопку «Войти», вы соглашаетесь c условиями <span class="red">политики конфиденциальности</span> 
+                    </div>
+                </form>
+                <form action="" class="form form-validate" data-tabs-index="1" id="password">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Телефон *</label>
+                            <input type="tel" class="input input-md" placeholder="+7 (000) 000-00-00">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Пароль *</label>
+                            <div class="input-wrap">
+                                <input type="password" class="input input-md" placeholder="">
+                                <button class="show-password">
+                                    <svg>
+                                        <use xlink:href='/img/sprite-new.svg#eye_close'></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <a href="#" class="password-link">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button class="button">Войти</button>
+                        <a href="" class="form-link">Зарегистрироваться</a>
+                    </div>
+
+                    <div class="form-alert">
+                        Нажимая кнопку «Войти», вы соглашаетесь c условиями <span class="red">политики конфиденциальности</span> 
+                    </div>
+                </form>
+    
+            </div>
+
+          
+
+        </div>
+    </div>
+</div>

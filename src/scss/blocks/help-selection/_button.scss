@@ -1,0 +1,23 @@
+&_button{
+    padding: 1.125rem;
+    text-align: center;
+    background: $color_4;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    color: $color_8;
+    transition: 0.2s linear;
+    &:hover{
+        background: #3f3939;
+    }
+
+    &--red{
+        background: $color_2;
+        &:hover{
+            background: $color_5;
+        }
+    }
+}

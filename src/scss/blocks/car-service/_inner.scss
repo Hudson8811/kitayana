@@ -1,0 +1,25 @@
+&__inner{
+    height: 100%;
+    padding: 4.9rem 5rem;
+    @media(max-width: 1400px){
+        padding: 3.125rem;
+    }
+    @media(max-width: 768px){
+        background: $color_8;
+        padding: 2.3rem;
+        &--mob{
+            background: none;
+        }
+
+        &--hidden{
+            display: none;
+        }
+    }
+
+    &--mob{
+        display: none;
+        @media(max-width: 768px){
+            display: block;
+        }
+    }
+}

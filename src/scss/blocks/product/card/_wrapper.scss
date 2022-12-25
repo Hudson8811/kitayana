@@ -1,0 +1,27 @@
+&-wrapper{
+    display: grid;
+    grid-template-columns: rem(480px) rem(720px) rem(480px);
+    grid-gap: rem(41px);
+    @media(max-width: 991px){
+        grid-template-columns: 1fr;
+    }
+    @media(max-width: 768px){
+        grid-gap: 38px;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bordered{
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(20px);
+        text-decoration-line: underline;
+        text-underline-offset: rem(4px);
+    }
+
+    
+   @import 'price-container';
+
+}

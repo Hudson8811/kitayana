@@ -1,0 +1,103 @@
+@include('partials/header.html',{
+top: 'show'
+})
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+
+
+
+
+
+<div class="wrapper search-page">
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Результат поиска по наименованию</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    @include('partials/components/page-title.html', {
+    'title': 'По запросу «Колодки» найдено',
+    'size': 'small',
+    'model': 'hidden'
+    })
+
+
+
+
+    <div class="search-result__block-wrapper mb0">
+        <div class="search-result__block">
+            <div class="search-result__block-section">
+                <div class="title-wrapper">
+                    <h4 class="title">Топливная система</h4>
+                    <div class="count">Найдено 536</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="search-result__block-section">
+                <div class="title-wrapper">
+                    <h4 class="title">Двигатель</h4>
+                    <div class="count">Найдено 136</div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="search-result__block-section">
+                <div class="title-wrapper">
+                    <h4 class="title">Трансмиссия</h4>
+                    <div class="count">Найдено 27</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        @include('partials/help-section.html')
+    </div>
+
+
+
+
+
+
+
+
+
+    @include('partials/need-help.html', {
+    block: 'show'
+    })
+
+
+    @include('partials/advantages.html')
+
+
+    @include('partials/shops.html')
+
+
+</div>
+
+
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')
