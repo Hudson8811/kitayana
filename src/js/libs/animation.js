@@ -272,7 +272,7 @@ $(document).ready(function() {
 
 
 
-const sections = document.querySelectorAll(".main-page section");
+const sections = document.querySelectorAll(".main-page .scrolltoblock");
 
 const scrolling = {
     enabled: true,
@@ -301,7 +301,7 @@ function goToSection(section, anim, i) {
     gsap.to(window, {
       scrollTo: {y: section, autoKill: false},
       onComplete: scrolling.enable,
-      duration: 1
+      duration: 2
     });
 
     anim && anim.restart();
@@ -309,7 +309,7 @@ function goToSection(section, anim, i) {
 }
 
 sections.forEach((section, i) => {
-  const intoAnim = gsap.from(section.querySelector(".right-col"), {yPercent: 50, duration: 1, paused: true});
+  const intoAnim = gsap.from(section.querySelector(".scrolltoblock-slow"), {yPercent: 50, duration: 1.5, paused: true});
   
   ScrollTrigger.create({
     trigger: section,

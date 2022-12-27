@@ -53,6 +53,20 @@
 					<div class="entry-block__benefit-text">
 						Более<span> 3 700 товаров</span><br>
 						всегда в наличии
+						<svg class="js-cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g>
+								<path d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
+									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path
+									d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
+									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+							<path
+								d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
+								stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
 					</div>
 				</div>
 			</div>
@@ -226,7 +240,7 @@
 			</div>
 		</div>
 	</div>
-	<section class="cars show-main">
+	<div class="cars show-main scrolltoblock">
 		<div class="cars__slider">
 			<a href="#" class="show">
 				<img src="img/logos/logo-main/lifan.png" alt="">
@@ -267,503 +281,505 @@
 				<img src="img/logos/logo-main/cherry-mob.png" alt="">
 			</a>
 		</div>
-		<div class="container">
-			<div class="cars__search">
-				<div class="cars__search-title">
-					Поиск автозапчастей
-				</div>
-				<form action="GET" role="search" class="cars__search-form">
-					<div class="cars__search-form-input">
-						<button class="--svg__search"></button>
-						<input type="text" placeholder="Введите марку автомобиля">
+		<div class="scrolltoblock-slow">
+			<div class="container">
+				<div class="cars__search">
+					<div class="cars__search-title">
+						Поиск автозапчастей
 					</div>
-					<div class="cars__search-form-input">
-						<button class="--svg__search"></button>
-						<input type="text" placeholder="Введите модель автомобиля">
+					<form action="GET" role="search" class="cars__search-form">
+						<div class="cars__search-form-input">
+							<button class="--svg__search"></button>
+							<input type="text" placeholder="Введите марку автомобиля">
+						</div>
+						<div class="cars__search-form-input">
+							<button class="--svg__search"></button>
+							<input type="text" placeholder="Введите модель автомобиля">
+						</div>
+					</form>
+				</div>
+				<div class="cars__list">
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/cherry.png" class="cars__list-items-logo" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">Tiggo 4</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
+								</div>
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Tiggo 7 Pro</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
+								</div>
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Tiggo T11</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
+								</div>
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Amulet A15</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
+								</div>
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Bonus A13</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
+								</div>
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
 					</div>
-				</form>
-			</div>
-			<div class="cars__list">
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/cherry.png" class="cars__list-items-logo" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">Tiggo 4</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/lifan.png" class="cars__list-items-logo" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">650 EV</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Tiggo 7 Pro</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Breez 520</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Tiggo T11</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Cebrium 720</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Amulet A15</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Celliya 530</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Bonus A13</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Murman 820</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/lifan.png" class="cars__list-items-logo" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">650 EV</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/geely.png" class="cars__list-items-logo" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">Tugella i</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Breez 520</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Tugella i</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Cebrium 720</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Emgrand EC7</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Celliya 530</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Atlas I</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Murman 820</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">MK</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/geely.png" class="cars__list-items-logo" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">Tugella i</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/haval.png" class="cars__list-items-logo" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">F7</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Tugella i</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">F7 x</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Emgrand EC7</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">H2</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Atlas I</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">H5 I</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">MK</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">H6</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/haval.png" class="cars__list-items-logo" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">F7</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/foton.png" class="cars__list-items-logo" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">Tugella i</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">F7 x</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Coolray i</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">H2</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Emgrand EC7</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">H5 I</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Atlas I</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">H6</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">MK</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/foton.png" class="cars__list-items-logo" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">Tugella i</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/faw.png" class="cars__list-items-logo cars__list-items-logo--sm mb-md" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">Tiggo 4</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Coolray i</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Tiggo 7 Pro</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Emgrand EC7</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Tiggo T11</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Atlas I</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Amulet A15</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">MK</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Bonus A13</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/faw.png" class="cars__list-items-logo cars__list-items-logo--sm mb-md" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">Tiggo 4</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/greatwall.png" class="cars__list-items-logo cars__list-items-logo--md mb-md" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">650 EV</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Tiggo 7 Pro</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Breez 520</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Tiggo T11</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Cebrium 720</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Amulet A15</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Celliya 530</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Bonus A13</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Murman 820</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/greatwall.png" class="cars__list-items-logo cars__list-items-logo--md mb-md" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">650 EV</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/brilliance.png" class="cars__list-items-logo cars__list-items-logo--md-2 mb-md" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">Tugella i</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Breez 520</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Coolray i</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Cebrium 720</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Emgrand EC7</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Celliya 530</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">Atlas I</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Murman 820</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">MK</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/brilliance.png" class="cars__list-items-logo cars__list-items-logo--md-2 mb-md" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">Tugella i</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cars__list-items">
+						<img src="img/logos/logo-main/brilliance.png" class="cars__list-items-logo cars__list-items-logo--md-2 mb-md" alt="">
+						<ul>
+							<li class="cars__list-item">
+								<a href="#">F7</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Coolray i</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">F7 x</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Emgrand EC7</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">H2</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">Atlas I</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">H5 I</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">MK</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
+							</li>
+							<li class="cars__list-item">
+								<a href="#">H6</a>
+								<div class="cars__list-item-hover">
+									<img src="img/car-3.png" alt="">
+									<div class="cars__list-item-hover--title">
+										Geely Coolray1
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
-				</div>
-				<div class="cars__list-items">
-					<img src="img/logos/logo-main/brilliance.png" class="cars__list-items-logo cars__list-items-logo--md-2 mb-md" alt="">
-					<ul>
-						<li class="cars__list-item">
-							<a href="#">F7</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
-								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">F7 x</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
-								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">H2</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
-								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">H5 I</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
-								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#">H6</a>
-							<div class="cars__list-item-hover">
-								<img src="img/car-3.png" alt="">
-								<div class="cars__list-item-hover--title">
-									Geely Coolray1
-								</div>
-							</div>
-						</li>
-						<li class="cars__list-item">
-							<a href="#" class="cars__all-items">Все модели</a>
-						</li>
-					</ul>
+							</li>
+							<li class="cars__list-item">
+								<a href="#" class="cars__all-items">Все модели</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- Sale slider -->
 	<div class="sales__slider-container sales__slider-container--mobile">
 		<div class="product__slider-title-wrapper">
@@ -991,7 +1007,7 @@
 	<!-- /Sale slider -->
 
 	<!-- Sale slider desktop -->
-	<section class="sales__slider-container sales__slider-container--desktop">
+	<div class="sales__slider-container sales__slider-container--desktop scrolltoblock">
 		<div class="product__slider-title-wrapper">
 			<h2 class="product__slider-title">
 				акции
@@ -1225,11 +1241,11 @@
 
 			<div class="product__slider-pagination product__slider-pagination-2"></div>
 		</div>
-	</section>
+	</div>
 	<!-- /Sale slider desktop-->
 
 	<!-- Product catalog -->
-	<section class="product-types b-none opened product-types--desktop">
+	<div class="product-types b-none opened product-types--desktop scrolltoblock">
 		<div class="container p-0">
 			<div class="product-types__title">
 				Каталог автозапчастей
@@ -1438,7 +1454,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- /Product catalog -->
 
 	<!-- Product catalog mobile -->
@@ -1514,7 +1530,7 @@
 	<!-- /Product catalog -->
 
 	<!-- Product slider -->
-	<section class="product__slider-container">
+	<div class="product__slider-container">
 		<div class="container">
 			<div class="product__slider-title-wrapper">
 				<h2 class="product__slider-title">
@@ -1544,7 +1560,7 @@
 				<div class="product__slider-pagination product__slider-pagination-0"></div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- /Product slider -->
 
 	<!-- Car service -->
@@ -1783,7 +1799,7 @@
 
 
 	<!-- Sale slider blog -->
-	<section class="sales__slider-container sales__slider-container--blog">
+	<div class="sales__slider-container sales__slider-container--blog">
 		<div class="product__slider-title-wrapper">
 			<h2 class="product__slider-title">
 				Блог<span>Новости</span>
@@ -1956,12 +1972,12 @@
 
 			<div class="product__slider-pagination product__slider-pagination-4"></div>
 		</div>
-	</section>
+	</div>
 	<!-- /Sale slider blog -->
 
 
 
-	<section class="advantage-banner">
+	<div class="advantage-banner">
 		<div class="container">
 			<div class="advantage-banner__title">
 				Работаем только <br> с надёжными производителями
@@ -1971,8 +1987,8 @@
 			</div>
 		</div>
 		<img src="img/main-page/advantage-bg.png" alt="" class="advantage-banner__bg">
-	</section>
-	<section class="container">
+	</div>
+	<div class="container">
 		<div class="car-service__content">
 			<div class="car-service__descr-main">
 				<div class="car-service__descr-main-left">
@@ -1996,7 +2012,7 @@
 			Подробнее
 			</a>
 		</div>
-	</section>
+	</div>
 
 	<!-- Contact form -->
 	@include('partials/need-help-single.html')
@@ -2007,7 +2023,7 @@
 	<!-- /Advantages -->
 
 	<!-- Banner STO -->
-	<section class="sale-banner">
+	<div class="sale-banner">
 		<div class="sale-banner__info">
 			<div class="sale-banner__title">
 				Магазины и СТО
@@ -2027,7 +2043,7 @@
 			<a href="#" class="button sale-banner__button">Все магазины и СТО</a>
 		</div>
 		<img src="img/sales/service-map.png" alt="" class="sale-banner__map">
-	</section>
+	</div>
 	<!-- /Banner STO -->
 </div>
 
