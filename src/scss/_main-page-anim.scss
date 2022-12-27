@@ -1,39 +1,26 @@
-.cars.scrolltoblock {
-	background-color: transparent;
-	.cars__slider {
-		background-color: #000000;
-	}
-	>div.scrolltoblock-slow {
-		background-color: #000000;
-		.cars__list {
-			margin-top: 0;
-			padding-top: 7.75rem;
-		}
-	}
+svg.js-cart-anim {
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
 }
-			 svg.js-cart-anim {
-				cursor: pointer;
-				transition: all 0.3s ease 0s;
-				}
-				svg.js-cart-anim:hover {
-				transform: scale(1.1);
-				}
-				svg.js-cart-anim	path {
-				transition: all 0.3s ease 0s;
-				}
-				svg.js-cart-anim g {
-				transition: all 0.3s ease 0s;
-				}
-				svg.js-cart-anim:hover g {
-				transform: rotate(7deg);
-				transform-origin: 100% 100%;
-				}
-				svg.js-cart-anim:hover path:nth-child(3),
-				svg.js-cart-anim:hover path:nth-child(4), 
-				svg.js-cart-anim:hover path:nth-child(5) {
-				transform: translate(0, 0);
-				transform-origin: 100% 100%;
-				}
+svg.js-cart-anim:hover {
+	transform: scale(1.1);
+}
+svg.js-cart-anim	path {
+	transition: all 0.3s ease 0s;
+}
+svg.js-cart-anim g {
+	transition: all 0.3s ease 0s;
+}
+svg.js-cart-anim:hover g {
+	transform: rotate(7deg);
+	transform-origin: 100% 100%;
+}
+svg.js-cart-anim:hover path:nth-child(3),
+svg.js-cart-anim:hover path:nth-child(4), 
+svg.js-cart-anim:hover path:nth-child(5) {
+	transform: translate(0, 0);
+	transform-origin: 100% 100%;
+}
 .sales__slider-container {
 	margin-top: 0;
 }
@@ -281,12 +268,12 @@
           display: inline-block;
           opacity: 0;
           transform: translate(10px, 0);
-          transition: opacity 0.7s ease 3.5s, transform 1s ease 3.5s;
+          transition: all 1s ease 3.5s;
         }
         .entry-block__benefit-text {
           opacity: 0;
           transform: translate(10px, 0);
-          transition: opacity 0.7s ease 3.7s, transform 1s ease 3.7s;
+          transition: all 1s ease 3.7s;
 
         }
         &.show-main-active {
@@ -308,12 +295,12 @@
           display: inline-block;
           opacity: 0;
           transform: translate(10px, 0);
-          transition: opacity 0.7s ease 3.8s, transform 1s ease 3.8s;
+          transition: all 1s ease 3.8s;
         }
         .entry-block__benefit-text {
           opacity: 0;
           transform: translate(10px, 0);
-          transition: opacity 0.7s ease 4s, transform 1s ease 4s;
+          transition: all 1s ease 4s;
         }
         &.show-main-active {
           svg {

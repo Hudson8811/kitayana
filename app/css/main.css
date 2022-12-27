@@ -256,20 +256,6 @@ ul {
   margin: 0;
 }
 
-.cars.scrolltoblock {
-  background-color: transparent;
-}
-.cars.scrolltoblock .cars__slider {
-  background-color: #000000;
-}
-.cars.scrolltoblock > div.scrolltoblock-slow {
-  background-color: #000000;
-}
-.cars.scrolltoblock > div.scrolltoblock-slow .cars__list {
-  margin-top: 0;
-  padding-top: 7.75rem;
-}
-
 svg.js-cart-anim {
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -550,12 +536,12 @@ svg.js-cart-anim:hover path:nth-child(5) {
   display: inline-block;
   opacity: 0;
   transform: translate(10px, 0);
-  transition: opacity 0.7s ease 3.5s, transform 1s ease 3.5s;
+  transition: all 1s ease 3.5s;
 }
 .main-page .entry-block__benefit-item:nth-child(1).show-main .entry-block__benefit-text, .main-page .entry-block__benefit-item:nth-child(2).show-main .entry-block__benefit-text {
   opacity: 0;
   transform: translate(10px, 0);
-  transition: opacity 0.7s ease 3.7s, transform 1s ease 3.7s;
+  transition: all 1s ease 3.7s;
 }
 .main-page .entry-block__benefit-item:nth-child(1).show-main.show-main-active svg, .main-page .entry-block__benefit-item:nth-child(2).show-main.show-main-active svg {
   opacity: 1;
@@ -569,12 +555,12 @@ svg.js-cart-anim:hover path:nth-child(5) {
   display: inline-block;
   opacity: 0;
   transform: translate(10px, 0);
-  transition: opacity 0.7s ease 3.8s, transform 1s ease 3.8s;
+  transition: all 1s ease 3.8s;
 }
 .main-page .entry-block__benefit-item:nth-child(3).show-main .entry-block__benefit-text, .main-page .entry-block__benefit-item:nth-child(4).show-main .entry-block__benefit-text {
   opacity: 0;
   transform: translate(10px, 0);
-  transition: opacity 0.7s ease 4s, transform 1s ease 4s;
+  transition: all 1s ease 4s;
 }
 .main-page .entry-block__benefit-item:nth-child(3).show-main.show-main-active svg, .main-page .entry-block__benefit-item:nth-child(4).show-main.show-main-active svg {
   opacity: 1;
