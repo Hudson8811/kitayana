@@ -285,6 +285,20 @@ svg.js-cart-anim:hover path:nth-child(5) {
   transform-origin: 100% 100%;
 }
 
+.header__logo {
+  transform: translate(0, -4px);
+}
+@media (max-width: 1440px) {
+  .header__logo {
+    transform: translate(0, 0px);
+  }
+}
+@media (max-width: 991px) {
+  .header__logo {
+    transform: translate(0, -6px);
+  }
+}
+
 .preloader-arrows__back {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
@@ -343,6 +357,7 @@ svg.js-cart-anim:hover path:nth-child(5) {
 @media (max-width: 991px) {
   .main-menu.jsMainMenu {
     top: 0;
+    transition: all 0.7s ease 0.7s;
   }
   .main-menu.jsMainMenu.open {
     top: 3.062rem;
@@ -353,7 +368,7 @@ svg.js-cart-anim:hover path:nth-child(5) {
     left: 2.5rem;
     top: 50%;
     transition: all 0.7s ease 0s;
-    transform: translate(0, -50%);
+    transform: translate(0, -58%);
     opacity: 1;
   }
   .header__logo.header__logo--active {
@@ -363,6 +378,7 @@ svg.js-cart-anim:hover path:nth-child(5) {
 
   .header__city-box {
     position: absolute;
+    width: auto;
     top: 50%;
     transform: translate(0, -50%);
     display: flex !important;
@@ -378,6 +394,10 @@ svg.js-cart-anim:hover path:nth-child(5) {
   }
 }
 @media (max-width: 768px) {
+  .header__top {
+    overflow: hidden;
+  }
+
   .header__logo {
     position: absolute;
     left: 2.5rem;
@@ -406,7 +426,15 @@ svg.js-cart-anim:hover path:nth-child(5) {
     opacity: 1;
     transform: translate(0, 0);
   }
+
+  .header__logo-mob {
+    z-index: 999;
+  }
 }
+.header__auth {
+  z-index: 999;
+}
+
 .header__box.favorite-box .header__name .heart__favorite {
   width: 24px;
   height: 24px;
@@ -414,18 +442,32 @@ svg.js-cart-anim:hover path:nth-child(5) {
   -webkit-animation: none;
   animation: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .header__box.favorite-box .header__name .heart__favorite {
     width: 16px;
     height: 16px;
     margin-right: 8px;
   }
 }
-.header__box.favorite-box .header__name .heart__favorite .heart-fill-back {
-  transition: all 0.7s ease 0s;
-}
 .header__box.favorite-box:hover .heart__favorite .heart-fill-back {
-  fill: red;
+  -webkit-animation: heart__favorite-fill 0.3s ease forwards;
+  animation: heart__favorite-fill 0.3s ease forwards;
+}
+@-webkit-keyframes heart__favorite-fill {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: red;
+  }
+}
+@keyframes heart__favorite-fill {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: red;
+  }
 }
 
 .header__city-box {
@@ -441,6 +483,7 @@ svg.js-cart-anim:hover path:nth-child(5) {
 
 .jsMenuButton.burger-menu {
   position: absolute;
+  z-index: 99;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
@@ -1235,6 +1278,9 @@ svg.js-cart-anim:hover path:nth-child(5) {
 }
 .main-page .cars.show-main.show-main-active {
   transform: translate(0, 0);
+}
+.main-page .cars.show-main .cars__slider {
+  display: flex !important;
 }
 .main-page .cars.show-main .cars__slider .swiper-wrapper {
   transition: all 15s linear !important;
