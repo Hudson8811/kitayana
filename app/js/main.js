@@ -203,7 +203,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    /* w */
+        const accordions = document.querySelectorAll(".accordion"),
+        filtersBox = document.querySelectorAll(".filters__box");
+    accordions.forEach(function (item) {
+        const accordionContent = item.querySelector(".accordion__content");
+        accordionToggle(item, accordionContent);
+    }),
+    filtersBox.forEach(function (item) {
+        const accordionContent = item.closest(".filters__item").querySelector(".filters__content");
+        accordionToggle(item, accordionContent);
+    }),
+    document.querySelectorAll(".filters__item--accordion .filters__header").forEach((item) => {
+        const filterAccordions = item.closest(".filters__item--accordion");
+        const filterAccordionsContent = filterAccordions.querySelector(".filters__content");
+        accordionToggle(item, filterAccordionsContent);
+    });
 
     const sparesSlider = new Swiper(".swiper-spares", {
         direction: "horizontal",
