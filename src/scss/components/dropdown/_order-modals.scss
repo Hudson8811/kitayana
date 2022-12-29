@@ -82,13 +82,21 @@
 
         .modal__container{
             padding-top: rem(27px);
+            padding-right: rem(82px);
             @media(max-width: 768px){
                 padding-top: 33px;
+                padding-right: 16px;
             }
         }
 
         .form{
 
+            .input--sm{
+                max-width: rem(312px);
+                @media(max-width: 768px){
+                    max-width: 100%;
+                }
+            }
             .buttons-wrap{
                 align-items: center;
                 margin-top: rem(32px);
@@ -154,8 +162,8 @@
 
                         &-text{
                             font-weight: 400;
-                            font-size: 14px;
-                            line-height: 24px;
+                            font-size: rem(14px);
+                            line-height: rem(24px);
                         }
                     }
                 }
@@ -1108,9 +1116,11 @@
     
 
 .modal.order-states{
-    max-width: 392px !important;
-    padding: 56px ;
-
+    max-width: rem(392px) !important;
+    padding: rem(56px) ;
+    @media(max-width: 991px){
+        padding: 40px 16px 16px;
+    }
     .state-text{
         @media(max-width: 768px){
             font-size: 12px;
@@ -1135,18 +1145,18 @@
     }
     &.open{
         .dropdown__close{
-            top: -84px !important;
-            right: 2px !important;
+            top: rem(-84px) !important;
+            right: rem(2px) !important;
         }
     }
   
     &--confim{
-        max-width: 512px !important;
-        padding: 32px 56px;
+        max-width: rem(512px) !important;
+        padding: rem(32px) rem(56px);
         svg{
-            max-width: 80px;
-            width: 80px;
-            height: 80px;
+            max-width: rem(80px);
+            width: rem(80px);
+            height: rem(80px);
         }
         @media(max-width: 768px){
             max-width: 320px !important;
@@ -1191,8 +1201,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 140px;
-                height: 64px;
+                width: rem(140px);
+                height: rem(64px);
                 text-transform: uppercase;
                 cursor: pointer;
                 @media(max-width: 768px){

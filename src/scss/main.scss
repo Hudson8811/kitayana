@@ -1,7 +1,6 @@
 @import 'setting';
 @import 'mixins';
 @import 'vars';
-@import 'main-page-anim';
 @import 'components/include';
 @import 'blocks/include';
 
@@ -854,7 +853,7 @@ input:checked+.slider:before {
         width: 100%;
         height: 48px;
         margin-top: 15px;
-
+        text-transform: uppercase;
         @media(min-width: 991px) {
             display: none;
         }
@@ -1835,3 +1834,15 @@ input.invalid {
         min-width: 0 !important;
     }
 }
+
+
+.product__slider-title-wrapper{
+    @media(max-width: 380px){
+        .product__slider-nav-wrapper{
+            display: none;
+        }
+    }
+}
+
+
+@import 'main-page-anim'

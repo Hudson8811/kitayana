@@ -16,10 +16,10 @@
   />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
-	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
 
-    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+
+    <link rel="stylesheet" href="/css/libs.min.css">
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-<body class="overflow-hidden">
+<body>
 
     <div class="preloader-arrows preloader-arrows-big js-preloader-arrows-big-active"></div>
     <div class="preloader-arrows__back"></div>
@@ -51,16 +51,14 @@
             <div class="header__inner">
                 <div class="header__row">
                     <div class="header__logo-mob">
-                        <div class="burger-menu-wrapper">
-                        	<button class="header__menu jsMenuButton burger-menu">
-	                            <span></span>
-	                            <span></span>
-	                            <span></span>
-	                        </button>
-                        </div>
+                        <button class="header__menu jsMenuButton burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <a href="#" class="header__logo header__logo--mob --svg__logo"></a>
                     </div>
-                    <div class="header__city-box header__city-btn ">
+                    <div class="header__city-box header__city-btn">
                         <div class="header__city">
                             Санкт-Петербург
                         </div>
@@ -213,17 +211,17 @@
                         </div>
                     </div>
                     <div class="header__row">
-                        <div class="header__phone-box ">
+                        <div class="header__phone-box">
                             <a href="tel:78126003535" class="header__phone">+7 (812) 600 35 35</a>
 
 
                         </div>
 
-                        <div class="header__text header__time ">с 10:00 до 20:00 мск</div>
+                        <div class="header__text header__time">с 10:00 до 20:00 мск</div>
 
                     </div>
                 </div>
-                <div class="header__text header__text--black header__text-delivery ">
+                <div class="header__text header__text--black header__text-delivery">
                     Бесплатная доставка от 3 000 ₽ — Возврат до 30 дней
                 </div>
                 <div class="header__row">
@@ -233,7 +231,7 @@
 
                     <a href="tel:78126003535" class="header__phone-button --svg__phone"></a>
 
-                    <div class="header__auth authorized ">
+                    <div class="header__auth authorized">
                         <button class="header__auth-button jsAuthButton" data-popup="jsAuthDropdown">
                             <svg class="header__icon-user">
                                 <use xlink:href="/img/sprite.svg#css--user"></use>
@@ -302,9 +300,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="header__question-button jsExpertButton " data-dropdown="jsExpertDropdown">
-                        <img alt="temp-alt" src="/img/avatar.png" class="header__photo ">
-                        <span class="">запрос эксперту</span>
+                    <button class="header__question-button jsExpertButton" data-dropdown="jsExpertDropdown">
+                        <img alt="temp-alt" src="/img/avatar.png" class="header__photo">
+                        запрос эксперту
                     </button>
                 </div>
             </div>
@@ -312,17 +310,15 @@
         <div class="header__main">
             <div class="header__inner">
                 <div class="header__box header__menu-box">
-                    <div class="burger-menu-wrapper">
-                    	<button class="header__menu jsMenuButton burger-menu --svg__menu ">
-	                        <span></span>
-	                        <span></span>
-	                        <span></span>
-	                    </button>
-                    </div>
+                    <button class="header__menu jsMenuButton burger-menu --svg__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <a href="#" class="header__logo --svg__logo"></a>
                 </div>
 
-                <div class="header__box header__search-box ">
+                <div class="header__box header__search-box">
                     <button class="header__search-icon --svg__search"></button>
                     <input type="text" class="header__search" placeholder="Поиск запчасти или наименования">
                     <button class="header__search-close --svg__close"></button>
@@ -416,40 +412,26 @@
                     </div>
 
                 </div>
-                <a href="cars.html" class="header__box header__box--col header__box-item ">
+                <a href="cars.html" class="header__box header__box--col header__box-item">
                     <div class="header__name">2 авто</div>
                     <div class="header__text">В гараже</div>
                 </a>
                 <a href="favorite.html"
-                    class="header__box header__box--col header__box--border-none header__box-item favorite-box ">
+                    class="header__box header__box--col header__box--border-none header__box-item favorite-box">
                     <div class="header__name">
-								<svg class="heart__favorite" viewBox="0 0 26 26">
-									<g class="heart-fill-back">
-										<path class="b"
-											d="M19.18,0c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0Z">
-										</path>
-									</g>
-									<g class="heart-stroke" fill="#000000">
-										<path
-											d="M19.18,1.8c2.77,0,5.02,2.25,5.02,5.02,0,2.35-2.55,4.76-4.8,6.88-.52,.49-1.03,.97-1.49,1.43-1.23,1.23-3.49,3.49-4.91,4.92-1.33-1.33-3.42-3.43-4.91-4.92-.46-.46-.97-.94-1.49-1.43C4.35,11.58,1.8,9.17,1.8,6.82,1.8,4.05,4.05,1.8,6.82,1.8c2.14,0,3.8,.92,4.55,2.53,.3,.63,.93,1.04,1.63,1.04s1.34-.41,1.63-1.04c.75-1.61,2.41-2.53,4.55-2.53m0-1.8c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0h0Z">
-										</path>
-									</g>
-									<g class="heart-fill">
-										<path class="b"
-											d="M19.18,0c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0Z">
-										</path>
-									</g>
-								</svg>
+                        <svg class="header__icon-heart">
+                            <use xlink:href="/img/sprite.svg#css--heart"></use>
+                        </svg>
                         243
                     </div>
                     <div class="header__text">Избранное</div>
                 </a>
-                <a href="cart" class="header__basket-button " id="jsCartBtn">
-                    <div class="header__name header__name--white ">
+                <a href="cart" class="header__basket-button" id="jsCartBtn">
+                    <div class="header__name header__name--white">
                         <div class="header__icon-cart --svg__cart"></div>
                         2367 ₽
                     </div>
-                    <div class="header__text ">В корзине 2 товара</div>
+                    <div class="header__text">В корзине 2 товара</div>
                 </a>
             </div>
         </div>
@@ -476,13 +458,13 @@
                 <div class="main-menu__grid">
                     <div class="main-menu__col active">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Каталог по маркам
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Chery</a>
                                 <a href="#" class="main-menu__link">Geely</a>
                                 <a href="#" class="main-menu__link">Lifan</a>
@@ -504,13 +486,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Аксессуары
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -532,13 +514,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Топливная система
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -560,13 +542,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Автохимия
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -589,13 +571,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Коробка передач
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -618,13 +600,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Кузов
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -647,13 +629,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Тормозная система
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -676,13 +658,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Фильтр
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -705,13 +687,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Химия
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -734,13 +716,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Шасси
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -763,13 +745,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Электрика
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -794,13 +776,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Клиентам
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -823,13 +805,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     О компании
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -852,13 +834,13 @@
 
                     <div class="main-menu__col">
                         <div class="accordion accordion--mob accordion--reset">
-                            <button class="accordion__overhead accordion__overhead--new">
+                            <button class="accordion__overhead">
                                 <span class="main-menu__title main-menu__title--mb-none">
                                     Информация
                                 </span>
                                 <span class="accordion__plus"></span>
                             </button>
-                            <div class="accordion__content accordion__content--new">
+                            <div class="accordion__content">
                                 <a href="#" class="main-menu__link">Прокладки</a>
                                 <a href="#" class="main-menu__link">Система подачи воздуха</a>
                                 <a href="#" class="main-menu__link">Механизм газораспределения</a>
@@ -1049,166 +1031,7 @@
         </g>
     </svg>
 </button>
-                        <svg class="js-cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-							<g>
-								<path d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
-									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								<path
-									d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
-									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							</g>
-							<path
-								d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
-								stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="cart__popup-content">
-            <div class="cart__product-item">
-                <div class="product-img">
-                    <img src="/img/item.png" alt="temp">
-                </div>
-
-                <div class="product-content">
-
-                    <span class="product-name">
-                        Щётка стеклоочистителя зимняя ALCF 24”/60 см
-                    </span>
-                    <span class="product-sku">
-                        Номер запчасти: 1882NKE601
-                    </span>
-
-                    <div class="price-wrapper">
-                        <div class="counter-wrapper">
-                            <div class="parts-item__button jsButtonCounter buttons-anim__button buttons-anim__button--black">
-                                <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--decrease" data-type="decrease"></span>
-                                <input class="js-number-inp buttons-anim__input" type="text" value="1">
-                                <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--increase" data-type="increase">
-                                </span>
-                                <span class="button-show-cancel-inner button-show-cancel-inner--grey">Отмена</span>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            1 230 ₽
-                            <span class="price--old">
-                                1 030 ₽
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="product-controls">
-                        <button class="heart__favorite-btn">
-    <svg class="heart__favorite" viewBox="0 0 26 26">
-        <g class="heart-fill-back">
-            <path class="b"
-                d="M19.18,0c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0Z">
-            </path>
-        </g>
-        <g class="heart-stroke" fill="#000000">
-            <path
-                d="M19.18,1.8c2.77,0,5.02,2.25,5.02,5.02,0,2.35-2.55,4.76-4.8,6.88-.52,.49-1.03,.97-1.49,1.43-1.23,1.23-3.49,3.49-4.91,4.92-1.33-1.33-3.42-3.43-4.91-4.92-.46-.46-.97-.94-1.49-1.43C4.35,11.58,1.8,9.17,1.8,6.82,1.8,4.05,4.05,1.8,6.82,1.8c2.14,0,3.8,.92,4.55,2.53,.3,.63,.93,1.04,1.63,1.04s1.34-.41,1.63-1.04c.75-1.61,2.41-2.53,4.55-2.53m0-1.8c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0h0Z">
-            </path>
-        </g>
-        <g class="heart-fill">
-            <path class="b"
-                d="M19.18,0c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0Z">
-            </path>
-        </g>
-    </svg>
-</button>
-                        <svg class="js-cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-							<g>
-								<path d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
-									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								<path
-									d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
-									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							</g>
-							<path
-								d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
-								stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="cart__popup-content">
-            <div class="cart__product-item">
-                <div class="product-img">
-                    <img src="/img/item.png" alt="temp">
-                </div>
-
-                <div class="product-content">
-
-                    <span class="product-name">
-                        Щётка стеклоочистителя зимняя ALCF 24”/60 см
-                    </span>
-                    <span class="product-sku">
-                        Номер запчасти: 1882NKE601
-                    </span>
-
-                    <div class="price-wrapper">
-                        <div class="counter-wrapper">
-                            <div class="parts-item__button jsButtonCounter buttons-anim__button buttons-anim__button--black">
-                                <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--decrease" data-type="decrease"></span>
-                                <input class="js-number-inp buttons-anim__input" type="text" value="1">
-                                <span class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--increase" data-type="increase">
-                                </span>
-                                <span class="button-show-cancel-inner button-show-cancel-inner--grey">Отмена</span>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            1 230 ₽
-                            <span class="price--old">
-                                1 030 ₽
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="product-controls">
-                        <button class="heart__favorite-btn">
-    <svg class="heart__favorite" viewBox="0 0 26 26">
-        <g class="heart-fill-back">
-            <path class="b"
-                d="M19.18,0c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0Z">
-            </path>
-        </g>
-        <g class="heart-stroke" fill="#000000">
-            <path
-                d="M19.18,1.8c2.77,0,5.02,2.25,5.02,5.02,0,2.35-2.55,4.76-4.8,6.88-.52,.49-1.03,.97-1.49,1.43-1.23,1.23-3.49,3.49-4.91,4.92-1.33-1.33-3.42-3.43-4.91-4.92-.46-.46-.97-.94-1.49-1.43C4.35,11.58,1.8,9.17,1.8,6.82,1.8,4.05,4.05,1.8,6.82,1.8c2.14,0,3.8,.92,4.55,2.53,.3,.63,.93,1.04,1.63,1.04s1.34-.41,1.63-1.04c.75-1.61,2.41-2.53,4.55-2.53m0-1.8c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0h0Z">
-            </path>
-        </g>
-        <g class="heart-fill">
-            <path class="b"
-                d="M19.18,0c-2.74,0-5.09,1.24-6.18,3.57C11.91,1.24,9.56,0,6.82,0,3.05,0,0,3.05,0,6.82s4.16,6.92,6.82,9.58c2.34,2.34,6.18,6.19,6.18,6.19,0,0,4.29-4.3,6.18-6.19,2.66-2.66,6.82-5.81,6.82-9.58S22.95,0,19.18,0Z">
-            </path>
-        </g>
-    </svg>
-</button>
-                        <svg class="js-cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-							<g>
-								<path d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
-									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								<path
-									d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
-									stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							</g>
-							<path
-								d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
-								stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							<path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
+                        <button class="remove"></button>
                     </div>
                     
                 </div>
@@ -3108,7 +2931,7 @@
                     </svg>
                     <span>На карте</span>
                 </a>
-                <a href="#" class="filters__map jsFilterMapBtn mobile-hidden" data-popup="jsService">
+                <a href="#" class="filters__map jsFilterMapBtn mobile-hidden" data-popup="jsOrdering">
                     <svg class="filters__icon-map">
                         <use xlink:href="/img/sprite.svg#sprite--pin"></use>
                     </svg>
@@ -5628,8 +5451,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-<script src="js/libs.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/libs.js"></script>
+<script src="/js/main.js"></script>
 
 </body>
 

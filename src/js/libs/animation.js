@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$("body").addClass("overflow-hidden");
 	setTimeout(function(){
 		$("body").removeClass("overflow-hidden");
 	}, 1500);
@@ -234,8 +235,6 @@ $(document).ready(function() {
 	});
 });
 
-
-
 $(document).on("click", ".cart__popup-header .close", function(event) {
 	$(this).addClass("scale");
 	setTimeout(function(){
@@ -263,9 +262,9 @@ for (let elm of elements) {
 
 $(document).ready(function() {
 	$('.preloader-arrows.preloader-arrows-big').addClass('js-preloader-arrows-big-new');
-	/* $('.accordion__overhead--new').click(function(event) {
+	$('.accordion__overhead--new').click(function(event) {
 		$(this).toggleClass('active').next().slideToggle(700);
-	}); */
+	});
 	$('.header__logo-mob .burger-menu-wrapper .jsMenuButton').click(function(event) {
 		$('.header__logo.header__logo--mob').toggleClass('header__logo--active');
 		$('.header__city-box.header__city-btn').toggleClass('header__city--active');

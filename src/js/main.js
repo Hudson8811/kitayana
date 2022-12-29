@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-        const accordions = document.querySelectorAll(".accordion"),
+    const accordions = document.querySelectorAll(".accordion"),
         filtersBox = document.querySelectorAll(".filters__box");
     accordions.forEach(function (item) {
         const accordionContent = item.querySelector(".accordion__content");
@@ -218,6 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const filterAccordionsContent = filterAccordions.querySelector(".filters__content");
         accordionToggle(item, filterAccordionsContent);
     });
+
 
     const sparesSlider = new Swiper(".swiper-spares", {
         direction: "horizontal",
@@ -907,8 +908,14 @@ document.addEventListener("DOMContentLoaded", function () {
             inputs.forEach((input) => {
                 if (input.hasAttribute("data-required") && input.value.length < 3 && !input.classList.contains("checkbox__input")) {
                     failValidate = true;
-                    console.log(input.closest(".input-group"))
-                    window.screen.width <= 768 ? input.insertAdjacentHTML("afterend", "<p class='input-error'>Обязательное поле</p>") :                     input.closest(".input-group").insertAdjacentHTML("beforeend", "<p class='input-error'>Обязательное поле</p>");
+                    // console.log(input.closest(".input-group"))
+                    if(window.screen.width <= 768){
+                        input.insertAdjacentHTML("afterend", "<p class='input-error'>Обязательное поле</p>");
+                    }else if(input.closest(".input-group")){
+                        input.closest(".input-group").insertAdjacentHTML("beforeend", "<p class='input-error'>Обязательное поле</p>");
+                    }else{
+                         input.insertAdjacentHTML("afterend", "<p class='input-error'>Обязательное поле</p>");
+                    }
                     input.classList.add("invalid");
                 } else if (input.classList.contains("checkbox__input") && !input.checked) {
                     failValidate = true;
@@ -1272,7 +1279,7 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
 
 
 
-    if(window.screen.width <= 768){
+    if(window.screen.width <= 600){
         const carListSlider = new Swiper(".car-list__wrapper", {
             wrapperClass: "car-list",
             slideClass: "car-item",
@@ -1356,65 +1363,6 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
         })
     
 
-
-
-
-
-    document.querySelectorAll(".sto-service-form .input-wrapper .input").forEach(item => {
-        item.addEventListener("click", function(e){
-
-             document.querySelectorAll(".sto-service-form .input-wrapper .sto-service-form__dropdown").forEach(elem => {
-                if(elem){
-                    elem.classList.remove("show");
-                }
-             });
-
-             document.querySelectorAll(".sto-service-form .input-wrapper input").forEach(elem => {
-                if(elem){
-                    elem.classList.remove("focus");
-                }
-             });
-
-            let input = this;
-            let dropdown = item.nextElementSibling;
-            let inputContainer = item.parentElement;
-            let inputWrapper = inputContainer.parentElement;
-
-            if(dropdown){
-                dropdown.classList.add("show");
-            }
-            input.classList.add('focus');
-
-            if(dropdown && dropdown.classList.contains("show")){
-                document.addEventListener('click', function(event) {
-                    if (!inputContainer.contains(event.target)){
-                        dropdown.classList.remove("show");
-                        dropdown.previousElementSibling.classList.remove("focus");
-                    } 
-                });
-            }
-
-            if(input && input.classList.contains("focus")){
-                document.addEventListener('click', function(event) {
-                    if (!inputContainer.contains(event.target)){
-                        input.classList.remove("focus");
-                    } 
-                });
-            }
-
-            if(dropdown){
-                dropdown.querySelectorAll('.sto-service-form__dropdown-item').forEach(dropItem => {
-                    dropItem.addEventListener('click', function() {
-                        let dropItemText = this.innerText;
-                        input.value = dropItemText;
-                        dropdown.classList.remove("show");
-                     })
-                })
-            }
-
-        })
-
-    })
 
     document.querySelectorAll(".sto-service-form .sto-service-form__toggle-button").forEach(item => {
         item.addEventListener("click", function(e){
@@ -1513,6 +1461,73 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
             let inputContainer = item.parentElement;
             let dropdown = inputContainer.querySelector('.sto-service-form__dropdown');
             let inputWrapper = inputContainer.parentElement;
+            let arrow = inputContainer.querySelector('.sto-service-form__arrow');
+
+            if(input.classList.contains("focus") && clickCounter == 2 && dropdown != null){
+                input.classList.remove("focus");
+                dropdown.classList.remove("show");
+                clickCounter = 0;
+                return
+            }
+             document.querySelectorAll(".sto-service-form .input-wrapper .sto-service-form__dropdown").forEach(elem => {
+                if(elem){
+                    elem.classList.remove("show");
+                    clickCounter = 1;
+                }
+             });
+
+             document.querySelectorAll(".sto-service-form .input-wrapper input").forEach(elem => {
+                if(elem){
+                    elem.classList.remove("focus");
+                }
+             });
+
+            if(dropdown){
+                dropdown.classList.add("show");
+            }
+            input.classList.add('focus');
+
+            if(dropdown && dropdown.classList.contains("show")){
+                document.addEventListener('click', function(event) {
+                    if (!inputContainer.contains(event.target)){
+                        dropdown.classList.remove("show");
+                        dropdown.previousElementSibling.classList.remove("focus");
+                    } 
+                });
+            }
+
+            if(input && input.classList.contains("focus")){
+                document.addEventListener('click', function(event) {
+                    if (!inputContainer.contains(event.target)){
+                        input.classList.remove("focus");
+                    } 
+                });
+            }
+
+            if(dropdown){
+                dropdown.querySelectorAll('.sto-service-form__dropdown-item').forEach(dropItem => {
+                    dropItem.addEventListener('click', function(e) {
+                        e.preventDefault;
+                        let dropItemText = this.innerText;
+                        input.value = dropItemText;
+                        dropdown.classList.remove("show");
+                     })
+                })
+            }
+
+        })
+
+    })
+
+    document.querySelectorAll(".sto-service-form .sto-service-form__arrow").forEach(item => {
+        item.addEventListener("click", function(e){
+            clickCounter++;
+            console.log(clickCounter);
+            let arrow = this;
+            let inputContainer = item.parentElement;
+            let dropdown = inputContainer.querySelector('.sto-service-form__dropdown');
+            let inputWrapper = inputContainer.parentElement;
+            let input = inputContainer.querySelector('.input');
 
             if(input.classList.contains("focus") && clickCounter == 2 && dropdown != null){
                 input.classList.remove("focus");

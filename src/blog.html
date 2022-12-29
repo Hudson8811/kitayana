@@ -1,0 +1,272 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+@include('partials/modals/stateFormModal.html')
+
+<div class="wrapper blog">
+	<div class="breadcrumbs breadcrumbs--pb-0">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<a href="#" class="breadcrumbs__link">Главная</a>
+				<a href="#" class="breadcrumbs__link">Блог</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h1 class="page-title page-title--big">
+			<a href="#">
+				Блог
+			</a>
+		</h1>
+	</div>
+	<div class="blog__content content">
+		<div class="blog__content-row">
+			<div class="blog__content-row-top">
+				<div class="blog__item --big --bg-item">
+					<img class="blog__item-image" src="img/blog/item-bg-1.png" alt="">
+					<div class="blog__item-blackout"></div>
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --white">
+								Совет
+							</div>
+							<div class="blog__item-date --white">
+								13 февраля 2022
+							</div>
+						</div>
+						<div class="blog__item-title --big --white">
+							Сезонная замена технических&nbsp;жидкостей в автомобиле 
+						</div>
+						<div class="blog__item-text --white">
+							Компания «Китаяна»  предлагает автозапчасти и сервис
+						</div>
+						<a href="#" class="blog__item-button button">Посмотреть</a>
+					</div>
+				</div>
+				<div class="blog__menu">
+					<div class="blog__menu-content">
+						<div class="blog__menu-top">
+							<div class="blog__menu-title">
+								Тематика
+							</div>
+							<div class="blog__menu-tags">
+								<a href="" class="blog__item-tag --dark">#Все</a>
+								<a href="" class="blog__item-tag --white">#Статья</a>
+								<a href="" class="blog__item-tag --white">#Видео-блог</a>
+								<a href="" class="blog__item-tag --white">#Совет</a>
+								<a href="" class="blog__item-tag --white">#Тест-драйв</a>
+							</div>
+						</div>
+						<div class="blog__menu-bottom">
+							<form action="post" class="blog__subscribe form-validate">
+								<div class="blog__menu-title">
+									Подписаться на&nbspпубликации
+								</div>
+								<div class="blog__input-wrapper">
+									<input type="e-mail" class="input input--white" placeholder="Ваша почта" data-required>
+									<button type="submit" class="button submit">
+										<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="24" cy="24" r="24" fill="#E60000"/>
+											<path d="M31 17H17C15.8954 17 15 17.8954 15 19V29C15 30.1046 15.8954 31 17 31H31C32.1046 31 33 30.1046 33 29V19C33 17.8954 32.1046 17 31 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M15 19L24 25L33 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
+								<div class="blog__conditions">
+									Нажимая на кнопку вы соглашаетесь с <a href="#" class="blog__conditions-link">политикой обработки персональных данных</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="blog__menu-socials">
+						<a href="#" class="blog__menu-social-link">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="/img/sprite-new.svg#vk"></use>
+							</svg>
+							Вконтакте
+						</a>
+						<a href="#" class="blog__menu-social-link">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="/img/sprite-new.svg#ok"></use>
+							</svg>
+							Однокласники
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="blog__content-row-bottom">
+				<div class="blog__item --grey">
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --white">
+								Совет
+							</div>
+							<div class="blog__item-date --grey">
+								12 Апреля 2022
+							</div>
+						</div>
+						<div class="blog__item-title">
+							Почему моторное масло становится похожим на солидол? 
+						</div>
+						<div class="blog__item-text --grey">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval
+						</div>
+					</div>
+				</div>
+				<div class="blog__item --bg-item">
+					<img class="blog__item-image" src="img/blog/item-bg-2.png" alt="">
+					<div class="blog__item-blackout"></div>
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --white">
+								Статья
+							</div>
+							<div class="blog__item-date --white">
+								1 мая 2022
+							</div>
+						</div>
+						<div class="blog__item-title --white">
+							Ждём Вас в наших магазинах&nbsp;и&nbsp;СТО!
+						</div>
+						<div class="blog__item-text --white">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval
+						</div>
+					</div>
+				</div>
+				<div class="blog__item --white">
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --grey">
+								Видео-блог
+							</div>
+							<div class="blog__item-date --grey">
+								12 Апреля 2022
+							</div>
+						</div>
+						<div class="blog__item-title --grey">
+							Ждём Вас в наших магазинах&nbsp;и&nbsp;СТО!
+						</div>
+						<div class="blog__item-text --grey">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval
+						</div>
+						<a href="#" class="blog__item-link">посмотреть</a>
+					</div>
+				</div>
+				<div class="blog__item --bg-item">
+					<img class="blog__item-image" src="img/blog/item-bg-3.png" alt="">
+					<div class="blog__item-blackout"></div>
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --white">
+								Статья
+							</div>
+							<div class="blog__item-date --white">
+								1 мая 2022
+							</div>
+						</div>
+						<div class="blog__item-title --white">
+							Ждём Вас в наших магазинах&nbsp;и&nbsp;СТО!
+						</div>
+						<div class="blog__item-text --white">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval
+						</div>
+					</div>
+				</div>
+				<div class="blog__item --white">
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --grey">
+								Видео-блог
+							</div>
+							<div class="blog__item-date --grey">
+								12 Апреля 2022
+							</div>
+						</div>
+						<div class="blog__item-title --grey">
+							Ждём Вас в наших магазинах&nbsp;и&nbsp;СТО!
+						</div>
+						<div class="blog__item-text --grey">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval
+						</div>
+					</div>
+				</div>
+				<div class="blog__item --grey">
+					<div class="blog__item-content">
+						<div class="blog__item-top-row">
+							<div class="blog__item-tag --white">
+								Совет
+							</div>
+							<div class="blog__item-date --grey">
+								12 Апреля 2022
+							</div>
+						</div>
+						<div class="blog__item-title">
+							Почему моторное масло становится похожим на солидол? 
+						</div>
+						<div class="blog__item-text --grey">
+							Компания «Китаяна»  предлагает автозапчасти и сервис для автомобилей Lifan, BYD, Chery, Haval
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-load-more-button">
+			<div class="js-preloader-arrows js-preloader-arrows-load-more"></div>
+			<button class="button button--grey load-more-button button-anim button-anim--grey">
+			Загрузить еще
+			</button>
+		</div>
+	</div>
+
+
+	<div class="subscribe-form-mobile">
+		<div class="blog__menu-bottom">
+			<form action="post" class="blog__subscribe form-validate">
+				<div class="blog__menu-title">
+					Подписаться на&nbspпубликации
+				</div>
+				<div class="blog__input-wrapper">
+					<input type="e-mail" class="input input--white" placeholder="Ваша почта" data-required>
+					<button type="submit" class="button submit">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="24" cy="24" r="24" fill="#E60000"/>
+							<path d="M31 17H17C15.8954 17 15 17.8954 15 19V29C15 30.1046 15.8954 31 17 31H31C32.1046 31 33 30.1046 33 29V19C33 17.8954 32.1046 17 31 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M15 19L24 25L33 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+				</div>
+				<div class="blog__conditions">
+					Нажимая на кнопку вы соглашаетесь с <a href="#" class="blog__conditions-link">политикой обработки персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<div class="blog__menu-socials">
+			<a href="#" class="blog__menu-social-link">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="/img/sprite-new.svg#vk"></use>
+				</svg>
+				Вконтакте
+			</a>
+			<a href="#" class="blog__menu-social-link">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="/img/sprite-new.svg#ok"></use>
+				</svg>
+				Однокласники
+			</a>
+		</div>
+	</div>
+
+</div>
+
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

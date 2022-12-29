@@ -558,6 +558,9 @@
 .cart-wrapper{
     .product__slider-container--pb{
         padding-bottom: rem(107px);
+        @media(max-width: 768px){
+            padding-bottom: 48px;
+        }
     }
     &--empty{
         padding-bottom: rem(66px) !important;

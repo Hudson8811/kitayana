@@ -335,40 +335,22 @@
         align-items: center;
         justify-content: space-between;
         .button{
-            width: rem(120px);
-            height: rem(64px);
-             
+             padding: rem(18px) rem(33.2px);
+             &--md{
+                padding: rem(18px) rem(23px);
+             }
             @media(max-width: 768px){
-                width: 70px;
-                height: 48px;
-                font-size: 10px;
-                line-height: 14px;
-                text-transform: uppercase;
-            }
-
-            &--sm{
-                width: rem(160px);
-                @media(max-width: 768px){
-                    width: 100px;
-                }
-            } 
-
-            &--md{
-                width: rem(238px);
-                padding: 0;
-                @media(max-width: 768px){
-                    width: 170px;
-                    
-                }
-            }
-
-            &--lg{
-                width: rem(262px);
-                @media(max-width: 768px){
-                    width: 170px;
-                }
+                padding: 18px 18px;
             }
         }
+    }
+
+    .input-error{
+        margin-bottom: 0;
+    }
+
+    .password-link ~ .input-error{
+        margin-top: rem(-31px);
     }
 
     

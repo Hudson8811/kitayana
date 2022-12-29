@@ -1,0 +1,86 @@
+@include('partials/header.html', {
+	top: 'show'
+})
+
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsServiceModal.html')
+
+
+<div class="modal state-form order-states sto-form-popup" id="stoFormError">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#mail-error'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Произошла ошибка при&nbsp;отправке, попробуйте&nbsp;позже
+    </div>
+
+    <button class="mobile-btn jsCloseStateForm">
+		Закрыть
+	</button>
+
+
+</div>
+
+<div class="modal state-form order-states sto-form-popup" id="stoFormSuccess">
+
+	<button class="modal__close dropdown__close jsCloseStateForm">
+        <span class="dropdown__close-icon --svg__close"></span>
+    </button>
+
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <use xlink:href='/img/sprite-new.svg#mail-success'></use>
+    </svg>
+        
+
+    <div class="state-title">
+		Ваша заявка успешно&nbsp;отправлена
+    </div>
+
+    <button class="mobile-btn jsCloseStateForm">
+		Закрыть
+	</button>
+
+
+</div>
+
+	<div class="wrapper sto-services">
+		<div class="breadcrumbs breadcrumbs--pb-0">
+			<div class="container">
+				<div class="breadcrumbs__inner">
+					<a href="#" class="breadcrumbs__link">Главная</a>
+					<a href="#" class="breadcrumbs__link">Услуги автосервиса</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ul>
+				<li><a href="" data-popup="stoFormError">Ошибка при заполнении формы</a></li>
+				<li><a href="" data-popup="stoFormSuccess">Заявка отправлена успешно</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+@include('partials/bottom-panel.html')
+
+@include('partials/footer.html')

@@ -25,27 +25,27 @@
 
 <div class="modal state-form order-states order-states--confim" id="removeConfim">
 
-	<button class="modal__close dropdown__close jsCloseStateForm">
+    <button class="modal__close dropdown__close jsCloseStateForm">
         <span class="dropdown__close-icon --svg__close"></span>
     </button>
 
     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <use xlink:href='/img/sprite-new.svg#cart-confim'></use>
+        <use xlink:href='/img/sprite-new.svg#cart-confim'></use>
     </svg>
-        
+
 
     <div class="state-title">
-		Удаление
+        Удаление
     </div>
 
     <div class="state-text">
-		Вы действительно хотите удалить авто  <br> <span class="red">Chery Tiggo T11</span>?
+        Вы действительно хотите удалить авто <br> <span class="red">Chery Tiggo T11</span>?
     </div>
 
-	<div class="confim-buttons">
-		<a href="" class="button" data-popup="carRemoved">удалить</a>
-		<a class="cancel">Отмена</a>
-	</div>
+    <div class="confim-buttons">
+        <a href="" class="button" data-popup="carRemoved">удалить</a>
+        <a class="cancel">Отмена</a>
+    </div>
 
 
 </div>
@@ -53,26 +53,26 @@
 
 <div class="modal state-form order-states" id="carRemoved">
 
-	<button class="modal__close dropdown__close jsCloseStateForm">
+    <button class="modal__close dropdown__close jsCloseStateForm">
         <span class="dropdown__close-icon --svg__close"></span>
     </button>
 
     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <use xlink:href='/img/sprite-new.svg#success-icon'></use>
+        <use xlink:href='/img/sprite-new.svg#success-icon'></use>
     </svg>
-        
+
 
     <div class="state-title">
-		Авто удалено
+        Авто удалено
     </div>
 
     <div class="state-text">
-		Chery Tiggo T11
+        Chery Tiggo T11
     </div>
 
-	<button class="mobile-btn jsCloseStateForm">
-		Закрыть
-	</button>
+    <button class="mobile-btn jsCloseStateForm">
+        Закрыть
+    </button>
 
 
 </div>
@@ -93,7 +93,7 @@
 
 
 
-  
+
 
     <div class="profile__inner container">
         <aside>
@@ -178,14 +178,16 @@
         <div class="profile__content">
             <div class="profile__content-header profile__content-header--sm">
                 <div class="profile__content-title">
-                    <a href=""><h1>Гараж <span class="title-count">2 авто</span></h1></a>
+                    <a href="">
+                        <h1>Гараж <span class="title-count">2 авто</span></h1>
+                    </a>
                     <a href="" class="add-car mobile-hidden" data-popup="jsOrderingNewAddress">
                         <svg>
                             <use xlink:href='/img/sprite-new.svg#red-plus'></use>
                         </svg>
-                        
+
                         Добавить авто
-                        
+
                     </a>
                     <p class="hint">7% ваша персональная скидка на товары</p>
                 </div>
@@ -205,7 +207,7 @@
 
 
 
-           <div class="profile__cars-list">
+            <div class="profile__cars-list">
                 <div class="profile__cars-item">
                     <div class="cars__item-col">
                         <div class="cars__item-details-wrapper">
@@ -214,17 +216,17 @@
                             </div>
                             <div class="cars__item-details">
                                 <span class="car-name">Chery Tiggo T11</span>
-                               <ul class="car-characteristic">
+                                <ul class="car-characteristic">
                                     <li>2.4 AT</li>
                                     <li>2013 год</li>
                                     <li>Китай</li>
-                               </ul>
-                               <span class="serial-number">
-                                Y4K8762Z7HB300490
-                               </span>
-                               <span class="car-number">
-                                А 777 АА 77
-                               </span>
+                                </ul>
+                                <span class="serial-number">
+                                    Y4K8762Z7HB300490
+                                </span>
+                                <span class="car-number">
+                                    А 777 АА 77
+                                </span>
                             </div>
 
                             <div class="nav">
@@ -234,15 +236,33 @@
                                     </svg>
                                 </button>
                                 <button data-popup="removeConfim">
-                                    <svg>
-                                        <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                    <svg class="cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <g>
+                                            <path
+                                                d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
+                                                stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
+                                                stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <path
+                                            d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
+                                            stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>
                         </div>
                         <div class="details-footer">
                             <p>
-                                Каталог запчастей для <b>Chery Tiggo T11</b> 
+                                Каталог запчастей для <b>Chery Tiggo T11</b>
                             </p>
                             <a class="button">В каталог</a>
                         </div>
@@ -289,17 +309,17 @@
                             </div>
                             <div class="cars__item-details">
                                 <span class="car-name">Chery Tiggo T11</span>
-                               <ul class="car-characteristic">
+                                <ul class="car-characteristic">
                                     <li>2.4 AT</li>
                                     <li>2013 год</li>
                                     <li>Китай</li>
-                               </ul>
-                               <span class="serial-number">
-                                Y4K8762Z7HB300490
-                               </span>
-                               <span class="car-number">
-                                А 777 АА 77
-                               </span>
+                                </ul>
+                                <span class="serial-number">
+                                    Y4K8762Z7HB300490
+                                </span>
+                                <span class="car-number">
+                                    А 777 АА 77
+                                </span>
                             </div>
 
                             <div class="nav">
@@ -309,15 +329,33 @@
                                     </svg>
                                 </button>
                                 <button data-popup="removeConfim">
-                                    <svg>
-                                        <use xlink:href="/img/sprite-new.svg#address-remove"></use>
+                                    <svg class="cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <g>
+                                            <path
+                                                d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
+                                                stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
+                                                stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <path
+                                            d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
+                                            stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>
                         </div>
                         <div class="details-footer">
                             <p>
-                                Каталог запчастей для  <b>Chery Tiggo T11</b> 
+                                Каталог запчастей для <b>Chery Tiggo T11</b>
                             </p>
                             <a class="button">В каталог</a>
                         </div>
@@ -330,7 +368,7 @@
                             <div class="product-count mobile-only">
                                 6 товаров
                             </div>
-    
+
                         </span>
                         <div class="price-wrapper">
                             <div class="price">
@@ -358,11 +396,11 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
 
-      
+
     </div>
 
 

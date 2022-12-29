@@ -621,6 +621,9 @@
             margin-bottom: 2rem;
             display: flex;
             align-items: center;
+            &.active{
+                color: $color_2;
+            }
             &:last-child{
                 margin-bottom: 0;
             }

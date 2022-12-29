@@ -12,7 +12,7 @@
 		}
 	}
 	.container{
-		max-width: rem(1805px);
+		// max-width: rem(1805px);
 		@media(max-width: 768px){
 			padding: 0 16px;
 		}
@@ -88,7 +88,7 @@
 	}
 	&__shop-link{
 		display: flex;
-		gap: rem(12px);
+		gap: rem(13px);
 		align-items: center;
 		font-weight: 600;
 		font-size: rem(22px);
@@ -113,7 +113,7 @@
 		font-size: rem(16px);
 		line-height: rem(32px);
 		color: #E60000;
-		padding-left: rem(30px);
+		padding-left: rem(31px);
 		text-transform: uppercase;
 		letter-spacing: 0.02em;
 		@media(max-width: 768px){
@@ -157,7 +157,7 @@
 		justify-content: space-between;
 		padding: rem(24.2px);
 		font-size: rem(16px);
-		line-height: rem(26.2px);
+		line-height: rem(26px);
 		color: #2D2727;
 		gap: rem(16px);
 		letter-spacing: 0.008em;
@@ -178,7 +178,7 @@
 			border-bottom: 1px solid rgba(0, 0, 0, 0);
 			color: #FFFFFF;
 			font-weight: 500;
-			margin-bottom: 0;
+			margin-bottom: rem(-1px);
 			@media(max-width: 768px){
 				font-weight: 400;
 				letter-spacing: -0.035em;
@@ -359,7 +359,8 @@
 }
 
 .sto-service-form{
-	width: rem(880px);
+	width: rem(885px);
+	flex-shrink: 0;
 	padding: rem(80px);
 	background: #F1F1F3;
 	height: fit-content;
@@ -373,10 +374,10 @@
 		font-weight: 700;
 		font-size: rem(48px);
 		line-height: rem(64px);
-		letter-spacing: 0.02em;
+		letter-spacing: 0.025em;
 		text-transform: uppercase;
 		color: #2D2727;
-		margin-bottom: rem(32.5px);
+		margin-bottom: rem(35px);
 		@media(max-width: 768px){
 			font-weight: 700;
 			font-size: 22px;
@@ -527,6 +528,7 @@
 		top: rem(24px);
 		right: rem(16px);
 		transition: all 0.3s ease;
+		cursor: pointer;
 		@media(max-width: 768px){
 			width: 16px;
 			height: 16px;
@@ -618,18 +620,23 @@
 		transition: all 0.3s ease;
 		transform: rotate(0deg);
 	}
+	// .sto-service-form__toggle-button + .sto-service-form__text{
+	// 	max-width: 98%;
+	// }
 	&__text{
 		font-weight: 500;
 		font-size: rem(16px);
 		line-height: rem(26px);
 		color: rgba(45, 39, 39, 0.7);
 		margin-bottom: rem(36px);
+		letter-spacing: 0.002em;
 		@media(max-width: 768px){
 			font-weight: 400;
 			font-size: 12px;
 			line-height: 24px;
 			margin-bottom: 22px;
 			margin-top: -6px;
+			letter-spacing: unset;
 		}
 	}
 	.checkbox{
@@ -965,8 +972,15 @@
 .to-services.to-services.sto-services{
 	.sto-services__title-row{
 		align-items: flex-end;
+		gap: 0;
 		@media(max-width: 991px){
 			align-items: flex-start;
+		}
+	}
+	.sto-services__title{
+		@media(min-width: 991px){
+			width: 81rem;
+			flex-grow: 0;
 		}
 	}
 	.sto-slider{
@@ -1089,9 +1103,23 @@
 }
 
 
-
-
-
 .overlay.sto-overlay.open{
 	z-index: 26;
+}
+
+
+
+.state-form.sto-form-popup .state-title{
+	font-weight: 600;
+	font-size: rem(20px);
+	line-height: rem(32px);
+	padding-top: rem(24px);
+	padding-bottom: 0;
+	text-align: center;
+	@media(max-width: 768px){
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		padding: 24px 15px 9px;
+	}
 }

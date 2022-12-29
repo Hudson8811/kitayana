@@ -498,7 +498,7 @@
             margin-left: 24px;
             @media(max-width: 768px){
                 height: 48px;
-                width: 152px;
+                min-width:152px !important;
             }
         }
         &-inner{
@@ -993,6 +993,11 @@ body.overflow-hidden::-webkit-scrollbar{
                 white-space: no-wrap;
             }
         } 
+
+        @media(max-width: 360px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     .parts-item-main__button{
         margin-top: 11px;
@@ -1004,6 +1009,14 @@ body.overflow-hidden::-webkit-scrollbar{
     max-width: 1040px;
     .modal__content{
         width: 100%;
+    }
+
+    @media(max-width: 400px){
+        .parts-item-main__button{
+            margin-top: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 10px;
+        }
     }
 }
 

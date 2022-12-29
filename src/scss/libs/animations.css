@@ -2775,4 +2775,28 @@ input.checkbox__input:checked + .checkbox-label {
     left: 0;
   }
 }
+
+
+svg.cart-anim {
+  transition: all 0.7s ease 0s;
+}
+svg.cart-anim:hover {
+  transform: scale(1.1);
+}
+svg.cart-anim	path {
+  transition: all 0.7s ease 0s;
+}
+svg.cart-anim g {
+  transition: all 0.7s ease 0s;
+}
+svg.cart-anim:hover g {
+  transform: rotate(7deg);
+  transform-origin: 100% 100%;
+}
+svg.cart-anim:hover path:nth-child(3),
+svg.cart-anim:hover path:nth-child(4), 
+svg.cart-anim:hover path:nth-child(5) {
+  transform: translate(0, 0);
+  transform-origin: 100% 100%;
+}
 /*# sourceMappingURL=animations.css.map */
