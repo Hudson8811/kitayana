@@ -278,10 +278,14 @@ AOS.init();
 
 var swiper = new Swiper(".cars__slider", {
 	spaceBetween: 30,
+    speed: 25000,
 	centeredSlides: true,
 	loop: true,
 	slidesPerView: 'auto',
+    allowTouchMove: false,
+    mousewheel: false,
 	autoplay: {
 		delay: 0,
-	},
+        disableOnInteraction: false
+    },
 });

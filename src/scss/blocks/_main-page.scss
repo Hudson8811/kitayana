@@ -851,7 +851,10 @@
 			text-transform: uppercase;
 			li{
 				position: relative;
-				width: 100%
+				width: 100%;
+				.cars__list-item-hover{
+					pointer-events: none;
+				}
 			}
 			li a{
 				width: 100%;
@@ -862,10 +865,13 @@
 				transition: 0.3s;
 				color: #FFFFFF;
 			}
-			li:hover .cars__list-item-hover{
-				transition: all 0.3s ease;
+			li.active .cars__list-item-hover{
+				transition: all 0.4s ease-out;
 				visibility: visible;
 				opacity: 1;
+			}
+			li.hidden .cars__list-item-hover{
+				opacity: 0;
 			}
 		}
 	}
