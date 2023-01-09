@@ -746,6 +746,8 @@
 		gap: rem(81.5px);
 		overflow: auto;
 		scrollbar-width: none;
+		pointer-events: none;
+		user-select: none;
 		@media(max-width: 768px){
 			padding: 16px 0;
 			gap: 29px;

@@ -16339,7 +16339,6 @@ body.overflow-hidden::-webkit-scrollbar {
   left: 13%;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 12.4844C4 11.9321 4.44772 11.4844 5 11.4844L19.9706 11.4844C20.5229 11.4844 20.9706 11.9321 20.9706 12.4844C20.9706 13.0367 20.5229 13.4844 19.9706 13.4844L5 13.4844C4.44772 13.4844 4 13.0367 4 12.4844Z' fill='%232D2727'/%3E%3C/svg%3E%0A");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16349,6 +16348,7 @@ body.overflow-hidden::-webkit-scrollbar {
 }
 .cart__product-item .counter-wrapper .buttons-anim__button--black .buttons-anim__icon--decrease::before {
   width: 65%;
+  top: 50%;
 }
 @media (max-width: 768px) {
   .cart__product-item .counter-wrapper .buttons-anim__button--black .buttons-anim__icon--decrease {
@@ -22490,6 +22490,11 @@ aside .service-map__button {
   gap: 5.09375rem;
   overflow: auto;
   scrollbar-width: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 768px) {
   .cars__slider {
