@@ -289,3 +289,18 @@ var swiper = new Swiper(".cars__slider", {
         disableOnInteraction: false
     },
 });
+
+
+$(document).ready(function() {
+    $(document).on('click','.product__slider-tab',function (){
+        if (!$(this).hasClass('active')){
+            $(this).addClass('active').siblings().removeClass('active');
+            let index = $(this).index();
+            let parent = $(this).closest('.sales__slider-container');
+            parent.find('.product__slider-nav').eq(index).css('display','flex').siblings().hide();
+            parent.find('.tab-slider').stop().fadeOut(100).promise().done(function(){
+                parent.find('.tab-slider').eq(index).fadeIn(100);
+            });
+        }
+    });
+});

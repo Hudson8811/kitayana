@@ -30,6 +30,8 @@ const paths = {
   buildJsFolder: `${buildFolder}/js`,
   srcPartialsFolder: `${srcFolder}/partials`,
   resourcesFolder: `${srcFolder}/resources`,
+  srcVideoFolder: `${srcFolder}/video`,
+  buildVideoFolder: `${buildFolder}/video`,
 };
 
 
@@ -105,6 +107,12 @@ const images = () => {
 
 }
 
+const video = () => {
+    return src(`${paths.srcVideoFolder}/**/*.{mp4,webm}`)
+    .pipe(dest(`${paths.buildVideoFolder}`))
+
+}
+
 
 
 const js = () =>{
@@ -154,6 +162,7 @@ const watching = () =>{
     watch(`${paths.srcPartialsFolder}/**/*.html`, html); 
     watch(`${srcFolder}/*.html`, html);
     watch(`${paths.srcImgFolder}/**/*.{jpg,jpeg,png,gif,ico,webp,svg}`, images);
+    watch(`${paths.srcImgFolder}/**/*.{mp4,webm}`, video);
     watch(`${paths.srcJsFolder}/libs/*.js`, js);
     watch(`${paths.srcJsFolder}/*.js`, js);
     watch(`${srcFolder}/fonts/**/*.ttf`, fonts);
@@ -167,4 +176,4 @@ const watching = () =>{
 exports.styles = scss;
 exports.watching = watching;
 
-exports.default = series(removeBuild, html, scss, images, js, fonts, svgSpritesCombine, watching);
+exports.default = series(removeBuild, html, scss, images, video, js, fonts, svgSpritesCombine, watching);

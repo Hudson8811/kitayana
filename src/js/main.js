@@ -453,7 +453,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        const blogSlidersDesk = document.querySelectorAll(".sale__slider.sale__slider--blog");
+        const blogSlidersDesk = document.querySelectorAll(".sale__slider.sale__slider--blog:not(.tab-slider)");
         blogSlidersDesk.forEach((item, index) => {
             new Swiper(item, {
                 slidesPerView: "3",
@@ -475,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        const blogSlidersDeskMob = document.querySelectorAll(".sale__slider.sale__slider--blog.sale__slider--blog--mob");
+        const blogSlidersDeskMob = document.querySelectorAll(".sale__slider.sale__slider--blog.sale__slider--blog--mob:not(.tab-slider)");
         blogSlidersDeskMob.forEach((item, index) => {
             new Swiper(item, {
                 slidesPerView: "1",
@@ -496,6 +496,60 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
             });
         });
+
+
+
+    const blogSlidersDeskTabs = document.querySelectorAll(".sale__slider.sale__slider--blog.tab-slider:not(.tab-slider--mobile)");
+    blogSlidersDeskTabs.forEach((item, index) => {
+        let tab = index;
+        $(item).closest('.sales__slider-container').find('.product__slider-navs').append('<div class="product__slider-nav product__slider-nav--'+tab+'">\n' +
+            '<button class="product__slider-prev product__slider-prev-tab"></button>\n' +
+            '<div class="product__slider-pagination product__slider-pagination-tab"></div>\n' +
+            '<button class="product__slider-next product__slider-next-tab"></button>\n' +
+            '</div>');
+
+        new Swiper(item, {
+            slidesPerView: "3",
+            wrapperClass: "sale__slider-wrapper",
+            slideClass: "sale__grid-item",
+            allowTouchMove: false,
+            slidesPerGroup: 3,
+            navigation: {
+                nextEl: `.product__slider-nav--`+tab+` .product__slider-next-tab`,
+                prevEl: `.product__slider-nav--`+tab+` .product__slider-prev-tab`,
+            },
+            pagination: {
+                el: `.product__slider-nav--`+tab+` .product__slider-pagination-tab`,
+                renderBullet: function (index, className) {
+                    return "<span class='product__slider-bullet " + className + "'>" + (index + 1) + "</span>";
+                },
+                clickable: true,
+            },
+        });
+        if (tab != 0){
+            $(item).hide();
+            $('.product__slider-nav--'+tab).hide();
+        }
+    });
+
+
+    const blogSlidersDeskMobTabs = document.querySelectorAll(".sale__slider.sale__slider--blog.sale__slider--blog--mob.tab-slider");
+    blogSlidersDeskMobTabs.forEach((item, index) => {
+        let tab = index;
+        new Swiper(item, {
+            slidesPerView: "1",
+            wrapperClass: "sale__slider-wrapper",
+            slideClass: "sale__grid-item",
+            allowTouchMove: true,
+            slidesPerGroup: 1,
+            navigation: false,
+            pagination: false,
+        });
+        if (tab != 0){
+            $(item).hide();
+        }
+    });
+
 
 
     const productSliders = document.querySelectorAll(".product__slider");
@@ -1600,6 +1654,19 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
                         }, 1000);
                     } else {
                         clearTimeout(ScrollToBlockTimer);
+                    }
+                }
+
+                let prevBlock = $('.cars.show-main').prev();
+                if (prevBlock.length > 0){
+                    prevBlock.css('transition','transform 0.1s linear');
+                    if (blockTop > scrollTop){
+                        if ( (scrollTop + windowH/1.5) > blockTop){
+                            let yPos = (blockTop - (scrollTop + windowH/1.5)) / windowH;
+                            prevBlock.css('transform','translateY('+ yPos*30 +'%)');
+                        } else {
+                            prevBlock.css('transform','translateY('+ 0 +'%)');
+                        }
                     }
                 }
             }
