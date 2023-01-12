@@ -33748,13 +33748,6 @@ input.invalid {
   		}
   	}
   } */
-  /*
-  	.tab-sliders{
-  		.tab-slider:not(:first-child){
-  			display: none;
-  		}
-  	}
-  */
 }
 .page-anim svg.js-cart-anim {
   width: 1.5rem !important;

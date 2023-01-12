@@ -1481,7 +1481,7 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
     })
 
     const stoMenuSlider = document.querySelectorAll(".sto-slider .shops-inner__list");
-    shopMenuSlider.forEach((item, index) => {
+    stoMenuSlider.forEach((item, index) => {
        new Swiper(item, {
            slidesPerView: "auto",
            allowTouchMove: false,
