@@ -35213,6 +35213,9 @@ input.invalid {
 .page-anim .main-page .cars.show-main .cars__slider {
   display: flex !important;
 }
+.page-anim .main-page .cars.show-main .cars__slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 .page-anim .main-page .cars.show-main .cars__slider .swiper-wrapper .swiper-slide {
   width: auto;
   display: inline-block;
@@ -35333,6 +35336,22 @@ input.invalid {
   .page-anim .product__slider-navs .product__slider-nav {
     display: none !important;
   }
+}
+.page-anim .cars__list-items ul li .cars__list-item-hover {
+  pointer-events: none;
+}
+.page-anim .cars__list-items ul li:hover .cars__list-item-hover {
+  transition: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.page-anim .cars__list-items ul li.active .cars__list-item-hover {
+  transition: all 0.4s ease-out;
+  visibility: visible;
+  opacity: 1;
+}
+.page-anim .cars__list-items ul li.hidden .cars__list-item-hover {
+  opacity: 0;
 }
 
 @media (min-width: 1921px) {

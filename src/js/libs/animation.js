@@ -278,7 +278,7 @@ AOS.init();
 
 var swiper = new Swiper(".cars__slider", {
 	spaceBetween: 30,
-    speed: 25000,
+    speed: 20000,
 	centeredSlides: true,
 	loop: true,
 	slidesPerView: 'auto',
