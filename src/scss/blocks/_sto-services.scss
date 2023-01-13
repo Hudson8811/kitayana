@@ -645,6 +645,20 @@
 			margin-bottom: 18px;
 		}
 	}
+	.checkbox.invalid .checkbox-wrap{
+		border: rem(1px) solid #E60000;
+	}
+	.checkbox.invalid input.checkbox__input:checked+.checkbox-wrap{
+		border: rem(1px) solid  #a7a9b9;
+	}
+	@media(max-width: 768px){
+		.checkbox.invalid .checkbox-wrap{
+			border: 1px solid #E60000;
+		}
+		.checkbox.invalid input.checkbox__input:checked+.checkbox-wrap{
+			border: 1px solid  #a7a9b9;
+		}
+	}
 	.checkbox__name{
 		font-size: rem(14px);
 		line-height: rem(24px);
@@ -975,6 +989,7 @@
 		gap: 0;
 		@media(max-width: 991px){
 			align-items: flex-start;
+			gap: 48px;
 		}
 	}
 	.sto-services__title{
@@ -1121,5 +1136,18 @@
 		font-size: 16px;
 		line-height: 20px;
 		padding: 24px 15px 9px;
+	}
+}
+
+
+@media(max-width: 768px){
+	.header.fixed~.wrapper.sto-services{
+		padding-top: 130px;
+	}
+}
+
+@media(max-width: 760px){
+	.header.fixed~.wrapper.sto-services{
+		padding-top: 90px;
 	}
 }

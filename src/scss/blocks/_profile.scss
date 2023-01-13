@@ -2080,7 +2080,17 @@
             }
 
             @media(max-width: 420px) {
-                gap: 10px;
+                overflow-x: auto;
+                overflow-y: none;
+                scrollbar-width: thin;
+                padding-right: 50px;
+                width: 100%;
+                li{
+                    width: max-content;
+                    a{
+                        white-space: nowrap;
+                    }
+                }
             }
 
             a {
@@ -2543,7 +2553,7 @@
         background: #F1F1F3;
         padding: rem(38px);
         display: grid;
-        grid-template-columns: rem(534px) rem(490px);
+        grid-template-columns: rem(534px) rem(480px);
         gap: rem(69px);
 
         @media(max-width: 991px) {
@@ -2900,6 +2910,13 @@
                 min-height: 223px;
             }
 
+            @media(max-width: 420px){
+                
+                grid-template-columns: 90px 1fr;
+            }
+
+         
+
             transition: 0.2s linear;
 
             @media(min-width: 991px) {
@@ -3018,6 +3035,11 @@
                     line-height: 14px;
                     width: 180px;
                     margin-bottom: 3px;
+                }
+
+                @media(max-width: 420px){
+                    width: 130px;
+                    margin-left: auto;
                 }
 
             }

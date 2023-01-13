@@ -437,66 +437,65 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const salesSlidersDesk = document.querySelectorAll(".sale__slider.sale__slider--desktop");
-        salesSlidersDesk.forEach((item, index) => {
-            new Swiper(item, {
-                slidesPerView: "1",
-                wrapperClass: "sale__slider-wrapper",
-                slideClass: "sale__slide-item",
-                allowTouchMove: false,
-                slidesPerGroup: 1,
-                navigation: {
-                    nextEl: `.product__slider-nav-wrapper .product__slider-next-2`,
-                    prevEl: `.product__slider-nav-wrapper .product__slider-prev-2`,
-                },
-            });
+    salesSlidersDesk.forEach((item, index) => {
+        new Swiper(item, {
+            slidesPerView: "1",
+            wrapperClass: "sale__slider-wrapper",
+            slideClass: "sale__slide-item",
+            allowTouchMove: false,
+            slidesPerGroup: 1,
+            navigation: {
+                nextEl: `.product__slider-nav-wrapper .product__slider-next-2`,
+                prevEl: `.product__slider-nav-wrapper .product__slider-prev-2`,
+            },
         });
+    });
 
 
 
-        const blogSlidersDesk = document.querySelectorAll(".sale__slider.sale__slider--blog:not(.tab-slider)");
-        blogSlidersDesk.forEach((item, index) => {
-            new Swiper(item, {
-                slidesPerView: "3",
-                wrapperClass: "sale__slider-wrapper",
-                slideClass: "sale__grid-item",
-                allowTouchMove: false,
-                slidesPerGroup: 3,
-                navigation: {
-                    nextEl: `.product__slider-nav-wrapper .product__slider-next-4`,
-                    prevEl: `.product__slider-nav-wrapper .product__slider-prev-4`,
+    const blogSlidersDesk = document.querySelectorAll(".sale__slider.sale__slider--blog:not(.tab-slider)");
+    blogSlidersDesk.forEach((item, index) => {
+        new Swiper(item, {
+            slidesPerView: "3",
+            wrapperClass: "sale__slider-wrapper",
+            slideClass: "sale__grid-item",
+            allowTouchMove: false,
+            slidesPerGroup: 3,
+            navigation: {
+                nextEl: `.product__slider-nav-wrapper .product__slider-next-4`,
+                prevEl: `.product__slider-nav-wrapper .product__slider-prev-4`,
+            },
+            pagination: {
+                el: `.product__slider-nav-wrapper .product__slider-pagination-4`,
+                renderBullet: function (index, className) {
+                    return "<span class='product__slider-bullet " + className + "'>" + (index + 1) + "</span>";
                 },
-                pagination: {
-                    el: `.product__slider-nav-wrapper .product__slider-pagination-4`,
-                    renderBullet: function (index, className) {
-                        return "<span class='product__slider-bullet " + className + "'>" + (index + 1) + "</span>";
-                    },
-                    clickable: true,
-                },
-            });
+                clickable: true,
+            },
         });
+    });
 
-        const blogSlidersDeskMob = document.querySelectorAll(".sale__slider.sale__slider--blog.sale__slider--blog--mob:not(.tab-slider)");
-        blogSlidersDeskMob.forEach((item, index) => {
-            new Swiper(item, {
-                slidesPerView: "1",
-                wrapperClass: "sale__slider-wrapper",
-                slideClass: "sale__grid-item",
-                allowTouchMove: true,
-                slidesPerGroup: 1,
-                navigation: {
-                    nextEl: `.product__slider-nav-wrapper .product__slider-next-5`,
-                    prevEl: `.product__slider-nav-wrapper .product__slider-prev-5`,
+    const blogSlidersDeskMob = document.querySelectorAll(".sale__slider.sale__slider--blog.sale__slider--blog--mob:not(.tab-slider)");
+    blogSlidersDeskMob.forEach((item, index) => {
+        new Swiper(item, {
+            slidesPerView: "1",
+            wrapperClass: "sale__slider-wrapper",
+            slideClass: "sale__grid-item",
+            allowTouchMove: true,
+            slidesPerGroup: 1,
+            navigation: {
+                nextEl: `.product__slider-nav-wrapper .product__slider-next-5`,
+                prevEl: `.product__slider-nav-wrapper .product__slider-prev-5`,
+            },
+            pagination: {
+                el: `.product__slider-nav-wrapper .product__slider-pagination-5`,
+                renderBullet: function (index, className) {
+                    return "<span class='product__slider-bullet " + className + "'>" + (index + 1) + "</span>";
                 },
-                pagination: {
-                    el: `.product__slider-nav-wrapper .product__slider-pagination-5`,
-                    renderBullet: function (index, className) {
-                        return "<span class='product__slider-bullet " + className + "'>" + (index + 1) + "</span>";
-                    },
-                    clickable: true,
-                },
-            });
+                clickable: true,
+            },
         });
-
+    });
 
 
     const blogSlidersDeskTabs = document.querySelectorAll(".sale__slider.sale__slider--blog.tab-slider:not(.tab-slider--mobile)");
@@ -551,7 +550,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     const productSliders = document.querySelectorAll(".product__slider");
     if (window.screen.width < 991) {
         productSliders.forEach((item, index) => {
@@ -592,6 +590,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
             });
         });
+
+        const shopMenuSlider = document.querySelectorAll(".shops-inner__list");
+        shopMenuSlider.forEach((item, index) => {
+           new Swiper(item, {
+               slidesPerView: "auto",
+               slidesPerGroup: 4,
+               allowTouchMove: true,
+               slideClass: "shops-inner__ordering-filter-item",
+               wrapperClass: "shops-inner__ordering-filter",
+               breakpoints: {
+               0: {
+                   spaceBetween: 31,
+               },
+               992: {
+                   spaceBetween: 0,
+               },
+           },
+           });
+       });
     } else {
         productSliders.forEach((item, index) => {
             console.log(index);
@@ -631,24 +648,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const shopMenuSlider = document.querySelectorAll(".shops-inner__list");
-    shopMenuSlider.forEach((item, index) => {
-       new Swiper(item, {
-           slidesPerView: "auto",
-           slidesPerGroup: 4,
-           allowTouchMove: true,
-           slideClass: "shops-inner__ordering-filter-item",
-           wrapperClass: "shops-inner__ordering-filter",
-           breakpoints: {
-           0: {
-               spaceBetween: 31,
-           },
-           992: {
-               spaceBetween: 0,
-           },
-       },
-       });
-   });
+   
 
     const dropdowns = document.querySelectorAll(".dropdown"),
         body = document.querySelector("body"),
@@ -713,40 +713,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Закрытие модалок
-    document.querySelectorAll(".jsButtonCloseModal").forEach(function (e) {
-        e.addEventListener("click", function (e) {
+    document.querySelectorAll(".jsButtonCloseModal").forEach(function (item) {
+        item.addEventListener("click", function (e) {
             e.preventDefault(), body.classList.remove("overflow-hidden");
             document.querySelector("html").classList.remove("overflow-hidden");
             let currentModal = document.querySelectorAll(".modal");
             overlay.classList.remove("open"),
-            currentModal.forEach(function (e) {
-                e.classList.remove("open");
+            currentModal.forEach(function (item) {
+                item.classList.remove("open");
             });
         });
     });
-    document.querySelectorAll(".jsButtonBackModal").forEach(function (e) {
-        e.addEventListener("click", function (e) {
+    document.querySelectorAll(".jsButtonBackModal").forEach(function (item) {
+        item.addEventListener("click", function (e) {
             let currentModal = this.closest('.modal');
             currentModal.classList.remove('open');
         });
     });
 
-    document.querySelectorAll(".jsButtonBackModal").forEach(function (e) {
-        e.addEventListener("click", function (e) {
+    document.querySelectorAll(".jsButtonBackModal").forEach(function (item) {
+        item.addEventListener("click", function (e) {
             let currentModal = e.target.closest(".modal");
             currentModal.classList.remove("open");
         });
     });
 
     // Закрытие модалок
-    document.querySelectorAll(".jsBtnCloseDropdown").forEach(function (e) {
-        e.addEventListener("click", function (e) {
+    document.querySelectorAll(".jsBtnCloseDropdown").forEach(function (item) {
+        item.addEventListener("click", function (e) {
             e.preventDefault(), body.classList.remove("overflow-hidden");
             document.querySelector("html").classList.remove("overflow-hidden");
             let currentDropdown = document.querySelectorAll(".dropdown");
             overlay.classList.remove("open"),
-                currentDropdown.forEach(function (e) {
-                    e.classList.remove("open");
+                currentDropdown.forEach(function (item) {
+                    item.classList.remove("open");
                 });
         });
     });
@@ -789,8 +789,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const mainMenu = document.querySelector(".jsMainMenu");
-    document.querySelectorAll(".jsMenuButton").forEach(function (e) {
-        e.addEventListener("click", function (e) {
+    document.querySelectorAll(".jsMenuButton").forEach(function (item) {
+        item.addEventListener("click", function (e) {
             body.classList.toggle("menu-opened"),
                 e.preventDefault(),
 
@@ -804,10 +804,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 mainMenu.classList.contains("open") ? (this.classList.remove("--svg__menu"), this.classList.add("--svg__menu_close")) : (this.classList.add("--svg__menu"), this.classList.remove("--svg__menu_close"));
         });
     });
-    const h = 0;
 
-    document.querySelectorAll(".jsAddItemCart").forEach(function (e) {
-        e.addEventListener("click", function (t) {
+    document.querySelectorAll(".jsAddItemCart").forEach(function (item) {
+        item.addEventListener("click", function (t) {
             t.preventDefault();
             e.nextElementSibling.classList.add("show");
         });
@@ -1010,16 +1009,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.querySelectorAll(".jsToggleTypeButton").forEach(function (e) {
-        e.addEventListener("click", function (e) {
+    document.querySelectorAll(".jsToggleTypeButton").forEach(function (item) {
+        item.addEventListener("click", function (e) {
             e.preventDefault();
-            const t = this.querySelector(".modal__type-icon"),
-                s = this.querySelector(".modal__type-icon").nextSibling,
-                o = this.closest(".modal__content").querySelector(".modal__type-wrapper--content"),
-                c = this.closest(".modal__content").querySelector(".modal__type-wrapper--map");
-            t.classList.contains("--svg__pin")
-                ? (t.classList.remove("--svg__pin"), t.classList.add("--svg__list"), (s.textContent = "Списком"), o.classList.remove("active"), c.classList.add("active"))
-                : (t.classList.remove("--svg__list"), t.classList.add("--svg__pin"), (s.textContent = "На карте"), c.classList.remove("active"), o.classList.add("active"));
+            const modalIcon = this.querySelector(".modal__type-icon"),
+                modalIconNext = this.querySelector(".modal__type-icon").nextSibling,
+                modalTypeWrap = this.closest(".modal__content").querySelector(".modal__type-wrapper--content"),
+                modalMapWrap = this.closest(".modal__content").querySelector(".modal__type-wrapper--map");
+            modalIcon.classList.contains("--svg__pin")
+                ? (modalIcon.classList.remove("--svg__pin"), modalIcon.classList.add("--svg__list"), (modalIconNext.textContent = "Списком"), modalTypeWrap.classList.remove("active"), modalMapWrap.classList.add("active"))
+                : (modalIcon.classList.remove("--svg__list"), modalIcon.classList.add("--svg__pin"), (modalIconNext.textContent = "На карте"), modalMapWrap.classList.remove("active"), modalTypeWrap.classList.add("active"));
         });
     });
 
@@ -1701,5 +1700,34 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
             }
         }
     });
+
+
+
+    document.querySelectorAll(".article-expand-list").forEach(item => {
+        item.addEventListener("click", function(e){
+            e.preventDefault;
+            let triggerButton = this;
+            let triggerButtonText = this.querySelector('span');
+            if( triggerButton.classList.contains("hide")){
+                triggerButtonText.textContent = "Развернуть";
+                triggerButton.classList.remove("hide");
+                triggerButton.classList.add("view");
+                document.querySelectorAll(".tech-service__row").forEach(list => {
+                    list.classList.remove("open");
+                })
+                return
+            }
+            if( triggerButton.classList.contains("view")){
+                triggerButton.classList.remove("view");
+                triggerButton.classList.add("hide");
+                triggerButtonText.textContent = "Cвернуть";
+                document.querySelectorAll(".tech-service__row").forEach(list => {
+                    list.classList.add("open");
+                })
+                return
+            }
+        })
+        
+    })
 
 });

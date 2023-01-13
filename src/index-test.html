@@ -1,4 +1,7 @@
+
+
 @include('partials/header.html')
+
 
 
 
@@ -18,10 +21,13 @@
 @include('partials/modals/jsOnOrderModal.html')
 @include('partials/modals/jsApplicabilityModal.html')
 @include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsBuyOneClick.html')
+@include('partials/modals/jsServiceModal.html')
+@include('partials/modals/jsOrderingModal.html')
 
 
 
-<div class="wrapper">
+<div class="wrapper wrapper-origin">
 
     <div class="breadcrumbs breadcrumbs--pb-0">
         <div class="container">
@@ -52,13 +58,13 @@
 
 
         <div class="content">
-
+<!-- 
             <div class="categories-tabs">
                 <div class="categories-tabs__name categories-tabs__name--black">Все 37:</div>
                 <a href="#original"
                     class="anchor-link categories-tabs__name categories-tabs__name--dashed ">Оригиналы</a>
                 <a href="#analogy" class="anchor-link categories-tabs__name categories-tabs__name--dashed">Аналоги</a>
-            </div>
+            </div> -->
 
 
             @include('partials/spares.html')
@@ -69,10 +75,46 @@
 
             @include('partials/parts-list.html')
 
+            <ul class="pagination">
+                <!-- <li>
+                    <a href="">
+                        <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href='/img/sprite-new.svg#pagination-left'></use>
+                        </svg>
+                    </a>
+                </li> -->
+
+                <li>
+                    <a href="" class="active">1</a>
+                </li>
+                <li>
+                    <a href="">2</a>
+                </li>
+                <li>
+                    <a href="">3</a>
+                </li>
+                <li>
+                    <a href="">...</a>
+                </li>
+                <li>
+                    <a href="">12</a>
+                </li>
+
+                <li class="arrow arrow--right">
+                    <a href="">
+                        <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <use xlink:href='/img/sprite-new.svg#pagination-right'></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
         </div>
     </div>
 
-    @include('partials/car-service.html')
+    @include('partials/car-service.html', {
+        'descr': 'car-service__content--descr-hidden'
+    })
 
 
     @include('partials/need-help.html', {
@@ -89,26 +131,87 @@
 </div>
 
 
+
 @include('partials/bottom-panel.html')
 
-
 <style>
-    @media(min-width: 1900px) {
+    @media(min-width: 1921px) {
         html {
             font-size: 16px !important;
         }
 
-        .wrapper {
+        /* .wrapper {
+            max-width: 1920px;
+            width: 100%;
+            margin: 0 auto;
+        } */
+
+        .wrapper-grid{
             max-width: 1920px;
             width: 100%;
             margin: 0 auto;
         }
 
         .header {
-            max-width: 1920px;
+            /* max-width: 1920px; */
             width: 100%;
             margin: 0 auto;
         }
+
+        .modal{
+            max-width: 1920px;
+        }
+        .jsSuppliersModal .modal__content{
+            width: 53%;
+            
+        }
+
+        /* .modal__content{
+            border-right: 1px solid black;
+        } */
+
+        .header__inner{
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .modal.open{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+      
+
+        .header.fixed .header__main{
+            border-bottom: 1px solid black;
+        }
+
+        .need-help{
+            justify-content: center;
+        }
+        .need-help__col--sm{
+            max-width: 635px;
+        }
+
+        .form-validate.need-help__col{
+            max-width: 1040px;
+        }
+        /* .modal{
+            border-left: 1px solid black;
+        } */
+
+        /* .modal::before{
+            content: '';
+            display: block;
+            height: 100%;
+            width: 400%;
+            background: #fff;
+            right: calc(100% + 2px);
+            top: 0;
+            position: absolute;
+        } */
+        
     }
 </style>
+
 @include('partials/footer.html')

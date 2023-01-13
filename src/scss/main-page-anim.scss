@@ -938,6 +938,7 @@ svg.js-cart-anim:hover path:nth-child(5) {
 
 
 
+
 	.entry-block{
 		position: relative;
 	}
@@ -986,7 +987,6 @@ svg.js-cart-anim:hover path:nth-child(5) {
 				flex-wrap: wrap;
 				.product__slider-tab{
 					&:not(.active){
-						font-size: 0.6em;
 						color: rgba(167, 169, 185, 0.5);
 						margin-left: rem(36px);
 						transition: color 0.3s;
