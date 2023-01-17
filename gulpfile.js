@@ -107,10 +107,12 @@ const images = () => {
 
 }
 
+
 const video = () => {
     return src(`${paths.srcVideoFolder}/**/*.{mp4,webm}`)
-    .pipe(dest(`${paths.buildVideoFolder}`))
+        .pipe(dest(`${paths.buildVideoFolder}`))
 }
+
 
 
 

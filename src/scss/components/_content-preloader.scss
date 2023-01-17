@@ -1,0 +1,93 @@
+.content-preloader{
+	padding: rem(76px) 0 rem(20px);
+	display: flex;
+	justify-content: center;
+	&__center{
+		font-weight: 600;
+		font-size: rem(14px);
+		line-height: 1.71;
+		text-align: center;
+		color: rgba(45, 39, 39, 0.7);
+		position: relative;
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			z-index: 100;
+			width: rem(31px);
+			height: rem(31px);
+			background-color: #E60000;
+		}
+		&::before{
+			clip-path: polygon(100% 0,40% 50%,100% 100%,55% 100%,0 55%,0 45%,55% 0);
+			border-top-left-radius: 70%;
+			border-bottom-left-radius: 70%;
+			bottom: rem(-11px);
+			left: rem(-36px);
+			animation: content-preloader-left 1.5s linear infinite;
+		}
+		&::after{
+			clip-path: polygon(45% 0,100% 45%,100% 55%,45% 100%,0 100%,55% 50%,0 0);
+			border-top-right-radius: 70%;
+			border-bottom-right-radius: 70%;
+			top: rem(-11px);
+			right: rem(-36px);
+			animation: content-preloader-right 1.5s linear infinite;
+		}
+	}
+}
+
+@keyframes content-preloader-left {
+	0% {
+		-webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+		clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 100% 100%, 45% 50%, 100% 0%);
+		opacity: 0;
+		transform: translateX(0);
+	}
+	30% {
+		-webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		opacity: 1;
+		transform: translateX(0);
+	}
+	95% {
+		-webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		-webkit-clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		clip-path: polygon(100% 0%, 45% 50%, 100% 100%, 55% 100%, 0% 50%, 55% 0%);
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+}
+
+
+@keyframes content-preloader-right {
+	0% {
+		-webkit-clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+		clip-path: polygon(0% 0%, 55% 50%, 0% 100%, 0% 100%, 55% 50%, 0% 0%);
+		opacity: 0;
+		transform: translateX(0);
+	}
+	30% {
+		-webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		opacity: 1;
+		transform: translateX(0);
+	}
+	95% {
+		-webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100% {
+		-webkit-clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		clip-path: polygon(45% 0%, 100% 50%, 45% 100%, 0% 100%, 55% 50%, 0% 0%);
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}

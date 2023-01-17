@@ -1556,7 +1556,7 @@ input.invalid {
 
 
 .load-more-button {
-    max-width: 1282px;
+    max-width: 1275px;
     @media(min-width: 1921px){
         max-width: 1297px;
     }
@@ -1564,6 +1564,10 @@ input.invalid {
     @media(max-width: 768px){
         font-size: 10px;
     }
+}
+
+.parts-list-wrapper + .wrapper-load-more-button .load-more-button{
+    max-width: 1280px;
 }
 
 .products__grid+.load-more-button {
@@ -1845,11 +1849,11 @@ input.invalid {
 }
 
 
-@media(max-width: 1920px) and (min-width: 991px){
-    .breadcrumbs .container, .selected-filter .container{
-        padding-left: 0;
-    }
-}
+// @media(max-width: 1920px) and (min-width: 991px){
+//     .breadcrumbs .container, .selected-filter .container{
+//         padding-left: 0;
+//     }
+// }
 
 @media(max-width: 420px){
     .profile-orders .order-list .order-item .arrow-wrapper{
@@ -1859,3 +1863,4 @@ input.invalid {
 
 @import 'main-page-anim';
 @import 'components/large-container';
+@import 'components/content-preloader';

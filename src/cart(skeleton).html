@@ -1,0 +1,470 @@
+@include('partials/header.html')
+
+
+
+<!-- dropdowns -->
+@include('partials/dropdown/jsAuthDropdown.html')
+@include('partials/dropdown/jsExpertDropdown.html')
+@include('partials/dropdown/jsRegisterDropdown.html')
+
+
+<!-- modals -->
+@include('partials/modals/jsFilterMapModal.html')
+@include('partials/modals/jsInStockModal.html')
+@include('partials/modals/jsInStockShopModal.html')
+@include('partials/modals/jsSuppliersModal.html')
+@include('partials/modals/jsOnOrderModal.html')
+@include('partials/modals/jsApplicabilityModal.html')
+@include('partials/modals/stateFormModal.html')
+@include('partials/modals/jsGetDetailPhoto.html')
+@include('partials/modals/jsGallery.html')
+@include('partials/modals/jsReviewPopup.html')
+
+
+
+
+<div class="wrapper cart-wrapper">
+
+
+    <div class="breadcrumbs breadcrumbs--pb-0">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <a href="#" class="breadcrumbs__link">Главная</a>
+                <a href="#" class="breadcrumbs__link">Корзина</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    @include('partials/components/page-title.html', {
+    gift: true,
+    size: 'small',
+    title: 'Корзина'
+    })
+
+    <div class="cart__content-wrapper">
+        <div class="container">
+            <div class="cart__content">
+                <div class="cart__count-wrapper">
+                    <div class="cart__count">
+                        К оформлению заказа доступно <b>6 товаров из 7</b>
+                    </div>
+
+                    <a href="" class="cart-clean">
+                        <i class="cart--icon"></i>
+                        Очистить корзину
+                    </a>
+                </div>
+
+
+                <div class="cart__product-list">
+                    <div class="cart__overhead">
+                        <span>Товары с розничных складов</span>
+                        <span class="attention-wrapper">
+                            Доступен самовывоз из магазина
+
+                            <span class="attention" data-attention-id="at1">
+                                <i class="attention--icon"></i>
+                                <span class="attention__content" id="at1">
+                                    <span class="attention__header">
+                                        <span class="attention__header-title">Замена артикула производителем</span>
+                                    </span>
+                                    <span class="attention__content-text attention__content-text--between">
+                                        Старый номер <b>D4060-JA00A</b>
+                                    </span>
+
+                                    <a href="" class="button button--grey attention__close mobile-only">закрыть</a>
+                                </span>
+                            </span>
+
+                        </span>
+                    </div>
+
+
+
+                    <div class="cart__product-item cart__product-item--skeleton">
+                        <div class="product__details-wrapper">
+                            <div class="product__img"></div>
+                            <div class="product__details">
+                                <div class="parts-item__title"></div>
+                                <div class="parts-item__manufacturer parts-item__manufacturer--code"></div>
+                                <div class="parts-item__manufacturer parts-item__manufacturer--brand"></div>
+                            </div>
+                        </div>
+                        <div class="product__item-col">
+                            <div class="parts-item__stock"></div>
+                        </div>
+                        <div class="product__item-col product__item-col--mobile">
+                            <div class="parts-item__stock"></div>
+                        </div>
+                        <div class="product__item-col">
+                            <div class="price-wrapper attention attention__card-item">
+                                <div class="parts-item__price"></div>
+                                <div class="parts-item__old-price mobile-hidden"></div>
+                            </div>
+                            <div class="parts-item__discount parts-item__discount--ml desktop-only"></div>
+                            <div class="counter-wrapper"></div>
+                            <div class="remove"></div>
+                        </div>
+                    </div>
+
+                    <div class="cart__product-item cart__product-item--skeleton">
+                        <div class="product__details-wrapper">
+                            <div class="product__img"></div>
+                            <div class="product__details">
+                                <div class="parts-item__title"></div>
+                                <div class="parts-item__manufacturer parts-item__manufacturer--code"></div>
+                                <div class="parts-item__manufacturer parts-item__manufacturer--brand"></div>
+                            </div>
+                        </div>
+                        <div class="product__item-col">
+                            <div class="parts-item__stock"></div>
+                        </div>
+                        <div class="product__item-col product__item-col--mobile">
+                            <div class="parts-item__stock"></div>
+                        </div>
+                        <div class="product__item-col">
+                            <div class="price-wrapper attention attention__card-item">
+                                <div class="parts-item__price"></div>
+                                <div class="parts-item__old-price mobile-hidden"></div>
+                            </div>
+                            <div class="parts-item__discount parts-item__discount--ml desktop-only"></div>
+                            <div class="counter-wrapper"></div>
+                            <div class="remove"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="cart__product-item">
+                        <div class="product__details-wrapper">
+                            <div class="product__img">
+                                <img src="/img/photo-none.png" alt="">
+                                @include('partials/components/favorite-btn.html')
+                                <div class="product__type-hint">АНАЛОГ</div>
+                            </div>
+                            <div class="product__details">
+                                <a href="#" class="parts-item__title">Наведите на цену для просмотра склелетона цен</a>
+                                <div class="parts-item__text parts-item__text--black-light parts-item__manufacturer">
+                                    SS35002</div>
+                                <div class="parts-item__text parts-item__text--black-light parts-item__manufacturer">
+                                    LIFAN / Китай</div>
+
+                            </div>
+                            <a href="" class="button button--white remove-button mobile-only">Удалить</a>
+                        </div>
+
+                        <div class="product__item-col">
+                            <a href="" class="parts-item__text parts-item__text--dotted">В наличии: <b>4 шт.</b> </a>
+                        </div>
+
+
+                        <div class="product__item-col">
+                            <a href="" class="parts-item__text">от <b>сегодня</b> </a>
+                        </div>
+
+                        <div class="product__item-col">
+                            <div class="price-wrapper attention attention__card-item">
+                                <div class="parts-item__text parts-item__text--md">
+                                    1 201 ₽
+                                </div>
+                                <div class="parts-item__old-price mobile-hidden">
+                                    1971 ₽
+                                </div>
+
+                                <div class="attention__content attention__content--skeleton">
+                                    <div class="attention__header">
+                                        <div class="price-wrapper">
+                                            <div class="price"></div>
+                                            <div class="parts-item__discount"></div>
+                                            <div class="price--old"></div>
+                                        </div>
+                                        <div class="attention__content-text attention__content-text--pt attention__content-text--between ">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="attention__content-text  attention__content-text--between ">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="attention__content-text  attention__content-text--between ">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="attention__content-text  attention__content-text--between ">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="parts-item__discount parts-item__discount--green parts-item__discount--ml desktop-only">
+                                –5%
+                            </div>
+
+                            <svg class="icon parts-item__discount-icon">
+                                <use xlink:href="/img/sprite.svg#sprite--discount"></use>
+                            </svg>
+
+                            <div class="counter-wrapper">
+                                <div
+                                    class="parts-item__button jsButtonCounter buttons-anim__button buttons-anim__button--black">
+                                    <span
+                                        class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--decrease"
+                                        data-type="decrease"></span>
+                                    <input class="js-number-inp buttons-anim__input" type="text" value="1">
+                                    <span
+                                        class="js-icon-scale-change js-change-number buttons-anim__icon buttons-anim__icon--increase"
+                                        data-type="increase">
+                                    </span>
+                                    <span class="button-show-cancel-inner button-show-cancel-inner--grey">Отмена</span>
+                                </div>
+                            </div>
+
+                            <button class="remove">
+                                <svg class="cart-anim" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <g>
+                                            <path
+                                                d="M21 5.97998C17.67 5.64998 14.32 5.47998 10.98 5.47998C9 5.47998 7.02 5.57998 5.04 5.77998L3 5.97998"
+                                                stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M8.49902 4.97L8.71902 3.66C8.87902 2.71 8.99902 2 10.689 2H13.309C14.999 2 15.129 2.75 15.279 3.67L15.499 4.97"
+                                                stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <path
+                                            d="M18.8504 9.14014L18.2004 19.2101C18.0904 20.7801 18.0004 22.0001 15.2104 22.0001H8.79039C6.00039 22.0001 5.91039 20.7801 5.80039 19.2101L5.15039 9.14014"
+                                            stroke="#2D2727" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10.3301 16.5H13.6601" stroke="#2D2727" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.50098 12.5H14.501" stroke="#2D2727" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <aside class="cart__aside-wrapper">
+                <div class="cart__aside">
+                    <span class="cart__aside-title">
+                        6 товаров в Корзине:
+                    </span>
+
+                    <ul class="cart__aside-info">
+                        <li class="cart__aside-row">
+                            <span>Стоимость заказа</span>
+                            <span>13 317 ₽</span>
+                        </li>
+
+                        <li class="cart__aside-row cart__aside-row--big">
+                            <span>Ваша скидка</span>
+                            <span>– 2 550 ₽</span>
+                        </li>
+
+                        <li class="cart__aside-row">
+                            <span>Доставка</span>
+                            <span>от бесплатно</span>
+                        </li>
+
+                        <li class="cart__aside-row">
+                            <span>Скидка от суммы заказа</span>
+                            <span>– 1 245 ₽ (-5%)</span>
+                        </li>
+                    </ul>
+
+                    <div class="cart__aside-total">
+                        <div class="cart__aside-row">
+                            <div>
+                                <b>Итого:</b>
+                                <div>к оплате</div>
+                            </div>
+                            <div class="price-wrapper">
+                                <div class="price">
+                                    1 401 ₽
+                                </div>
+                                <div class="cart__aside-row">
+                                    <div class="discount-count">-5%</div>
+                                    <div class="price price--old">
+                                        1971 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="cart__aside-promo">
+                        <input type="text" class="input input--white" placeholder="Введите промокод">
+                    </div>
+
+                    <div class="cart__aside-discounts">
+                        <div class="cart__aside-discounts-item">
+                            <b>СКИДКА -15%</b> на Яндекс-такси при покупке запчастей в розницу
+                            <div class="promo">Промокод <b>YANDEX</b></div>
+                        </div>
+
+                        <div class="cart__aside-discounts-item">
+                            <b>СКИДКА -5%</b> от суммы заказа 9 000 ₽
+                        </div>
+                    </div>
+
+                    <button class="button w-100">оформить заказ</button>
+                </div>
+
+                <div class="service-map">
+                    <div class="service-map__title">
+                        <div class="service-map__title__left">СТО на карте</div>
+                        <a href="#" class="service-map__title__right">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href='/img/sprite-new.svg#geo'></use>
+                            </svg>
+                            <span class="parts-item__text--dotted">На карте</span>
+                        </a>
+                    </div>
+                    <div class="service-map__subtitle">Производим ремонт любых китайских автомобилей быстро, качественно
+                    </div>
+                    <a href="#" class="service-map__link">доступно 26 автосервисов</a>
+                    <a href="#" class="button service-map__button">Записаться на СТО
+                    </a>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+
+
+    <div class="product__slider-container product__slider-container--pb">
+        <div class="container">
+            <div class="product__slider-title-wrapper  align-center">
+                <h2 class="product__slider-title">
+                    Вас может заинтересовать
+                </h2>
+
+                <div class="product__slider-nav-wrapper">
+                    <div class="product__slider-nav">
+                        <button class="product__slider-prev product__slider-prev-0"></button>
+                        <div class="product__slider-pagination product__slider-pagination-0"></div>
+                        <button class="product__slider-next product__slider-next-0"></button>
+
+                    </div>
+
+                    <a href="#" class="all-product">Все товары</a>
+                </div>
+
+            </div>
+
+
+            <div class="product__slider">
+
+                <div class="product__slider-wrapper">
+
+                       <!-- product item -->
+                       <div class="products__grid-item">
+
+                        <!-- product item header -->
+                        <div class="product__item-header">
+                            <!-- hints -->
+                            <div class="product__item-hints hints-wrapper">
+
+                                <div class="hint hint--black hint--@productBlackHint">
+                                    sale
+                                </div>
+
+
+                                <div class="hint hint--blue">
+                                    -10%
+                                </div>
+                            </div>
+
+                            <!-- product img -->
+                            <div class="product__item-img">
+                                <img alt="temp-alt" src="/img/products/grid-items/image7-9.png">
+
+
+                                <!-- favorite btn -->
+                                @include('partials/components/favorite-btn.html')
+                            </div>
+                        </div>
+                        <!-- product body -->
+                        <div class="product__item-body">
+                            <!-- product name -->
+                            <a href="" class="product__item-name">
+                                Полусинтетическое моторное масло 5W-30 Profi SN/CF 4 л. – NG7...
+                            </a>
+                            <!-- product attribute -->
+                            <span class="product__item-attr">Номер товара: 1882NKE601</span>
+
+                            <!-- product info row -->
+                            <div class="product__item-row product__item-row--between">
+                                <div class="product__item-col">
+                                    <a href="#" class="product__item-text product__item-text--underline"
+                                        data-popup="jsInStockModal">
+                                      В наличии: <span>под заказ</span> 
+                                    </a>
+
+                                
+                                </div>
+
+                                <div class="product__item-col">
+                                    <div class="price">
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- product footer -->
+                        <div class="product__item-footer">
+                            <button class="parts-item__button parts-item__button--black btn-bell-anim" data-popup="jsOnOrderModal">
+                                под заказ
+                                <span class="--svg__notification on-order__button-icon bell-anim"></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                    @loop('partials/products-grid-item.html', '/json/products.json')
+
+
+
+                 
+                </div>
+                <div class="product__slider-pagination product__slider-pagination-0"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="order__mobile-btn">
+    <button>
+        <b>Оформить заказ</b>
+        6 шт., 1 401 ₽
+    </button>
+</div>
+
+@include('partials/bottom-panel.html')
+
+
+@include('partials/footer.html')

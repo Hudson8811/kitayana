@@ -143,7 +143,77 @@
         margin-right: auto;
     }
 
+    .modal .on-order{
+        padding: 32px;
+    }
+
+    .main-menu{
+        max-width: 1920px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+        .main-menu__inner{
+            background: #fff;
+            z-index: 99;
+        }
+        .main-menu__bottom{
+            z-index: 99;
+        }
+    }
+    body.menu-opened{
+        .header{
+            &::before{
+                content: '';
+                width: 100vw;
+                height: 100vh;
+                background-color: #000;
+                opacity: 0.4;
+                left: 50%;
+                transform: translateX(-50%);
+                position: fixed;
+                z-index: 98;
+                top: 8.4rem;
+            }
+        }
+    }
     
+
+    .header__inner{
+        padding-left: 85px;
+        overflow: hidden;
+    }
+
+    .spares .swiper-slide{
+        margin-right: 63px !important;
+    }
+    .load-more-button{
+        max-width: 1337px;
+margin-right: 0;
+    }
+
+    .products__grid + .wrapper-load-more-button .load-more-button{
+        max-width: 1280px;
+    }
+    .subcategory{
+        max-width: 1280px;
+    }
+    .product__aside-container{
+        grid-template-columns: 79.438rem 25.3125rem;
+    }
+    .product__aside-container.product__reviews{
+        grid-template-columns: 64rem 40rem;
+    }
+    .product__top-line .heart__favorite-btn{
+        margin-top: 0.738rem;
+    }
+    // .header__basket-button{
+    //     margin-right: 0;
+    // }
+
+    .parts-list-wrapper + .wrapper-load-more-button .load-more-button{
+        max-width: 1337px;
+    }
 
     
     /* .modal{
@@ -229,9 +299,16 @@
         }
     }
 
+    .header.fixed::before{
+        top: 5.4rem !important;
+    }
+
     .shops-inner{
         max-width: 1920px;
         margin: 0 auto;
+    }
+    .jsInStockModal .modal__list{
+        padding-right: 24px;
     }
 
     .entry-block{
@@ -269,5 +346,11 @@
     .wrapper.blog, .wrapper.post{
         max-width: 1920px;
         margin: 0 auto;
+    }
+    .cart__popup.opened {
+        left: calc(50% + 390px);
+    }
+    #jsExpertDropdown{
+        left: calc(50% + 424px);
     }
 }

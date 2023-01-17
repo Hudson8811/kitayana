@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-    const mapsIds = ["map-modal", "map-modal-mob", "map-modal-stock", "filter-map-modal", "map-modal2", "map-modal3", "map-modal4", "map-modal5", "address-map"];
+    const mapsIds = ["map-modal", "map-modal-mob", "map-modal-stock", "filter-map-modal", "map-modal2", "map-modal3", "map-modal4", "map-modal5", "address-map", "map-modal-ordering"];
 
     ymaps.ready(function () {
         mapsIds.forEach(function(mapItem){
@@ -452,7 +452,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     const blogSlidersDesk = document.querySelectorAll(".sale__slider.sale__slider--blog:not(.tab-slider)");
     blogSlidersDesk.forEach((item, index) => {
         new Swiper(item, {
@@ -472,8 +471,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 clickable: true,
             },
+
         });
     });
+
 
     const blogSlidersDeskMob = document.querySelectorAll(".sale__slider.sale__slider--blog.sale__slider--blog--mob:not(.tab-slider)");
     blogSlidersDeskMob.forEach((item, index) => {
@@ -550,6 +551,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+
+
     const productSliders = document.querySelectorAll(".product__slider");
     if (window.screen.width < 991) {
         productSliders.forEach((item, index) => {
@@ -592,23 +595,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const shopMenuSlider = document.querySelectorAll(".shops-inner__list");
-        shopMenuSlider.forEach((item, index) => {
-           new Swiper(item, {
-               slidesPerView: "auto",
-               slidesPerGroup: 4,
-               allowTouchMove: true,
-               slideClass: "shops-inner__ordering-filter-item",
-               wrapperClass: "shops-inner__ordering-filter",
-               breakpoints: {
-               0: {
-                   spaceBetween: 31,
-               },
-               992: {
-                   spaceBetween: 0,
-               },
-           },
-           });
-       });
+       
+            shopMenuSlider.forEach((item, index) => {
+                new Swiper(item, {
+                    slidesPerView: "auto",
+                    slidesPerGroup: 4,
+                    allowTouchMove: true,
+                    slideClass: "shops-inner__ordering-filter-item",
+                    wrapperClass: "shops-inner__ordering-filter",
+                    breakpoints: {
+                    0: {
+                        spaceBetween: 31,
+                    },
+                    992: {
+                        spaceBetween: 0,
+                    },
+                },
+                });
+            });
+        
+       
     } else {
         productSliders.forEach((item, index) => {
             console.log(index);
@@ -1673,6 +1679,7 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
         });
     }
 
+  
     $('.cars__list-item-hover').on('transitionend webkitTransitionEnd oTransitionEnd',function (){
         $('.cars__list-item').removeClass('hidden');
         if ($('.cars__list-item:hover').length === 0) {
@@ -1703,6 +1710,7 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
 
 
 
+
     document.querySelectorAll(".article-expand-list").forEach(item => {
         item.addEventListener("click", function(e){
             e.preventDefault;
@@ -1729,5 +1737,21 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
         })
         
     })
+
+
+    jQuery(function($){
+        $(document).mouseup( function(e){
+            var menu = $( ".jsMainMenu");
+            if ( !menu.is(e.target) && menu.has(e.target).length === 0 && !$(".jsMenuButton").is(e.target)) {
+                body.classList.remove("overflow-hidden"),
+                    body.classList.remove("menu-opened"),
+                    document.querySelector("html").classList.remove("overflow-hidden");
+                mainMenu.classList.remove("visible");
+                mainMenu.classList.remove("open");
+                $(".jsMenuButton").removeClass("--svg__menu_close");
+            }
+        });
+    });
+
 
 });
