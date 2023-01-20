@@ -469,76 +469,74 @@
 	&__item:nth-last-child(1){
 		margin-bottom: 0;
 	}
-	&__title{
+	h3{
 		font-weight: 600;
 		font-size: rem(28px);
 		line-height: rem(34px);
 		margin-bottom: rem(33px);
+		margin-top: rem(48px);
 		@media(max-width: 768px){
 			font-size: 16px;
 			line-height: 20px;
 			margin-bottom: 16px;
+			margin-top: rem(24px);
 		}
 	}
-	&__text{
+	p{
 		font-weight: 400;
 		font-size: rem(16px);
 		line-height: rem(28px);
 		letter-spacing: 0.002em;
 		color: #000000;
+		margin-bottom: rem(24px);
 		@media(max-width: 768px){
+			margin-bottom: 16px;
 			font-size: 12px;
 			line-height: 24px;
 		}
-		p{
-			margin-bottom: rem(24px);
+	}
+	ul{
+		padding-left: rem(26px);
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		gap: rem(8px);
+		padding-bottom: rem(4px);
+		max-width: rem(800px);
+		@media(max-width: 991px){
+			max-width: unset;
+			padding-bottom: unset;
+		}
+		@media(max-width: 768px){
+			padding-left: 8px;
+			padding-bottom: 4px;
+			gap: 8px;
+			margin-top: -4px;
+		}
+		li{
+			display: flex;
+			gap: rem(19px);
+			font-weight: 500;
+			color: #2D2727;
 			@media(max-width: 768px){
-				margin-bottom: 16px;
+				gap: 14px;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 24px;
 			}
 		}
-		ul{
-			padding-left: rem(26px);
-			list-style-type: none;
-			display: flex;
-			flex-direction: column;
-			gap: rem(8px);
-			padding-bottom: rem(4px);
-			max-width: rem(800px);
-			@media(max-width: 991px){
-				max-width: unset;
-				padding-bottom: unset;
-			}
+		li:before{
+			content: '';
+			display: block;
+			width: rem(14px);
+			height: rem(2px);
+			flex-shrink: 0;
+			background-color: #E60000;
+			margin-top: rem(14px);
 			@media(max-width: 768px){
-				padding-left: 8px;
-				padding-bottom: 4px;
-				gap: 8px;
-				margin-top: -4px;
-			}
-			li{
-				display: flex;
-				gap: rem(19px);
-				font-weight: 500;
-				color: #2D2727;
-				@media(max-width: 768px){
-					gap: 14px;
-					font-weight: 500;
-					font-size: 12px;
-					line-height: 24px;
-				}
-			}
-			li:before{
-				content: '';
-				display: block;
-				width: rem(14px);
-				height: rem(2px);
-				flex-shrink: 0;
-				background-color: #E60000;
-				margin-top: rem(14px);
-				@media(max-width: 768px){
-					width: 8px;
-					height: 2px;
-					margin-top: 11px;
-				}
+				width: 8px;
+				height: 2px;
+				margin-top: 11px;
 			}
 		}
 	}

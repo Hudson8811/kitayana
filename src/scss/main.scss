@@ -1585,6 +1585,16 @@ input.invalid {
     }
 }
 
+.wrapper--grey-mb{
+    .wrapper-grid{
+        background: #fff;
+    }
+    .sop-products{
+        height: max-content;
+        background: #f1f1f3;
+    }
+}
+
 
 .search-wrap .filters__search {
     margin-bottom: 0 !important;

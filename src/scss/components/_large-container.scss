@@ -36,7 +36,7 @@
         margin: 0 auto;
     }
     .modal{
-        max-height: 1000px;
+        max-height: 1044px;
         max-width: 1400px !important;
     }
     .modal.open{
@@ -114,7 +114,9 @@
     /* .header.fixed .header__main{
         border-bottom: 1px solid black;
     } */
-
+    .sto-services__near-services-right img{
+        max-height: 345px;
+    }
     .need-help{
         justify-content: center;
     }
@@ -215,6 +217,49 @@ margin-right: 0;
         max-width: 1337px;
     }
 
+
+    .sale-single{
+        max-width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
+        .sale-inner{
+            border-right: .0625rem solid rgba(0,0,0,.7);
+            .container{
+                padding-left: 90px;
+            }
+            .info-content{
+                margin-left: 90px;
+            }
+        }
+    }
+    .sales__slider-container{
+        padding-left: 80px;
+    }
+
+    .about .container{
+        padding-left: 90px;
+    }
+    .about-bank{
+        padding-left: 0;
+    }
+   
+
+    .header.fixed{
+        .header__inner{
+            max-width: 1886px;
+            padding-left: 3rem;
+        }
+    }
+
+    .modal.edit-car .car-list .car-list__inner{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .entry-block__left{
+        padding-left: 85px;
+    }
+    .main-page .product-types .container{
+        padding-left: 85px;
+    }
     
     /* .modal{
         border-left: 1px solid black;
@@ -272,6 +317,21 @@ margin-right: 0;
     .main-page .cars .container{
         margin-left: auto;
         margin-right: auto;
+    }
+    .selected-transport{
+        margin-right: -50px;
+    }
+    .product__top-line .heart__favorite-btn{
+        margin-left: 29px;
+    }
+
+    .sale-single--product{
+        .product__slider-container .container{
+            padding-right: 4rem !important;
+        }
+        .product__slider{
+            overflow: hidden;
+        }
     }
 
     .main-page .cars__slider{
@@ -333,9 +393,10 @@ margin-right: 0;
         width: 100%;
     }
     .sto-services__near-services{
-        max-width: 1920px;
-        margin-left: auto;
-        margin-right: auto;
+        display: grid;
+        grid-template-columns: 480px 1440px;
+        justify-content: center;
+
     }
     .modal.auth-modals .modal__content{
         max-width: 1200px;
@@ -352,5 +413,24 @@ margin-right: 0;
     }
     #jsExpertDropdown{
         left: calc(50% + 424px);
+    }
+    .post__content-right{
+        border-right: .0625rem solid rgba(0,0,0,.7);
+    }
+    .post .product__slider{
+        overflow: hidden;
+    }
+    .auth-modals{
+        max-height: 1000px;
+        height: max-content !important;
+    }
+    .modal.auth-modals .form-wrapper{
+        padding-bottom: 80px;
+    }
+    .modal.auth-modals .not-found{
+       min-height: 700px;
+       .button{
+        width: max-content;
+       }
     }
 }
