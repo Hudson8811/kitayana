@@ -599,8 +599,8 @@ document.addEventListener("DOMContentLoaded", function () {
             shopMenuSlider.forEach((item, index) => {
                 new Swiper(item, {
                     slidesPerView: "auto",
-                    slidesPerGroup: 4,
-                    allowTouchMove: true,
+                    slidesPerGroup: 1,
+                    /* allowTouchMove: true, */
                     slideClass: "shops-inner__ordering-filter-item",
                     wrapperClass: "shops-inner__ordering-filter",
                     breakpoints: {
@@ -613,7 +613,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 });
             });
-        
        
     } else {
         productSliders.forEach((item, index) => {
@@ -1488,14 +1487,15 @@ document.querySelector(".js-state-form-back")?.addEventListener("click", functio
     const stoMenuSlider = document.querySelectorAll(".sto-slider .shops-inner__list");
     stoMenuSlider.forEach((item, index) => {
        new Swiper(item, {
-           slidesPerView: "auto",
-           allowTouchMove: false,
+           slidesPerView: "auto",/* 
+           allowTouchMove: false, */
            loop: true,
            slideToClickedSlide: true,
            slideClass: "shops-inner__ordering-filter-item",
            wrapperClass: "shops-inner__ordering-filter",
            navigation: {
                     nextEl: `.shops-inner__next-el`,
+                    prevEl: `.shops-inner__prev-el`,
                 },
            breakpoints: {
            0: {

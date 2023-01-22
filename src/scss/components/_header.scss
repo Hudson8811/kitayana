@@ -6,6 +6,7 @@
 
     @media(min-width: 991px){
         margin-right: rem(-18px);
+        margin-right: rem(0px);
     }
     // .header__city
     &__city{
@@ -214,7 +215,9 @@
             align-items: center;
             height: 100%;
             border-right: 0.062rem solid $color_6;
-
+				&.header__box--border-none{
+    	        border-right: none;
+				}
             // .header__box--col
             &--col{
                
@@ -1097,6 +1100,7 @@
 
         @media(min-width: 991px){
             margin-right: rem(-1px);
+            margin-right: rem(-0px);
         }
 
         &.active{

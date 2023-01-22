@@ -1003,6 +1003,8 @@
 		gap: rem(20px);
 		margin-bottom: rem(80px);
 		border-bottom: rem(1px) solid rgba(0, 0, 0, 0.7);
+		position: relative;/* 
+		overflow: hidden; */
 		@media(max-width: 768px){
 			margin-bottom: 24px;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.7);
@@ -1011,6 +1013,7 @@
 	.shops-inner__list{
 		flex-shrink: 0;
 		margin-left: 0;
+		width: 60px;
 		width: rem(710px);
 		overflow: hidden;
 		border-bottom: unset;
@@ -1068,8 +1071,34 @@
 	.shops-inner__next-el{
 		flex-shrink: 0;
 		cursor: pointer;
+		background-color: #ffffff;
+		position: relative;
+		z-index: 99;
 		@media(max-width: 768px){
 			display: none;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+			z-index: 99;
+		}
+	}
+	.shops-inner__prev-el{
+		flex-shrink: 0;
+		cursor: pointer;
+		background-color: #ffffff;
+		position: relative;
+		z-index: 99;
+		@media(max-width: 768px){
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			z-index: 99;
+		}
+		svg {
+			transform: rotate(180deg);
 		}
 	}
 	.shops-inner__next-el.swiper-button-disabled{
