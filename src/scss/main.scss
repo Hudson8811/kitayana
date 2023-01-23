@@ -1874,3 +1874,20 @@ input.invalid {
 @import 'main-page-anim';
 @import 'components/large-container';
 @import 'components/content-preloader';
+
+.product__top-line {
+	.heart__favorite-btn {
+		flex: 1 1 auto;
+		height: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 5px;
+		}
+	}
+}

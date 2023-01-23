@@ -969,8 +969,12 @@
 
     &__question, &__basket{
         &-button{
-            min-width: rem(240px);
-            max-width: rem(240px) !important;
+            min-width: 13.85rem;
+            max-width: 13.85rem !important;
+				@media (min-width: 1921px){
+					min-width: 15rem;
+					max-width: 15rem !important;
+				}
         }
     }
 
