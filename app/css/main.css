@@ -8715,7 +8715,7 @@ body.overflow-hidden::-webkit-scrollbar {
   }
 }
 .attention__card-item .attention__content {
-  width: 15.75rem;
+  width: 20rem;
   padding-bottom: 12px;
 }
 .attention__card-item .attention__header {
@@ -30849,7 +30849,7 @@ aside .service-map__button {
 }
 
 .overlay.sto-overlay.open {
-  z-index: 26;
+  z-index: 24;
 }
 
 .state-form.sto-form-popup .state-title {
